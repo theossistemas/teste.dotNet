@@ -24,6 +24,8 @@ Uma livraria da cidade teve um aumento no número de seus exemplares e está com
 ### Outros Requisitos:
 	* Para a persistência dos dados deve ser utilizado o Dapper ou Entity Core.
 	* Configurar o Swagger na aplicação
+	* Usar Microsfot SqlServer 2014 ou superior.
+	* Gerar Scripts e disponibilizá-los um uma pasta.
 
 ### Observações:
 	* O sistema deverá ser desenvolvido na plataforma .NET com C#, usando o framework ASP.NET CORE 
