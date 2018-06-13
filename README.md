@@ -26,13 +26,16 @@ Uma livraria da cidade teve um aumento no número de seus exemplares e está com
 	* Configurar o Swagger na aplicação
 
 ### Observações:
-	* O sistema deverá ser desenvolvido na plataforma .NET com C#, usando o framework ASP.NET CORE (preferêncialmente 2.1, caso for usado outra versão, informar no pull-request)
-	* Deve conter autenticação com dois níveis de acesso, um administrador e um público, o usuário de nível público não terá autenticação, ou seja, terá acesso livre;
+	* O sistema deverá ser desenvolvido na plataforma .NET com C#, usando o framework ASP.NET CORE 
+	(preferêncialmente 2.1, caso for usado outra versão, informar no pull-request)
+	* Deve conter autenticação com dois níveis de acesso, um administrador e um público, o usuário de nível 
+	público não terá autenticação, ou seja, terá acesso livre;
 
 
 ### Diferencial:
 	* Implementar front-end para consumir a API em  Angular como framework Javascript.
 
-    obs: Teste terá como avaliação principal os requisitos solicitados para o backend,  porém o frontend poderá ser critério de desempate.
+    obs: Teste terá como avaliação principal os requisitos solicitados para o backend,  porém o frontend 
+    poderá ser critério de desempate.
 
 
