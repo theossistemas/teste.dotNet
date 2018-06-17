@@ -1,0 +1,31 @@
+﻿@model Sistema.Models.Livros
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<h3>Confirma a exlusão do livro abaixo?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.valor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.valor)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <a asp-action="Edit" asp-route-id="@Model.id"><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> Excluir registro</button></a>
+        <a asp-action="Index"><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-share-alt"></span> Retornar a lista</button></a>
+    </form>
+</div>
