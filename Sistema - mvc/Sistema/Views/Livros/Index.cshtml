@@ -1,0 +1,79 @@
+﻿@model Paginacao<Sistema.Models.Livros>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Cadastro de exemplares</h2>
+<hr />
+<p>
+    <a asp-action="Create"><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Novo registro</button></a>
+</p>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Filtro: <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" />
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            <a asp-action="Index">Todos registros</a> | Total de registros @Model.TotalR
+        </p>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DescricaoParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Descrição</a>
+            </th>
+            <th>
+                Valor R$
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.valor)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id"><span class="glyphicon glyphicon-pencil"></span></a> |
+                    <a asp-action="Details" asp-route-id="@item.id"><span class="glyphicon glyphicon-eye-open"></span></a> |
+                    <a asp-action="Delete" asp-route-id="@item.id"><span class="glyphicon glyphicon-trash"></span></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@{
+    var antDesabilitado = !Model.PaginaAnterior ? "disabled" : "";
+    var proDesabilitado = !Model.ProximaPagina ? "disabled" : "";
+}
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.PaginaInicial - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @antDesabilitado">
+    Anterior
+</a>
+@for (int i = 1; i <= Model.TotalPaginas; i++)
+{
+    <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
+       asp-route-page="@i"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       class="btn btn-default">
+        @i
+    </a>
+}
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.PaginaInicial + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @proDesabilitado">
+    Proximo
+</a>

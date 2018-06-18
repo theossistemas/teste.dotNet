@@ -1,0 +1,12 @@
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\bin\Debug\netcoreapp2.0\Sistema.deps.json
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\bin\Debug\netcoreapp2.0\Sistema.runtimeconfig.json
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\bin\Debug\netcoreapp2.0\Sistema.runtimeconfig.dev.json
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\bin\Debug\netcoreapp2.0\Sistema.dll
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\bin\Debug\netcoreapp2.0\Sistema.pdb
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\obj\Debug\netcoreapp2.0\Sistema.csprojAssemblyReference.cache
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\obj\Debug\netcoreapp2.0\Sistema.csproj.CoreCompileInputs.cache
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\obj\Debug\netcoreapp2.0\Sistema.AssemblyInfoInputs.cache
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\obj\Debug\netcoreapp2.0\Sistema.AssemblyInfo.cs
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\obj\Debug\netcoreapp2.0\Sistema.dll
+c:\users\dyego.furletti\Source\Repos\Sistema\Sistema\obj\Debug\netcoreapp2.0\Sistema.pdb
+C:\Users\dyego.furletti\Source\Repos\Sistema\Sistema\bin\Debug\netcoreapp2.0\Sistema.xml

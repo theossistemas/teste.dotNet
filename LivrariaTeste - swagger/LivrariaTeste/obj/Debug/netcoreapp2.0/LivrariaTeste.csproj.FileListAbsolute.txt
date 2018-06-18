@@ -1,0 +1,12 @@
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\bin\Debug\netcoreapp2.0\LivrariaTeste.deps.json
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\bin\Debug\netcoreapp2.0\LivrariaTeste.runtimeconfig.json
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\bin\Debug\netcoreapp2.0\LivrariaTeste.runtimeconfig.dev.json
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\bin\Debug\netcoreapp2.0\LivrariaTeste.dll
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\obj\Debug\netcoreapp2.0\LivrariaTeste.csprojAssemblyReference.cache
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\obj\Debug\netcoreapp2.0\LivrariaTeste.csproj.CoreCompileInputs.cache
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\obj\Debug\netcoreapp2.0\LivrariaTeste.AssemblyInfoInputs.cache
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\obj\Debug\netcoreapp2.0\LivrariaTeste.AssemblyInfo.cs
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\bin\Debug\netcoreapp2.0\LivrariaTeste.xml
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\bin\Debug\netcoreapp2.0\LivrariaTeste.pdb
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\obj\Debug\netcoreapp2.0\LivrariaTeste.dll
+C:\Users\dyego.furletti\Source\Repos\LivrariaTeste\LivrariaTeste\obj\Debug\netcoreapp2.0\LivrariaTeste.pdb
