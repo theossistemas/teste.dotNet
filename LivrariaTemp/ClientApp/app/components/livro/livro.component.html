@@ -1,0 +1,55 @@
+﻿<div>
+    <h1>Livros</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Valor</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let livro of livros">
+                <td>{{livro.livroId}}</td>
+                <td>{{livro.titulo}}</td>
+                <td>R${{livro.valor}}</td>
+                <td>
+                    <button class="btn btn-link" (click)="edit(livro)">Editar</button>
+                    <button class="btn btn-link" (click)="delete(livro)">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <section>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-10">
+                <h2>{{ formLabel }}</h2>
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-horizontal">
+
+                        <div class="form-group">
+                            <label class="control-label col-xs-12 col-sm-1">Titulo:</label>
+                            <div class="col-xs-12 col-sm-6">
+                                <input class="form-control" type="text" formControlName="titulo" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-xs-12 col-sm-1">Valor:</label>
+                            <div class="col-xs-12 col-sm-6">
+                                <input class="form-control" type="text" formControlName="valor" />
+                            </div>
+                        </div>
+
+                        <div class="form-footer col-xs-12 col-sm-3">
+                            <button type="submit" class="btn btn-success" [disabled]="!form.valid">Enviar</button>
+                            <button type="button" class="btn btn-primary" (click)="cancel()">Cancelar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </section>
+</div>
