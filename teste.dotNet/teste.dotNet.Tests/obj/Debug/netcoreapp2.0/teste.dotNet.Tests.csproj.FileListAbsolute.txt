@@ -1,0 +1,17 @@
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.csprojAssemblyReference.cache
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.csproj.CoreCompileInputs.cache
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.AssemblyInfoInputs.cache
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.AssemblyInfo.cs
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.Tests.deps.json
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.Tests.runtimeconfig.json
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.Tests.runtimeconfig.dev.json
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.Tests.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.Tests.pdb
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\bin\Debug\netcoreapp2.0\teste.dotNet.pdb
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.csproj.CopyComplete
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet.Tests\obj\Debug\netcoreapp2.0\teste.dotNet.Tests.pdb

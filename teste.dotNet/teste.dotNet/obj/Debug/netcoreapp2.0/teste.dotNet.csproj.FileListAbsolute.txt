@@ -1,0 +1,11 @@
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\bin\Debug\netcoreapp2.0\teste.dotNet.deps.json
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\bin\Debug\netcoreapp2.0\teste.dotNet.runtimeconfig.json
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\bin\Debug\netcoreapp2.0\teste.dotNet.runtimeconfig.dev.json
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\bin\Debug\netcoreapp2.0\teste.dotNet.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\obj\Debug\netcoreapp2.0\teste.dotNet.csprojAssemblyReference.cache
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\obj\Debug\netcoreapp2.0\teste.dotNet.csproj.CoreCompileInputs.cache
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\obj\Debug\netcoreapp2.0\teste.dotNet.AssemblyInfoInputs.cache
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\obj\Debug\netcoreapp2.0\teste.dotNet.AssemblyInfo.cs
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\bin\Debug\netcoreapp2.0\teste.dotNet.pdb
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\obj\Debug\netcoreapp2.0\teste.dotNet.dll
+C:\Git\teste.dotNet\teste.dotNet\teste.dotNet\obj\Debug\netcoreapp2.0\teste.dotNet.pdb
