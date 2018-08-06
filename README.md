@@ -1,5 +1,3 @@
-
-
 ## Programador Backend (C#)
 
 # Instruções
@@ -14,7 +12,8 @@
     
 ### O Teste
 
-Uma livraria da cidade teve um aumento no número de seus exemplares e está com um problema para identificar todos os livros que possui em estoque. Para ajudar a livraria foi solicitado a você desenvolver uma aplicação web para gerenciar estes exemplares.Requisitos
+Uma livraria da cidade teve um aumento no número de seus exemplares e está com um problema para identificar todos os livros que possui em estoque. 
+Para ajudar a livraria foi solicitado a você desenvolver uma aplicação web para gerenciar estes exemplares.Requisitos
 
 
     * O sistema deverá mostrar todos os livros cadastrados ordenados de forma ascendente pelo nome;
@@ -39,5 +38,3 @@ Uma livraria da cidade teve um aumento no número de seus exemplares e está com
 
     obs: Teste terá como avaliação principal os requisitos solicitados para o backend,  porém o frontend 
     poderá ser critério de desempate.
-
-
