@@ -1,0 +1,12 @@
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\bin\Debug\netstandard2.0\Livraria.Data.EFCore.deps.json
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\bin\Debug\netstandard2.0\Livraria.Data.EFCore.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\bin\Debug\netstandard2.0\Livraria.Data.EFCore.pdb
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\bin\Debug\netstandard2.0\Livraria.Domain.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\bin\Debug\netstandard2.0\Livraria.Domain.pdb
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.csprojAssemblyReference.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.csproj.CoreCompileInputs.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.AssemblyInfoInputs.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.AssemblyInfo.cs
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.csproj.CopyComplete
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.EFCore\obj\Debug\netstandard2.0\Livraria.Data.EFCore.pdb

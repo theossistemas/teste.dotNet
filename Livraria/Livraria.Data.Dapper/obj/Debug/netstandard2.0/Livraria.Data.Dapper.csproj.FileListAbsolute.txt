@@ -1,0 +1,12 @@
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\bin\Debug\netstandard2.0\Livraria.Data.Dapper.deps.json
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\bin\Debug\netstandard2.0\Livraria.Data.Dapper.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\bin\Debug\netstandard2.0\Livraria.Data.Dapper.pdb
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\bin\Debug\netstandard2.0\Livraria.Domain.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\bin\Debug\netstandard2.0\Livraria.Domain.pdb
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.csprojAssemblyReference.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.AssemblyInfoInputs.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.AssemblyInfo.cs
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.csproj.CopyComplete
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Data.Dapper\obj\Debug\netstandard2.0\Livraria.Data.Dapper.pdb

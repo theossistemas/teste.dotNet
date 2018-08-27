@@ -1,0 +1,9 @@
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\bin\Debug\netstandard2.0\Livraria.Domain.deps.json
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\bin\Debug\netstandard2.0\Livraria.Domain.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\bin\Debug\netstandard2.0\Livraria.Domain.pdb
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\obj\Debug\netstandard2.0\Livraria.Domain.csprojAssemblyReference.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\obj\Debug\netstandard2.0\Livraria.Domain.csproj.CoreCompileInputs.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\obj\Debug\netstandard2.0\Livraria.Domain.AssemblyInfoInputs.cache
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\obj\Debug\netstandard2.0\Livraria.Domain.AssemblyInfo.cs
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\obj\Debug\netstandard2.0\Livraria.Domain.dll
+C:\Users\joaon\source\repos\teste.dotNet\Livraria\Livraria.Domain\obj\Debug\netstandard2.0\Livraria.Domain.pdb
