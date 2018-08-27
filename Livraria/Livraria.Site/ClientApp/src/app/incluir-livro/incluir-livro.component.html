@@ -1,0 +1,42 @@
+<h3>Inclusão de Livro</h3>
+<form name="form" (ngSubmit)="salvar()" #f="ngForm" novalidate>
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" name="nome" [(ngModel)]="model.nome" #nome="ngModel" [ngClass]="{ 'is-invalid': erros.Nome.length > 0 }" />
+    <div *ngIf="erros.Nome.length > 0" class="invalid-feedback">
+      <div *ngFor="let erro of erros.Nome">{{erro}}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="descricao">Descrição</label>
+    <input type="text" class="form-control" name="descricao" [(ngModel)]="model.descricao" #descricao="ngModel" [ngClass]="{ 'is-invalid': erros.Descricao.length > 0 }" />
+    <div *ngIf="erros.Descricao.length > 0" class="invalid-feedback">
+      <div *ngFor="let erro of erros.Descricao">{{erro}}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="autor">Autor</label>
+    <input type="text" class="form-control" name="autor" [(ngModel)]="model.autor" #autor="ngModel" [ngClass]="{ 'is-invalid': erros.Autor.length > 0 }" required />
+    <div *ngIf="erros.Autor.length > 0" class="invalid-feedback">
+      <div *ngFor="let erro of erros.Autor">{{erro}}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="editora">Editora</label>
+    <input type="text" class="form-control" name="editora" [(ngModel)]="model.editora" #editora="ngModel" [ngClass]="{ 'is-invalid': erros.Editora.length > 0 }" required />
+    <div *ngIf="erros.Editora.length > 0" class="invalid-feedback">
+      <div *ngFor="let erro of erros.Editora">{{erro}}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="edicao">Edição</label>
+    <input type="text" class="form-control" name="edicao" [(ngModel)]="model.edicao" #edicao="ngModel" [ngClass]="{ 'is-invalid': erros.Edicao.length > 0 }" required />
+    <div *ngIf="erros.Edicao.length > 0" class="invalid-feedback">
+      <div *ngFor="let erro of erros.Edicao">{{erro}}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary">Salvar</button>
+  </div>
+  <div *ngIf="mensagem">{{mensagem}}</div>
+</form>

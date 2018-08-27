@@ -1,0 +1,48 @@
+<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded' (click)='toggle()'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' [routerLink]='["/"]'>
+              Livraria
+            </a>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
+          <ul class='nav navbar-nav'>
+            <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+              <a [routerLink]='["/"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-home'></span> Home
+              </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/listagem-livros"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-book'></span> Livros
+              </a>
+            </li>
+            <li *ngIf="!globals.isAuthenticated" [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/autenticacao"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-lock'></span> Autenticar
+              </a>
+            </li>
+
+            <li *ngIf="globals.isAuthenticated" [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/incluir-livro"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-plus-sign'></span> Incluir Livro
+              </a>
+            </li>
+
+            <li *ngIf="globals.isAuthenticated">
+              <a (click)='logout()'>
+                <span class='glyphicon glyphicon-off'></span> Logout
+              </a>
+            </li>
+
+          </ul>
+        </div>
+    </div>
+</div>

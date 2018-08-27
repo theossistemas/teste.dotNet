@@ -1,0 +1,43 @@
+<h1>Listagem de Livros</h1>
+
+<p>Listagem de livros ordenado pelo nome.</p>
+
+<p *ngIf="!livros"><em>Carregando...</em></p>
+<div id="mdlSample" class="modal fade" role="dialog" [ngStyle]="{'display': mdlSampleIsOpen ? 'block' : 'none', 'opacity': 1}">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Confirmação de Exclusão</h4>
+      </div>
+      <div class="modal-body">Deseja realmente excluir o livro "{{livroExcluir.nome}}"</div>
+      <div class="modal-footer" align="right">
+        <button type="button" id="btnOK" class="btn btn-success" (click)="confirmarExclusao()"> Sim</button>
+        <button type="button" id="btnClose" class="btn btn-danger" (click)="closeModal()"> Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+<table class='table' *ngIf="livros">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Autor</th>
+      <th>Editora</th>
+      <th>Edição</th>
+      <th *ngIf="globals.isAuthenticated"> Editar </th>
+      <th *ngIf="globals.isAuthenticated"> Excluir </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let livro of livros">
+      <td>{{ livro.nome }}</td>
+      <td>{{ livro.descricao }}</td>
+      <td>{{ livro.autor.nome }}</td>
+      <td>{{ livro.editora.nome }}</td>
+      <td>{{ livro.edicao }}</td>
+      <td *ngIf="globals.isAuthenticated"><button (click)="editar(livro)" class="btn btn-warning">Editar</button></td>
+      <td *ngIf="globals.isAuthenticated"><button (click)="openModal(livro)" class="btn btn-danger">Excluir</button></td>
+    </tr>
+  </tbody>
+</table>

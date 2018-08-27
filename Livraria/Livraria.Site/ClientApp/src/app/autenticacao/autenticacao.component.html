@@ -1,0 +1,21 @@
+<h3>Autenticação de Administrador</h3>
+<form name="form" (ngSubmit)="f.form.valid && autenticar()" #f="ngForm" novalidate>
+  <div class="form-group">
+    <label for="login">Login</label>
+    <input type="text" class="form-control" name="login" [(ngModel)]="model.login" #login="ngModel" [ngClass]="{ 'is-invalid': f.submitted && login.invalid }" required />
+    <div *ngIf="f.submitted && login.invalid" class="invalid-feedback">
+      <div *ngIf="login.errors.required">Login é obrigatório</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="senha">Senha</label>
+    <input type="password" class="form-control" name="senha" [(ngModel)]="model.senha" #senha="ngModel" [ngClass]="{ 'is-invalid': f.submitted && senha.invalid }" required />
+    <div *ngIf="f.submitted && senha.invalid" class="invalid-feedback">
+      <div *ngIf="senha.errors.required">Senha é obrigatória</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary">Autenticar</button>
+  </div>
+  <div *ngIf="mensagem">{{mensagem}}</div>
+</form>
