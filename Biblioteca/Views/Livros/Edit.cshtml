@@ -1,0 +1,44 @@
+﻿@model Biblioteca.Models.Entidades.Livro
+
+@{
+    ViewData["Title"] = "Alterar";
+}
+
+<h2>Alterar Livro</h2>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LivroId" />
+            <div class="form-group">
+                <label asp-for="LivroNome" class="control-label"></label>
+                <input asp-for="LivroNome" class="form-control" />
+                <span asp-validation-for="LivroNome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivroAutor" class="control-label"></label>
+                <input asp-for="LivroAutor" class="form-control" />
+                <span asp-validation-for="LivroAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivroDataPublicacao" class="control-label"></label>
+                <input asp-for="LivroDataPublicacao"  class="form-control" />
+                <span asp-validation-for="LivroDataPublicacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Alterar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-success">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Biblioteca</name>
+    </assembly>
+    <members>
+        <member name="T:Biblioteca.Controllers.LivrosController">
+            <summary>
+            Controller Livros
+            </summary>     
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.#ctor(Biblioteca.Data.Contexto)">
+            <summary>
+            Construtor
+            </summary>   
+            <param name="context">Contexto da aplicação</param>        
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Index">
+            <summary>
+            Lista de Livros
+            </summary>       
+            <returns>lista de livros para a View</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Details(System.Nullable{System.Int32})">
+            <summary>
+            envia para a tela de livro detalhado
+            </summary>       
+            <param name="id">Id do livro</param>        
+            <returns>Retorna a View com os detalhes do livro</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Create">
+            <summary>
+            Envia para a tela de Cadastro do livro
+            </summary>       
+            <returns>Retorna a View de cadastro</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Create(Biblioteca.Models.Entidades.Livro)">
+            <summary>
+            Action Post de cadastro.
+            </summary>       
+            <param name="Livro">Entidade Livro</param>       
+            <returns>Retorna para a view de listagem, caso obtenha sucesso no cadastro</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Edit(System.Nullable{System.Int32})">
+            <summary>
+            Envia para a tela de Edição do livro
+            </summary>       
+            <returns>Retorna a View de edição</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Edit(System.Int32,Biblioteca.Models.Entidades.Livro)">
+            <summary>
+            Action Post de alteração.
+            </summary>       
+            <param name="livro">Entidade Livro</param>       
+            <returns>Retorna para a view de listagem, caso obtenha sucesso na alteração</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Envia para a tela de Deleção do livro
+            </summary>       
+            <param name="id">Id do livro</param>       
+            <returns>Retorna a View de deleção</returns>
+        </member>
+        <member name="M:Biblioteca.Controllers.LivrosController.DeleteConfirmed(System.Int32)">
+            <summary>
+            Action Post de deleção.
+            </summary>       
+            <param name="id">Id do Livro</param>       
+            <returns>Retorna para a view de listagem, caso obtenha sucesso na deleção</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,36 @@
+﻿@model Biblioteca.Models.Entidades.Livro
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h2>Detalhes do Livro</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LivroNome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivroNome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LivroAutor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivroAutor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LivroDataPublicacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LivroDataPublicacao)
+        </dd>
+    </dl>
+</div>
+<div>
+     <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.LivroId">Alterar</a> 
+    <a asp-action="Index" class="btn btn-success">Voltar</a>
+</div>

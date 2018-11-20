@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Biblioteca.Models.Entidades.Livro>
+
+@{
+    ViewData["Title"] = "Lista";
+}
+
+
+@*<link rel="apple-touch-icon" href="~/apple-icon.png">
+    <link rel="shortcut icon" href="~/favicon.ico">*@
+<head>
+    <link rel="stylesheet" href="~/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="~/vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+</head>
+
+    @using Microsoft.AspNetCore.Identity
+
+    @inject SignInManager<IdentityUser> SignInManager
+    @inject UserManager<IdentityUser> UserManager
+
+    <p>
+        <a asp-action="Create" class="btn btn-outline-success">Cadastrar Livro</a>
+    </p>
+    <table class="table table-striped table-bordered dataTable no-footer" id="bootstrap-data-table-export" role="grid" aria-describedby="bootstrap-data-table-export_info">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.LivroNome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LivroAutor)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.LivroDataPublicacao)
+                </th>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <th></th>
+                }
+                </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LivroNome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LivroAutor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LivroDataPublicacao)
+                </td>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <td>
+
+                        <a asp-action="Edit" class="btn btn-outline-success" asp-route-id="@item.LivroId">Alterar</a>
+                        <a asp-action="Details" class="btn btn-outline-success" asp-route-id="@item.LivroId"> Detalhes </a>
+                        <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.LivroId"> Excluir </a>
+
+                       
+
+
+
+                    </td>
+                }
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <script src="~/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="~/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="~/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+    <script src="~/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="~/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="~/assets/js/init-scripts/data-table/datatables-init.js"></script>
+
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+
+    }
+
+
