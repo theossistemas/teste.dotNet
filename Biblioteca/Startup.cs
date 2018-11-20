@@ -40,7 +40,7 @@ namespace Biblioteca
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
                               // "Server=localhost;Database=BibliotecaDB; UserID = sa; Password =amo2508831; Trusted_Connection = False";
-            //var connection = @"Data Source=localhost;User ID=sa;Password=amo2508831;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //var connection = @"Data Source=localhost;User ID=sa;Password=*****;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             
 
             services.AddDbContext<Contexto>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
