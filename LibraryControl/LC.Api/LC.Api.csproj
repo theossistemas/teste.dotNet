@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LC.Application\LC.Aplication.Book\LC.Aplication.Book.csproj" />
+    <ProjectReference Include="..\LC.Application\LC.Aplication.Book\LC.Application.Book.csproj" />
+    <ProjectReference Include="..\LC.Application\LC.Application.User\LC.Application.User.csproj" />
     <ProjectReference Include="..\LC.Commons\LC.Commons.csproj" />
     <ProjectReference Include="..\LC.Domain\LC.Domain.csproj" />
     <ProjectReference Include="..\LC.Infrastruture\LC.Infrastruture.csproj" />

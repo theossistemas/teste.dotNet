@@ -4705,7 +4705,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "LC.Aplication.Book/1.0.0": {
+      "LC.Application.Book/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -4713,10 +4713,23 @@
           "LC.Infrastruture": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/LC.Aplication.Book.dll": {}
+          "bin/placeholder/LC.Application.Book.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LC.Aplication.Book.dll": {}
+          "bin/placeholder/LC.Application.Book.dll": {}
+        }
+      },
+      "LC.Application.User/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "LC.Infrastruture": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LC.Application.User.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LC.Application.User.dll": {}
         }
       },
       "LC.Commons/1.0.0": {
@@ -12446,10 +12459,15 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "LC.Aplication.Book/1.0.0": {
+    "LC.Application.Book/1.0.0": {
       "type": "project",
-      "path": "../LC.Application/LC.Aplication.Book/LC.Aplication.Book.csproj",
-      "msbuildProject": "../LC.Application/LC.Aplication.Book/LC.Aplication.Book.csproj"
+      "path": "../LC.Application/LC.Aplication.Book/LC.Application.Book.csproj",
+      "msbuildProject": "../LC.Application/LC.Aplication.Book/LC.Application.Book.csproj"
+    },
+    "LC.Application.User/1.0.0": {
+      "type": "project",
+      "path": "../LC.Application/LC.Application.User/LC.Application.User.csproj",
+      "msbuildProject": "../LC.Application/LC.Application.User/LC.Application.User.csproj"
     },
     "LC.Commons/1.0.0": {
       "type": "project",
@@ -12474,7 +12492,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "LC.Aplication.Book >= 1.0.0",
+      "LC.Application.Book >= 1.0.0",
+      "LC.Application.User >= 1.0.0",
       "LC.Commons >= 1.0.0",
       "LC.Domain >= 1.0.0",
       "LC.Infrastruture >= 1.0.0",
@@ -12516,8 +12535,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Aplication.Book.csproj": {
-              "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Aplication.Book.csproj"
+            "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Application.Book.csproj": {
+              "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Application.Book.csproj"
+            },
+            "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Application.User\\LC.Application.User.csproj": {
+              "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Application.User\\LC.Application.User.csproj"
             },
             "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Commons\\LC.Commons.csproj": {
               "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Commons\\LC.Commons.csproj"

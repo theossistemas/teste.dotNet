@@ -14,9 +14,12 @@
       "launchBrowser": true,
       "launchUrl": "",
       "environmentVariables": {
-        "DB_CONNECTION": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LibraryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "DIRECTORY_IMAGE": "C:/ProjetosElvis/teste.dotNet/LibraryControl/LC.Api/wwwroot/img/books/"
+        "DB_CONNECTION": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LibraryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
+        "DIRECTORY_IMAGE": "C:/ProjetosElvis/teste.dotNet/LibraryControl/LC.Api/wwwroot/img/books/",
+        "TOKEN_AUDIENCE": "ExemploAudience",
+        "TOKEN_ISSUER": "ExemploIssuer",
+        "TOKEN_SECONDS": "120"
       }
     },
     "AC.Api": {

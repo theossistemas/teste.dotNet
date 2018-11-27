@@ -3647,9 +3647,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Aplication.Book.csproj",
-      "projectName": "LC.Aplication.Book",
-      "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Aplication.Book.csproj",
+      "projectUniqueName": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Application.Book.csproj",
+      "projectName": "LC.Application.Book",
+      "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\LC.Application.Book.csproj",
       "packagesPath": "C:\\Users\\elvisley.pereira\\.nuget\\packages\\",
       "outputPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Application\\LC.Aplication.Book\\obj\\",
       "projectStyle": "PackageReference",

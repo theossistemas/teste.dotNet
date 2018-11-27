@@ -17,6 +17,7 @@ namespace LC.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BookConfig());
+            modelBuilder.ApplyConfiguration(new UserConfig());
         }
     }
 }

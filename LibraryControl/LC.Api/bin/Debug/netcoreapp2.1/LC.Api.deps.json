@@ -24,7 +24,8 @@
     ".NETCoreApp,Version=v2.1": {
       "LC.Api/1.0.0": {
         "dependencies": {
-          "LC.Aplication.Book": "1.0.0",
+          "LC.Application.Book": "1.0.0",
+          "LC.Application.User": "1.0.0",
           "LC.Commons": "1.0.0",
           "LC.Domain": "1.0.0",
           "LC.Infrastruture": "1.0.0",
@@ -759,16 +760,27 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "LC.Aplication.Book/1.0.0": {
+      "LC.Application.Book/1.0.0": {
         "dependencies": {
           "LC.Commons": "1.0.0",
           "LC.Infrastruture": "1.0.0"
         },
         "runtime": {
-          "LC.Aplication.Book.dll": {}
+          "LC.Application.Book.dll": {}
         },
         "compile": {
-          "LC.Aplication.Book.dll": {}
+          "LC.Application.Book.dll": {}
+        }
+      },
+      "LC.Application.User/1.0.0": {
+        "dependencies": {
+          "LC.Infrastruture": "1.0.0"
+        },
+        "runtime": {
+          "LC.Application.User.dll": {}
+        },
+        "compile": {
+          "LC.Application.User.dll": {}
         }
       },
       "LC.Commons/1.0.0": {
@@ -3957,7 +3969,12 @@
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
-    "LC.Aplication.Book/1.0.0": {
+    "LC.Application.Book/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LC.Application.User/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

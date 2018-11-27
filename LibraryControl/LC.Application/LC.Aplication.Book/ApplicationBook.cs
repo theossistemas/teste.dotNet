@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace LC.Aplication.Book
+namespace LC.Application.Book
 {
     public class ApplicationBook
     {

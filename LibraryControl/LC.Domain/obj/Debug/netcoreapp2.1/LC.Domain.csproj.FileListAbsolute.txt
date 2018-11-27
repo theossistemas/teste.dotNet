@@ -22,3 +22,4 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Domain\obj\Debug\netcoreapp2.1\L
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Domain\obj\Debug\netcoreapp2.1\LC.Domain.AssemblyInfo.cs
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Domain\obj\Debug\netcoreapp2.1\LC.Domain.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Domain\obj\Debug\netcoreapp2.1\LC.Domain.pdb
+C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Domain\obj\Debug\netcoreapp2.1\LC.Domain.csprojAssemblyReference.cache

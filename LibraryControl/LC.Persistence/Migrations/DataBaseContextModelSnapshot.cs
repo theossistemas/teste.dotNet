@@ -78,6 +78,33 @@ namespace LC.Persistence.Migrations
 
                     b.ToTable("TB_BOOKS");
                 });
+
+            modelBuilder.Entity("LC.Domain.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ID")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AcessKey")
+                        .IsRequired()
+                        .HasColumnName("ACESS_KEY");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnName("LOGIN");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnName("NAME");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AcessKey")
+                        .IsUnique();
+
+                    b.ToTable("TB_USERS");
+                });
 #pragma warning restore 612, 618
         }
     }

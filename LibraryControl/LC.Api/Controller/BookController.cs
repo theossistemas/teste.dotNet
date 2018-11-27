@@ -1,4 +1,4 @@
-﻿using LC.Aplication.Book;
+﻿using LC.Application.Book;
 using LC.Aplication.Book.DataTransferObject;
 using LC.Domain;
 using Microsoft.AspNetCore.Mvc;

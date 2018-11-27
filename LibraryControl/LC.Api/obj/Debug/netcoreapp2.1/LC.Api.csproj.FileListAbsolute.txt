@@ -41,12 +41,10 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.A
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.runtimeconfig.dev.json
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.pdb
-C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Aplication.Book.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Commons.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Domain.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Infrastruture.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Persistence.dll
-C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Aplication.Book.pdb
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Commons.pdb
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Domain.pdb
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Infrastruture.pdb
@@ -61,3 +59,7 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.A
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.csproj.CopyComplete
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.pdb
+C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.Book.dll
+C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.User.dll
+C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.Book.pdb
+C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.User.pdb
