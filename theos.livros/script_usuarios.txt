@@ -1,0 +1,30 @@
+USE [master]
+GO
+
+/****** Object:  Table [dbo].[usuarios]    Script Date: 27-11-2018 01:33:45 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[usuarios](
+	[idusuario] [int] NOT NULL,
+	[login] [varchar](50) NOT NULL,
+	[senha] [varchar](50) NOT NULL,
+	[acesso] [varchar](20) NULL,
+ CONSTRAINT [pk_usuario] PRIMARY KEY CLUSTERED 
+(
+	[idusuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

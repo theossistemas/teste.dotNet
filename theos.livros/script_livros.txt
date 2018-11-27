@@ -1,0 +1,29 @@
+USE [master]
+GO
+
+/****** Object:  Table [dbo].[livros]    Script Date: 27-11-2018 01:32:07 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[livros](
+	[idlivro] [int] NOT NULL,
+	[titulo] [varchar](255) NOT NULL,
+	[autor] [varchar](255) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[idlivro] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

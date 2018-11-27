@@ -1,0 +1,13 @@
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.csproj.CoreCompileInputs.cache
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.RazorAssemblyInfo.cache
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.RazorAssemblyInfo.cs
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.AssemblyInfoInputs.cache
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.AssemblyInfo.cs
+D:\projetos\theos\theos\theos.livros\theos.livros\bin\Debug\netcoreapp2.1\theos.livros.deps.json
+D:\projetos\theos\theos\theos.livros\theos.livros\bin\Debug\netcoreapp2.1\theos.livros.runtimeconfig.json
+D:\projetos\theos\theos\theos.livros\theos.livros\bin\Debug\netcoreapp2.1\theos.livros.runtimeconfig.dev.json
+D:\projetos\theos\theos\theos.livros\theos.livros\bin\Debug\netcoreapp2.1\theos.livros.dll
+D:\projetos\theos\theos\theos.livros\theos.livros\bin\Debug\netcoreapp2.1\theos.livros.pdb
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.RazorTargetAssemblyInfo.cache
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.dll
+D:\projetos\theos\theos\theos.livros\theos.livros\obj\Debug\netcoreapp2.1\theos.livros.pdb
