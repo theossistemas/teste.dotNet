@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class RegisterService {
   
-  _URL = `${environment.production}/book`;
+  _URL = `${environment.endpoint}/1.0/book`;
 
   constructor(
     private globalService : GlobalService,

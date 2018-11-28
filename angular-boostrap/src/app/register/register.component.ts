@@ -46,7 +46,7 @@ export class RegisterComponent implements OnInit {
         return;
     }
 
-    if (!this.registerForm.value.id) {
+    if (this.registerForm.value.id) {
       this.service.updateBook(this.registerForm.value.id, this.registerForm.value).subscribe(resp => {
         console.log(resp);
       })

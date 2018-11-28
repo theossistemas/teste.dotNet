@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PublicService {
   
-  _URL = `${environment.production}/book`;
+  _URL = `${environment.endpoint}/1.0/book/`;
 
   constructor(
     private globalService : GlobalService,
@@ -18,7 +18,11 @@ export class PublicService {
   ) {}
 
   getAllBooks(){
-    return this.httpClient.get<Array<Book>>("https://reqres.in/api/users?page=2");  
+    return this.httpClient.get<Array<Book>>(this._URL);  
+  }
+
+  removeBook(id){
+    return this.httpClient.delete(`${this._URL}${id}`);
   }
 
 }
