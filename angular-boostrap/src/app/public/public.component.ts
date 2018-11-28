@@ -10,8 +10,7 @@ import { debug } from 'util';
 })
 export class PublicComponent implements OnInit {
 
-  //bookList: Array<Book> = [];
-  bookList: Array<any> = [];
+  bookList: Array<Book> = [];
 
   constructor(
     private publicService: PublicService
@@ -19,7 +18,7 @@ export class PublicComponent implements OnInit {
 
   ngOnInit() {
     this.publicService.getAllBooks().subscribe(res => {
-      console.log(res);
+      this.bookList = res;
     })
   }
 }

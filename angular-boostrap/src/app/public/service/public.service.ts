@@ -18,7 +18,7 @@ export class PublicService {
   ) {}
 
   getAllBooks(){
-    return this.httpClient.get("https://reqres.in/api/users?page=2");  
+    return this.httpClient.get<Array<Book>>("https://reqres.in/api/users?page=2");  
   }
 
 }
