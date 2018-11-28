@@ -1,3 +1,4 @@
+import { GlobalService } from './../../commons/services/global.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private globalService : GlobalService
+  ) { }
 
   ngOnInit() {
+  }
+
+  showActionLogin() {
+    const valid = this.globalService.userLogged();
+    return valid;
+  }
+
+  showNameUser(){
+    return this.globalService.getAuthLogin().name;
   }
 
 }

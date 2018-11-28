@@ -1,49 +1,53 @@
-<form>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
   <div class="form-row">
     <div class="form-group col-md-4">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <label for="name">Nome</label>
+      <input type="text" formControlName="name" class="form-control" id="name" placeholder="Nome">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputPassword4">Senha</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+      <label for="description_short">Descrição Simples</label>
+      <input type="text" formControlName="description_short" class="form-control" id="description_short" placeholder="Senha">
     </div>
     <div class="form-group col-md-4">
-      <label for="exampleFormControlFile1">Exemplo de input de arquivo</label>
-      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      <label for="description_long">Descrição Completa</label>
+      <input type="text" class="form-control" formControlName="description_long" id="description_long">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+    <label for="photo">photo</label>
+    <input type="file" class="form-control-file" formControlName="photo" id="photo" >
   </div>
   <div class="form-group">
-    <label for="inputAddress2">Endereço 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+    <label for="price">Preço</label>
+    <input type="text" class="form-control" formControlName="price" id="price" placeholder="100.00">
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
+      <label for="author">Autor</label>
+      <input type="text" formControlName="author" class="form-control" id="author">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputEstado">Estado</label>
-      <select id="inputEstado" class="form-control">
-        <option selected>Escolher...</option>
-        <option>...</option>
-      </select>
+      <label for="year">Ano</label>
+      <input type="number" formControlName="year" class="form-control" id="year">
     </div>
     <div class="form-group col-md-2">
-      <label for="inputCEP">CEP</label>
-      <input type="text" class="form-control" id="inputCEP">
+      <label for="language">Linguagem</label>
+      <input type="text" formControlName="language" class="form-control" id="language">
     </div>
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Clique em mim
-      </label>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="publishing">Editora</label>
+      <input type="text" formControlName="publishing" class="form-control" id="publishing">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="weight">Peso</label>
+      <input type="number" formControlName="weight" class="form-control" id="weight">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="quantity_pages">Qtd.Paginas</label>
+      <input type="number" formControlName="quantity_pages" class="form-control" id="quantity_pages">
     </div>
   </div>
   <button type="submit" class="btn btn-primary">Entrar</button>

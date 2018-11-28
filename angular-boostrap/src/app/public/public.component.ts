@@ -1,4 +1,7 @@
+import { Book } from './../models/book';
 import { Component, OnInit } from '@angular/core';
+import { PublicService } from './service/public.service';
+import { debug } from 'util';
 
 @Component({
   selector: 'app-public',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicComponent implements OnInit {
 
-  constructor() { }
+  //bookList: Array<Book> = [];
+  bookList: Array<any> = [];
+
+  constructor(
+    private publicService: PublicService
+  ) { }
 
   ngOnInit() {
+    this.publicService.getAllBooks().subscribe(res => {
+      console.log(res);
+    })
   }
-
 }
