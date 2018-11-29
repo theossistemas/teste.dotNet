@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class LoginService {
 
-  _URL = `${environment.endpoint}/1.0/book`;
+  _URL = `${environment.endpoint}/1.0/user`;
 
   constructor(
     private httpClient: HttpClient
@@ -20,7 +20,7 @@ export class LoginService {
 
 
   userLogin(data) : Observable<Token> {
-      return this.httpClient.post<Token>(`${this._URL}/1.0/login`, {
+      return this.httpClient.post<Token>(`${this._URL}`, {
         ... data
       });
   }

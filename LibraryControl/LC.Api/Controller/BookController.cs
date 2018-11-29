@@ -31,6 +31,25 @@ namespace LC.Api.Controller
         }
 
         /// <summary>
+        /// Buscar o livro pelo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="app"></param>
+        /// <returns></returns>
+        [HttpGet("{id:int}")]
+        public ActionResult<IEnumerable<Book>> GetById(int id, [FromServices] ApplicationBook app)
+        {
+            try
+            {
+                return Ok(app.GetById(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+        /// <summary>
         /// Cadastrar livro
         /// </summary>
         /// <param name="createdBookDTO"></param>

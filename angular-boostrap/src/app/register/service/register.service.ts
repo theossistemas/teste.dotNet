@@ -16,8 +16,8 @@ export class RegisterService {
     private httpClient: HttpClient
   ) {}
 
-  getBookById(id: number){
-    return this.httpClient.get(`${this._URL}/${id}`);  
+  getBookById<Book>(id: number){
+    return this.httpClient.get<Book>(`${this._URL}/${id}`);  
   }
 
   saveBook(data: Book) {

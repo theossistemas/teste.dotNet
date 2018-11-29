@@ -9,7 +9,7 @@ namespace LC.Persistence
         {
             var optionsBuilder = new DbContextOptionsBuilder<DataBaseContext>();
 
-            optionsBuilder.UseSqlServer(@"Data Source=CEDRONDS-034\SQLEXPRESS;Initial Catalog=LBDB;Integrated Security=True;Pooling=False");
+            //optionsBuilder.UseSqlServer(@"Data Source=CEDRONDS-034\SQLEXPRESS;Initial Catalog=LBDB;Integrated Security=True;Pooling=False");
             
             return new DataBaseContext(optionsBuilder.Options);
         }

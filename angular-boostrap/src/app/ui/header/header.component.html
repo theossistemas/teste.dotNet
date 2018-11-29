@@ -3,6 +3,7 @@
   <div class="navbar-expand mr-auto">
     <div class="navbar-nav">
       <a *ngIf="!showActionLogin()"  class="nav-item nav-link" href="/login">Login</a>
+      <a *ngIf="showActionLogin()" (click)="logout()"  class="nav-item nav-link">Sair</a>
       <a *ngIf="showActionLogin()" >{{ showNameUser() }}</a>
     </div>
   </div>

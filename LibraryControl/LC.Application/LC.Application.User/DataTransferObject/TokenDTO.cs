@@ -20,6 +20,9 @@ namespace LC.Application.User.DataTransferObject
         [DataMember(Name = "token")]
         public string Token { get; set; }
 
+        [DataMember(Name = "name")]
+        public string Name { get; set; }
+
 
     }
 }

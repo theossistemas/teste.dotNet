@@ -52,7 +52,8 @@ namespace LC.Application.User
                     Authenticated = true,
                     CreatedAt = createdAt,
                     ExpirationDate = expirationDate,
-                    Token = token
+                    Token = token,
+                    Name = login.Name
                 };
             }
             catch (Exception ex)

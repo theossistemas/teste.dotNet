@@ -24,6 +24,11 @@ namespace LC.Application.Book
             return _bookRepository.GetOrderedAscendingByName();
         }
 
+        public Domain.Book GetById(int id)
+        {
+            return _bookRepository.Get(new Object[] { id });
+        }
+
         public Domain.Book Created(CreatedBookDTO createdBookDTO)
         {
             try

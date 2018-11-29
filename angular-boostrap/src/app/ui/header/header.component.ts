@@ -24,4 +24,8 @@ export class HeaderComponent implements OnInit {
     return this.globalService.getAuthLogin().name;
   }
 
+  logout(){
+    this.globalService.clearAuthLogin();
+  }
+
 }
