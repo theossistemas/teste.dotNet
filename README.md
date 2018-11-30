@@ -2,6 +2,23 @@
 
 ## Programador Backend (C#)
 
+# Instruções para executar o projeto
+
+### Backend
+    1. Abra o projeto LibraryControl no Visual Studio 2017
+    2. Crie o banco de dados
+    3. Alterar o endereco do banco de dados dentro do projeto LC.API/Properties no arquivo launchSettings.json variavel DB_CONNECTION
+    4. Execute a aplicacao
+
+
+### FrontEnd
+    1. Abra o projeto angular-boostrap no Visual Studio Code
+    2. Execute no terminal npm install 
+    2. Alterar da api dentro do environment.ts (endpoint e images_url)
+    3. Execute no terminal ng s
+
+
+
 # Instruções
 
     Esse teste é público. Todos os interessados que fizerem pull request receberão um feedback da equipe
