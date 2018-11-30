@@ -40,3 +40,17 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.csproj.CopyComplete
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Persistence.deps.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Persistence.runtimeconfig.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Persistence.runtimeconfig.dev.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Persistence.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Persistence.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Domain.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\bin\Debug\netcoreapp2.1\LC.Domain.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.csprojAssemblyReference.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.AssemblyInfoInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.AssemblyInfo.cs
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.csproj.CopyComplete
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Persistence\obj\Debug\netcoreapp2.1\LC.Persistence.pdb

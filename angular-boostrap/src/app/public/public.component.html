@@ -3,43 +3,24 @@
       <div class="row">
           <div class="col-12 col-md-6 col-lg-4" *ngFor="let book of bookList" >
               <div class="card">
-                  <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="{{ book.name }}">
+                  <img class="card-img-top" src="{{images_url}}/{{book.photo}}" alt="{{ book.name }}">
                   <div class="card-body">
                       <h4 class="card-title"><a title="{{ book.name }}">{{ book.name }}</a></h4>
-                      <p class="card-text">{{ book.description_short }}</p>
-                      <div class="row">
-                        <p class="">R$ {{ book.price }}</p>
-                      </div>
+                      <p class="card-text">{{ book.description_short }}
+                      </p>
+                      <h4><span class="badge badge-success">R$ {{ book.price}}</span></h4>
                   </div>
                   <div class="card-footer" appSecure>
                     <div class="row">
                         <div class="col-6">
-                            <button (click)="editar(book.id)" >Editar</button>
+                            <button (click)="editar(book.id)" class="btn btn-primary">Editar</button>
                         </div>
                         <div class="col-6">
-                            <button (click)="remover(book.id)" >Remover</button>
+                            <button (click)="remover(book.id)" class="btn btn-danger" >Remover</button>
                         </div>
                     </div>
                   </div>
               </div>
-          </div>
-          
-          <div class="col-12">
-              <nav aria-label="...">
-                  <ul class="pagination">
-                      <li class="page-item disabled">
-                          <a class="page-link" href="#" tabindex="-1">Previous</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item active">
-                          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                          <a class="page-link" href="#">Next</a>
-                      </li>
-                  </ul>
-              </nav>
           </div>
       </div>
   </div>

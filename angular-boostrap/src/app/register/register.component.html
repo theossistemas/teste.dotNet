@@ -15,7 +15,7 @@
   </div>
   <div class="form-group">
     <label for="photo">photo</label>
-    <input type="file" class="form-control-file" formControlName="photo" id="photo" >
+    <input type="file" class="form-control-file" (change)="onFileChange($event)" id="photo" >
   </div>
   <div class="form-group">
     <label for="price">Preço</label>

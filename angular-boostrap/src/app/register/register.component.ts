@@ -1,9 +1,11 @@
 import { Book } from './../models/book';
 import { GlobalService } from './../commons/services/global.service';
-import { Component, OnInit, DebugElement } from '@angular/core';
+import { Component, OnInit, DebugElement, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RegisterService } from './service/register.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-register',
@@ -14,20 +16,22 @@ export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup;
   submitted = false;
- 
+
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private formBuilder: FormBuilder,
     private globalService: GlobalService,
-    private service: RegisterService
+    private service: RegisterService,
+    private spinner: NgxSpinnerService,
+    private toastr: ToastrService
   ) { }
 
   ngOnInit() {
-
     this.submitted = true;
 
     this.registerForm = this.formBuilder.group({
-      id: [null],
+      id: [0],
       name: [null, Validators.required],
       description_short: [null],
       description_long: [null],
@@ -41,15 +45,32 @@ export class RegisterComponent implements OnInit {
       quantity_pages: [null]
     });
 
-    const idEdit = this.route.snapshot.paramMap.get("id");
+    const idEdit = this.route.snapshot.paramMap.get('id');
 
     if ( idEdit !== null) {
       this.editBook(idEdit);
     }
   }
 
+  onFileChange(event) {
+    const reader = new FileReader();
+    if (event.target.files && event.target.files.length > 0) {
+      const file = event.target.files[0];
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        this.registerForm.get('photo').setValue({
+          filename: file.name,
+          filetype: file.type,
+          value: reader.result.toString().split(',')[1]
+        });
+      };
+    }
+  }
+
 
   editBook(id) {
+    this.spinner.show();
+
     this.service.getBookById<Book>(id).subscribe(resp => {
       this.registerForm.setValue({
         id: resp.id,
@@ -65,6 +86,11 @@ export class RegisterComponent implements OnInit {
         weight: resp.weight,
         quantity_pages: resp.quantity_pages
       });
+
+      setTimeout(() => {
+          this.spinner.hide();
+      }, 1000);
+
     });
   }
 
@@ -72,17 +98,22 @@ export class RegisterComponent implements OnInit {
 
     // stop here if form is invalid
     if (this.registerForm.invalid) {
+      this.toastr.error('Todos os campos sao obrigatorios');
         return;
     }
 
+    this.spinner.show();
+
     if (this.registerForm.value.id) {
       this.service.updateBook(this.registerForm.value.id, this.registerForm.value).subscribe(resp => {
-        console.log(resp);
-      })
+        this.router.navigate(['/']);
+        this.toastr.success('Atualizado com sucesso');
+      });
     } else {
       this.service.saveBook(this.registerForm.value).subscribe(resp => {
-        console.log(resp);
-      })
+        this.router.navigate(['/']);
+        this.toastr.success('Cadastrado com sucesso');
+      });
     }
   }
 }

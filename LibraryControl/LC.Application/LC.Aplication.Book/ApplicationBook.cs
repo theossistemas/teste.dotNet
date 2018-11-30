@@ -5,6 +5,7 @@ using LC.Infrastruture.Repositories.Implementation;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using LC.Application.Book.DataTransferObject;
 
 namespace LC.Application.Book
 {
@@ -27,6 +28,7 @@ namespace LC.Application.Book
         public Domain.Book GetById(int id)
         {
             return _bookRepository.Get(new Object[] { id });
+
         }
 
         public Domain.Book Created(CreatedBookDTO createdBookDTO)
@@ -42,19 +44,18 @@ namespace LC.Application.Book
                     throw new Exception("Livro já cadastrado com esse nome!");
                 }
 
-                if (!this.uploadPhoto(createdBookDTO.Base64Photo, slug))
-                {
-                    throw new Exception("Erro ao realizar o upload da foto");
-                }
+
 
                 Domain.Book _bk = new Domain.Book();
+
+                _bk.Photo = this.uploadPhoto(createdBookDTO.Photo, slug);
+                
                 _bk.Author = createdBookDTO.Author;
                 _bk.Slug = slug;
                 _bk.DescriptionLong = createdBookDTO.DescriptionLong;
                 _bk.DescriptionShort = createdBookDTO.DescriptionShort;
                 _bk.Language = createdBookDTO.Language;
                 _bk.Name = createdBookDTO.Name;
-                _bk.Photo = slug;
                 _bk.Price = createdBookDTO.Price;
                 _bk.Publishing = createdBookDTO.Publishing;
                 _bk.QuantityPages = createdBookDTO.QuantityPages;
@@ -84,10 +85,9 @@ namespace LC.Application.Book
                                
                 string slug = _generateSlug.generate(createdBookDTO.Name);
 
-                if (createdBookDTO.Base64Photo != "")
+                if (createdBookDTO.Photo != null)
                 {
-                    uploadPhoto(createdBookDTO.Base64Photo, slug);
-                    _bk.Photo = slug;
+                    _bk.Photo = uploadPhoto(createdBookDTO.Photo, slug);
                 }
 
                 _bk.Slug = slug;
@@ -138,14 +138,20 @@ namespace LC.Application.Book
             }
         }
 
-        private bool uploadPhoto(string _base64Photo , string name)
+        private string uploadPhoto(PhotoDTO photoDTO , string name)
         {
+            
+            var base64array = Convert.FromBase64String(photoDTO.Value);
 
-            var base64array = Convert.FromBase64String(_base64Photo);
-            var filePath = Path.Combine($"{Environment.GetEnvironmentVariable("DIRECTORY_IMAGE")}{name}.png");
+            var directoryUpload = Directory.GetCurrentDirectory();
+           
+            var directoryServer = Path.Combine($"{Environment.GetEnvironmentVariable("DIRECTORY_IMAGE")}{name}.{photoDTO.FileType.Split('/')[1]}");
+            
+            var filePath = Path.Combine($"{directoryUpload}//wwwroot//{directoryServer}");
             System.IO.File.WriteAllBytes(filePath, base64array);
 
-            return true;
+            return directoryServer;
         }
+        
     }
 }

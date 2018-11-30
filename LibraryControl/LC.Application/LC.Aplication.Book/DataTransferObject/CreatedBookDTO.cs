@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
+using LC.Application.Book.DataTransferObject;
 
 namespace LC.Aplication.Book.DataTransferObject
 {
@@ -20,8 +20,8 @@ namespace LC.Aplication.Book.DataTransferObject
         [DataMember(Name = "description_long")]
         public string DescriptionLong { get; set; }
 
-        [DataMember(Name = "photo_base64")]
-        public string Base64Photo { get; set; }
+        [DataMember(Name = "photo")]
+        public PhotoDTO Photo { get; set; }
 
         [DataMember(Name = "price")]
         public Decimal Price { get; set; }

@@ -40,3 +40,17 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcorea
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.csproj.CopyComplete
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Infrastruture.deps.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Infrastruture.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Infrastruture.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Domain.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Persistence.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Domain.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\bin\Debug\netcoreapp2.1\LC.Persistence.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.csprojAssemblyReference.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.csproj.CoreCompileInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.AssemblyInfoInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.AssemblyInfo.cs
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.csproj.CopyComplete
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Infrastruture\obj\Debug\netcoreapp2.1\LC.Infrastruture.pdb

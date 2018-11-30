@@ -18,3 +18,19 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.xml
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.csprojAssemblyReference.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.csproj.CoreCompileInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.AssemblyInfoInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.AssemblyInfo.cs
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Application.User.deps.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Application.User.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Application.User.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Domain.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Infrastruture.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Persistence.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Infrastruture.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Domain.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\bin\Debug\netcoreapp2.1\LC.Persistence.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Application\LC.Application.User\obj\Debug\netcoreapp2.1\LC.Application.User.csproj.CopyComplete

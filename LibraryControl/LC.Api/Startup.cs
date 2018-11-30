@@ -176,6 +176,8 @@ namespace LB.Api
 
             app.UseMiddleware<ExceptionHandler>();
 
+            app.UseStaticFiles();
+
             app.UseHttpsRedirection();
             app.UseMvc();
            

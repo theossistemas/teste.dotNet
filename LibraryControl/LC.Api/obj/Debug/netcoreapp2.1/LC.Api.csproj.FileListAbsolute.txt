@@ -63,3 +63,30 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.A
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.User.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.Book.pdb
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.User.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.deps.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.runtimeconfig.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.runtimeconfig.dev.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Api.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.Book.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.User.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Commons.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Domain.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Infrastruture.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Persistence.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.Book.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Application.User.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Commons.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Domain.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Infrastruture.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\bin\Debug\netcoreapp2.1\LC.Persistence.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.csprojAssemblyReference.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.csproj.CoreCompileInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.RazorAssemblyInfo.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.RazorAssemblyInfo.cs
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.AssemblyInfoInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.AssemblyInfo.cs
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.RazorTargetAssemblyInfo.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.csproj.CopyComplete
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Api\obj\Debug\netcoreapp2.1\LC.Api.pdb

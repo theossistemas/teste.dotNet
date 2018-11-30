@@ -34,7 +34,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     FormsModule,
     NgxSpinnerModule,
-    ToastrModule.forRoot() 
+    ToastrModule.forRoot()
   ],
   providers: [
     AuthGuardService,

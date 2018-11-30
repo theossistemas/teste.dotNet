@@ -4,7 +4,7 @@ export class Book {
     slug: string;
     description_short: string;
     description_long: string;
-    photo: string;
+    photo: string|any;
     created_at: string;
     price: number;
     author: string;

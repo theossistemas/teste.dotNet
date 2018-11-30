@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
     return valid;
   }
 
+
   showNameUser(){
     return this.globalService.getAuthLogin().name;
   }

@@ -2,9 +2,11 @@
   <a class="navbar-brand" href="/">Modelo</a>
   <div class="navbar-expand mr-auto">
     <div class="navbar-nav">
-      <a *ngIf="!showActionLogin()"  class="nav-item nav-link" href="/login">Login</a>
-      <a *ngIf="showActionLogin()" (click)="logout()"  class="nav-item nav-link">Sair</a>
-      <a *ngIf="showActionLogin()" >{{ showNameUser() }}</a>
+      <a *ngIf="showActionLogin()" href="/register"  class="nav-item nav-link">Novo Livro</a>
+      <a  href="/"  class="nav-item nav-link">Listar</a>
+      <a *ngIf="!showActionLogin()" style="left:right" class="nav-item nav-link" href="/login">Login</a>
+      <a *ngIf="showActionLogin()"  style="left:right;cursor: pointer;" (click)="logout()"  class="nav-item nav-link">Sair</a>
+      <a *ngIf="showActionLogin()"  style="left:right"  class="nav-item nav-link" >Seja bem vindo(a): {{ showNameUser() }}</a>
     </div>
   </div>
 </nav>

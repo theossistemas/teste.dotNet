@@ -7,3 +7,12 @@ C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.AssemblyInfo.cs
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.dll
 C:\ProjetosElvis\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\bin\Debug\netcoreapp2.1\LC.Commons.deps.json
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\bin\Debug\netcoreapp2.1\LC.Commons.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\bin\Debug\netcoreapp2.1\LC.Commons.pdb
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.csprojAssemblyReference.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.csproj.CoreCompileInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.AssemblyInfoInputs.cache
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.AssemblyInfo.cs
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.dll
+C:\Users\1544 IRON V4\Documents\Projetos\teste.dotNet\LibraryControl\LC.Commons\obj\Debug\netcoreapp2.1\LC.Commons.pdb

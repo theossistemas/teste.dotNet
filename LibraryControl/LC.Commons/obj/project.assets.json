@@ -681,23 +681,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\elvisley.pereira\\.nuget\\packages\\": {},
+    "C:\\Users\\1544 IRON V4\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Commons\\LC.Commons.csproj",
+      "projectUniqueName": "C:\\Users\\1544 IRON V4\\Documents\\Projetos\\teste.dotNet\\LibraryControl\\LC.Commons\\LC.Commons.csproj",
       "projectName": "LC.Commons",
-      "projectPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Commons\\LC.Commons.csproj",
-      "packagesPath": "C:\\Users\\elvisley.pereira\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjetosElvis\\teste.dotNet\\LibraryControl\\LC.Commons\\obj\\",
+      "projectPath": "C:\\Users\\1544 IRON V4\\Documents\\Projetos\\teste.dotNet\\LibraryControl\\LC.Commons\\LC.Commons.csproj",
+      "packagesPath": "C:\\Users\\1544 IRON V4\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1544 IRON V4\\Documents\\Projetos\\teste.dotNet\\LibraryControl\\LC.Commons\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\elvisley.pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\1544 IRON V4\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -705,7 +705,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://ec2-54-227-2-133.compute-1.amazonaws.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
