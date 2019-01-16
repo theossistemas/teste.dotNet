@@ -1,0 +1,9 @@
+Foi criado um arquivo com a extensão .bak como backup do banco.
+Por ter desenvolvido o projeto no ubuntu, não consegui utilizar as ferramentas gráficas para geração de scripts de banco e a forma que foi gerado foi a única solução que encontrei.
+
+Foi implementado um sistema de token para requisições do tipo POST, PUT e DELETE, sendo assim, só é possível acessar a rota GET "/api/Livros", sem a utilização do token. O token padrão solicitado nas actions é "123456"
+
+O sistema foi feito de forma simples sem usar nenhuma arquitetura mais elaborada.
+Agradeço pela oportunidade e fico à disposição. 
+
+Att. André Fernandes

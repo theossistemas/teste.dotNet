@@ -1,0 +1,14 @@
+/home/andre/Documentos/teste.dotNet/livraria-backend/bin/Debug/netcoreapp2.1/livraria-backend.deps.json
+/home/andre/Documentos/teste.dotNet/livraria-backend/bin/Debug/netcoreapp2.1/livraria-backend.runtimeconfig.json
+/home/andre/Documentos/teste.dotNet/livraria-backend/bin/Debug/netcoreapp2.1/livraria-backend.runtimeconfig.dev.json
+/home/andre/Documentos/teste.dotNet/livraria-backend/bin/Debug/netcoreapp2.1/livraria-backend.dll
+/home/andre/Documentos/teste.dotNet/livraria-backend/bin/Debug/netcoreapp2.1/livraria-backend.pdb
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.csprojAssemblyReference.cache
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.csproj.CoreCompileInputs.cache
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.RazorAssemblyInfo.cache
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.RazorAssemblyInfo.cs
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.AssemblyInfoInputs.cache
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.AssemblyInfo.cs
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.RazorTargetAssemblyInfo.cache
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.dll
+/home/andre/Documentos/teste.dotNet/livraria-backend/obj/Debug/netcoreapp2.1/livraria-backend.pdb
