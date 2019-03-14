@@ -1,0 +1,14 @@
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.csprojAssemblyReference.cache
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.csproj.CoreCompileInputs.cache
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.AssemblyInfoInputs.cache
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.AssemblyInfo.cs
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Repository.deps.json
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Repository.dll
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Repository.pdb
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Context.dll
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Domain.dll
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Context.pdb
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\bin\Debug\netcoreapp2.2\livraria.Domain.pdb
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.csproj.CopyComplete
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.dll
+D:\teste-theos\teste-theos-back\livraria\livraria.Repository\obj\Debug\netcoreapp2.2\livraria.Repository.pdb

@@ -1,0 +1,173 @@
+<div class='row mb-3'>
+  <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6 top'>
+    <div class="form-group">
+      <label for="Nome">Consulta</label>
+      <form (keyup)="pressFormConsulta($event)" >
+      <div class="input-group">
+        <input name="Nome" class="form-control form-control-sm" type="text" [(ngModel)]="filtro">
+        <div class="input-group-append">
+          <button class="btn btn-sm btn-outline-secondary" type="button" (click)="consultar()">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+
+  <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6 top'>
+    <button class="btn btn-sm btn-primary float-right btn-add" *ngIf="usuario.authenticated" (click)="create()">
+      <i class="fas fa-plus"></i> Cadastrar Livro
+    </button>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4' *ngFor="let livro of livros">
+    <div class='card'>
+      <img class='card-img-top' src='../../assets/img/livro.png'>
+      <div class='card-body'>
+        <small>Titulo:</small>
+        <h5 class='card-title text-muted'>{{livro.titulo}}</h5>
+
+        <small>Autor:</small>
+        <p class='car-text'>
+          {{livro.autor.nome}}
+        </p>
+        <small>Categoria:</small>
+        <p class='car-text'>
+          {{livro.categoria.descricao}}
+        </p>
+      </div>
+      <div class="card-footer">
+        <div class='row'>
+          <div class='col-sm-6'>
+            <button type="submit" class="btn btn-sm btn-link" (click)="edit(livro)"
+              *ngIf="usuario.authenticated">
+              editar
+            </button>
+            <button type="submit" class="btn btn-sm btn-link" (click)="delete(livro)"
+              *ngIf="usuario.authenticated">
+              excluir
+            </button>
+          </div>
+          <div class='col-sm-6'>
+            <h4 class="text-success text-right">{{livro.valor | currency:'BRL':true}}</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id='modalCadastro'>
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="confirmCreate()" #refForm="ngForm">
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class="form-group">
+                <label for="Titulo">Titulo </label>
+                <input name="Titulo" class="form-control form-control-sm" type="text" [(ngModel)]="livro.Titulo">
+              </div>
+              <div class="form-group">
+                <label for="Valor">Valor </label>
+                <input name="Valor" min='1'  class="form-control form-control-sm" type="number" [(ngModel)]="livro.Valor">
+              </div>
+              <div class="form-group">
+                <label for="Autor">Autor</label>
+                <select name="Sexo" class="form-control form-control-sm" [(ngModel)]="livro.autorId"
+                  (change)="setAutor($event.target.value)">
+                  
+                  <option *ngFor="let autor of autores" [value]="autor.autorId">{{autor.nome}}</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Sexo">Categorias</label>
+                <select name="Categoria" class="form-control form-control-sm" [(ngModel)]="livro.categoriaId"
+                  (change)="setCategoria($event.target.value)">
+                  
+                  <option *ngFor="let categoria of categorias" [value]="categoria.categoriaId">{{categoria.descricao}}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary float-left" data-dismiss="modal">
+          Cancela
+        </button>
+        <button type="submit" class="btn btn-primary float-right" (click)="confirmCreate()">
+          Gravar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id='modalAlteracao'>
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar Livro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="confirmCreate()" #refForm="ngForm">
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class="form-group">
+                <label for="Titulo">Titulo </label>
+                <input name="Titulo" class="form-control form-control-sm" type="text" [(ngModel)]="livro.titulo">
+              </div>
+              <div class="form-group">
+                <label for="Valor">Valor </label>
+                <input name="Valor" min='1' class="form-control form-control-sm" type="number" [(ngModel)]="livro.valor">
+              </div>
+              <div class="form-group">
+                <label for="Autor">Autor</label>
+                <select name="Sexo" class="form-control form-control-sm" [(ngModel)]="livro.autorId"
+                  (change)="setAutor($event.target.value)">
+                  
+                  <option *ngFor="let autor of autores" [value]="autor.autorId">{{autor.nome}}</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Sexo">Categorias</label>
+                <select name="Categoria" class="form-control form-control-sm" [(ngModel)]="livro.categoriaId"
+                  (change)="setCategoria($event.target.value)">
+                  
+                  <option *ngFor="let categoria of categorias" [value]="categoria.categoriaId">{{categoria.descricao}}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary float-left" data-dismiss="modal">
+          Cancela
+        </button>
+        <button type="submit" class="btn btn-success float-right" (click)="confirmEdit()">
+          Gravar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ngx-confirm-box [confirmHeading]="'Atenção'" [confirmCanceltext]="'Cancela'" [confirmOkaytext]="'Ok'"
+    [confirmContent]="'Deseja realmente excluir este registro?'" (confirmEvt)="confirmDelete($event)"></ngx-confirm-box>

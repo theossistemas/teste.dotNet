@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\livraria.Context\livraria.Context.csproj" />
+    <ProjectReference Include="..\livraria.Domain\livraria.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand" href="#">
+      <img src='../favicon.ico' /> Livraria
+  </a>
+
+  <a class="nav-link" href="javascript:(void)" *ngIf="usuario.authenticated">
+    Olá, {{usuario.Email}}
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id='menu'>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active" *ngIf="!usuario.authenticated">
+        <a class="nav-link" href="javascript:(void)" (click)="login()">
+          Entrar
+        </a>
+      </li>
+      <li class="nav-item active" *ngIf="usuario.authenticated">
+        <a class="nav-link" href="javascript:(void)" (click)="sair()">
+          Sair
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id='modalLogin' *ngIf="!usuario.authenticated">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="login()" #refForm="ngForm">
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class="form-group">
+                <label for="Nome">Email </label>
+                <input name="Nome" class="form-control form-control-sm" type="text" [(ngModel)]="usuario.Email">
+              </div>
+              <div class="form-group">
+                <label for="Nome">Senha</label>
+                <input name="Nome" class="form-control form-control-sm" type="password" [(ngModel)]="usuario.Senha">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="row" *ngIf="loginError">
+          <div class='col-sm-12'>
+            <span class='text-danger'>{{loginError}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" (click)="confirmLogin()">
+          Entrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ngx-spinner>
+    <p style="font-size: 20px; color: white">Aguarde...</p>
+   </ngx-spinner>

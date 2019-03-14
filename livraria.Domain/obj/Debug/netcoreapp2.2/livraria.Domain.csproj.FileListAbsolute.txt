@@ -1,0 +1,9 @@
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\obj\Debug\netcoreapp2.2\livraria.Domain.csproj.CoreCompileInputs.cache
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\obj\Debug\netcoreapp2.2\livraria.Domain.AssemblyInfoInputs.cache
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\obj\Debug\netcoreapp2.2\livraria.Domain.AssemblyInfo.cs
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\bin\Debug\netcoreapp2.2\livraria.Domain.deps.json
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\bin\Debug\netcoreapp2.2\livraria.Domain.dll
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\bin\Debug\netcoreapp2.2\livraria.Domain.pdb
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\obj\Debug\netcoreapp2.2\livraria.Domain.dll
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\obj\Debug\netcoreapp2.2\livraria.Domain.pdb
+D:\teste-theos\teste-theos-back\livraria\livraria.Domain\obj\Debug\netcoreapp2.2\livraria.Domain.csprojAssemblyReference.cache
