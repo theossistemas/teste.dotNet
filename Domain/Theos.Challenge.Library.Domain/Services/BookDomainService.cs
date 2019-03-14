@@ -22,7 +22,7 @@ namespace Theos.Challenge.Library.Model.Services
             return _repository.Create(book);
         }
 
-        public Task<bool> Delete(Book book)
+        public Task<int> Delete(Book book)
         {
             //Validation Here
             return _repository.Delete(book);
@@ -46,7 +46,7 @@ namespace Theos.Challenge.Library.Model.Services
             return _repository.GetBookByIdentifier(identifier);
         }
 
-        public Task<bool> Update(Book book)
+        public Task<int> Update(Book book)
         {
             return _repository.Update(book);
         }

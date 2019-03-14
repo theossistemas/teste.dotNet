@@ -5,16 +5,16 @@ using Theos.Challenge.Library.Model.Contracts.Infra;
 using Theos.Challenge.Library.SharedKernel.Entities;
 using Theos.Challenge.Library.SharedKernel.ValueObjects;
 
-namespace Theos.Challenge.Library.Orm.Dapper.Repository
+namespace Theos.Challenge.Library.Orm.EFCore.Repository
 {
-    public sealed class BookRepository : IBookRepository
+    public class BookEfCoreRepository : IBookRepository
     {
         public Task<int> Create(Book book)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> Delete(Book book)
+        public Task<int> Delete(Book book)
         {
             throw new NotImplementedException();
         }
@@ -34,7 +34,7 @@ namespace Theos.Challenge.Library.Orm.Dapper.Repository
             throw new NotImplementedException();
         }
 
-        public Task<bool> Update(Book book)
+        public Task<int> Update(Book book)
         {
             throw new NotImplementedException();
         }

@@ -12,7 +12,7 @@ namespace Theos.Challenge.Library.Model.Contracts.Infra
          Task<Book> GetBookByIdentifier(Identifier identifier);
          Task<Book> GetBookBy(Func<Book,bool> condition);
          Task<IList<Book>> GetAllBooks();
-         Task<bool> Update(Book book);
-         Task<bool> Delete(Book book);
+         Task<int> Update(Book book);
+         Task<int> Delete(Book book);
     }
 }

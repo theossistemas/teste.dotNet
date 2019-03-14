@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Theos.Challenge.Library.Domain\Theos.Challenge.Library.Domain.csproj" />
+    <ProjectReference Include="..\..\Infra\Theos.Challenge.Library.Orm.Dapper\Theos.Challenge.Library.Orm.Dapper.csproj" />
+    <ProjectReference Include="..\..\Application\Theos.Challenge.Library.Application\Theos.Challenge.Library.Application.csproj" />
+  </ItemGroup>
+
+</Project>

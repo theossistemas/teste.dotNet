@@ -12,7 +12,7 @@ namespace Theos.Challenge.Library.Application.Contracts.Services
         Task<BookDTO> GetBookByIdentifier(Identifier identifier);
         Task<BookDTO> GetBookBy(Func<BookDTO,bool> condition);
         Task<IList<BookDTO>> GetAllBooksAsc();
-        Task<bool> Update(BookDTO book);
-        Task<bool> Delete(BookDTO book);
+        Task<int> Update(BookDTO book);
+        Task<int> Delete(BookDTO book);
     }
 }

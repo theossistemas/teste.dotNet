@@ -18,6 +18,6 @@ namespace Theos.Challenge.Library.SharedKernel.Entities
         /// <value></value>
         public string Identifier { get; private set; }   
         public Cip Cip { get; private set; }     
-        public string Author {get; private set;}                
+        public string Author { get; private set; }                
     }
 }
