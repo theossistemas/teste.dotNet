@@ -107,6 +107,9 @@ namespace Theos.Library.Core.Data.Migrations
                 name: "IX_User_KeyId",
                 table: "User",
                 column: "KeyId");
+
+            migrationBuilder.Sql("INSERT INTO USERKEY (ID) VALUES ('6D1FC865-8DA6-44F7-9100-7276C570BDA3');");
+            migrationBuilder.Sql("INSERT INTO[USER] (ID, DATE, USERID, VERSION, ACTIVE, KEYID, LOGIN, PASSWORD) values (NEWID(), GETDATE(), '00000000-0000-0000-0000-000000000000', 1, 1, '6D1FC865-8DA6-44F7-9100-7276C570BDA3', 'admin', 'ILdc/0VG9DUQLdL7hlN+akQi9ttqh9uPSteH0RkHpxA=');");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

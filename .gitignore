@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Theos.Library/Theos.Library.Api.Test/bin/Debug/netcoreapp2.1
+/Theos.Library/Theos.Library.Api.Test/obj
