@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  theos.library.api:
+    image: theos-library-api
+    container_name: theos.library.api
+    build:
+      context: .
+      dockerfile: Theos.Library.Api/Dockerfile
+    volumes:
+      - F:/storage/api/:/app/wwwroot/
+    networks:
+      - network
+    ports:
+      - 8080:80
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: database
+    ports:
+      - 1433:1433
+    environment:
+      - 'ACCEPT_EULA=Y'
+      - 'SA_PASSWORD=theos@00'
+    networks:
+      - network
+
+networks:
+  network:
+    external: true

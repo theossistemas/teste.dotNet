@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Library.Api", "Theos.Library.Api\Theos.Library.Api.csproj", "{63253950-86B5-4D36-87DD-BC534C47C4CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{4A642D26-57F6-4A24-B1D0-E820F9A47477}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8130B0F3-5869-4BF1-A609-11B24F32234A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{24C31858-F372-432D-9CA7-419B2A77EA5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F0270D0C-9681-49A1-AE9C-CE9C2AC39030}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B4A6A656-9A25-491B-BC07-D3E79FCE3241}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{EDFC4E52-145B-440B-8512-70DC7F1955E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Library.Domain", "Theos.Library.Domain\Theos.Library.Domain.csproj", "{EF6F9651-2D16-441C-A4A0-33638E7875BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Library.CrossCutting", "Theos.Library.CrossCutting\Theos.Library.CrossCutting.csproj", "{D81920F3-E492-4FB3-BB31-B0C984CAF063}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Library.Core.Data", "Theos.Library.Core.Data\Theos.Library.Core.Data.csproj", "{155413E0-EC9F-4082-8E0B-8465FE6A7BEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Library.Core.Business", "Theos.Library.Core.Business\Theos.Library.Core.Business.csproj", "{5B030744-4C3B-4F75-9B23-46659C613BCC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{217544A9-B1D5-4353-85F7-500686A4DEA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{58766956-AA06-4D49-9F56-AA3E8B94B9F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theos.Library.Api.Test", "..\Theos.Library.Api.Test\Theos.Library.Api.Test.csproj", "{61BBD238-56CC-4CFB-B017-C07320265ECA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63253950-86B5-4D36-87DD-BC534C47C4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63253950-86B5-4D36-87DD-BC534C47C4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63253950-86B5-4D36-87DD-BC534C47C4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63253950-86B5-4D36-87DD-BC534C47C4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6F9651-2D16-441C-A4A0-33638E7875BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6F9651-2D16-441C-A4A0-33638E7875BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6F9651-2D16-441C-A4A0-33638E7875BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6F9651-2D16-441C-A4A0-33638E7875BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81920F3-E492-4FB3-BB31-B0C984CAF063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81920F3-E492-4FB3-BB31-B0C984CAF063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81920F3-E492-4FB3-BB31-B0C984CAF063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81920F3-E492-4FB3-BB31-B0C984CAF063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155413E0-EC9F-4082-8E0B-8465FE6A7BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155413E0-EC9F-4082-8E0B-8465FE6A7BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155413E0-EC9F-4082-8E0B-8465FE6A7BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155413E0-EC9F-4082-8E0B-8465FE6A7BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B030744-4C3B-4F75-9B23-46659C613BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B030744-4C3B-4F75-9B23-46659C613BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B030744-4C3B-4F75-9B23-46659C613BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B030744-4C3B-4F75-9B23-46659C613BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217544A9-B1D5-4353-85F7-500686A4DEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217544A9-B1D5-4353-85F7-500686A4DEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217544A9-B1D5-4353-85F7-500686A4DEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217544A9-B1D5-4353-85F7-500686A4DEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BBD238-56CC-4CFB-B017-C07320265ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BBD238-56CC-4CFB-B017-C07320265ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BBD238-56CC-4CFB-B017-C07320265ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BBD238-56CC-4CFB-B017-C07320265ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63253950-86B5-4D36-87DD-BC534C47C4CE} = {4A642D26-57F6-4A24-B1D0-E820F9A47477}
+		{24C31858-F372-432D-9CA7-419B2A77EA5E} = {8130B0F3-5869-4BF1-A609-11B24F32234A}
+		{F0270D0C-9681-49A1-AE9C-CE9C2AC39030} = {8130B0F3-5869-4BF1-A609-11B24F32234A}
+		{EF6F9651-2D16-441C-A4A0-33638E7875BC} = {B4A6A656-9A25-491B-BC07-D3E79FCE3241}
+		{D81920F3-E492-4FB3-BB31-B0C984CAF063} = {EDFC4E52-145B-440B-8512-70DC7F1955E3}
+		{155413E0-EC9F-4082-8E0B-8465FE6A7BEA} = {F0270D0C-9681-49A1-AE9C-CE9C2AC39030}
+		{5B030744-4C3B-4F75-9B23-46659C613BCC} = {24C31858-F372-432D-9CA7-419B2A77EA5E}
+		{61BBD238-56CC-4CFB-B017-C07320265ECA} = {58766956-AA06-4D49-9F56-AA3E8B94B9F3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D75F77C6-B5D2-4017-88AD-F0C5B98F2E90}
+	EndGlobalSection
+EndGlobal
