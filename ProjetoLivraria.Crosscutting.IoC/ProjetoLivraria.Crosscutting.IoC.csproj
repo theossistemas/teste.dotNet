@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoLivraria.Domain\ProjetoLivraria.Domain.csproj" />
+    <ProjectReference Include="..\ProjetoLivraria.Data\ProjetoLivraria.Data.csproj" />
+    <ProjectReference Include="..\ProjetoLivraria.Application\ProjetoLivraria.Application.csproj" />
+  </ItemGroup>
+</Project>
