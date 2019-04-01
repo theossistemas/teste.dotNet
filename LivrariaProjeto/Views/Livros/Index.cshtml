@@ -1,0 +1,59 @@
+﻿@model IEnumerable<LivrariaProjeto.Models.Livro>
+
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <p>
+            <a asp-action="Create">Novo Livro</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayName("Livro")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Autor")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Preço")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Data de Lançamento")
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Autor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Preco)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Lancamento)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="glyphicon glyphicon-edit"></a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" class="glyphicon glyphicon-th-list"></a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="glyphicon glyphicon-trash"></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+</html>

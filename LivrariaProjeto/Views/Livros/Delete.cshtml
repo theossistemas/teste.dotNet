@@ -1,0 +1,51 @@
+﻿@model LivrariaProjeto.Models.Livro
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+
+    <h3>Tem certeza que deseja deletar ?</h3>
+    <div>
+        <h4>Livro</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayName("Livro")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+            <dt>
+                @Html.DisplayName("Autor")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Autor)
+            </dd>
+            <dt>
+                @Html.DisplayName("Preço")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Preco)
+            </dd>
+            <dt>
+                @Html.DisplayName("Data de Lançamento")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Lancamento)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Deletar" class="btn btn-default" /> |
+            <a asp-action="Index">Voltar</a>
+        </form>
+    </div>
+</body>
+</html>
