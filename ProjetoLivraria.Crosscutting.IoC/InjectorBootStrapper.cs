@@ -12,8 +12,12 @@ namespace ProjetoLivraria.Crosscutting.IoC
         public static void RegisterServices(IServiceCollection services)
         {
             services.AddScoped<ILivroAppService, LivroAppService>();
+            services.AddScoped<IUsuarioAppService, UsuarioAppService>();
+
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<ILivroRepository, LivroRepository>();
-            services.AddScoped<ProjetoLivrariaContext>();
+
+            services.AddTransient<ProjetoLivrariaContext>();
         }
     }
 }

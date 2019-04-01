@@ -5,11 +5,11 @@ namespace ProjetoLivraria.Domain.Repositories.Interfaces
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : class
     {
-        void Add(TEntity obj);
+        TEntity Add(TEntity obj);
         TEntity GetById(Guid id);
         IQueryable<TEntity> GetAll();
-        void Update(TEntity obj);
-        void Remove(Guid id);
+        TEntity Update(TEntity obj);
+        int Remove(Guid id);
         int SaveChanges();
     }
 }

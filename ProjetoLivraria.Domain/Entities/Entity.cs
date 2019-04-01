@@ -3,7 +3,7 @@ namespace ProjetoLivraria.Domain.Entities
 {
     public abstract class Entity
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public DateTime? CriadoEm { get; set; }
         public DateTime? ModificadoEm { get; set; }
 

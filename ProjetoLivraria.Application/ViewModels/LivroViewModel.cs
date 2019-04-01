@@ -1,42 +1,31 @@
 ﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.Serialization;
 
 namespace ProjetoLivraria.Application.ViewModels
 {
+    [DataContract]
     public class LivroViewModel
     {
-        [Key]
+        [DataMember]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "ISBN obrigatório")]
-        [MinLength(2)]
-        [MaxLength(100)]
-        [DisplayName("ISBN")]
+        [DataMember]
         public string Isbn { get; set; }
 
-        [Required(ErrorMessage = "Autor obrigatório")]
-        [MinLength(2)]
-        [MaxLength(100)]
-        [DisplayName("Autor")]
+        [DataMember]
         public string Autor { get; set; }
 
-        [Required(ErrorMessage = "Título obrigatório")]
-        [MinLength(2)]
-        [MaxLength(100)]
-        [DisplayName("Título")]
+        [DataMember]
         public string Titulo { get; set; }
 
-        [Required(ErrorMessage = "Preço obrigatório")]
-        [DisplayName("Preço")]
+        [DataMember]
         public double Preco { get;  set; }
 
-        [Required(ErrorMessage = "Data de publicação é obrigatória")]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
-        [DataType(DataType.Date, ErrorMessage = "Data em formato inválido")]
-        [DisplayName("Publicação")]
+        [DataMember]
         public DateTime Publicacao { get;  set; }
-
+        [DataMember]
         public string ImagemCapa { get;  set; }
     }
 }

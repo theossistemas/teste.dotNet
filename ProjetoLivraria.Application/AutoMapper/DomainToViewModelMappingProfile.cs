@@ -9,6 +9,7 @@ namespace ProjetoLivraria.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<Livro, LivroViewModel>();
+            CreateMap<Usuario, UsuarioViewModel>();
         }
     }
 }

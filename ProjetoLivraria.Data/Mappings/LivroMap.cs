@@ -1,12 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ProjetoLivraria.Domain.Entities;
 
 namespace ProjetoLivraria.Data.Mappings
 {
     public class LivroMap : IEntityTypeConfiguration<Livro>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Livro> builder)
+        public void Configure(EntityTypeBuilder<Livro> builder)
         {
             builder.Property(l => l.Id)
                 .HasColumnName("Id");
@@ -26,5 +26,6 @@ namespace ProjetoLivraria.Data.Mappings
                 .HasMaxLength(30)
                 .IsRequired();
         }
+
     }
 }

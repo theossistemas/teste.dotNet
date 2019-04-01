@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoLivraria.Data;
 
 namespace ProjetoLivraria.Data.Migrations
 {
     [DbContext(typeof(ProjetoLivrariaContext))]
-    partial class ProjetoLivrariaContextModelSnapshot : ModelSnapshot
+    [Migration("20190401194058_UsuarioPasswordField")]
+    partial class UsuarioPasswordField
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

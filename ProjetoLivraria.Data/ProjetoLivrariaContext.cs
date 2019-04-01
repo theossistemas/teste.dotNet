@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using ProjetoLivraria.Data.Mappings;
@@ -14,6 +13,7 @@ namespace ProjetoLivraria.Data
             : base(options) { }
 
         public DbSet<Livro> Livros { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         public override int SaveChanges()
         {
@@ -42,6 +42,7 @@ namespace ProjetoLivraria.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new LivroMap());
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
 
             base.OnModelCreating(modelBuilder);
         }

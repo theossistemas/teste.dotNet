@@ -16,10 +16,6 @@
     <ProjectReference Include="..\ProjetoLivraria.Domain\ProjetoLivraria.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Mappings\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Remove="Repositories\Interfaces\IRepository.cs" />
   </ItemGroup>
   <ItemGroup>

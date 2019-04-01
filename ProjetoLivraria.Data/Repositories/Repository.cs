@@ -16,12 +16,14 @@ namespace ProjetoLivraria.Data.Repositories
             DbSet = Db.Set<TEntity>();
         }
 
-        public virtual void Add(TEntity obj)
+        public TEntity Add(TEntity obj)
         {
             DbSet.Add(obj);
+            Db.SaveChanges();
+            return obj;
         }
 
-        public virtual TEntity GetById(Guid id)
+        public TEntity GetById(Guid id)
         {
             return DbSet.Find(id);
         }
@@ -31,14 +33,17 @@ namespace ProjetoLivraria.Data.Repositories
             return DbSet;
         }
 
-        public virtual void Update(TEntity obj)
+        public TEntity Update(TEntity obj)
         {
             Db.Entry(obj).State = EntityState.Modified;
+            Db.SaveChanges();
+            return obj;
         }
 
-        public virtual void Remove(Guid id)
+        public int Remove(Guid id)
         {
             DbSet.Remove(DbSet.Find(id));
+            return Db.SaveChanges();
         }
 
         public int SaveChanges()
