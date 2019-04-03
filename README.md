@@ -36,6 +36,7 @@ Uma livraria da cidade teve um aumento no número de seus exemplares e está com
 
 ### Diferencial:
 	* Implementar front-end para consumir a API em  Angular como framework Javascript.
+	* Aplicação das boas práticas do DDD, TDD, Design Patterns, SOLID e Clean Code.
 
     obs: Teste terá como avaliação principal os requisitos solicitados para o backend,  porém o frontend 
     poderá ser critério de desempate.
