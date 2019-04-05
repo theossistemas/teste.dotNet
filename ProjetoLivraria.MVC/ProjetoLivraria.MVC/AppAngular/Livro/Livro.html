@@ -1,0 +1,122 @@
+﻿
+<div class="container">
+
+    <div class="panel panel-info">
+        <h1>Lista de Livros</h1>
+        <div ng-show="MostrarForm">
+            <div class="panel-body">
+
+                <form class="form-horizontal" name="frmLivro">
+                    <div class="form-group row">
+                        <label class="control-label col-sm-2"> Codigo</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" readonly="readonly" name="IdLivro" ng-model="IdLivro" placeholder="Id Livro" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-sm-2"> Nome</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" name="nome" required ng-model="Nome" placeholder="Nome" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-sm-2"> Editora</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" name="editora" required ng-model="Editora" placeholder="Editora" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-sm-2"> Autor(a)</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" name="autor" required ng-model="Autor" placeholder="Autor(a)" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  col-sm-2"> Ano</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="number" name="ano" required ng-model="Ano" placeholder="Ano" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label  col-sm-2"> Categoria</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" name="categoria" required ng-model="Categoria" placeholder="Categoria" />
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="panel-footer">
+                <button type="button" class="btn btn-primary" ng-disabled="frmLivro.$invalid" id="btnSalvar" data-dismiss="modal" ng-click="SalvarLivro()">Salvar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="limparDados()">Fechar</button>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button type="button" class="btn btn-info" ng-hide="MostrarForm" ng-click="ExibirForm(true)">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Id</th>
+                    <th class="text-center">Nome</th>
+                    <th class="text-center">Editora</th>
+                    <th class="text-center">Ano</th>
+                    <th class="text-center">Autor</th>
+                    <th class="text-center">Categoria</th>
+                    <th class="text-center">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="livro in ListaLivros">
+                    <td class="text-center">{{livro.IdLivro}}</td>
+                    <td class="text-center">{{livro.Nome}}</td>
+                    <td class="text-center">{{livro.Editora}}</td>
+                    <td class="text-center">{{livro.Ano}}</td>
+                    <td class="text-center">{{livro.Autor}}</td>
+                    <td class="text-center">{{livro.Categoria}}</td>
+                    <td class="text-center" style="width: 200px;">
+                        <button class="btn btn-success"
+                                ng-click="PreEditar(livro)">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button href="#"
+                           data-target="#ExcluirLivro"
+                           id="btnExcluir"
+                           data-toggle="modal" class="btn btn-danger"
+                           ng-click="PreencheLivro(livro)">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal" role="dialog" id="ExcluirLivro">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="text-info">Você tem certeza que deseja excluir o livro?</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>Id Livro : {{IdLivro}}</p>
+                            <p>Nome Livro : {{Nome}}</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="excluirLivro(IdLivro)">Excluir</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

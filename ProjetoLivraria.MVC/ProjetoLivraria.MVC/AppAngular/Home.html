@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Biblioteca</title>
+
+
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/Site.css" rel="stylesheet" />
+
+    <script src="../../Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="../../Scripts/jquery-1.10.2.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Scripts/angular-route.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+    <script src="../../Scripts/respond.js"></script>
+
+    <script src="../../AppAngular/module.js"></script>
+    <script src="../../AppAngular/Livro/livroService.js"></script>
+    <script src="../../AppAngular/Livro/livroController.js"></script>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body ng-app="bibliotecaApplication">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div ng-view></div>
+     
+        <hr />
+        <footer>
+           
+        </footer>
+    </div>
+ 
+
+</body>
+</html>

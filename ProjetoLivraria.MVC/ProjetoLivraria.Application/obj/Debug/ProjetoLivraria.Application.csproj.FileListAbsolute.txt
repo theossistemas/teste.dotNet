@@ -1,0 +1,7 @@
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\bin\Debug\ProjetoLivraria.Application.dll
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\bin\Debug\ProjetoLivraria.Application.pdb
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\bin\Debug\ProjetoLivraria.Domain.dll
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\bin\Debug\ProjetoLivraria.Domain.pdb
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\obj\Debug\ProjetoLivraria.Application.csprojResolveAssemblyReference.cache
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\obj\Debug\ProjetoLivraria.Application.dll
+E:\Biblioteca\ProjetoLivraria.MVC\ProjetoLivraria.Application\obj\Debug\ProjetoLivraria.Application.pdb
