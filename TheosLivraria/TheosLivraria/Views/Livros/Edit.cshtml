@@ -1,0 +1,59 @@
+﻿@model TheosLivraria.Models.Livro
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Editar Livro</h2>
+
+<h4>Livro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ISBN" class="control-label"></label>
+                <input asp-for="ISBN" class="form-control" />
+                <span asp-validation-for="ISBN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeLivro" class="control-label"></label>
+                <input asp-for="NomeLivro" class="form-control" />
+                <span asp-validation-for="NomeLivro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeAutor" class="control-label"></label>
+                <input asp-for="NomeAutor" class="form-control" />
+                <span asp-validation-for="NomeAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Editora" class="control-label"></label>
+                <input asp-for="Editora" class="form-control" />
+                <span asp-validation-for="Editora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnoLancamento" class="control-label"></label>
+                <input asp-for="AnoLancamento" class="form-control" />
+                <span asp-validation-for="AnoLancamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Edicao" class="control-label"></label>
+                <input asp-for="Edicao" class="form-control" />
+                <span asp-validation-for="Edicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"><< Voltar ao Catálogo</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

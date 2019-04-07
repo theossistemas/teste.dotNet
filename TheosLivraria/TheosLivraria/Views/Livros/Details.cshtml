@@ -1,0 +1,54 @@
+﻿@model TheosLivraria.Models.Livro
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Livro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeLivro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NomeLivro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeAutor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NomeAutor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Editora)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Editora)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnoLancamento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnoLancamento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Edicao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Edicao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index"><< Voltar ao Catálogo</a>
+</div>

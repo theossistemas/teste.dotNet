@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TheosLivraria</name>
+    </assembly>
+    <members>
+        <member name="T:TheosLivraria.Controllers.HomeController">
+            <summary>
+            HomeController
+            </summary>
+        </member>
+        <member name="M:TheosLivraria.Controllers.HomeController.Index">
+            <summary>
+            Página Principal da Aplicação
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.HomeController.Sobre">
+            <summary>
+            Página com informações do candidato à vaga BackEnd C# da Theòs, Felipe Rampazzo Farias
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TheosLivraria.Controllers.LivrosController">
+            <summary>
+            LivrosController
+            </summary>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Index">
+            <summary>
+            Traz a view da listagem dos livros, por ordem alfabética.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Details(System.Nullable{System.Int32})">
+            <summary>
+            Traz a view com os detalhes do livro selecionado.
+            </summary>
+            <param name="id">Id do livro</param>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Create">
+            <summary>
+            Traz a view de criação de um novo livro.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Create(TheosLivraria.Models.Livro)">
+            <summary>
+            Cria um novo Livro.
+            </summary>
+            <param name="livro"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Edit(System.Nullable{System.Int32})">
+            <summary>
+            Traz a view de edição de livro.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Edit(System.Int32,TheosLivraria.Models.Livro)">
+            <summary>
+            Permite editar os dados de um livro existente.
+            </summary>
+            <param name="id">Id do livro</param>
+            <param name="livro">Model do livro</param>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Traz a view de exclusão de livros.
+            </summary>
+            <param name="id">Id do livro</param>
+            <returns></returns>
+        </member>
+        <member name="M:TheosLivraria.Controllers.LivrosController.DeleteConfirmed(System.Int32)">
+            <summary>
+            Deleta de fato o livro selecionado.
+            </summary>
+            <param name="id">Id do livro a ser deletado.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
