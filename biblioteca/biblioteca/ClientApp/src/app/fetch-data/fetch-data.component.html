@@ -1,0 +1,21 @@
+<h1>Lista de livros cadastrados</h1>
+
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="forecasts">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nome</th>
+      <th>decricao</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let forecast of forecasts">
+      <td>{{ forecast.id }}</td>
+      <td>{{ forecast.nome }}</td>
+      <td>{{ forecast.descricao}}</td>
+    </tr>
+  </tbody>
+</table>
