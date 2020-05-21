@@ -372,3 +372,4 @@ src/FTStore.Web/wwwroot/assets/images/**
 
 #distribution
 dist/**/*
+src/TheosBookStore.Web/log.txt
