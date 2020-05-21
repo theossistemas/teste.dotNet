@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\TheosBookStore.Stock.App\TheosBookStore.Stock.App.csproj" />
+    <ProjectReference Include="..\TheosBookStore.LibCommon\TheosBookStore.LibCommon.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectGuid>6C6ED649-3EAC-4CBE-9E3C-D1D9E3E949D3</ProjectGuid>
+  </PropertyGroup>
+</Project>

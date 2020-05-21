@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\TheosBookStore.Auth.Domain\TheosBookStore.Auth.Domain.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectGuid>24719116-4B51-4E83-8A94-F2E91C86E433</ProjectGuid>
+  </PropertyGroup>
+</Project>

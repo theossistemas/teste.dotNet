@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\TheosBookStore.Stock.App\TheosBookStore.Stock.App.csproj" />
+    <ProjectReference Include="..\TheosBookStore.Stock.Domain\TheosBookStore.Stock.Domain.csproj" />
+    <ProjectReference Include="..\TheosBookStore.Stock.Infra\TheosBookStore.Stock.Infra.csproj" />
+    <ProjectReference Include="..\TheosBookStore.Auth.App\TheosBookStore.Auth.App.csproj" />
+    <ProjectReference Include="..\TheosBookStore.Auth.Domain\TheosBookStore.Auth.Domain.csproj" />
+    <ProjectReference Include="..\TheosBookStore.Auth.Infra\TheosBookStore.Auth.Infra.csproj" />
+    <ProjectReference Include="..\TheosBookStore.LibCommon\TheosBookStore.LibCommon.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectGuid>D39802C5-D820-463B-91B7-0713BCEC689C</ProjectGuid>
+  </PropertyGroup>
+</Project>
