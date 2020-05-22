@@ -61,7 +61,7 @@ namespace TheosBookStore.Stock.Domain.Tests.Services
 
             bookServices.Register(book);
             operationValid.Should().BeFalse();
-            errorMessages.Should().Be($"The Book {book.Title} is already registered");
+            errorMessages.Should().Be($"The Book \"{book.Title}\" is already registered");
             bookRepository.VerifyAll();
         }
 
