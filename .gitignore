@@ -361,15 +361,10 @@ MigrationBackup/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-src/FTStore.Web/wwwroot/arquivos/
-!FTStore.Web/wwwroot/arquivos/.gitkeep
-src/FTStore.Web/wwwroot/assets/**
-!FTStore.Web/wwwroot/assets/**/.gitkeep
-src/FTStore.Web/wwwroot/assets/images/**
 
 #sonarqube
 .sonarqube/**
 
 #distribution
 dist/**/*
-src/TheosBookStore.Web/log.txt
+src/TheosBookStore.Web/theosbookstore-web*.log
