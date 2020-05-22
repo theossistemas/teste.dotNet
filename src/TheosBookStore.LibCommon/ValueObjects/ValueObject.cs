@@ -2,7 +2,8 @@ using FluentValidation.Results;
 
 namespace TheosBookStore.LibCommon.ValueObjects
 {
-    public abstract class ValueObject<T> where T : ValueObject<T>
+    public abstract class ValueObject<T>
+        where T : ValueObject<T>
     {
         public ValidationResult ValidationResult { get => _validationResult; }
         protected ValidationResult _validationResult = new ValidationResult();
