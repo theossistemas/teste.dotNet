@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 
 using Serilog;
 using Serilog.Events;
+using Serilog.Exceptions;
 using Serilog.Formatting.Json;
 using Serilog.Sinks.Elasticsearch;
 
@@ -29,6 +30,7 @@ namespace TheosBookStore.Web.Lib
         private ILogger GetLoggerConfiguration() => new LoggerConfiguration()
                 .Enrich.FromLogContext()
                 .Enrich.WithMachineName()
+                .Enrich.WithExceptionDetails()
                 .WriteTo.Debug()
                 .WriteTo.Console()
                 .WriteTo.File(new JsonFormatter(), GetLogFileName(), LogEventLevel.Debug)
