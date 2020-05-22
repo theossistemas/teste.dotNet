@@ -12,7 +12,7 @@ namespace TheosBookStore.Stock.Domain.Entities
         public string Title { get; protected set; }
         public ISBN ISBN { get; protected set; }
         public int PageCount { get; protected set; }
-        public string Publisher { get; protected set; }
+        public Publisher Publisher { get; protected set; }
         public int YearPublication { get; protected set; }
         public int Edition { get; protected set; }
         public string City { get; protected set; }
@@ -23,7 +23,7 @@ namespace TheosBookStore.Stock.Domain.Entities
             _authors = new List<Author>();
         }
         public Book(string title, ISBN isbn, ICollection<Author> authors,
-            int pageCount, string publisher, int yearPublication, int edition,
+            int pageCount, Publisher publisher, int yearPublication, int edition,
             string city) : this()
         {
             Title = title;
