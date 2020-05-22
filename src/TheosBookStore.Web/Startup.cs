@@ -1,3 +1,5 @@
+using System.Reflection;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,6 +27,8 @@ namespace TheosBookStore.Web
         {
             services.AddControllersWithViews();
 
+            services.AddSwaggerConfig();
+
             services.AddJWTConfig(Configuration);
 
             services.AddSpaStaticFiles(configuration =>
@@ -51,6 +55,11 @@ namespace TheosBookStore.Web
             {
                 app.UseSpaStaticFiles();
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", Assembly.GetExecutingAssembly().GetName().Name);
+            });
 
             app.UseRouting();
 
