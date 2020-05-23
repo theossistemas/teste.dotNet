@@ -1,3 +1,4 @@
+using System.Linq;
 using FluentAssertions;
 using TheosBookStore.Stock.Domain.Entities;
 using TheosBookStore.Stock.Infra.Models;
@@ -30,9 +31,10 @@ namespace TheosBookStore.Stock.Infra.Tests.Mapper.Profiles
             model.Authors.Should().HaveSameCount(entity.Authors);
             model.Authors.Should()
                 .Equal(entity.Authors,
-                    (authorModel, authoEntity) =>
-                        authorModel.Id == authoEntity.Id
-                        && authorModel.Name == authoEntity.Name
+                    (bookAuthor, authorEntity) =>
+                        bookAuthor.AuthorId == authorEntity.Id
+                        && bookAuthor.Author.Id == authorEntity.Id
+                        && bookAuthor.Author.Name == authorEntity.Name
                 );
             model.PageCount.Should().Be(entity.PageCount);
             model.Publisher.Id.Should().Be(entity.Publisher.Id);
@@ -54,9 +56,11 @@ namespace TheosBookStore.Stock.Infra.Tests.Mapper.Profiles
             entity.Authors.Should().HaveSameCount(model.Authors);
             entity.Authors.Should()
                 .Equal(model.Authors,
-                    (authorModel, authoEntity) =>
-                        authorModel.Id == authoEntity.Id
-                        && authorModel.Name == authoEntity.Name
+                    (authorEntity, bookAuthor) =>
+                        authorEntity.Id == bookAuthor.Author.Id
+                        && authorEntity.Id == bookAuthor.Author.Id
+                        && authorEntity.Name == bookAuthor.Author.Name
+                        && authorEntity.Name == bookAuthor.Author.Name
                 );
             entity.PageCount.Should().Be(model.PageCount);
             entity.Publisher.Id.Should().Be(model.Publisher.Id);

@@ -10,6 +10,14 @@ namespace TheosBookStore.Stock.Infra.Mappers
         {
             builder.ToTable("BookAuthor");
             builder.HasKey(ba => new { ba.AuthorId, ba.BookId });
+            builder
+                .HasOne(ba => ba.Book)
+                .WithMany(b => b.Authors)
+                .HasForeignKey(ba => ba.BookId);
+            builder
+                .HasOne(ba => ba.Author)
+                .WithMany(a => a.Books)
+                .HasForeignKey(ba => ba.AuthorId);
         }
     }
 }

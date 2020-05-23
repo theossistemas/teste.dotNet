@@ -22,9 +22,9 @@ namespace TheosBookStore.Stock.Infra.Repositories
         protected override BookModel BeforePost(BookModel model, EntityState state)
         {
             Unchange<PublisherModel>(model.Publisher);
-            foreach (var author in model.Authors)
+            foreach (var bookAuthor in model.Authors)
             {
-                Unchange<AuthorModel>(author);
+                Unchange<AuthorModel>(bookAuthor.Author);
             }
 
             return base.BeforePost(model, state);

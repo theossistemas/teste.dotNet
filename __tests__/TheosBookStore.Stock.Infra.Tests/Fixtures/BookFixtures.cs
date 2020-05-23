@@ -40,10 +40,13 @@ namespace TheosBookStore.Stock.Infra.Tests.Fixtures
 
         internal BookModel GetModel()
         {
+            var bookId = Faker.RandomNumber.Next(1, 100);
             var publisher = _publisherFixtures.GetModel();
+            var author1 = _authorFixtures.GetModel();
+            var author2 = _authorFixtures.GetModel();
             var model = new BookModel
             {
-                Id = Faker.RandomNumber.Next(1, 100),
+                Id = bookId,
                 Title = Faker.Name.FullName(),
                 ISBN = ISBN_VALID,
                 PageCount = Faker.RandomNumber.Next(1, 100),
@@ -52,10 +55,18 @@ namespace TheosBookStore.Stock.Infra.Tests.Fixtures
                 Edition = Faker.RandomNumber.Next(1, 50),
                 City = Faker.Address.City(),
                 Publisher = publisher,
-                Authors = new List<AuthorModel>
+                Authors = new List<BookAuthor>
                 {
-                    _authorFixtures.GetModel(),
-                    _authorFixtures.GetModel(),
+                    new BookAuthor{
+                        BookId = bookId,
+                        Author = author1,
+                        AuthorId = author1.Id
+                    },
+                    new BookAuthor{
+                        BookId = bookId,
+                        Author = author2,
+                        AuthorId = author2.Id
+                    }
                 }
             };
             return model;
