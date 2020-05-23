@@ -9,19 +9,25 @@ namespace TheosBookStore.Stock.Domain.Entities
 {
     public class Book : Entity
     {
-        public string Title { get; protected set; }
-        public ISBN ISBN { get; protected set; }
-        public int PageCount { get; protected set; }
-        public Publisher Publisher { get; protected set; }
-        public int YearPublication { get; protected set; }
-        public int Edition { get; protected set; }
-        public string City { get; protected set; }
-        public IEnumerable<Author> Authors { get => _authors; }
+        public string Title { get; private set; }
+        public ISBN ISBN { get; private set; }
+        public int PageCount { get; private set; }
+        public Publisher Publisher { get; private set; }
+        public int YearPublication { get; private set; }
+        public int Edition { get; private set; }
+        public string City { get; private set; }
+        public IEnumerable<Author> Authors
+        {
+            get => _authors;
+            private set => value.ToList().ForEach(author => _authors.Add(author));
+        }
         private readonly IList<Author> _authors;
-        public Book()
+
+        private Book()
         {
             _authors = new List<Author>();
         }
+
         public Book(string title, ISBN isbn, ICollection<Author> authors,
             int pageCount, Publisher publisher, int yearPublication, int edition,
             string city) : this()
