@@ -1,3 +1,4 @@
+using System;
 using TheosBookStore.LibCommon.ValueObjects;
 using TheosBookStore.Stock.Domain.Validations;
 
@@ -25,6 +26,16 @@ namespace TheosBookStore.Stock.Domain.ValueObjects
         {
             _validationResult = new ISBNValidations().Validate(this);
             return _validationResult.IsValid;
+        }
+
+        public static implicit operator ISBN(string isbn)
+        {
+            return new ISBN(isbn);
+        }
+
+        public static implicit operator string(ISBN isbn)
+        {
+            return isbn.Value;
         }
     }
 }
