@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TheosBookStore.Auth.Infra.Context;
 using TheosBookStore.CrossCutting.Models;
 using TheosBookStore.Stock.Infra.Context;
 
@@ -38,7 +39,14 @@ namespace TheosBookStore.CrossCutting.Extensions
         public static IServiceCollection AddSqlServer(this IServiceCollection services,
             string migrationAssembly, string connectionString)
         {
-            services.AddDbContext<TheosBookStoreStockDB>(options =>
+            services.AddDbContext<TheosBookStoreStockDbContext>(options =>
+                options
+                    .UseLazyLoadingProxies()
+                    .UseSqlServer(connectionString, m =>
+                        m.MigrationsAssembly(migrationAssembly))
+            );
+
+            services.AddDbContext<TheosBookStoreAuthDbContext>(options =>
                 options
                     .UseLazyLoadingProxies()
                     .UseSqlServer(connectionString, m =>
@@ -55,9 +63,13 @@ namespace TheosBookStore.CrossCutting.Extensions
             using var scope = serviceScopeFactory.CreateScope();
             var services = scope.ServiceProvider;
 
-            TheosBookStoreStockDB stockDB = services
-                .GetRequiredService<TheosBookStoreStockDB>();
+            TheosBookStoreStockDbContext stockDB = services
+                .GetRequiredService<TheosBookStoreStockDbContext>();
             stockDB.Database.Migrate();
+
+            TheosBookStoreAuthDbContext authDB = services
+               .GetRequiredService<TheosBookStoreAuthDbContext>();
+            authDB.Database.Migrate();
 
             return host;
         }

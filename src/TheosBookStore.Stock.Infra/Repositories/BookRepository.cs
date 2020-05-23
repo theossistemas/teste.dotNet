@@ -16,7 +16,7 @@ namespace TheosBookStore.Stock.Infra.Repositories
 {
     public class BookRepository : BaseRepository<Book, BookModel>, IBookRepository
     {
-        public BookRepository(TheosBookStoreStockDB dbContext, IMapper mapper)
+        public BookRepository(TheosBookStoreStockDbContext dbContext, IMapper mapper)
             : base(dbContext, mapper) { }
 
         public bool HasAny(Book book)

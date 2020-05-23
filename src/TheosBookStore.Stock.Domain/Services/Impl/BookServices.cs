@@ -5,6 +5,7 @@ using TheosBookStore.LibCommon.Services;
 using TheosBookStore.Stock.Domain.Entities;
 using TheosBookStore.Stock.Domain.Repositories;
 
+
 namespace TheosBookStore.Stock.Domain.Services.Impl
 {
     public class BookServices : ServiceBase, IBookServices

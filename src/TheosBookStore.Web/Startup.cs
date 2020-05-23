@@ -36,6 +36,8 @@ namespace TheosBookStore.Web
                 .AddStockDependencies()
                 .AddMapper(typeof(Startup));
 
+            services.AddWebDependencies();
+
             services.AddSwaggerConfig();
 
             services.AddJWTConfig(Configuration);

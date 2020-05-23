@@ -1,6 +1,13 @@
 using System;
-using AutoMapper;
+
 using Microsoft.Extensions.DependencyInjection;
+
+using AutoMapper;
+
+using TheosBookStore.Auth.App.Services;
+using TheosBookStore.Auth.App.Services.Impl;
+using TheosBookStore.Auth.Domain.Repositories;
+using TheosBookStore.Auth.Infra.Repositories;
 using TheosBookStore.Stock.App.Factories;
 using TheosBookStore.Stock.App.Factories.Impl;
 using TheosBookStore.Stock.App.Services;
@@ -10,6 +17,7 @@ using TheosBookStore.Stock.Domain.Services;
 using TheosBookStore.Stock.Domain.Services.Impl;
 using TheosBookStore.Stock.Infra.Mappers.Profiles;
 using TheosBookStore.Stock.Infra.Repositories;
+using TheosBookStore.Auth.Infra.Mapping.Profiles;
 
 namespace TheosBookStore.CrossCutting.Extensions
 {
@@ -29,6 +37,9 @@ namespace TheosBookStore.CrossCutting.Extensions
             services.AddScoped<IBookRemover, BookRemover>();
             services.AddScoped<IBookList, BookList>();
             services.AddTransient<IBookFactory, BookFactory>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
             return services;
         }
 
@@ -40,6 +51,7 @@ namespace TheosBookStore.CrossCutting.Extensions
                 config.AddProfile<BookProfile>();
                 config.AddProfile<PublisherProfile>();
                 config.AddProfile<AuthorProfile>();
+                config.AddProfile<UserProfile>();
             }, type);
             return services;
         }

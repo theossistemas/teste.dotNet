@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TheosBookStore.Stock.Infra.Context;
 
-namespace TheosBookStore.Web.Migrations
+namespace TheosBookStore.Web.Migrations.StockMigrations
 {
-    [DbContext(typeof(TheosBookStoreStockDB))]
-    [Migration("20200523171745_InitializeStockDB")]
+    [DbContext(typeof(TheosBookStoreStockDbContext))]
+    [Migration("20200523233244_InitializeStockDB")]
     partial class InitializeStockDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

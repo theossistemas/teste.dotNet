@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace TheosBookStore.Web.Migrations
+namespace TheosBookStore.Web.Migrations.StockMigrations
 {
     public partial class InitializeStockDB : Migration
     {

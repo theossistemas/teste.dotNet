@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TheosBookStore.Stock.Infra.Context;
 
-namespace TheosBookStore.Web.Migrations
+namespace TheosBookStore.Web.Migrations.StockMigrations
 {
-    [DbContext(typeof(TheosBookStoreStockDB))]
-    partial class TheosBookStoreStockDBModelSnapshot : ModelSnapshot
+    [DbContext(typeof(TheosBookStoreStockDbContext))]
+    partial class TheosBookStoreStockDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

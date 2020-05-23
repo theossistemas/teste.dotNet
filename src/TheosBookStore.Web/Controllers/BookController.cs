@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TheosBookStore.Stock.App.Models;
@@ -9,6 +10,7 @@ namespace TheosBookStore.Web.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class BookController : ControllerBase
     {
         private readonly IBookRegister _bookRegister;
@@ -26,6 +28,7 @@ namespace TheosBookStore.Web.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(ResponseDefault<ICollection<BookResponse>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ResponseDefault<ICollection<BookResponse>>), StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(ResponseDefault<ICollection<BookResponse>>), StatusCodes.Status400BadRequest)]
