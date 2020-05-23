@@ -12,7 +12,7 @@ namespace TheosBookStore.Stock.Infra.Models
         public int Year { get; set; }
         public int Edition { get; set; }
         public string City { get; set; }
-        public virtual Publisher Publisher { get; set; }
+        public virtual PublisherModel Publisher { get; set; }
         public virtual ICollection<AuthorModel> Authors { get; set; }
     }
 }
