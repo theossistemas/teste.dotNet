@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 
 using TheosBookStore.LibCommon.Services;
@@ -31,7 +32,14 @@ namespace TheosBookStore.Stock.Domain.Services.Impl
                 return;
             }
 
-            _bookRepository.Register(book);
+            try
+            {
+                _bookRepository.Register(book);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler(e);
+            }
         }
     }
 }
