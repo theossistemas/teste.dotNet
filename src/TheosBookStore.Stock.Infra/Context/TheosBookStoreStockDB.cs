@@ -21,6 +21,8 @@ namespace TheosBookStore.Stock.Infra.Context
 
             modelBuilder.ApplyConfiguration(new AuthorMap());
             modelBuilder.ApplyConfiguration(new BookAuthorMap());
+            modelBuilder.ApplyConfiguration(new PublisherMap());
+            modelBuilder.ApplyConfiguration(new BookMap());
 
             base.OnModelCreating(modelBuilder);
         }
