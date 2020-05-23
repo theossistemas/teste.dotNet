@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 
 using Serilog;
 
+using TheosBookStore.CrossCutting.Extensions;
 using TheosBookStore.Web.Lib;
 
 namespace TheosBookStore.Web
@@ -19,7 +20,10 @@ namespace TheosBookStore.Web
             try
             {
                 Log.Debug("Starting application");
-                CreateHostBuilder(args).Build().Run();
+                CreateHostBuilder(args)
+                    .Build()
+                    .InitializeDataBase()
+                    .Run();
             }
             catch (Exception ex)
             {
@@ -31,11 +35,7 @@ namespace TheosBookStore.Web
         private static void LogConfig()
         {
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            var configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile(
-                    $"appsettings.{environment}.json",
-                    optional: true)
+            var configuration = AddConfigurationSettings(new ConfigurationBuilder())
                 .Build();
             var log = new LogConfigBuilder(configuration, environment);
             log.Build();
@@ -45,12 +45,7 @@ namespace TheosBookStore.Web
           Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration(configuration =>
                 {
-                    var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-                    configuration
-                        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                        .AddJsonFile(
-                            $"appsettings.{environment}.json",
-                            optional: true);
+                    AddConfigurationSettings(configuration);
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
@@ -58,6 +53,16 @@ namespace TheosBookStore.Web
                 })
                 .UseSerilog();
 
-
+        public static IConfigurationBuilder AddConfigurationSettings(IConfigurationBuilder configuration)
+        {
+            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            configuration
+                .AddEnvironmentVariables(prefix: "TBS_")
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile(
+                    $"appsettings.{environment}.json",
+                    optional: true);
+            return configuration;
+        }
     }
 }

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using TheosBookStore.CrossCutting.Extensions;
 using TheosBookStore.Web.Extensions;
 
 namespace TheosBookStore.Web
@@ -25,6 +25,10 @@ namespace TheosBookStore.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = Configuration.BuildConnectionString();
+            var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
+            services.AddSqlServer(assemblyName, connectionString);
+
             services.AddControllersWithViews();
 
             services.AddSwaggerConfig();
