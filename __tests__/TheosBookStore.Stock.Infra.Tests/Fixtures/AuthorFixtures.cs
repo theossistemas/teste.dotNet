@@ -5,18 +5,18 @@ namespace TheosBookStore.Stock.Infra.Tests.Fixtures
 {
     public class AuthorFixtures
     {
-        public Author GetAuthorEntity()
+        public Author GetEntity()
         {
             var author = new Author(Faker.Name.FullName());
             author.DefineId(Faker.RandomNumber.Next(100));
             return author;
         }
 
-        public AuthorModel GetAuthorModel()
+        public AuthorModel GetModel()
         {
             var author = new AuthorModel
             {
-                Id = Faker.RandomNumber.Next(100),
+                Id = Faker.RandomNumber.Next(1, 100),
                 Name = Faker.Name.FullName()
             };
             return author;

@@ -21,7 +21,7 @@ namespace TheosBookStore.Stock.Infra.Tests.Mapper.Profiles
         [Fact]
         public void ShouldMapEntityToModel()
         {
-            var entity = _authorFixtures.GetAuthorEntity();
+            var entity = _authorFixtures.GetEntity();
 
             var model = _mapper.Mapper.Map<AuthorModel>(entity);
 
@@ -32,7 +32,7 @@ namespace TheosBookStore.Stock.Infra.Tests.Mapper.Profiles
         [Fact]
         public void ShouldMapModelToEntity()
         {
-            var model = _authorFixtures.GetAuthorModel();
+            var model = _authorFixtures.GetModel();
 
             var entity = _mapper.Mapper.Map<Author>(model);
 
