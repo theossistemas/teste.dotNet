@@ -27,6 +27,8 @@ namespace TheosBookStore.Stock.App.Services.Impl
                 return;
             }
             _services.Register(book);
+            if (!_services.IsValid)
+                AddErrorMessage(_services.GetErrorMessages());
         }
     }
 }
