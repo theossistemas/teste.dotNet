@@ -28,10 +28,25 @@ services:
     - ELASTICSEARCH_URL=http://elasticsearch:9200
    networks:
     - elastic
+
+  theosbookstore-database:
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+      - 1433:1433
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "TheosDB_password"
+    volumes:
+      - theosbookstoredb-data:/var/opt/mssql
+    networks:
+      - theos-backend
+  
   
 networks:
   elastic:
     driver: bridge
+  theos-backend:
 
 volumes:
   elasticsearch-data:
+  theosbookstoredb-data:
