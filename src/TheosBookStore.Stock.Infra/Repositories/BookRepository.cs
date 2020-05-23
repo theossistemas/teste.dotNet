@@ -18,5 +18,16 @@ namespace TheosBookStore.Stock.Infra.Repositories
         {
             return DbSet.Any(table => table.ISBN == book.ISBN);
         }
+
+        protected override BookModel BeforePost(BookModel model, EntityState state)
+        {
+            Unchange<PublisherModel>(model.Publisher);
+            foreach (var author in model.Authors)
+            {
+                Unchange<AuthorModel>(author);
+            }
+
+            return base.BeforePost(model, state);
+        }
     }
 }
