@@ -23,9 +23,9 @@ namespace TheosBookStore.Stock.App.Tests.Fixtures
                 "Rio de Janeiro");
         }
 
-        internal BookInsertRequest GetValidBookInsertRequest()
+        internal BookRequest GetValidBookInsertRequest()
         {
-            return new BookInsertRequest
+            return new BookRequest
             {
                 Title = "The book title",
                 ISBN = "123456789012",
@@ -63,9 +63,9 @@ namespace TheosBookStore.Stock.App.Tests.Fixtures
                 "Ri");
         }
 
-        public BookInsertRequest GetInvalidBookRequest()
+        public BookRequest GetInvalidBookRequest()
         {
-            return new BookInsertRequest
+            return new BookRequest
             {
                 Title = "Th",
                 ISBN = "12345456a456789012",

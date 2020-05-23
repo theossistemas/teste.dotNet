@@ -21,5 +21,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\TheosBookStore.Stock.App\TheosBookStore.Stock.App.csproj" />
+    <ProjectReference Include="..\..\src\TheosBookStore.Stock.Domain\TheosBookStore.Stock.Domain.csproj" />
   </ItemGroup>
 </Project>

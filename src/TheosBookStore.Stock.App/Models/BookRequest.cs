@@ -4,8 +4,9 @@ using TheosBookStore.Stock.Domain.ValueObjects;
 
 namespace TheosBookStore.Stock.App.Models
 {
-    public class BookInsertRequest
+    public class BookRequest
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public string ISBN { get; set; }
         public List<AuthorDTO> Authors { get; set; }

@@ -25,6 +25,9 @@ namespace TheosBookStore.CrossCutting.Extensions
         {
             services.AddScoped<IBookServices, BookServices>();
             services.AddScoped<IBookRegister, BookRegister>();
+            services.AddScoped<IBookUpdater, BookUpdater>();
+            services.AddScoped<IBookRemover, BookRemover>();
+            services.AddScoped<IBookList, BookList>();
             services.AddTransient<IBookFactory, BookFactory>();
             return services;
         }

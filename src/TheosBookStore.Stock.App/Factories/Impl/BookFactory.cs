@@ -8,18 +8,43 @@ namespace TheosBookStore.Stock.App.Factories.Impl
 {
     public class BookFactory : IBookFactory
     {
-        public Book FromInsertRequest(BookInsertRequest bookInsert)
+        public BookResponse FromEntityToResponse(Book book)
         {
-            return new Book(
-                bookInsert.Title,
-                new ISBN(bookInsert.ISBN),
-                GetAuthorList(bookInsert.Authors),
-                bookInsert.PageCount,
-                GetPublisher(bookInsert.Publisher),
-                bookInsert.Year,
-                bookInsert.Edition,
-                bookInsert.City
+            if (book == null)
+                return null;
+            return new BookResponse
+            {
+                Id = book.Id,
+                Title = book.Title,
+                ISBN = book.ISBN,
+                Authors = book.Authors.Select(author => new AuthorDTO
+                {
+                    Id = author.Id,
+                    Name = author.Name
+                }).ToList(),
+                PageCount = book.PageCount,
+                Publisher = book.Publisher,
+                Year = book.YearPublication,
+                Edition = book.Edition,
+                City = book.City,
+            };
+        }
+
+        public Book FromRequest(BookRequest request)
+        {
+            var book = new Book(
+                request.Title,
+                new ISBN(request.ISBN),
+                GetAuthorList(request.Authors),
+                request.PageCount,
+                GetPublisher(request.Publisher),
+                request.Year,
+                request.Edition,
+                request.City
             );
+            if (request.Id > 0)
+                book.DefineId(request.Id);
+            return book;
         }
 
         private List<Author> GetAuthorList(List<AuthorDTO> authors) => authors.ToList().ConvertAll(author =>

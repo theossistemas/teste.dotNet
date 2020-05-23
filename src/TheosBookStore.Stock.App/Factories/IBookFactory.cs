@@ -5,6 +5,7 @@ namespace TheosBookStore.Stock.App.Factories
 {
     public interface IBookFactory
     {
-        Book FromInsertRequest(BookInsertRequest bookInsert);
+        Book FromRequest(BookRequest bookInsert);
+        BookResponse FromEntityToResponse(Book book);
     }
 }

@@ -23,7 +23,7 @@ namespace TheosBookStore.Stock.App.Tests.Factories
             var bookInsert = _bookFixture.GetValidBookInsertRequest();
             IBookFactory bookFactory = new BookFactory();
 
-            Book book = bookFactory.FromInsertRequest(bookInsert);
+            Book book = bookFactory.FromRequest(bookInsert);
 
             book.Should().NotBeNull();
             book.Title.Should().Be(bookInsert.Title);

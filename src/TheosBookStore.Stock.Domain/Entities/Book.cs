@@ -28,6 +28,11 @@ namespace TheosBookStore.Stock.Domain.Entities
             _authors = new List<Author>();
         }
 
+        public static Book BookNull()
+        {
+            return new Book();
+        }
+
         public Book(string title, ISBN isbn, ICollection<Author> authors,
             int pageCount, Publisher publisher, int yearPublication, int edition,
             string city) : this()

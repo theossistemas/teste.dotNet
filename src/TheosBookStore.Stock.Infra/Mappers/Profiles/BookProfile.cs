@@ -12,6 +12,8 @@ namespace TheosBookStore.Stock.Infra.Mappers.Profiles
         {
             string asdf = new ISBN("asdf");
             CreateMap<BookModel, Book>()
+                .ForMember(entity => entity.Id, opt =>
+                    opt.MapFrom(model => model.Id))
                 .ForMember(entity => entity.YearPublication, opt =>
                     opt.MapFrom(model => model.Year))
                 .ForMember(entity => entity.Authors, opt =>
