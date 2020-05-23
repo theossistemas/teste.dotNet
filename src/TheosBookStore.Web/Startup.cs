@@ -31,6 +31,11 @@ namespace TheosBookStore.Web
 
             services.AddControllersWithViews();
 
+            services
+                .AddRepositories()
+                .AddStockDependencies()
+                .AddMapper(typeof(Startup));
+
             services.AddSwaggerConfig();
 
             services.AddJWTConfig(Configuration);
