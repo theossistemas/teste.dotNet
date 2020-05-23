@@ -13,6 +13,7 @@ namespace TheosBookStore.Stock.Infra.Tests.Fixtures
             {
                 cfg.AddProfile<AuthorProfile>();
                 cfg.AddProfile<PublisherProfile>();
+                cfg.AddProfile<BookProfile>();
             });
             Mapper = _mapperConfig.CreateMapper();
         }
