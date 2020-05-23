@@ -8,7 +8,7 @@ namespace TheosBookStore.Stock.Infra.Context
     {
         public DbSet<AuthorModel> Authors { get; set; }
         public DbSet<PublisherModel> Publishers { get; set; }
-        public DbSet<Book> Books { get; set; }
+        public DbSet<BookModel> Books { get; set; }
         public DbSet<BookAuthor> BookAuthor { get; set; }
 
         public TheosBookStoreStockDB() : base() { }
