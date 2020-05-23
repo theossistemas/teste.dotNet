@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TheosBookStore.Stock.Domain.Entities;
 
-namespace TheosBookStore.Stock.Infra.Mapper
+namespace TheosBookStore.Stock.Infra.Mappers
 {
     public class AuthorMap : IEntityTypeConfiguration<Author>
     {

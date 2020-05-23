@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using TheosBookStore.Stock.Infra.Mapper;
+using TheosBookStore.Stock.Infra.Mappers;
 using TheosBookStore.Stock.Infra.Models;
 
 namespace TheosBookStore.Stock.Infra.Context
