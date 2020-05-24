@@ -1,0 +1,46 @@
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Library.deps.json
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Library.runtimeconfig.json
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Library.runtimeconfig.dev.json
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Library.dll
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.csprojAssemblyReference.cache
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.RazorAssemblyInfo.cache
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.RazorAssemblyInfo.cs
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.AssemblyInfoInputs.cache
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.AssemblyInfo.cs
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.RazorTargetAssemblyInfo.cache
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.genruntimeconfig.cache
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Persistence.dll
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.csproj.CoreCompileInputs.cache
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Library.pdb
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.csproj.CopyComplete
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.dll
+C:\Users\Raphael\source\repos\Library\Library\obj\Debug\netcoreapp2.1\Library.pdb
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Business.dll
+C:\Users\Raphael\source\repos\Library\Library\bin\Debug\netcoreapp2.1\Business.pdb
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Library.deps.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Library.runtimeconfig.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Library.runtimeconfig.dev.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Library.dll
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Library.pdb
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Business.dll
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Persistence.dll
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Business.pdb
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.csprojAssemblyReference.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.RazorAssemblyInfo.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.RazorAssemblyInfo.cs
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.AssemblyInfoInputs.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.AssemblyInfo.cs
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.RazorTargetAssemblyInfo.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.csproj.CopyComplete
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.dll
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.pdb
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.genruntimeconfig.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Library\obj\Debug\netcoreapp2.1\Library.csproj.CoreCompileInputs.cache

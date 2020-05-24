@@ -1,0 +1,17 @@
+C:\Users\Raphael\source\repos\Library\Persistence\bin\Debug\netstandard2.0\Persistence.deps.json
+C:\Users\Raphael\source\repos\Library\Persistence\bin\Debug\netstandard2.0\Persistence.dll
+C:\Users\Raphael\source\repos\Library\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Raphael\source\repos\Library\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfo.cs
+C:\Users\Raphael\source\repos\Library\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Raphael\source\repos\Library\Persistence\bin\Debug\netstandard2.0\Persistence.pdb
+C:\Users\Raphael\source\repos\Library\Persistence\obj\Debug\netstandard2.0\Persistence.dll
+C:\Users\Raphael\source\repos\Library\Persistence\obj\Debug\netstandard2.0\Persistence.pdb
+C:\Users\Raphael\source\repos\Library\Persistence\obj\Debug\netstandard2.0\Persistence.csprojAssemblyReference.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\bin\Debug\netstandard2.0\Persistence.deps.json
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\bin\Debug\netstandard2.0\Persistence.dll
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\bin\Debug\netstandard2.0\Persistence.pdb
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfo.cs
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\obj\Debug\netstandard2.0\Persistence.dll
+C:\Users\Raphael\source\repos\Nova pasta\Livraria\Library\Persistence\obj\Debug\netstandard2.0\Persistence.pdb
