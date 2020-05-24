@@ -104,5 +104,12 @@ namespace TheosBookStore.Web.Controllers
             response.Data = bookResponse;
             return Ok(response);
         }
+
+        [HttpGet("exceptionTest")]
+        [AllowAnonymous]
+        public IActionResult ExceptionTest()
+        {
+            throw new System.Exception("Teste de exceção");
+        }
     }
 }

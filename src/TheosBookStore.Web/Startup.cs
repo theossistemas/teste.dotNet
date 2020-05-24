@@ -1,12 +1,16 @@
+using System.IO.Compression;
 using System.Reflection;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+
 using TheosBookStore.CrossCutting.Extensions;
 using TheosBookStore.Web.Extensions;
 
@@ -36,11 +40,19 @@ namespace TheosBookStore.Web
                 .AddStockDependencies()
                 .AddMapper(typeof(Startup));
 
+            services.AddRouting(options => options.LowercaseUrls = true);
+
             services.AddWebDependencies();
 
             services.AddSwaggerConfig();
 
             services.AddJWTConfig(Configuration);
+
+            services.AddCors();
+
+            services.Configure<GzipCompressionProviderOptions>(
+                options => options.Level = CompressionLevel.Optimal);
+            services.AddResponseCompression(options => options.Providers.Add<GzipCompressionProvider>());
 
             services.AddSpaStaticFiles(configuration =>
             {
@@ -48,8 +60,16 @@ namespace TheosBookStore.Web
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseCors(options =>
+                options
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin());
+
+            app.UseProblemDetailsExceptionHandler(loggerFactory);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -91,6 +111,7 @@ namespace TheosBookStore.Web
                 if (env.IsDevelopment())
                 {
                     spa.UseAngularCliServer(npmScript: "start");
+                    // spa.UseProxyToSpaDevelopmentServer("http://localhost:4200/");
                 }
             });
         }

@@ -11,13 +11,20 @@ using TheosBookStore.Stock.Domain.Repositories;
 using TheosBookStore.Stock.Domain.ValueObjects;
 using TheosBookStore.Stock.Infra.Context;
 using TheosBookStore.Stock.Infra.Models;
+using Microsoft.Extensions.Logging;
+using System.Text.Json;
 
 namespace TheosBookStore.Stock.Infra.Repositories
 {
     public class BookRepository : BaseRepository<Book, BookModel>, IBookRepository
     {
-        public BookRepository(TheosBookStoreStockDbContext dbContext, IMapper mapper)
-            : base(dbContext, mapper) { }
+        private readonly ILogger<BookRepository> _logger;
+
+        public BookRepository(TheosBookStoreStockDbContext dbContext, IMapper mapper, ILogger<BookRepository> logger)
+            : base(dbContext, mapper)
+        {
+            _logger = logger;
+        }
 
         public bool HasAny(Book book)
         {
@@ -49,6 +56,8 @@ namespace TheosBookStore.Stock.Infra.Repositories
                 Unchange<AuthorModel>(bookAuthor.Author);
             }
 
+            LogNewBook(model, state);
+
             return base.BeforePost(model, state);
         }
 
@@ -65,6 +74,16 @@ namespace TheosBookStore.Stock.Infra.Repositories
                 .ToList();
             var entityList = _mapper.Map<ICollection<Book>>(modelList);
             return entityList;
+        }
+
+        private void LogNewBook(BookModel model, EntityState state)
+        {
+            if (state != EntityState.Added)
+                return;
+
+            var modelJson = JsonSerializer.Serialize(model);
+            _logger.LogInformation($"Adding a new book:{modelJson}");
+
         }
     }
 }
