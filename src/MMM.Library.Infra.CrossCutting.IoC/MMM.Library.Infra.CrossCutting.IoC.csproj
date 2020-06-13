@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MMM.Library.Application\MMM.Library.Application.csproj" />
+    <ProjectReference Include="..\MMM.Library.Infra.CrossCutting.Identity\MMM.Library.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\MMM.Library.Infra.CrossCutting.Logging\MMM.Library.Infra.CrossCutting.Logging.csproj" />
+    <ProjectReference Include="..\MMM.Library.Infra.Data\MMM.Library.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
