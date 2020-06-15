@@ -19,7 +19,7 @@ namespace MMM.Library.Services.AspNetWebApi.V1
         protected bool AuthenticatedUser { get; set; }
 
         protected ApiBaseController(INotificationHandler<DomainNotification> notifications,
-                                 IMediatorHandler mediatorHandler) //,IUser appUser)
+                                    IMediatorHandler mediatorHandler) //,IUser appUser)
         {
             _notifications = (DomainNotificationHandler)notifications;
             _mediatorHandler = mediatorHandler;
@@ -50,6 +50,11 @@ namespace MMM.Library.Services.AspNetWebApi.V1
             });
         }
 
+        protected bool IsValidOperation()
+        {
+            return !_notifications.HasNotifications();
+        }
+
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
         {
             if (!modelState.IsValid) NotifierInvalidModelErrors(modelState);
@@ -67,9 +72,9 @@ namespace MMM.Library.Services.AspNetWebApi.V1
             }
         }
 
-        protected bool IsValidOperation()
+        protected void NotifyError(string code, string message)
         {
-            return !_notifications.HasNotifications();
+            _mediatorHandler.PublishNotification(new DomainNotification(code, message));
         }
 
         protected IEnumerable<string> GetErrorMessages()
@@ -77,9 +82,6 @@ namespace MMM.Library.Services.AspNetWebApi.V1
             return _notifications.GetNotifications().Select(c => c.Value).ToList();
         }
 
-        protected void NotifyError(string code, string message)
-        {
-            _mediatorHandler.PublishNotification(new DomainNotification(code, message));
-        }
+           
     }
 }

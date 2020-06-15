@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using MMM.Library.Application.Interfaces;
 using MMM.Library.Application.Services;
 using MMM.Library.Domain.Core.EvetSourcing;
@@ -14,6 +15,7 @@ using MMM.Library.Domain.CQRS.Handlers;
 using MMM.Library.Domain.CQRS.Queries;
 using MMM.Library.Domain.Interfaces;
 using MMM.Library.Infra.CrossCutting.Identity.Models;
+using MMM.Library.Infra.CrossCutting.Identity.Services;
 using MMM.Library.Infra.CrossCutting.Logging.AspNetFilter;
 using MMM.Library.Infra.CrossCutting.Logging.KissLogProvider;
 using MMM.Library.Infra.Data.Context;
@@ -27,7 +29,6 @@ namespace MMM.Library.Infra.CrossCutting.IoC
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
             // Mediator         
             services.AddScoped<IMediatorHandler, MediatorHandler>();
@@ -63,13 +64,13 @@ namespace MMM.Library.Infra.CrossCutting.IoC
 
             // Infra - CrossCutting - Identity  
             services.AddScoped<IUser, AspNetUser>();
+            services.AddScoped<IIdentityService, IdentityService>();            
 
             // EF Context ---
             services.AddScoped<LibraryDbContext>();
 
             // Infra - Filters
             services.AddScoped<AuditFilter>();
-            services.AddScoped<GlobalActionLogger>();
 
             return services;
         }

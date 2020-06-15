@@ -33,6 +33,11 @@ namespace MMM.Library.Domain.Models
             Language = language;
             Location = location;
         }
+
+        public void UpdateCategory(Guid categoryId)
+        {
+            CategoryId = categoryId;
+        }       
                 
     }
 }

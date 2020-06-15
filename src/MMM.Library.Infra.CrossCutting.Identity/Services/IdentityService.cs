@@ -1,7 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MMM.Library.Domain.Core.Mediator;
@@ -15,40 +13,34 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MMM.Library.Services.AspNetWebApi.V1
+namespace MMM.Library.Infra.CrossCutting.Identity.Services
 {
-    [ApiController]
-    [ApiVersion("1.0", Deprecated = true)]
-    [Route("v{version:apiVersion}/account")]
-    public class AuthController : ApiBaseController
+    public class IdentityService : IIdentityService
     {
-        private readonly ILogger<AuthController> _logger;
+        protected readonly DomainNotificationHandler _notifications;
+        protected readonly IMediatorHandler _mediatorHandler;
 
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly TokenSettings _tokenSettings;
 
-        public AuthController(ILogger<AuthController> logger,
-                              SignInManager<IdentityUser> signInManager,
-                              UserManager<IdentityUser> userManager,
-                              IOptions<TokenSettings> tokenSettings,
-                              INotificationHandler<DomainNotification> notifications,
-                              IMediatorHandler mediator)
-            : base(notifications, mediator)
-        {
-            _logger = logger;
+        public IdentityService(INotificationHandler<DomainNotification> notifications,
+                                    IMediatorHandler mediatorHandler,
+                                    IOptions<TokenSettings> tokenSettings,
+                                    SignInManager<IdentityUser> signInManager,
+                                    UserManager<IdentityUser> userManager)
 
-            _userManager = userManager;
+        {
+            _notifications = (DomainNotificationHandler)notifications;
+            _mediatorHandler = mediatorHandler;
+
             _signInManager = signInManager;
+            _userManager = userManager;
             _tokenSettings = tokenSettings.Value;
         }
 
-        [HttpPost]
-        [Route("new-user")]
-        public async Task<IActionResult> NewUser(UserRegistrationViewModel userRegistration)
+        public async Task<bool> NewUser(UserRegistrationViewModel userRegistration)
         {
-            if (!ModelState.IsValid) return CustomResponse(ModelState);
-
             var user = new IdentityUser
             {
                 UserName = userRegistration.Email,
@@ -62,43 +54,38 @@ namespace MMM.Library.Services.AspNetWebApi.V1
             {
                 foreach (var error in result.Errors)
                 {
-                    NotifyError(error.Code, error.Description);
+                    await _mediatorHandler.PublishNotification(new DomainNotification(error.Code, error.Description));
+
                 }
 
-                return CustomResponse(userRegistration);
+                return false;
             }
 
             await _signInManager.SignInAsync(user, false);
-            var token = await JwtCreate(userRegistration.Email);
 
-            return CustomResponse(token);
+            return true;
         }
 
-        [HttpPost]
-        [Route("login")]
-        public async Task<IActionResult> Login(UserLoginViewModel loginUser)
-        {
-            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
+        public async Task<bool> Login(UserLoginViewModel loginUser)
+        {
             var result = await _signInManager.PasswordSignInAsync(loginUser.Email, loginUser.Password, false, true);
 
-            if (result.Succeeded)
-            {
-                _logger.LogInformation(DateTime.Now.ToLongDateString() + " - Login para usuário: " + loginUser.Email);
-                return CustomResponse(await JwtCreate(loginUser.Email));
-            }
+            if (result.Succeeded) return true;
 
             if (result.IsLockedOut)
             {
-                NotifyError("Bloqueado", "Usuário temporariamente bloqueado por tentativas inválidas");
-                return CustomResponse(loginUser);
-            }
-            NotifyError("403", "Usuário ou senha incorretos");
+                await _mediatorHandler.PublishNotification(new DomainNotification("Bloqueado", "Usuário temporariamente bloqueado por tentativas inválidas"));
 
-            return CustomResponse(loginUser);
+                return false;
+            }
+
+            await _mediatorHandler.PublishNotification(new DomainNotification("403", "Usuário ou senha incorretos"));
+
+            return false;
         }
 
-        private async Task<LoginResponseViewModel> JwtCreate(string email)
+        public async Task<LoginResponseViewModel> JwtGenerate(string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
             var claims = await _userManager.GetClaimsAsync(user);

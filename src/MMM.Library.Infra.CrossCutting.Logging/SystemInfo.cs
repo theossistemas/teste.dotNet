@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MMM.Library.Infra.CrossCutting.Logging
+﻿namespace MMM.Library.Infra.CrossCutting.Logging
 {
     public class SystemInfo
     {

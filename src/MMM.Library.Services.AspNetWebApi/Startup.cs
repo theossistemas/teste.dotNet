@@ -38,9 +38,7 @@ namespace MMM.Library.Services.AspNetWebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-
-            services.AddMvc();
+            services.AddMvcSetup();
 
             services.AddDatabaseSetup(Configuration);
 
@@ -59,6 +57,7 @@ namespace MMM.Library.Services.AspNetWebApi
             // Dependencias 
             services.ResolveDependencies();
 
+            // Api Versioning
             services.AddApiVersioning(o =>
             {
                 o.ReportApiVersions = true;
@@ -88,7 +87,7 @@ namespace MMM.Library.Services.AspNetWebApi
                     builder => builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader());
-            });           
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
@@ -103,7 +102,7 @@ namespace MMM.Library.Services.AspNetWebApi
             else
             {
                 app.UseExceptionHandler("/error");
-                app.UseCors("CorsPolicyDevelopment");
+                // app.UseCors("CorsPolicyDevelopment");
             }
 
             // ->
@@ -117,6 +116,8 @@ namespace MMM.Library.Services.AspNetWebApi
 
             app.UseAuthorization();
             app.UseAuthentication();
+
+            app.UseGlobalizationSetup();
 
             app.UseEndpoints(endpoints =>
             {

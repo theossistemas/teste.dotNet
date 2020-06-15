@@ -13,6 +13,7 @@ namespace MMM.Library.Domain.Core.Models
             Id = Guid.NewGuid();
         }
 
+        // Events stack
         private List<Event> _notifications;
         public IReadOnlyCollection<Event> Notifications => _notifications?.AsReadOnly();
 

@@ -14,6 +14,8 @@ namespace MMM.Library.Application.ViewModels
         // CQRS Fast Fail Validation recusará datas fora do intervalo entre 1800 e Ano Atual
         [Required(ErrorMessage = "Ano do Livro é obrigatório", AllowEmptyStrings = false)]
         public int Year { get; set; }
+
+        [Required]
         public string Language { get; set; }
         public string Location { get; set; }
         public string Status { get; set; }

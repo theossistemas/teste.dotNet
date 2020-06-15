@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace MMM.Library.Services.AspNetWebApi
 {
@@ -12,9 +13,18 @@ namespace MMM.Library.Services.AspNetWebApi
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
+                 .ConfigureLogging(logging => 
+                 {
+                     logging.ClearProviders();
+                     logging.AddConsole();
+                     //logging.AddDebug();
+                     //logging.AddEventLog();
+                     //logging.AddEventSourceLogger();
+                     //logging.AddTraceSource(sourceSwitchName);
+                 })
+                 .ConfigureWebHostDefaults(webBuilder =>
+                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                 });               
     }
 }

@@ -22,6 +22,8 @@ namespace MMM.Library.Infra.CrossCutting.Logging.AspNetFilter
             SystemInfo = systemInfo.Value;
         }
 
+        // https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters?view=aspnetcore-3.1
+        // Do something after the action executes.
         public void OnActionExecuted(ActionExecutedContext context)
         {
             if (_hostingEnviroment.IsDevelopment())
@@ -42,13 +44,18 @@ namespace MMM.Library.Infra.CrossCutting.Logging.AspNetFilter
                     TimeStamp = DateTime.Now,
                 };
 
+                DevTools.PrintConsoleMessage("Global Logger with Action Filter:::::::::::::::::::::::::::::::::::::::::",
+                    ConsoleColor.Yellow, ConsoleColor.Red);
                 DevTools.PrintConsoleMessage(data.ToString(), ConsoleColor.DarkBlue, ConsoleColor.Gray);
+                DevTools.PrintConsoleMessage("-------------------------------------------------------------------------",
+                  ConsoleColor.Yellow, ConsoleColor.Red);
 
                 //string data1 = data.ToString();
                 _logger.LogInformation(1, " ", "Parameters: {data}", data.ToString());
             }
         }
 
+        // Do something before the action executes.
         public void OnActionExecuting(ActionExecutingContext context)
         {
 

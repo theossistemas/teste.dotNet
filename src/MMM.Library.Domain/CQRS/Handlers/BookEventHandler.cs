@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using MMM.Library.Domain.CQRS.Events;
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,7 +14,7 @@ namespace MMM.Library.Domain.CQRS.Handlers
         // Eventos - enviar notificações
         public Task Handle(BookEventAdded notification, CancellationToken cancellationToken)
         {
-            return Task.CompletedTask;    
+            return Task.CompletedTask;
         }
 
         public Task Handle(BookEventUpdated notification, CancellationToken cancellationToken)
