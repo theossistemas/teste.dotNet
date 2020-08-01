@@ -1,0 +1,22 @@
+﻿[*.cs]
+
+# S1643: Strings should not be concatenated using '+' in a loop
+dotnet_diagnostic.S1643.severity = none
+
+# S1854: Dead stores should be removed
+dotnet_diagnostic.S1854.severity = none
+
+# S3445: Exceptions should not be explicitly rethrown
+dotnet_diagnostic.S3445.severity = none
+
+# S112: General exceptions should never be thrown
+dotnet_diagnostic.S112.severity = none
+
+# S3168: "async" methods should not return "void"
+dotnet_diagnostic.S3168.severity = none
+
+# S3776: Cognitive Complexity of methods should not be too high
+dotnet_diagnostic.S3776.severity = none
+
+# S107: Methods should not have too many parameters
+dotnet_diagnostic.S107.severity = none

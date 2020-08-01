@@ -1,0 +1,16 @@
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\CrossCutting.deps.json
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\CrossCutting.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\CrossCutting.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\Data.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\Domain.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\Service.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\Data.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\Domain.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\bin\Debug\netcoreapp3.0\Service.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.csprojAssemblyReference.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.AssemblyInfoInputs.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.AssemblyInfo.cs
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.csproj.CoreCompileInputs.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.csproj.CopyComplete
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.CrossCutting\obj\Debug\netcoreapp3.0\CrossCutting.pdb

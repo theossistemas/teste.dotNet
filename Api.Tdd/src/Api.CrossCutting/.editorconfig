@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# S1118: Utility classes should not have public constructors
+dotnet_diagnostic.S1118.severity = none

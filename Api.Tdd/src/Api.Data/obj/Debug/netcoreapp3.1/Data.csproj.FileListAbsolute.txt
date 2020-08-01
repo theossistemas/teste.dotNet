@@ -1,0 +1,15 @@
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Data.deps.json
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Data.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Data.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache

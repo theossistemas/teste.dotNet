@@ -1,0 +1,15 @@
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Data.deps.json
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Data.runtimeconfig.json
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Data.runtimeconfig.dev.json
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Data.dll
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Data.pdb
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Domain.dll
+D:\mybigbangapi_base\Api.Data\bin\Release\netcoreapp3.0\Base.Domain.pdb
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.csprojAssemblyReference.cache
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.AssemblyInfoInputs.cache
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.AssemblyInfo.cs
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.csproj.CoreCompileInputs.cache
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.csproj.CopyComplete
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.dll
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.pdb
+D:\mybigbangapi_base\Api.Data\obj\Release\netcoreapp3.0\Base.Data.genruntimeconfig.cache

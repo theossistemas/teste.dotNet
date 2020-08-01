@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# S3445: Exceptions should not be explicitly rethrown
+dotnet_diagnostic.S3445.severity = none
+
+# S1450: Private fields only used as local variables in methods should become local variables
+dotnet_diagnostic.S1450.severity = none
+
+# S4136: Method overloads should be grouped together
+dotnet_diagnostic.S4136.severity = none

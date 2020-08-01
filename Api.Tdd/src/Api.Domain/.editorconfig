@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# S3237: "value" parameters should be used
+dotnet_diagnostic.S3237.severity = none
+
+# S1643: Strings should not be concatenated using '+' in a loop
+dotnet_diagnostic.S1643.severity = none
+
+# S3776: Cognitive Complexity of methods should not be too high
+dotnet_diagnostic.S3776.severity = none

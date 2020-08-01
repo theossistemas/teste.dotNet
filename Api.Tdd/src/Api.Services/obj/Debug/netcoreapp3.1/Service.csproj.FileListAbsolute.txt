@@ -1,0 +1,12 @@
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\bin\Debug\netcoreapp3.1\Service.deps.json
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\bin\Debug\netcoreapp3.1\Service.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\bin\Debug\netcoreapp3.1\Service.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.dll
+D:\Nova pasta\teste.dotNet\Api.Tdd\src\Api.Services\obj\Debug\netcoreapp3.1\Service.pdb

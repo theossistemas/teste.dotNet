@@ -1,0 +1,9 @@
+D:\mybigbangapi_base\Api.Domain\bin\Release\netcoreapp3.0\Base.Domain.deps.json
+D:\mybigbangapi_base\Api.Domain\bin\Release\netcoreapp3.0\Base.Domain.dll
+D:\mybigbangapi_base\Api.Domain\bin\Release\netcoreapp3.0\Base.Domain.pdb
+D:\mybigbangapi_base\Api.Domain\obj\Release\netcoreapp3.0\Base.Domain.csprojAssemblyReference.cache
+D:\mybigbangapi_base\Api.Domain\obj\Release\netcoreapp3.0\Base.Domain.AssemblyInfoInputs.cache
+D:\mybigbangapi_base\Api.Domain\obj\Release\netcoreapp3.0\Base.Domain.AssemblyInfo.cs
+D:\mybigbangapi_base\Api.Domain\obj\Release\netcoreapp3.0\Base.Domain.csproj.CoreCompileInputs.cache
+D:\mybigbangapi_base\Api.Domain\obj\Release\netcoreapp3.0\Base.Domain.dll
+D:\mybigbangapi_base\Api.Domain\obj\Release\netcoreapp3.0\Base.Domain.pdb

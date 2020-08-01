@@ -1,0 +1,16 @@
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.CrossCutting.deps.json
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.CrossCutting.dll
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.CrossCutting.pdb
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.Data.dll
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.Domain.dll
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.Services.dll
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.Data.pdb
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.Domain.pdb
+D:\mybigbangapi_base\Api.CrossCutting\bin\Release\netcoreapp3.0\Base.Services.pdb
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.csprojAssemblyReference.cache
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.AssemblyInfoInputs.cache
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.AssemblyInfo.cs
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.csproj.CoreCompileInputs.cache
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.csproj.CopyComplete
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.dll
+D:\mybigbangapi_base\Api.CrossCutting\obj\Release\netcoreapp3.0\Base.CrossCutting.pdb
