@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lMUh1hne2GFDp/GjsaMhdjryZgpNcOtwzqU1M00XBwBNJkBmrJ//VzVr+KzkFALmi1xeB/hUEac+NbEDPxJfjQ==",
+  "success": true,
+  "projectFilePath": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Entities/Entities.csproj",
+  "expectedPackageFiles": [
+    "/home/zier/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/zier/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

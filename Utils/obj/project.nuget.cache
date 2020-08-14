@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VxNoEazm9MYPOr4JAso3BPfLXlHckRDyqEQ9lUU223T0HkGTSA9t96gyoD7jwNo+iHonKc65f7fEAqS0fD/Wyg==",
+  "success": true,
+  "projectFilePath": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Utils/Utils.csproj",
+  "expectedPackageFiles": [
+    "/home/zier/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/zier/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
