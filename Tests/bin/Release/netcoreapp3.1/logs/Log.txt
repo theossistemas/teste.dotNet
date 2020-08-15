@@ -1,0 +1,24 @@
+14/08/2020 21:34:15 ===> System.Exception: Teste da classe de Logs!
+
+14/08/2020 21:35:41 ===> System.Exception: Teste da classe de Logs!
+
+14/08/2020 21:36:25 ===> System.Exception: Teste da classe de Logs!
+14/08/2020 22:51:26 ===> System.Exception: <?xml version="1.0"?>
+<atualizacaoAutomatica>
+  <versao guid="52CECA45-425E-428C-A9D8-4D89A8B31A5D" numero="1" />
+  <comandoCriar>Teste</comandoCriar>
+  <comandoExcluir>Test</comandoExcluir>
+</atualizacaoAutomatica>
+15/08/2020 09:55:32 ===> System.InvalidOperationException: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarBancoDeDados() in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 101

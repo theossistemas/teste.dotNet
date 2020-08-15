@@ -25,6 +25,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Enumerators": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "Enumerators/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Enumerators.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enumerators.dll": {}
+        }
       }
     }
   },
@@ -172,37 +195,59 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Enumerators/1.0.0": {
+      "type": "project",
+      "path": "../Enumerators/Enumerators.csproj",
+      "msbuildProject": "../Enumerators/Enumerators.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Entities >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "/home/zier/.nuget/packages/": {}
+    "C:\\Users\\win-pc\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Models/Models.csproj",
+      "projectUniqueName": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Models/Models.csproj",
-      "packagesPath": "/home/zier/.nuget/packages/",
-      "outputPath": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Models/obj/",
+      "projectPath": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\win-pc\\.nuget\\packages\\",
+      "outputPath": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Models\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/home/zier/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\win-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -231,7 +276,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

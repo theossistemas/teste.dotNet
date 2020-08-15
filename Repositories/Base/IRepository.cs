@@ -6,9 +6,9 @@ namespace Repositories.Base
 {
     public interface IRepository<T> where T : IEntity
     {
-         IEntity Save(T t);
+         T Save(T t);
 
-         IEntity Find(Int64? id);
+         T Find(Int64? id);
 
          void Delete(Int64? id);
 

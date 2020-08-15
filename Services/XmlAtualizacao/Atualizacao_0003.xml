@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<atualizacaoAutomatica>
+
+    <versao guid="CEF2369E-710D-4E94-B05A-D8E1D4047932" numero="3" />
+
+    <comandoExcluir>
+        <![CDATA[
+      
+            DROP PROCEDURE IF EXISTS PROC_SalvarAtualizarUsuario
+      
+        ]]>
+    </comandoExcluir>
+
+    <comandoCriar>
+        <![CDATA[
+      
+            CREATE PROC PROC_SalvarAtualizarUsuario
+            (
+              @id BIGINT,
+              @login VARCHAR(MAX),
+              @senha VARCHAR(MAX),
+              @permissao SMALLINT
+            )
+            AS
+            BEGIN
+            
+              IF (@id IS NULL)
+              BEGIN
+        
+                INSERT INTO Usuario 
+                (
+                  Login,
+                  Senha,
+                  Permissao
+                ) 
+                VALUES 
+                (
+                  @login,
+                  @senha,
+                  @permissao
+                )
+          
+                SET @id = (SELECT SCOPE_IDENTITY())
+        
+              END
+              ELSE
+              BEGIN
+        
+                UPDATE Usuario SET Login = @login, Senha = @senha, Permissao = @permissao WHERE Id = @id
+        
+              END
+        
+              SELECT @id
+           
+          END
+      
+        ]]>
+    </comandoCriar>
+
+</atualizacaoAutomatica>

@@ -1,0 +1,12 @@
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\bin\Release\netstandard2.0\Entities.deps.json
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\bin\Release\netstandard2.0\Entities.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\bin\Release\netstandard2.0\Entities.pdb
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\bin\Release\netstandard2.0\Enumerators.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\bin\Release\netstandard2.0\Enumerators.pdb
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.AssemblyInfo.cs
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.csproj.CopyComplete
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Entities\obj\Release\netstandard2.0\Entities.pdb

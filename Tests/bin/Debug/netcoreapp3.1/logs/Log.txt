@@ -1,0 +1,293 @@
+15/08/2020 00:18:27 ===> System.Exception: Teste da classe de Logs!
+
+14/08/2020 21:33:32 ===> System.Exception: Teste da classe de Logs!
+
+15/08/2020 10:18:10 ===> System.Data.SqlClient.SqlException (0x80131904): Instrução CREATE DATABASE não permitida em transação com várias instruções.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.CriarBancoSeNaoExistir() in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 121
+ClientConnectionId:819d5e8c-122b-4fda-af14-c803c6340066
+Error Number:226,State:5,Class:16
+15/08/2020 10:20:34 ===> System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 49
+ClientConnectionId:f11e1e25-b573-4fcf-917a-0ee4f48ea61b
+Error Number:208,State:1,Class:16
+15/08/2020 10:20:35 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID:  , Número: 0
+15/08/2020 10:23:37 ===> System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 50
+ClientConnectionId:da9d59e2-adcb-4c01-9e51-fd5179c65a76
+Error Number:208,State:1,Class:16
+15/08/2020 10:23:37 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID:  , Número: 0, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 60
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 72
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:da9d59e2-adcb-4c01-9e51-fd5179c65a76
+Error Number:208,State:1,Class:16
+15/08/2020 10:23:55 ===> System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 50
+ClientConnectionId:02da3fb3-42e5-46fb-b607-27a645ac8885
+Error Number:208,State:1,Class:16
+15/08/2020 10:23:55 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID:  , Número: 0, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 60
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 72
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:02da3fb3-42e5-46fb-b607-27a645ac8885
+Error Number:208,State:1,Class:16
+15/08/2020 10:32:37 ===> System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 50
+ClientConnectionId:0397524b-5f08-45a3-a6b2-5d663b9a7756
+Error Number:208,State:1,Class:16
+15/08/2020 10:32:37 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID:  , Número: 0, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Versao' inválido.
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 60
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 72
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:0397524b-5f08-45a3-a6b2-5d663b9a7756
+Error Number:208,State:1,Class:16
+15/08/2020 10:37:16 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: 7C24EE94-9071-4C5B-BC7B-8240BE9BA8F1 , Número: 1, motivo: System.Data.SqlClient.SqlException (0x80131904): Sintaxe incorreta próxima à palavra-chave 'table'.
+Sintaxe incorreta próxima à palavra-chave 'table'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 79
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:61557d82-1e80-454b-95e5-36ad3db8e02e
+Error Number:156,State:1,Class:15
+15/08/2020 10:41:31 ===> System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): O tempo limite de espera foi atingido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 50
+ClientConnectionId:38df8404-dbd8-40c3-8687-4fb7a9d7b137
+Error Number:-2,State:0,Class:11
+15/08/2020 10:41:31 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: 7C24EE94-9071-4C5B-BC7B-8240BE9BA8F1 , Número: 1, motivo: System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): O tempo limite de espera foi atingido.
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 60
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 72
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:38df8404-dbd8-40c3-8687-4fb7a9d7b137
+Error Number:-2,State:0,Class:11
+15/08/2020 10:42:46 ===> System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): O tempo limite de espera foi atingido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 50
+ClientConnectionId:e2937eb4-b1ca-471d-8486-6b81b66fbcd3
+Error Number:-2,State:0,Class:11
+15/08/2020 10:42:46 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: 7C24EE94-9071-4C5B-BC7B-8240BE9BA8F1 , Número: 1, motivo: System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): O tempo limite de espera foi atingido.
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 60
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 72
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:e2937eb4-b1ca-471d-8486-6b81b66fbcd3
+Error Number:-2,State:0,Class:11
+15/08/2020 10:46:02 ===> System.InvalidOperationException: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IDbConnection connection, IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 68
+15/08/2020 10:46:02 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID:  , Número: 0, motivo: System.InvalidOperationException: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+   at Repositories.AtualizacaoRepository.VerificarSeAtualizacaoNaoFoiRealizada(IDbConnection connection, IAtualizacaoAutomatica atualizacao) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 77
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 89
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+15/08/2020 10:47:16 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: ABF9F540-CFEE-4DE1-925F-95BED9366395 , Número: 2, motivo: System.Data.SqlClient.SqlException (0x80131904): Sintaxe incorreta próxima à palavra-chave 'SELECT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 97
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:aa86a522-d939-42c9-a656-141551527f33
+Error Number:156,State:1,Class:15
+15/08/2020 11:22:15 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: FEED512A-55AE-4E94-BA7E-3A7168FE6A42 , Número: 3, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Usuario' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 97
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:9879e387-1ceb-4a24-acda-4864e8267899
+Error Number:208,State:1,Class:16
+15/08/2020 11:22:43 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: FEED512A-55AE-4E94-BA7E-3A7168FE6A42 , Número: 3, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Usuario' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 97
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:b2be306f-20ec-479b-852d-c27701d7b1db
+Error Number:208,State:1,Class:16
+15/08/2020 11:23:57 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: FEED512A-55AE-4E94-BA7E-3A7168FE6A42 , Número: 3, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Usuario' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 97
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:2722a15c-4518-4f51-9fb2-a1e04702abc4
+Error Number:208,State:1,Class:16
+15/08/2020 11:30:14 ===> Utils.Exceptions.Atualizacao.AtualizacaoAutomaticaException: Ocorreu um erro na atualização automática, GUID: FEED512A-55AE-4E94-BA7E-3A7168FE6A42 , Número: 3, motivo: System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'Usuario' inválido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 441
+   at Repositories.AtualizacaoRepository.ExecutarListaAtualizacoes(IDbConnection connection, IDbTransaction transaction, IList`1 atualizacoes, IAtualizacaoAutomatica& atualizacaoAtual) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 97
+   at Repositories.AtualizacaoRepository.AtualizarSistemaPorListaAtualizacoes(IList`1 atualizacoes) in C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Repositories\AtualizacaoRepository.cs:line 26
+ClientConnectionId:e4eb1e0c-da78-4a61-8cbb-cfa111d1fcc8
+Error Number:208,State:1,Class:16

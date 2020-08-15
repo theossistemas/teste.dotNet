@@ -4,4 +4,26 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="XmlAtualizacao\Atualizacao_0001.xml" />
+    <None Remove="XmlAtualizacao\Atualizacao_0002.xml" />
+    <None Remove="XmlAtualizacao\Atualizacao_0003.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="XmlAtualizacao\Atualizacao_0003.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="XmlAtualizacao\Atualizacao_0001.xml" />
+    <EmbeddedResource Include="XmlAtualizacao\Atualizacao_0002.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\Utils\Utils.csproj" />
+  </ItemGroup>
+
 </Project>

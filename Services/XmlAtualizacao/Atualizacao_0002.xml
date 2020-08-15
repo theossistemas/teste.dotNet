@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<atualizacaoAutomatica>
+
+  <versao guid="ABF9F540-CFEE-4DE1-925F-95BED9366395" numero="2" />
+
+  <comandoExcluir>
+    <![CDATA[
+      
+      DROP PROCEDURE IF EXISTS PROC_SalvarAtualizarLivro
+      
+    ]]>
+  </comandoExcluir>
+
+  <comandoCriar>
+    <![CDATA[
+      
+      CREATE PROC PROC_SalvarAtualizarLivro 
+      (
+        @id BIGINT,
+        @titulo VARCHAR(MAX),
+        @descricao VARCHAR(MAX)
+      )
+      AS
+      BEGIN
+        
+        IF (@id IS NULL)
+        BEGIN
+        
+          INSERT INTO Livro 
+          (
+            Titulo,
+            Descricao
+          ) 
+          VALUES 
+          (
+            @titulo,
+            @descricao
+          )
+          
+          SET @id = (SELECT SCOPE_IDENTITY())
+        
+        END
+        ELSE
+        BEGIN
+        
+          UPDATE Livro SET Titulo = @titulo, Descricao = @descricao WHERE Id = @id
+        
+        END
+        
+        SELECT @id
+        
+      END
+      
+    ]]>
+  </comandoCriar>
+
+</atualizacaoAutomatica>

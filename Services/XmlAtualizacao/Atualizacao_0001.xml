@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<atualizacaoAutomatica>
+
+  <versao guid="7C24EE94-9071-4C5B-BC7B-8240BE9BA8F1" numero="1" />
+
+  <comandoExcluir>
+    <![CDATA[
+      
+    ]]>
+  </comandoExcluir>
+
+  <comandoCriar>
+    <![CDATA[
+      
+      IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Usuario')
+      BEGIN
+        
+        CREATE TABLE Usuario (Id BIGINT NOT NULL IDENTITY PRIMARY KEY, Login VARCHAR(100) NOT NULL UNIQUE, Senha VARCHAR(100) NOT NULL, Permissao TINYINT NOT NULL)
+        
+        INSERT INTO Usuario (Login, Senha, Permissao) VALUES ('admin', 'YWRtaW4=', 0)
+        
+      END
+    
+      IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Livro')
+      BEGIN
+        
+        CREATE TABLE Livro (Id BIGINT NOT NULL IDENTITY PRIMARY KEY, Titulo VARCHAR(100) NOT NULL UNIQUE, Descricao VARCHAR(MAX))
+        
+      END
+      
+    ]]>
+  </comandoCriar>
+
+</atualizacaoAutomatica>

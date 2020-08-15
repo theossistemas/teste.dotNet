@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Utils/Utils.csproj": {}
+    "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Utils\\Utils.csproj": {}
   },
   "projects": {
-    "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Utils/Utils.csproj": {
+    "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Utils/Utils.csproj",
+        "projectUniqueName": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Utils/Utils.csproj",
-        "packagesPath": "/home/zier/.nuget/packages/",
-        "outputPath": "/home/zier/Área de trabalho/theos-sistemas-teste/teste.dotNet/Utils/obj/",
+        "projectPath": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\win-pc\\.nuget\\packages\\",
+        "outputPath": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Utils\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/zier/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\win-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +47,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -53,7 +63,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
