@@ -1,0 +1,9 @@
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\bin\Debug\netstandard2.0\Enumerators.deps.json
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\bin\Debug\netstandard2.0\Enumerators.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\bin\Debug\netstandard2.0\Enumerators.pdb
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.csprojAssemblyReference.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.AssemblyInfoInputs.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.AssemblyInfo.cs
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.csproj.CoreCompileInputs.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.pdb

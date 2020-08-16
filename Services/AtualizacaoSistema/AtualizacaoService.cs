@@ -1,10 +1,12 @@
 ﻿using Entities;
 using Repositories;
+using Repositories.Atualizacoes;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Utils.Logs;
 using Utils.Xml;
 
 namespace Services.AtualizacaoSistema
@@ -15,11 +17,15 @@ namespace Services.AtualizacaoSistema
 
         public static void Iniciar()
         {
+            Log.ConsoleLog("Iniciando serviços de atualização automática !");
+
             IList<IAtualizacaoAutomatica> atualizacoes = RetornarListaClassesAtualizacao();
 
             AtualizacaoRepository repository = new AtualizacaoRepository();
 
             repository.AtualizarSistemaPorListaAtualizacoes(atualizacoes);
+
+            Log.ConsoleLog("Atualizações realizadas com sucesso !");
         }
 
         private static String[] PegarNomesXmlsAtualizacao()

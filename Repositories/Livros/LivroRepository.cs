@@ -4,7 +4,6 @@ using System.Data;
 using System.Linq;
 using Dapper;
 using Entities;
-using Repositories.Base;
 using Utils.Connection;
 using Utils.Exceptions;
 using Utils.Exceptions.Livro;
@@ -92,6 +91,15 @@ namespace Repositories.Livros
                     if (jaCadastrado)
                         throw new LivroJaCadastradoException();
                 }
+        }
+
+        public IList<Livro> FindByTitle(String title)
+        {
+            using (IDbConnection connection = SqlServerHelper.Connection)
+                return connection.Query<Livro>(@"SELECT * FROM Livro WHERE Titulo LIKE @titulo ORDER BY Titulo ASC", new
+                { 
+                    titulo = $"%{title}%"
+                }).ToList();
         }
     }
 }

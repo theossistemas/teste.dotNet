@@ -23,6 +23,11 @@ namespace Utils.Connection
             }
         }
 
+        public static void Initializer(String connectionString)
+        {
+            ConnectionStringBuilder = new SqlConnectionStringBuilder(connectionString);
+        }
+
         public static void Initializer(SqlConnectionStringBuilder connectionStringBuilder)
         {
             ConnectionStringBuilder = connectionStringBuilder;

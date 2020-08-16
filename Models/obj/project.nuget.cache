@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mV4oJDVaIkNwg5mBJ0hndMkdBnPB7FlGQYD+l8n2GokH3j4j7sZMwdWS8BN/DM3OrwwPj9DoDMVyLndOOIHJzQ==",
+  "success": true,
+  "projectFilePath": "C:\\CSharp_Workspace\\theos-sistemas-teste\\teste.dotNet\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\win-pc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\win-pc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

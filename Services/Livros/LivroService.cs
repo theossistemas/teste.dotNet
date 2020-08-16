@@ -56,5 +56,16 @@ namespace Services.Livros
         {
             this.repository.VerificarSeLivroNaoExiste(livro);
         }
+
+        public IList<LivroDTO> FindByTitle(String title)
+        {
+            IList<Livro> livros = repository.FindByTitle(title);
+
+            IList<LivroDTO> retorno = new List<LivroDTO>();
+
+            livros.ToList().ForEach(x => retorno.Add(new LivroDTO(x)));
+
+            return retorno;
+        }
     }
 }

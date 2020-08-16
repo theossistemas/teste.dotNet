@@ -23,15 +23,7 @@ namespace Utils.Logs
 
             using (StreamWriter writer = new StreamWriter(arquivo, true))
             {
-                StringBuilder builder = new StringBuilder();
-
-                builder.Append(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-
-                builder.Append(" ===> ");
-
-                builder.Append(exception.ToString());
-
-                writer.WriteLine(builder.ToString());
+                writer.WriteLine(FormatarMensagemLog(exception.ToString()));
 
                 writer.Flush();
             }
@@ -41,6 +33,26 @@ namespace Utils.Logs
         {
             if (!Directory.Exists(pastaLog))
                 Directory.CreateDirectory(pastaLog);
+        }
+
+        public static void ConsoleLog(String message)
+        {
+            Console.WriteLine(FormatarMensagemLog(message));
+        }
+
+        private static String FormatarMensagemLog(String mensagem)
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.Append(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+
+            builder.Append(" ===> ");
+
+            builder.Append(mensagem);
+
+            builder.AppendLine();
+
+            return builder.ToString();
         }
     }
 }

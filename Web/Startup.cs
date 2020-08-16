@@ -1,3 +1,6 @@
+using Entities;
+using Enumerators;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -5,6 +8,15 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Repositories.Livros;
+using Repositories.Usuarios;
+using Services.Acesso;
+using Services.AtualizacaoSistema;
+using Services.Livros;
+using Services.Usuarios;
+using System;
+using System.Data.SqlClient;
+using Utils.Connection;
 
 namespace Web
 {
@@ -26,6 +38,26 @@ namespace Web
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddAuthorization(options =>
+            {
+                foreach (Permissao permissao in (Permissao[])Enum.GetValues(typeof(Permissao)))
+                {
+                    options.AddPolicy(permissao.ToString(), policy => policy.Requirements.Add(new PermissaoAcessoRequirement(permissao)));
+                }
+            });
+
+            services.AddScoped<IAuthorizationHandler, PermissaoAcessoHandler>();
+
+            services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
+            services.AddSingleton<ILivroRepository, LivroRepository>();
+
+            services.AddSingleton<IUsuarioService, UsuarioService>();
+            services.AddSingleton<ILivroService, LivroService>();
+
+            SqlServerHelper.Initializer(Configuration.GetConnectionString("default"));
+
+            AtualizacaoService.Iniciar();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
