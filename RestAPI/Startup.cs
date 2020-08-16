@@ -35,7 +35,7 @@ namespace RestAPI
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "APITheos-Teste", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API-Theos-Teste", Version = "v1" });
             });
 
             services.AddAuthorization(options =>
@@ -84,7 +84,7 @@ namespace RestAPI
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "APITheos-Teste");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API-Theos-Teste");
             });
 
             app.UseAuthentication();

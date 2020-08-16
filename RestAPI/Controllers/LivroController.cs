@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace RestAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/livro")]
     [ApiController]
     public class LivroController : ControllerBase
     {

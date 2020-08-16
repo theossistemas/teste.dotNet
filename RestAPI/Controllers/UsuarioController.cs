@@ -4,7 +4,7 @@ using System;
 
 namespace RestAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/usuario")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {
