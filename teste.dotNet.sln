@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{6D5507C5-5921-4E91-93D4-5AE3B40D4186}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{B0F72F44-DDDD-47FA-B10A-5DF7635CBA72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{B0F72F44-DDDD-47FA-B10A-5DF7635CBA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPI", "RestAPI\RestAPI.csproj", "{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,18 @@ Global
 		{B0F72F44-DDDD-47FA-B10A-5DF7635CBA72}.Release|x64.Build.0 = Release|Any CPU
 		{B0F72F44-DDDD-47FA-B10A-5DF7635CBA72}.Release|x86.ActiveCfg = Release|Any CPU
 		{B0F72F44-DDDD-47FA-B10A-5DF7635CBA72}.Release|x86.Build.0 = Release|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Debug|x64.Build.0 = Debug|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Debug|x86.Build.0 = Debug|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Release|x64.ActiveCfg = Release|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Release|x64.Build.0 = Release|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2FBD570-804D-46DC-A1E5-354BE3F8EEE1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

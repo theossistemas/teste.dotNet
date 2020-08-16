@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models.DTO;
-using Services.Acesso;
 using Services.Livros;
 using System;
 using System.Collections.Generic;
 
-namespace Web.Controllers
+namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

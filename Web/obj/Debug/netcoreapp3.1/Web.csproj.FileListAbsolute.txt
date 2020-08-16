@@ -70,6 +70,8 @@ C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Web.csproj.CoreCompileInputs.cache
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache

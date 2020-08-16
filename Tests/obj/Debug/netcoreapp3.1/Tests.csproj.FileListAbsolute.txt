@@ -112,3 +112,9 @@ C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\obj\Debug\netcoreapp
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\obj\Debug\netcoreapp3.1\Tests.dll
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\obj\Debug\netcoreapp3.1\Tests.pdb
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\obj\Debug\netcoreapp3.1\Tests.genruntimeconfig.cache
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll

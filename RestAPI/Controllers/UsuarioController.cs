@@ -2,7 +2,7 @@
 using Services.Usuarios;
 using System;
 
-namespace Web.Controllers
+namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -21,7 +21,7 @@ namespace Web.Controllers
         /// <param name="login"></param>
         /// <param name="senha"></param>
         /// <returns>Verdadeiro / Falso</returns>
-        [HttpGet("{login}/{senha}")]
+        [HttpPost("{login}/{senha}")]
         public Boolean ValidarLogin(String login, String senha)
         {
             return usuarioService.ValidarLogin(login, senha);
