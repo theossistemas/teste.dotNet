@@ -165,7 +165,7 @@ namespace Repositories.Atualizacoes
             {
                 try
                 {
-                    connection.Execute("CREATE TABLE Versao (Id BIGINT IDENTITY PRIMARY KEY, Guid VARCHAR(100) NOT NULL, Numero BIGINT NOT NULL)");
+                    connection.Execute("CREATE TABLE Versao (Id BIGINT IDENTITY PRIMARY KEY, Guid VARCHAR(100) NOT NULL UNIQUE, Numero BIGINT NOT NULL)");
                 }
                 catch (Exception ex)
                 {
