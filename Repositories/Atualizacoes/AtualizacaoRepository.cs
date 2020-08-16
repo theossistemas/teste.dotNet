@@ -12,6 +12,8 @@ namespace Repositories.Atualizacoes
 {
     public class AtualizacaoRepository
     {
+        private static readonly String nomeDB = "Theos_teste";
+
         public void AtualizarSistemaPorListaAtualizacoes(IList<IAtualizacaoAutomatica> atualizacoes)
         {
             this.VerificarBancoDeDados();
@@ -113,12 +115,12 @@ namespace Repositories.Atualizacoes
 
         private void VerificarBancoDeDados()
         {
-            if (!this.VerificarSeBancoDeDadosExiste("Theos_teste"))
+            if (!this.VerificarSeBancoDeDadosExiste(nomeDB))
             {
                 this.CriarBancoDados();
             }
 
-            SqlServerHelper.ConnectionStringBuilder.InitialCatalog = "Theos_teste";
+            SqlServerHelper.ConnectionStringBuilder.InitialCatalog = nomeDB;
 
             if (!this.VerificarSeTabelaExiste("Versao"))
             {
@@ -150,7 +152,7 @@ namespace Repositories.Atualizacoes
             {
                 try
                 {
-                    connection.Execute("CREATE DATABASE Theos_teste");
+                    connection.Execute($"CREATE DATABASE {nomeDB}");
                 }
                 catch (Exception ex)
                 {
