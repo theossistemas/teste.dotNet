@@ -19,11 +19,11 @@ namespace RestAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("{login}/{senha}")]
-        public Boolean ValidarLogin(String login, String senha)
+        public IActionResult ValidarLogin(String login, String senha)
         {
             senha = Convert.ToBase64String(Encoding.UTF8.GetBytes(senha));
 
-            return usuarioService.ValidarLogin(login, senha);
+            return Ok(usuarioService.ValidarLogin(login, senha));
         }
     }
 }

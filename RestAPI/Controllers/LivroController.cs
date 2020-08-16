@@ -23,52 +23,64 @@ namespace RestAPI.Controllers
         [HttpGet]
         [AllowAnonymous]
         [Produces(applicationJson)]
-        public IList<LivroDTO> FindAll()
+        public IActionResult FindAll()
         {
-            return this.livroService.FindAll();
+            return Ok(this.livroService.FindAll());
         }
 
         [HttpGet("{id}")]
         [AllowAnonymous]
         [Produces(applicationJson)]
-        public LivroDTO Find(Int64 id)
+        public IActionResult Find(Int64 id)
         {
-            return this.livroService.Find(id);
+            LivroDTO livro = this.livroService.Find(id);
+
+            if (livro == null)
+                return NotFound();
+
+            return Ok(livro);
         }
 
         [HttpPost]
         [Authorize]
         [Produces(applicationJson)]
         [Consumes(applicationJson)]
-        public LivroDTO Save(LivroDTO livro)
+        public IActionResult Save(LivroDTO livro)
         {
-            return this.livroService.Save(livro);
+            livro = this.livroService.Save(livro);
+
+            return CreatedAtAction(nameof(Find), new { id = livro.Id }, livro);
         }
 
         [HttpPut("{id}")]
         [Authorize]
         [Produces(applicationJson)]
         [Consumes(applicationJson)]
-        public LivroDTO Update(Int64 id, LivroDTO livro)
+        public IActionResult Update(Int64 id, LivroDTO livro)
         {
+            if (this.livroService.Find(id) == null)
+                return NotFound();
+
             livro.Id = id;
 
-            return this.livroService.Save(livro);
+            return Accepted(this.livroService.Save(livro));
         }
 
         [HttpDelete("{id}")]
         [Authorize]
-        public void Delete(Int64 id)
+        public IActionResult Delete(Int64 id)
         {
             this.livroService.Delete(id);
+
+            return NoContent();
         }
 
         [AllowAnonymous]
         [HttpGet("titulos/{titulo}")]
         [Produces(applicationJson)]
-        public IList<LivroDTO> FindByTitle(String titulo)
+        public IActionResult FindByTitle(String titulo)
         {
-            return this.livroService.FindByTitle(titulo);
+            return Ok(this.livroService.FindByTitle(titulo));
         }
     }
 }
