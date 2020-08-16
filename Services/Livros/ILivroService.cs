@@ -7,7 +7,9 @@ namespace Services.Livros
 {
     public interface ILivroService : IService<LivroDTO>
     {
-        void VerificarSeLivroNaoExiste(LivroDTO livro);
+        Boolean VerificarSeLivroNaoExiste(String titulo);
+
+        String ValidarLivro(LivroDTO livro);
 
         IList<LivroDTO> FindByTitle(String title);
     }

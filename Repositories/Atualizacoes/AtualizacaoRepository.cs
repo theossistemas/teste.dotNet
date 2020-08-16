@@ -93,7 +93,7 @@ namespace Repositories.Atualizacoes
                     {
                         atualizacaoOut = atualizacao;
 
-                        if (String.IsNullOrEmpty(atualizacao.ComandoExcluir))
+                        if (!String.IsNullOrEmpty(atualizacao.ComandoExcluir))
                             connection.Execute(atualizacao.ComandoExcluir, transaction: transaction);
 
                         connection.Execute(atualizacao.ComandoCriar, transaction: transaction);

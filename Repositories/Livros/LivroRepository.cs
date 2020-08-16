@@ -48,7 +48,8 @@ namespace Repositories.Livros
 
         public Livro Save(Livro livro)
         {
-            this.VerificarSeLivroNaoExiste(livro);
+            if (livro.Id == null && !this.VerificarSeLivroNaoExiste(livro.Titulo))
+                throw new LivroJaCadastradoException();
 
             using (IDbConnection connection = SqlServerHelper.Connection)
             using (IDbTransaction transaction = connection.BeginTransaction())
@@ -78,19 +79,15 @@ namespace Repositories.Livros
             }
         }
 
-        public void VerificarSeLivroNaoExiste(Livro livro)
+        public Boolean VerificarSeLivroNaoExiste(String titulo)
         {
-            if (livro.Id == null)
-                using (IDbConnection connection = SqlServerHelper.Connection)
+            using (IDbConnection connection = SqlServerHelper.Connection)
+            {
+                return connection.Query<Int32>("SELECT COUNT(Id) FROM Livro WHERE LOWER(Titulo) = LOWER(@titulo)", new
                 {
-                    Boolean jaCadastrado = connection.Query<Int32>("SELECT COUNT(Id) FROM Livro WHERE LOWER(Titulo) = LOWER(@titulo)", new
-                    {
-                        titulo = livro.Titulo
-                    }).FirstOrDefault() > 0;
-
-                    if (jaCadastrado)
-                        throw new LivroJaCadastradoException();
-                }
+                    titulo
+                }).FirstOrDefault() == 0;
+            }
         }
 
         public IList<Livro> FindByTitle(String title)

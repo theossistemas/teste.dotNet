@@ -4,6 +4,7 @@ using Repositories.Livros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Services.Livros
 {
@@ -52,9 +53,9 @@ namespace Services.Livros
             return new LivroDTO(repository.Save(livro));
         }
 
-        public void VerificarSeLivroNaoExiste(LivroDTO livro)
+        public Boolean VerificarSeLivroNaoExiste(String titulo)
         {
-            this.repository.VerificarSeLivroNaoExiste(livro);
+            return this.repository.VerificarSeLivroNaoExiste(titulo);
         }
 
         public IList<LivroDTO> FindByTitle(String title)
@@ -66,6 +67,20 @@ namespace Services.Livros
             livros.ToList().ForEach(x => retorno.Add(new LivroDTO(x)));
 
             return retorno;
+        }
+
+        public String ValidarLivro(LivroDTO livro)
+        {
+            if (livro == null)
+                return "Nenhum dado foi informado !";
+
+            if (livro != null && String.IsNullOrWhiteSpace(livro.Titulo))            
+                return "O campo título é obrigatório !";
+
+            if (livro.Id == null && !this.VerificarSeLivroNaoExiste(livro.Titulo))
+                return "Livro já cadastrado !";
+
+            return String.Empty;
         }
     }
 }
