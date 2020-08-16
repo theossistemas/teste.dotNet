@@ -55,14 +55,14 @@ namespace Repositories.Livros
             {
                 try
                 {
-                    livro.Id = connection.Query<Int64>(@"EXEC PROC_SalvarAtualizarLivro(@id, @titulo, @descricao)", new
+                    livro.Id = connection.Query<Int64>(@"PROC_SalvarAtualizarLivro", new
                     {
                         id = livro.Id,
                         titulo = livro.Titulo,
                         descricao = livro.Descricao
                     },
-                    commandType: CommandType.StoredProcedure,
-                    transaction: transaction)
+                    transaction: transaction,
+                    commandType: CommandType.StoredProcedure)
                     .FirstOrDefault();
 
                     transaction.Commit();

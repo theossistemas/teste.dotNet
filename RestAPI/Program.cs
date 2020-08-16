@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Globalization;
 
 namespace RestAPI
 {
@@ -7,6 +9,11 @@ namespace RestAPI
     {
         public static void Main(string[] args)
         {
+            CultureInfo cultureInfo = new CultureInfo("pt-BR");
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
             CreateHostBuilder(args).Build().Run();
         }
 

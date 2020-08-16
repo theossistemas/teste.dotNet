@@ -14,6 +14,7 @@ using Services.AtualizacaoSistema;
 using Services.Livros;
 using Services.Usuarios;
 using System;
+using System.Globalization;
 using Utils.Connection;
 
 namespace Web

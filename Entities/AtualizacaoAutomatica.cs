@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Base;
+using System;
 using System.Xml.Serialization;
 
 namespace Entities
@@ -9,15 +10,18 @@ namespace Entities
         [XmlElement(ElementName = "versao")]
         public Versao Versao { get; set; }
 
-        [XmlElement(ElementName = "comandoCriar")]
-        public String ComandoCriar { get; set; }
-
         [XmlElement(ElementName = "comandoExcluir")]
         public String ComandoExcluir { get; set; }
+
+        [XmlElement(ElementName = "comandoCriar")]
+        public String ComandoCriar { get; set; }
     }
 
-    public class Versao
+    public class Versao : IEntity
     {
+        [XmlIgnore]
+        public Int64? Id { get; set; }
+
         [XmlAttribute(AttributeName = "guid")]
         public String Guid { get; set; }
 

@@ -17,7 +17,7 @@
         
         CREATE TABLE Usuario (Id BIGINT NOT NULL IDENTITY PRIMARY KEY, Login VARCHAR(100) NOT NULL UNIQUE, Senha VARCHAR(100) NOT NULL, Permissao TINYINT NOT NULL)
         
-        INSERT INTO Usuario (Login, Senha, Permissao) VALUES ('admin', 'YWRtaW4=', 0)
+        INSERT INTO Usuario (Login, Senha, Permissao) VALUES ('admin', 'MTIzNA==', 0)
         
       END
     

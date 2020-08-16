@@ -11,6 +11,8 @@ namespace Services.Usuarios
 
         Permissao? RetornarPermissaoDoUsuario(String login);
 
+        UsuarioDTO FindUserByLogin(String login);
+
         void VerificarSeUsuarioJaCadastrado(String login);
     }
 }

@@ -68,5 +68,14 @@ namespace Services.Usuarios
         {
             return this.repository.RetornarPermissaoDoUsuario(login);
         }
+
+        public UsuarioDTO FindUserByLogin(String login)
+        {
+            Usuario usuario = this.repository.FindUserByLogin(login);
+
+            if (usuario == null) return null;
+
+            return new UsuarioDTO(usuario);
+        }
     }
 }

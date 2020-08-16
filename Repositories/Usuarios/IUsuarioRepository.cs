@@ -11,6 +11,8 @@ namespace Repositories.Usuarios
 
         Permissao? RetornarPermissaoDoUsuario(String login);
 
+        Usuario FindUserByLogin(String login);
+
         void VerificarSeUsuarioJaCadastrado(String login);
     }
 }

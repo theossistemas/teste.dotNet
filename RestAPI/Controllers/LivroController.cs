@@ -11,6 +11,8 @@ namespace RestAPI.Controllers
     [ApiController]
     public class LivroController : ControllerBase
     {
+        private const String applicationJson = "application/json";
+
         private ILivroService livroService;
 
         public LivroController(ILivroService livroService)
@@ -18,49 +20,35 @@ namespace RestAPI.Controllers
             this.livroService = livroService;
         }
 
-        /// <summary>
-        /// Retorna todos os livros salvos no sistema
-        /// </summary>
-        /// <returns>Lista de livros</returns>
         [HttpGet]
         [AllowAnonymous]
+        [Produces(applicationJson)]
         public IList<LivroDTO> FindAll()
         {
             return this.livroService.FindAll();
         }
 
-        /// <summary>
-        /// Retorna um livro pelo seu id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns>Retorna um livro</returns>
         [HttpGet("{id}")]
         [AllowAnonymous]
+        [Produces(applicationJson)]
         public LivroDTO Find(Int64 id)
         {
             return this.livroService.Find(id);
         }
 
-        /// <summary>
-        /// Salve um novo livro no banco de dados
-        /// </summary>
-        /// <param name="livro"></param>
-        /// <returns>Retona o livro persistido</returns>
         [HttpPost]
         [Authorize]
+        [Produces(applicationJson)]
+        [Consumes(applicationJson)]
         public LivroDTO Save(LivroDTO livro)
         {
             return this.livroService.Save(livro);
         }
 
-        /// <summary>
-        /// Atualiza um livro no banco de dados
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="livro"></param>
-        /// <returns>Retorna o livro atualizado</returns>
         [HttpPut("{id}")]
         [Authorize]
+        [Produces(applicationJson)]
+        [Consumes(applicationJson)]
         public LivroDTO Update(Int64 id, LivroDTO livro)
         {
             livro.Id = id;
@@ -68,13 +56,16 @@ namespace RestAPI.Controllers
             return this.livroService.Save(livro);
         }
 
-        /// <summary>
-        /// Retorna uma lista de livros pela pesquisa por título
-        /// </summary>
-        /// <param name="titulo"></param>
-        /// <returns>Retorna uma lista de livros</returns>
+        [HttpDelete("{id}")]
+        [Authorize]
+        public void Delete(Int64 id)
+        {
+            this.livroService.Delete(id);
+        }
+
         [AllowAnonymous]
         [HttpGet("titulos/{titulo}")]
+        [Produces(applicationJson)]
         public IList<LivroDTO> FindByTitle(String titulo)
         {
             return this.livroService.FindByTitle(titulo);

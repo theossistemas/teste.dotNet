@@ -14,6 +14,8 @@ using Services.Acesso;
 using Microsoft.AspNetCore.Authorization;
 using Repositories.Usuarios;
 using Repositories.Livros;
+using System.Globalization;
+using Microsoft.AspNetCore.Authentication;
 
 namespace RestAPI
 {
@@ -33,22 +35,15 @@ namespace RestAPI
 
             services.AddLogging();
 
+            services.AddCors();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API-Theos-Teste", Version = "v1" });
             });
 
-            services.AddAuthorization(options =>
-            {
-                Permissao[] permissoes = (Permissao[])Enum.GetValues(typeof(Permissao));
-
-                foreach (Permissao permissao in permissoes)
-                {
-                    options.AddPolicy(permissao.ToString(), policy => policy.Requirements.Add(new PermissaoAcessoRequirement(permissao)));
-                }
-            });
-
-            services.AddScoped<IAuthorizationHandler, PermissaoAcessoHandler>();
+            services.AddAuthentication("BasicAuthentication")
+               .AddScheme<AuthenticationSchemeOptions, PermissaoAcessoHandler>("BasicAuthentication", null);
 
             services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
             services.AddSingleton<ILivroRepository, LivroRepository>();
@@ -73,8 +68,14 @@ namespace RestAPI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -86,8 +87,6 @@ namespace RestAPI
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "API-Theos-Teste");
             });
-
-            app.UseAuthentication();
         }
     }
 }

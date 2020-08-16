@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using Entities;
 using Enumerators;
-using Repositories.Base;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -108,6 +107,12 @@ namespace Repositories.Usuarios
 
             if (existe)
                 throw new UsuarioJaCadastradoException();
+        }
+
+        public Usuario FindUserByLogin(String login)
+        {
+            using (IDbConnection connection = SqlServerHelper.Connection)
+                return connection.Query<Usuario>(@"SELECT * FROM Usuario WHERE Login = @login", new { login }).SingleOrDefault();
         }
     }
 }

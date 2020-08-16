@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Services.Usuarios;
 using System;
+using System.Text;
 
 namespace RestAPI.Controllers
 {
@@ -15,15 +17,12 @@ namespace RestAPI.Controllers
             this.usuarioService = usuarioService;
         }
 
-        /// <summary>
-        /// Método para validação de login
-        /// </summary>
-        /// <param name="login"></param>
-        /// <param name="senha"></param>
-        /// <returns>Verdadeiro / Falso</returns>
+        [AllowAnonymous]
         [HttpPost("{login}/{senha}")]
         public Boolean ValidarLogin(String login, String senha)
         {
+            senha = Convert.ToBase64String(Encoding.UTF8.GetBytes(senha));
+
             return usuarioService.ValidarLogin(login, senha);
         }
     }

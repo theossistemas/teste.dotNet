@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System.Globalization;
 
 namespace Web
 {
@@ -7,6 +8,11 @@ namespace Web
     {
         public static void Main(string[] args)
         {
+            CultureInfo cultureInfo = new CultureInfo("pt-BR");
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
             CreateHostBuilder(args).Build().Run();
         }
 
