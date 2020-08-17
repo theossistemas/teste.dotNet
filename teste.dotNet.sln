@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIClient", "RestAPIClient\RestAPIClient.csproj", "{CFCFA6B3-A41F-456D-A40E-C1279A60AD20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{EB8C64CC-F87A-472F-A67E-4C2322319358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,6 +146,18 @@ Global
 		{CFCFA6B3-A41F-456D-A40E-C1279A60AD20}.Release|x64.Build.0 = Release|Any CPU
 		{CFCFA6B3-A41F-456D-A40E-C1279A60AD20}.Release|x86.ActiveCfg = Release|Any CPU
 		{CFCFA6B3-A41F-456D-A40E-C1279A60AD20}.Release|x86.Build.0 = Release|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Release|x64.Build.0 = Release|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB8C64CC-F87A-472F-A67E-4C2322319358}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
