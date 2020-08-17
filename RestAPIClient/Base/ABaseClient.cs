@@ -17,18 +17,18 @@ namespace RestAPIClient.Base
         {
             HttpRequestMessage httpRequest = new HttpRequestMessage(method, uri);
 
-            httpRequest.Headers.Authorization = new AuthenticationHeaderValue("Basic", $"{usuario.Login}:{usuario.Id}");
+            Byte[] bytes = Encoding.UTF8.GetBytes($"{usuario.Login}:{usuario.Senha}");
+
+            httpRequest.Headers.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(bytes));
 
             return httpRequest;
         }
 
         public virtual HttpRequestMessage CriarMensagemRequisicaoComAutorizacaoBasica(HttpMethod method, String uri, Object body, UsuarioDTO usuario)
         {
-            HttpRequestMessage httpRequest = new HttpRequestMessage(method, uri);
+            HttpRequestMessage httpRequest = this.CriarMensagemRequisicaoComAutorizacaoBasica(method, uri, usuario);
 
             httpRequest.Content = new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8, "application/json");
-
-            httpRequest.Headers.Authorization = new AuthenticationHeaderValue("Basic", $"{usuario.Login}:{usuario.Id}");
 
             return httpRequest;
         }

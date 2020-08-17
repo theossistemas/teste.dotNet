@@ -4,17 +4,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Enumerators;
-using System;
 using Services.Usuarios;
 using Services.Livros;
 using Utils.Connection;
 using Services.AtualizacaoSistema;
 using Services.Acesso;
-using Microsoft.AspNetCore.Authorization;
 using Repositories.Usuarios;
 using Repositories.Livros;
-using System.Globalization;
 using Microsoft.AspNetCore.Authentication;
 
 namespace RestAPI
