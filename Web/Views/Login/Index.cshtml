@@ -1,0 +1,46 @@
+﻿@model Models.DTO.UsuarioDTO;
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row">
+
+    <div class="col-md-4 offset-md-4">
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <h5 class="card-title">Login</h5>
+
+                @if (!String.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+
+                <form asp-action="Login" asp-antiforgery="true" method="post">
+
+                    <div class="form-group">
+                        <label asp-for="Login"></label>
+                        <input asp-for="Login" class="form-control" placeholder="Usuário" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Senha"></label>
+                        <input asp-for="Senha" type="password" class="form-control" placeholder="Senha" required />
+                    </div>
+
+                    <input type="submit" value="Login" class="btn btn-primary" />
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

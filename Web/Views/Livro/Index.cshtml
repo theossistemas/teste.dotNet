@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Livraria OnLine!";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Livraria OnLine !</h1>
+</div>
+
+<br />
+
+<div>
+    
+    @if (ViewBag.Livros != null)
+    {
+        IList<Models.DTO.LivroDTO> livros = ViewBag.Livros;
+
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th scope="col">Título</th>
+                    <th scope="col">Descricao</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                @foreach (Models.DTO.LivroDTO livro in livros)
+                 {
+                    <tr>
+                        <td scope="row">@livro.Titulo</td>
+                        <td>@livro.Descricao</td>
+                        <td></td>
+                    </tr>
+                 }
+            </tbody>
+
+        </table>
+     }
+</div>

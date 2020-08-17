@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -13,6 +10,7 @@ using RestAPIClient.Livros;
 using RestAPIClient.Usuarios;
 using Services.Acesso;
 using Services.Usuarios;
+using System;
 
 namespace Web
 {
@@ -29,12 +27,6 @@ namespace Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            services.AddAuthentication("BasicAuthentication")
-               .AddScheme<AuthenticationSchemeOptions, PermissaoAcessoHandler>("BasicAuthentication", null);
-
-            services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
-            services.AddSingleton<IUsuarioService, UsuarioService>();
 
             services.AddSingleton<ILivroClient, LivroClient>();
             services.AddSingleton<IUsuarioClient, UsuarioClient>();

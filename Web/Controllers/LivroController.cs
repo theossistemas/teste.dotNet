@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -38,6 +39,24 @@ namespace Web.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [Authorize]
+        [HttpPost("{id}")]
+        public async Task<IActionResult> Delete(Int64? id)
+        {
+            IApiResponse response = await livroClient.Delete(id, Sessao.Usuario);
+
+            if (response.HttpStatusCode == System.Net.HttpStatusCode.NoContent)
+            {
+                ViewBag.Message = "Excluído com sucesso !";
+
+                return View("Livro", new LivroDTO());
+            }
+
+            ViewBag.ErrorMessage = response.ErrorMessage;
+
+            return View("Livro", new LivroDTO());
         }
     }
 }

@@ -19,7 +19,6 @@ C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
-C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -63,3 +62,6 @@ C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Enumerators.pdb
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Repositories.pdb
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\bin\Debug\netcoreapp3.1\Utils.pdb
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Livro\Index.cshtml.g.cs
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Web\obj\Debug\netcoreapp3.1\Razor\Views\Livro\Livro.cshtml.g.cs

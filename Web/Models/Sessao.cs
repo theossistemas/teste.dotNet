@@ -1,9 +1,15 @@
 ﻿using Models.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Web.Models
 {
-    public class Sessao : ISessao
+    public class Sessao
     {
-        public UsuarioDTO usuario { get; set; }
+        private Sessao() { }
+
+        public static UsuarioDTO Usuario { get; set; }
     }
 }
