@@ -1,0 +1,10 @@
+[
+  {
+    "nome" : "livro",
+    "url" : "http://localhost:50000/api/livro"
+  },
+  {
+    "nome" : "usuario",
+    "url" : "http://localhost:50000/api/usuario"
+  }
+]

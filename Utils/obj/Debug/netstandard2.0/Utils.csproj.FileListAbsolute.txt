@@ -6,4 +6,3 @@ C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Utils\obj\Debug\netstandar
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Utils\obj\Debug\netstandard2.0\Utils.csproj.CoreCompileInputs.cache
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Utils\obj\Debug\netstandard2.0\Utils.dll
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Utils\obj\Debug\netstandard2.0\Utils.pdb
-C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Utils\obj\Debug\netstandard2.0\Utils.csprojAssemblyReference.cache

@@ -6,4 +6,3 @@ C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\nets
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.csproj.CoreCompileInputs.cache
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.dll
 C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.pdb
-C:\CSharp_Workspace\theos-sistemas-teste\teste.dotNet\Enumerators\obj\Debug\netstandard2.0\Enumerators.csprojAssemblyReference.cache
