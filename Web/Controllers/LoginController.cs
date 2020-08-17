@@ -1,14 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.DTO;
 using RestAPIClient.Response;
 using RestAPIClient.Usuarios;
 using System;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using Web.Models;
 
 namespace Web.Controllers
 {
@@ -39,16 +36,6 @@ namespace Web.Controllers
 
                 return View("Index", new UsuarioDTO());
             }
-
-            ClaimsIdentity identity = new ClaimsIdentity("Administrator");
-
-            identity.AddClaim(new Claim(ClaimTypes.Name, usuario.Login));
-
-            ClaimsPrincipal principal = new ClaimsPrincipal(identity);
-
-            await HttpContext.SignInAsync("Administrator", principal);
-
-            Sessao.Usuario = usuario;
 
             HttpContext.Session.SetString("User", usuario.Login);
 
