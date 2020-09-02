@@ -2,6 +2,7 @@
 using Livraria.Common.Model;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
@@ -11,7 +12,8 @@ namespace Livraria.API.Controllers
     {
         private readonly NotifiyHandler _messageHandler;
 
-        protected BaseController(INotificationHandler<Notifications> notification)
+        protected BaseController(
+            INotificationHandler<Notifications> notification)
         {
             _messageHandler = (NotifiyHandler)notification;
         }

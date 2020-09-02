@@ -2,6 +2,7 @@
 using Livraria.Domain.Entidades;
 using Livraria.Domain.Interfaces.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,9 +12,11 @@ namespace Livraria.Data.Repository
     public class LivroRepositorio : Repository<Livro>, ILivroRepositorio
     {
         private readonly LivrariaContext _livrariaContext;
-        public LivroRepositorio(LivrariaContext livrariaContext):base(livrariaContext)
+        private readonly ILogger<LivrariaContext> _logger;
+        public LivroRepositorio(LivrariaContext livrariaContext, ILogger<LivrariaContext> logger) :base(livrariaContext, logger)
         {
             _livrariaContext = livrariaContext;
+            _logger = logger;
         }
 
         public async Task<Livro> ObterPorTitulo(string titulo)

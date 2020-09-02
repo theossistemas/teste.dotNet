@@ -7,6 +7,7 @@ using Livraria.Domain.Serviços.Alteradores;
 using Livraria.Domain.Serviços.Armazenadores;
 using Livraria.Domain.Serviços.Validadores;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace Livraria.DI
 {
