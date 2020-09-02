@@ -4,6 +4,7 @@ using Livraria.Common.Interface;
 using Livraria.Common.Model;
 using Livraria.Data.Context;
 using Livraria.DI;
+using Livraria.Domain.Interfaces.Repository;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -58,6 +59,15 @@ namespace Livraria.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.Use(async (context, next) =>
+            {
+                //Request
+                await next.Invoke();
+                //Response
+                var unitOfWork = (IUnitOfWork)context.RequestServices.GetService(typeof(IUnitOfWork));
+                await unitOfWork.Commit();
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

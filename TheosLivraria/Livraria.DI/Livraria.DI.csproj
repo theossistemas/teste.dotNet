@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Livraria.Data\Livraria.Data.csproj" />
     <ProjectReference Include="..\Livraria.Domain\Livraria.Domain.csproj" />
   </ItemGroup>
 
