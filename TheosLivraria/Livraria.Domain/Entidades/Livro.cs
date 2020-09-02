@@ -11,6 +11,16 @@ namespace Livraria.Domain.Entidades
         public int AutorId { get; private set; }
         public virtual Autor Autor { get; private set; }
 
+        protected Livro() {}
+
+        public Livro(string titulo, int anopublicacao, int edicao, Autor autor)
+        {
+            Titulo = titulo;
+            AnoDePublicacao = anopublicacao;
+            Edicao = edicao;
+            Autor = autor;
+        }
+
         public override bool Validar()
         {
             RuleFor(x => x.Titulo)
@@ -35,6 +45,32 @@ namespace Livraria.Domain.Entidades
 
             ValidationResult = Validate(this);
             return ValidationResult.IsValid;
+        }
+
+        public void AlterarTitulo(string titulo)
+        {
+            Titulo = titulo;
+        }
+
+        public void AlterarAnoDePublicao(int anoPublicacao)
+        {
+            AnoDePublicacao = anoPublicacao;
+        }
+
+        public void AlterarEdicao(int edicao)
+        {
+            Edicao = edicao;
+        }
+
+        public void AlterarAutorId(int id)
+        {
+            AutorId = id;
+        }
+
+        public void AlterarAutor(Autor autor)
+        {
+            if (autor == null) return;
+            Autor = autor;
         }
     }
 }
