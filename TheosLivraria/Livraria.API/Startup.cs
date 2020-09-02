@@ -1,10 +1,17 @@
-﻿using Livraria.Data.Context;
+﻿using Livraria.Common.Handler;
+using Livraria.Common.Implementation;
+using Livraria.Common.Interface;
+using Livraria.Common.Model;
+using Livraria.Data.Context;
+using Livraria.DI;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 
 namespace Livraria.API
 {
@@ -21,7 +28,31 @@ namespace Livraria.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<LivrariaContext>(c => c.UseSqlServer(Configuration.GetConnectionString("SQLServer")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(option => option.EnableEndpointRouting = false)
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddCors();
+
+            services.AddMediatR(typeof(Startup));
+            services.AddScoped<INotificationHandler<Notifications>, NotifiyHandler>();
+            services.AddScoped<INotify, Notify>();
+            Bootstrap.Configure(services);
+
+            //Aplicando documentação com Swagger
+            services.AddSwaggerGen(x =>
+            {
+                x.SwaggerDoc("V1", new OpenApiInfo
+                {
+                    Title = "Livraria Theos - Cadastro de Livros",
+                    Version = "V1",
+                    Description = "Prcesso seletivo para desenvolvedor .net",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Rafael Miranda",
+                        Email = "arthur.rafa10@gmail.com"
+                    }
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +69,15 @@ namespace Livraria.API
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/V1/swagger.json", "Livraria Theos");
+            });
+
         }
     }
 }
