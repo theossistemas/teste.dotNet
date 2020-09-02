@@ -7,5 +7,7 @@ namespace Livraria.Domain.Interfaces.Validadores
     {
         void Validar(LivroDto dto);
         void ValidarSeLivroExiste(Livro livro);
+
+        void ValidarLivroEncontrado(Livro livro);
     }
 }

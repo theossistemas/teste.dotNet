@@ -8,5 +8,6 @@ namespace Livraria.Domain.Interfaces.Repository
     {
         Task<List<Livro>> ObterTodosOrdenadoPorNome();
         Task<Livro> ObterPorTitulo(string titulo);
+        Task<Livro> ObterPorId(int id);
     }
 }

@@ -28,6 +28,12 @@ namespace Livraria.Domain.Serviços.Validadores
             }
         }
 
+        public void ValidarLivroEncontrado(Livro livro)
+        {
+            if (livro == null)
+                _notify.NewNotification(Resources.LivroEntidade, Resources.LivroNaoEncontrado);
+        }
+
         public void ValidarSeLivroExiste(Livro livro)
         {
             if (livro != null)

@@ -12,9 +12,4 @@
     <ProjectReference Include="..\Livraria.Common\Livraria.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\Removedores\" />
-    <Folder Include="Serviços\Removedores\" />
-  </ItemGroup>
-
 </Project>

@@ -22,9 +22,18 @@ namespace Livraria.Data.Repository
         public async Task<Livro> ObterPorTitulo(string titulo)
         {
             var resultado = await _livrariaContext.Livro
+                .Include(x => x.Autor)
                 .FirstOrDefaultAsync(x => x.Titulo.ToUpper().Trim() == titulo.ToUpper().Trim());
             return resultado;
         }
+        public async Task<Livro> ObterPorId(int id)
+        {
+            var resultado = await _livrariaContext.Livro
+                .Include(x => x.Autor)
+                .FirstOrDefaultAsync(x => x.Id == id);
+            return resultado;
+        }
+
 
         public async Task<List<Livro>> ObterTodosOrdenadoPorNome()
         {
