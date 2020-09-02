@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Livraria.Data.Migrations
 {
     [DbContext(typeof(LivrariaContext))]
-    [Migration("20200902175324_Inicial")]
+    [Migration("20200902231348_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

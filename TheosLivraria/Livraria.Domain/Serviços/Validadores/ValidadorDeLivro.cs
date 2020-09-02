@@ -22,7 +22,7 @@ namespace Livraria.Domain.Serviços.Validadores
             {
                 _notify.NewNotification(Resources.LivroEntidade, Resources.LivroNulo);
             }
-            else if (dto.Autor == null)
+            else if (dto.Autor == null && dto.AutorId < Constantes.Um)
             {
                 _notify.NewNotification(Resources.LivroEntidade, Resources.LivroComAutorNulo);
             }

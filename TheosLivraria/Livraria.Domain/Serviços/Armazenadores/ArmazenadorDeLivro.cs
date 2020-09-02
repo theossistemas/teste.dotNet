@@ -61,8 +61,11 @@ namespace Livraria.Domain.Serviços.Armazenadores
 
         private Livro Novolivro(LivroDto dto)
         {
-            var autor = NovoAutor(dto.Autor);
-            return new Livro(dto.Titulo, dto.AnoDePublicacao, dto.Edicao, autor);
+           // var autor = NovoAutor(dto.Autor);
+            var livro =  new Livro(dto.Titulo, dto.AnoDePublicacao, dto.Edicao, dto.AutorId);
+            if (dto.Autor != null)
+                livro.AlterarAutor(NovoAutor(dto.Autor));
+            return livro;
         }
 
         private Autor NovoAutor(AutorDto dto)

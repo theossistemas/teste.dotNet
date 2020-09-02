@@ -8,6 +8,7 @@ namespace Livraria.Domain.Dto
         public string Titulo { get; set; }
         public int AnoDePublicacao { get; set; }
         public int Edicao { get; set; }
+        public int AutorId { get; set; }
         public AutorDto Autor { get; set; }
 
         public static LivroDto ConverterParaDto(Livro livro)
@@ -19,6 +20,7 @@ namespace Livraria.Domain.Dto
                 AnoDePublicacao = livro.AnoDePublicacao,
                 Edicao = livro.Edicao,
                 Titulo = livro.Titulo,
+                AutorId = livro.Autor.Id,
                 Autor = AutorDto.ConverterParaDto(livro.Autor)
             };
         }

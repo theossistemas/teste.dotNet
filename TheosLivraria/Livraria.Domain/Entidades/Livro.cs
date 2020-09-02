@@ -13,12 +13,12 @@ namespace Livraria.Domain.Entidades
 
         protected Livro() {}
 
-        public Livro(string titulo, int anopublicacao, int edicao, Autor autor)
+        public Livro(string titulo, int anopublicacao, int edicao, int autorId)
         {
             Titulo = titulo;
             AnoDePublicacao = anopublicacao;
             Edicao = edicao;
-            Autor = autor;
+            AutorId = autorId;
         }
 
         public override bool Validar()

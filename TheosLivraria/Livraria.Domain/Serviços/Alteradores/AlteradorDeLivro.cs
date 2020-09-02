@@ -9,7 +9,7 @@ namespace Livraria.Domain.Serviços.Alteradores
         public void Alterar(Livro livro, LivroDto dto)
         {
             livro.AlterarAnoDePublicao(dto.AnoDePublicacao);
-            livro.AlterarAutorId(dto.Autor.Id.Value);
+            livro.AlterarAutorId(dto.AutorId);
             livro.AlterarEdicao(dto.Edicao);
             livro.AlterarTitulo(dto.Titulo);
         }
