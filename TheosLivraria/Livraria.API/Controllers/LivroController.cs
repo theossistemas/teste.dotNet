@@ -3,6 +3,7 @@ using Livraria.Domain.Dto;
 using Livraria.Domain.Interfaces.Armazenadores;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Livraria.API.Controllers
 {
@@ -19,9 +20,9 @@ namespace Livraria.API.Controllers
             _armazenadorDeLivro = armazenadorDeLivro;
         }
         [HttpPost("AdicionarLivro")]
-        public IActionResult AdicionarLivro([FromBody] LivroDto dto)
+        public async Task<IActionResult> AdicionarLivro([FromBody] LivroDto dto)
         {
-            _armazenadorDeLivro.Armazenar(dto);
+            await _armazenadorDeLivro.Armazenar(dto);
 
             if (!OperacaoValida())
                 return BadRequestResponse();

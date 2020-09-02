@@ -15,9 +15,17 @@ namespace Livraria.Data.Repository
         {
             _livrariaContext = livrariaContext;
         }
-        public Task<List<Livro>> ObterTodosOrdenadoPorNome()
+
+        public async Task<Livro> ObterPorTitulo(string titulo)
         {
-            return _livrariaContext.Livro
+            var resultado = await _livrariaContext.Livro
+                .FirstOrDefaultAsync(x => x.Titulo.ToUpper().Trim() == titulo.ToUpper().Trim());
+            return resultado;
+        }
+
+        public async Task<List<Livro>> ObterTodosOrdenadoPorNome()
+        {
+            return await _livrariaContext.Livro
                  .Include(x => x.Autor)
                  .OrderBy(x => x.Titulo)
                  .ToListAsync();
