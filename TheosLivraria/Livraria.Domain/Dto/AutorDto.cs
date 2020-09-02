@@ -1,5 +1,4 @@
 ﻿using Livraria.Domain.Entidades;
-using System.Collections.Generic;
 
 namespace Livraria.Domain.Dto
 {
@@ -7,7 +6,6 @@ namespace Livraria.Domain.Dto
     {
         public int? Id { get; set; }
         public string Nome { get; set; }
-        public List<LivroDto> Livros { get; set; }
 
         public static AutorDto ConverterParaDto(Autor autor)
         {

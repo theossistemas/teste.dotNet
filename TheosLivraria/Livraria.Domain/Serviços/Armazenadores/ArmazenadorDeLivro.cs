@@ -67,7 +67,9 @@ namespace Livraria.Domain.Serviços.Armazenadores
 
         private Autor NovoAutor(AutorDto dto)
         {
-            return new Autor(dto.Nome);
+            var autor = new Autor(dto.Nome);
+            autor.DefinirId(dto.Id.Value);
+            return autor;
         }
     }
 }

@@ -9,6 +9,11 @@ namespace Livraria.Domain.Entidades
     {
         public int Id { get; protected set; }
 
+        public void DefinirId(int id)
+        {
+            Id = id;
+        }
+
         [NotMapped]
         public ValidationResult ValidationResult { get; protected set; }
 

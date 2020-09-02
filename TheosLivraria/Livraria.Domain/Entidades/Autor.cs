@@ -7,7 +7,7 @@ namespace Livraria.Domain.Entidades
     public class Autor : Entity<Autor>
     {
         public string Nome { get; private set; }
-        public virtual ICollection<Livro> Livros { get; private set; }
+        public virtual IList<Livro> Livros { get; private set; }
 
         protected Autor() {}
 

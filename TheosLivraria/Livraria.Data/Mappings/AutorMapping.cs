@@ -15,6 +15,11 @@ namespace Livraria.Data.Mappings
                 .IsRequired()
                 .HasMaxLength(Constantes.QuantidadeDeCaracteres100);
 
+            builder.HasMany(x => x.Livros)
+                .WithOne(x => x.Autor)
+                .HasForeignKey(x => x.AutorId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             builder.Ignore(x => x.CascadeMode);
             builder.Ignore(x => x.ValidationResult);
 
