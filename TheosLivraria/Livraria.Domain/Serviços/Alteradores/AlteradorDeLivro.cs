@@ -6,6 +6,11 @@ namespace Livraria.Domain.Serviços.Alteradores
 {
     public class AlteradorDeLivro : IAlteradorDeLivro
     {
+        public AlteradorDeLivro()
+        {
+
+        }
+
         public void Alterar(Livro livro, LivroDto dto)
         {
             livro.AlterarAnoDePublicao(dto.AnoDePublicacao);
