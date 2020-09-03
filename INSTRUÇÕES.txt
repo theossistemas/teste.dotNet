@@ -1,9 +1,11 @@
 1 - Para o projeto de backend existe um repositório "fake" de usuário chamado UserRepository. Para realizar login e ter acesso, utilize um dos usuários 
     existentes ou insira um se desejar.
 
-2 - No projeto angular,  execute o comando npm install para baixar as dependências.
+2 - extrair a pasta LivrariaApp.rar
 
-3 - Para executar o projeto angular, comente a autorização nos controllers do backend (esse trecho de código -> [Authorize] e [Authorize(Roles ="manager")]), pois 
+3 - No projeto angular,  execute o comando npm install para baixar as dependências.
+
+4 - Para executar o projeto angular, comente a autorização nos controllers do backend (esse trecho de código -> [Authorize] e [Authorize(Roles ="manager")]), pois 
     o app angular não realiza login.
 
-4 - Excute o projeto backend e altere o environment do angular (arquivo environment.ts) para poder realizar a comunicação entre a api e o frontend
+5 - Excute o projeto backend e altere o environment do angular (arquivo environment.ts) para poder realizar a comunicação entre a api e o frontend
