@@ -25,25 +25,25 @@ namespace Livraria.Data.Repository
         }
 
         public async Task AdicionarAsync(TEntity obj)
-        { //=> await _dbSet.AddAsync(obj); 
+        { 
             await _dbSet.AddAsync(obj);
             Log(obj, Resources.AdicionadoLogger);
 
         }
 
         public void Adicionar(TEntity obj)
-        {//=> _dbSet.Add(obj);
+        {
             _dbSet.Add(obj);
             Log(obj, Resources.AdicionadoLogger);
         }
 
-        public void Atualizar(TEntity obj) //=> _dbSet.Update(obj);
+        public void Atualizar(TEntity obj)
         {
             _dbSet.Update(obj);
             Log(obj, Resources.AlteradoLogger);
         }
 
-        public void Remover(TEntity obj) //=> _dbSet.Remove(obj);
+        public void Remover(TEntity obj) 
         {
             _dbSet.Remove(obj);
             Log(obj, Resources.removidoLogger);

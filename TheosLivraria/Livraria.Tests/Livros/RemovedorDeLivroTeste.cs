@@ -18,11 +18,9 @@ namespace Livraria.Tests.Livros
     {
         private NotifiyHandler _notifiyHandler;
         private Notify _notify;
-        private ValidadorDeLivro _validadorDeLivro;
         private readonly Faker _faker;
         private readonly Mock<ILivroRepositorio> _livroRepositorioMock;
         private readonly Mock<IValidadorDelivro> _validadorDeLivroMock;
-        private readonly Mock<INotify> _notifyMock;
 
         private RemovedorDeLivro _removedorDeLivro;
 
@@ -30,11 +28,9 @@ namespace Livraria.Tests.Livros
         {
             _notifiyHandler = new NotifiyHandler();
             _notify = new Notify(_notifiyHandler);
-            _validadorDeLivro = new ValidadorDeLivro(_notify);
             _faker = FakerBuilder.Novo().Build();
             _livroRepositorioMock = new Mock<ILivroRepositorio>();
             _validadorDeLivroMock = new Mock<IValidadorDelivro>();
-            _notifyMock = new Mock<INotify>();
             _removedorDeLivro = new RemovedorDeLivro(_notify, _livroRepositorioMock.Object, _validadorDeLivroMock.Object);
         }
 
