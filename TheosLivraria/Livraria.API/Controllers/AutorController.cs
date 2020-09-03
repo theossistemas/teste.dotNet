@@ -3,6 +3,7 @@ using Livraria.Common.Utils;
 using Livraria.Domain.Dto;
 using Livraria.Domain.Interfaces.Repository;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,6 +14,7 @@ namespace Livraria.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AutorController : BaseController
     {
         private readonly IAutorRepositorio _autorRepositorio;
