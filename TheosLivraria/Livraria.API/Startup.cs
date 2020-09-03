@@ -2,10 +2,12 @@
 using Livraria.Common.Implementation;
 using Livraria.Common.Interface;
 using Livraria.Common.Model;
+using Livraria.Common.Utils;
 using Livraria.Data.Context;
 using Livraria.DI;
 using Livraria.Domain.Interfaces.Repository;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +15,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
 namespace Livraria.API
 {
@@ -53,6 +57,48 @@ namespace Livraria.API
                         Email = "arthur.rafa10@gmail.com"
                     }
                 });
+
+                x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme."
+                });
+
+                x.AddSecurityRequirement(new OpenApiSecurityRequirement
+                     {
+                         {
+                               new OpenApiSecurityScheme
+                                 {
+                                     Reference = new OpenApiReference
+                                     {
+                                         Type = ReferenceType.SecurityScheme,
+                                         Id = "Bearer"
+                                     }
+                                 },
+                                 new string[] {}
+                         }
+                     });
+            });
+
+            var key = Encoding.ASCII.GetBytes(Settings.Secret);
+            services.AddAuthentication(option =>
+            {
+                option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+            }).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                   ValidateIssuerSigningKey = true,
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    IssuerSigningKey = new SymmetricSecurityKey(key) 
+                };
             });
 
             services.AddLogging(loggingBuilder =>
@@ -67,7 +113,7 @@ namespace Livraria.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(
             IApplicationBuilder app,
-            IHostingEnvironment env, 
+            IHostingEnvironment env,
             ILoggerFactory loggerFactory)
         {
             app.Use(async (context, next) =>
@@ -91,6 +137,8 @@ namespace Livraria.API
 
             app.UseHttpsRedirection();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseAuthorization();
+            app.UseAuthentication();
             app.UseMvc();
 
             app.UseSwagger();

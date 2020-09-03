@@ -5,6 +5,7 @@ using Livraria.Domain.Interfaces.Armazenadores;
 using Livraria.Domain.Interfaces.Removedores;
 using Livraria.Domain.Interfaces.Repository;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,6 +17,7 @@ namespace Livraria.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LivroController : BaseController
     {
         private readonly IArmazenadorDeLivro _armazenadorDeLivro;
@@ -36,6 +38,7 @@ namespace Livraria.API.Controllers
             _logger = logger;
         }
         [HttpPost("AdicionarLivro")]
+        [Authorize(Roles = "manager")]
         public async Task<IActionResult> AdicionarLivro([FromBody] LivroDto dto)
         {
             //_logger.LogInformation(1002, "Adicionar Livro Controller");
@@ -48,6 +51,7 @@ namespace Livraria.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "manager")]
         public async Task<IActionResult> Remover(int id)
         {
             await _removedorDeLivro.Remover(id);
@@ -58,6 +62,7 @@ namespace Livraria.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "manager")]
         public async Task<IActionResult> Get(int id)
         {
             try
@@ -71,6 +76,7 @@ namespace Livraria.API.Controllers
             }
         }
         [HttpGet]
+        [Authorize(Roles ="manager")]
         public async Task<IActionResult> Get()
         {
             try
