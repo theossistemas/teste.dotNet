@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://getbootstrap.com/docs/4.4/examples/sticky-footer-navbar/ -->
+<html lang="pt-br" class="h-100">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="./css/template-sticky-footer-navbar.css" rel="stylesheet">
+
+    <script src="./js/feather.min.js"></script>
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/localStorage.js"></script>
+    <script src="./js/handle_login.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/api_access.js"></script>
+    <script src="./js/components.js"></script>
+
+    <title>Livraria Theos</title>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+
+    <script>
+      function btnSalvarLivro_click(id) {
+        if(isLogged()){
+          //alert(id);
+
+          let nome = document.getElementById('input-nome').value;
+
+          let autor = document.getElementById('input-autor').value;
+          
+          let lancamento = document.getElementById('input-lancamento').value;
+          lancamento = parseInt(0 + lancamento)
+          
+          let preco = document.getElementById('input-preco').value;
+          preco = parseFloat(0 + preco)
+
+          if(id == 0){
+            insert_book(
+              admin.token,
+              {
+                name: nome,
+                author: autor,
+                launchYear: lancamento,
+                price: preco
+              },
+              function (response) {
+                alert('Livro inserido com sucesso');
+                location.reload();
+              },
+              function (response) {
+                if (response.status == 401) {
+                  logout();
+                } else if (response.status == 400 && response.responseJSON.message != null) {
+                  alert(response.responseJSON.message);
+                } else {
+                  alert("Ocorreu um erro desconhecido executando a operação")
+                }
+              }
+            )
+          }else{
+            update_book(
+              id,
+              admin.token,
+              {
+                name: nome,
+                author: autor,
+                launchYear: lancamento,
+                price: preco
+              },
+              function (response) {
+                alert('Livro editado com sucesso');
+                location.reload();
+              },
+              function (response) {
+                if (response.status == 401) {
+                  logout();
+                } else if (response.status == 400 && response.responseJSON.message != null) {
+                  alert(response.responseJSON.message);
+                } else {
+                  alert("Ocorreu um erro desconhecido executando a operação")
+                }
+              }
+            )
+          }
+        }
+      }
+
+      function btnNewBook_click() {
+        document.getElementById('btnSalvar').onclick = function () {
+          btnSalvarLivro_click(0);
+        };
+
+        document.getElementById('editBookModal-titulo').innerText = "Novo Livro";
+
+        document.getElementById('input-nome').value = "";
+        document.getElementById('input-autor').value = "";
+        document.getElementById('input-lancamento').value = "";
+        document.getElementById('input-preco').value = "";
+
+        $("#editBookModal").modal("show");
+      }
+
+      function btnEditBook_click(id){
+        document.getElementById('btnSalvar').onclick = function () {
+          btnSalvarLivro_click(id);
+        };
+
+        document.getElementById('editBookModal-titulo').innerText = "Editar Livro";
+
+        get_book(
+          id, 
+          function (response) {
+            //console.log(response)
+
+            document.getElementById('input-nome').value = response.name;
+            document.getElementById('input-autor').value = response.author;
+            document.getElementById('input-lancamento').value = response.launchYear;
+            document.getElementById('input-preco').value = response.price;
+
+            $("#editBookModal").modal("show");
+
+          }, default_error_callback
+        );
+      }
+
+      function btnDeleteBook_click(id, name) {
+        if (isLogged()) {
+          if (confirm("Tem certeza que deseja excluir o livro a seguir?\n" + name)) {
+            delete_book(
+              id,
+              admin.token,
+              function (response) {
+                alert('Livro excluido com sucesso');
+                location.reload();
+              },
+              function (response) {
+                if (response.status == 401) {
+                  logout();
+                } else if (response.status == 400 && response.responseJSON.message != null) {
+                  alert(response.responseJSON.message);
+                } else {
+                  alert("Ocorreu um erro desconhecido executando a operação")
+                }
+              }
+            )
+          }
+        }
+      }
+
+      window.onload = function () {
+        get_books(function (response) {
+          //console.log(response)
+
+          var html = '';
+
+          for (var i = 0; i < response.length; i++) {
+            html +=
+              `
+            <tr>
+              <td>`+ response[i].name + `</td>
+                <td>`+ response[i].author + `</td>
+                <td>`+ response[i].launchYear + `</td>
+                <th>R$ `+ response[i].price.toFixed(2).toString().replace('.', ',') + `</th>
+                `+ (isLogged() ? `
+                    <th class="text-right">
+                      <a href="#"onclick="btnEditBook_click(`+ response[i].id + `); return false;">
+                          <i data-feather="edit-2"></i>
+                      </a>
+                      <a href="." onclick="btnDeleteBook_click(`+ response[i].id + `,'` + response[i].name + `'); return false;">
+                          <i data-feather="x"></i>
+                      </a>
+                  </th>` : '') + `
+            </tr>
+            `
+          }
+
+          document.getElementById('table-books').innerHTML = html;
+
+          feather.replace();
+
+        }, default_error_callback);
+      }
+    </script>
+
+    <script>header();</script>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">Nossos Livros</h1>
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Autor</th>
+              <th scope="col">Lançamento</th>
+              <th scope="col">Preço</th>
+              <script>
+                if (isLogged()) {
+                  document.write('<th class="text-right" scope="col"><a href="#" onclick="btnNewBook_click()"><i data-feather="plus-circle"></i></a></th>');
+                }
+              </script>
+            </tr>
+          </thead>
+          <tbody id="table-books">
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script>
+      loginModal();
+      editBookModal();
+    </script>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Teste de admiss&atilde;o de Marcelo Guimar&atilde;es</span>
+      </div>
+    </footer>
+  </body>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</html>
