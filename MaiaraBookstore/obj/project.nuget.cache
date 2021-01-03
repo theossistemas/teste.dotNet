@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "viznougxzjR4y1IUlIgaClEB4DldUEElD5nqcIdut+ArUUw1WIdWumwKX3Tb8+uHWqaD3S3aGrwefgHDr3MaiQ==",
+  "dgSpecHash": "borOqvuE2jnc69prPhdzfxm1dKXMrgFhp0Ydcbu2+uQYWYYqmHWteBI4d1OjpjO5ec4Dfk35YXcAa+O8TUIDZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.1\\microsoft.entityframeworkcore.design.3.1.1.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.1\\microsoft.entityframeworkcore.relational.3.1.1.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.1\\microsoft.entityframeworkcore.sqlserver.3.1.1.nupkg.sha512",
+    "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.1\\microsoft.entityframeworkcore.tools.3.1.1.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.1\\microsoft.extensions.caching.abstractions.3.1.1.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.1\\microsoft.extensions.caching.memory.3.1.1.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.1\\microsoft.extensions.configuration.3.1.1.nupkg.sha512",
