@@ -12,6 +12,8 @@ namespace Livraria.Context.Types
             builder.HasKey(a => a.Id);
 
             builder.HasMany(a => a.Livros).WithOne(l => l.Autor).HasForeignKey(l => l.IdAutor);
+
+            builder.HasData(new Pessoa { Id = 1, Nome = "Administrador" });
         }
     }
 }
