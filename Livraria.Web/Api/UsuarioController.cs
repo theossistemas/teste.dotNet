@@ -3,6 +3,7 @@
 using Livraria.Domain.Contexto;
 using Livraria.Web.Models.Usuarios;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using System;
@@ -25,7 +26,7 @@ namespace Livraria.Web.Api
             _mapper = mapper;
         }
 
-        [HttpPost, Route("logar")]
+        [HttpPost, Route("logar"), AllowAnonymous]
         public ActionResult Logar(UsuarioModel model)
         {
             model.Senha = EncriptarSenha(model.Senha);

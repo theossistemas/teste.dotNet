@@ -4,76 +4,6 @@
     "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Web\\Livraria.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj",
-        "projectName": "Livraria.Domain",
-        "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj",
-        "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Rodrigo\\Desktop\\Bibliotecas sheth\\Atuais": {},
-          "C:\\Users\\Rodrigo\\OneDrive\\Rodrigo\\StarLight\\bibliotecas": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "SimpleInjector": {
-              "target": "Package",
-              "version": "[5.2.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -104,9 +34,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj"
-              },
               "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
                 "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj"
               }
@@ -275,6 +202,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "SimpleInjector": {
               "target": "Package",

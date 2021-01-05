@@ -1,11 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Livraria.Domain\Livraria.Domain.csproj" />
     <ProjectReference Include="..\Livraria.Domain\Livraria.Domain.csproj" />
   </ItemGroup>
 
