@@ -13,3 +13,6 @@ C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\obj\Debug\net5
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\obj\Debug\net5.0\Livraria.Context.dll
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\obj\Debug\net5.0\ref\Livraria.Context.dll
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\obj\Debug\net5.0\Livraria.Context.pdb
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\bin\Debug\net5.0\Livraria.Context.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\bin\Debug\net5.0\Livraria.Context.runtimeconfig.dev.json
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Context\obj\Debug\net5.0\Livraria.Context.genruntimeconfig.cache

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 
 using Livraria.Domain.Contexto;
+using Livraria.Domain.Usuarios;
 using Livraria.Web.Models.Usuarios;
 
 using Microsoft.AspNetCore.Authorization;
@@ -13,7 +14,7 @@ using System.Text;
 
 namespace Livraria.Web.Api
 {
-    [Route("api/usario")]
+    [Route("api/usuario")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {
@@ -37,6 +38,16 @@ namespace Livraria.Web.Api
                 return NotFound();
 
             return Ok(_mapper.Map<UsuarioModel>(user));
+        }
+
+        [HttpPut, Route("cadastrar")]
+        public ActionResult AtualizarUsuario (UsuarioModel model)
+        {
+            Usuario existente = _contexto.Usuarios.FirstOrDefault(u => u.Login == model.Login && u.Senha == EncriptarSenha(model.Senha));
+            Usuario usuario = _mapper.Map<Usuario>(model);
+
+
+            return Ok();
         }
 
         public string EncriptarSenha(string value)
