@@ -1,0 +1,12 @@
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\bin\Debug\net5.0\Livraria.Domain.deps.json
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\bin\Debug\net5.0\Livraria.Domain.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\bin\Debug\net5.0\ref\Livraria.Domain.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\bin\Debug\net5.0\Livraria.Domain.pdb
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.csprojAssemblyReference.cache
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.AssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\ref\Livraria.Domain.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.pdb

@@ -1744,6 +1744,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Livraria.Context/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Livraria.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Livraria.Context.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Livraria.Context.dll": {}
+        }
+      },
       "Livraria.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7100,17 +7113,22 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Livraria.Context/1.0.0": {
+      "type": "project",
+      "path": "../Livraria.Context/Livraria.Context.csproj",
+      "msbuildProject": "../Livraria.Context/Livraria.Context.csproj"
+    },
     "Livraria.Domain/1.0.0": {
       "type": "project",
-      "path": "../Livraria.Domain/Livraria.Domain.csproj",
-      "msbuildProject": "../Livraria.Domain/Livraria.Domain.csproj"
+      "path": "../../Livraria.Domain/Livraria.Domain.csproj",
+      "msbuildProject": "../../Livraria.Domain/Livraria.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 10.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.0",
-      "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj",
+      "Livraria.Context >= 1.0.0",
       "Livraria.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
@@ -7154,11 +7172,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj": {
+              "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj"
+            },
             "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
               "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj"
-            },
-            "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj"
             }
           }
         }
@@ -7229,15 +7247,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

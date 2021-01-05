@@ -837,6 +837,9 @@
           "projectReferences": {
             "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj": {
               "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\Livraria.Domain\\Livraria.Domain.csproj"
+            },
+            "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
+              "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj"
             }
           }
         }

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "+ckOPVjK5pEAjjG0Yeh0j39QZU+tEK5Ky5hDqflcWcdxn1rRtY0jhIJ5SAACN7sM6e51ou1PnqM+ot2q6EgBEg==",
-  "success": false,
+  "dgSpecHash": "FHCnJ/F6ruXd1P/lJPYOCIqaeKiYXJXNH+tkxaXf2FPD9W4FkjBaDPT8O/Rk59qEFIkwjUlM/TxUwPSmVZfamg==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Web\\Livraria.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodrigo\\.nuget\\packages\\angularjs\\1.8.2\\angularjs.1.8.2.nupkg.sha512",
@@ -122,15 +122,6 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\teste.dotNet\\Livraria.Context\\Livraria.Context.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",
