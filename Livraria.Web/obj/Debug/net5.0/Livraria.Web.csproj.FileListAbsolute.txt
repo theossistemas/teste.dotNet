@@ -115,3 +115,4 @@ C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\obj\Debug\net5.0\L
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\obj\Debug\net5.0\Livraria.Web.genruntimeconfig.cache
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -15,8 +15,7 @@ using System.Text;
 namespace Livraria.Web.Api
 {
     [Route("api/usuario")]
-    [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuarioController : BaseApiController
     {
         private readonly IContextoDeDados _contexto;
         private readonly IMapper _mapper;
@@ -36,6 +35,9 @@ namespace Livraria.Web.Api
 
             if (user == null)
                 return NotFound();
+
+            UsuarioModel usuarioModel = _mapper.Map<UsuarioModel>(user);
+            usuarioModel.Token = TokenService.GenerateToken(usuarioModel);
 
             return Ok(_mapper.Map<UsuarioModel>(user));
         }
