@@ -29,9 +29,9 @@ namespace Livraria.Web.Api
         [HttpPost, Route("logar"), AllowAnonymous]
         public ActionResult Logar(UsuarioModel model)
         {
-            model.Senha = EncriptarSenha(model.Senha);
+            model.Senha = EncriptarSenha(model.Login, model.Senha);
 
-            var user = _contexto.Usuarios.FirstOrDefault(u => u.Login == model.Login && u.Senha == model.Senha);
+            Usuario user = _contexto.Usuarios.FirstOrDefault(u => u.Login == model.Login && u.Senha == model.Senha);
 
             if (user == null)
                 return NotFound();
@@ -39,23 +39,23 @@ namespace Livraria.Web.Api
             UsuarioModel usuarioModel = _mapper.Map<UsuarioModel>(user);
             usuarioModel.Token = TokenService.GenerateToken(usuarioModel);
 
-            return Ok(_mapper.Map<UsuarioModel>(user));
+            return Ok(usuarioModel);
         }
 
         [HttpPut, Route("cadastrar")]
-        public ActionResult AtualizarUsuario (UsuarioModel model)
+        public ActionResult AtualizarUsuario(UsuarioModel model)
         {
-            Usuario existente = _contexto.Usuarios.FirstOrDefault(u => u.Login == model.Login && u.Senha == EncriptarSenha(model.Senha));
+            Usuario existente = _contexto.Usuarios.FirstOrDefault(u => u.Login == model.Login && u.Senha == EncriptarSenha(model.Login, model.Senha));
             Usuario usuario = _mapper.Map<Usuario>(model);
 
 
             return Ok();
         }
 
-        public string EncriptarSenha(string value)
+        public string EncriptarSenha(string login, string senha)
         {
-            byte[] salt = Encoding.UTF8.GetBytes(value);
-            byte[] senhaByte = Encoding.UTF8.GetBytes(value);
+            byte[] salt = Encoding.UTF8.GetBytes(login);
+            byte[] senhaByte = Encoding.UTF8.GetBytes(senha);
             byte[] sha256 = new SHA256Managed().ComputeHash(senhaByte.Concat(salt).ToArray());
             return Convert.ToBase64String(sha256);
         }

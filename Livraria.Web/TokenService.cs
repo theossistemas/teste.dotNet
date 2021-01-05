@@ -10,7 +10,7 @@ namespace Livraria.Web
 {
     public class TokenService
     {
-        public static string Secret = "segredo";
+        public static string Secret = "segredo1234segredo1234";
 
         public static string GenerateToken(UsuarioModel usuario)
         {

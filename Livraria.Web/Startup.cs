@@ -2,6 +2,7 @@ using AutoMapper;
 
 using Livraria.Context;
 using Livraria.Domain;
+using Livraria.Domain.Contexto;
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -55,8 +56,8 @@ namespace Livraria.Web
 
             services.AddControllersWithViews();
 
-            services.AddDbContext<ContextoDeDados>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("BancoDeDados")), ServiceLifetime.Scoped);
+            services.AddDbContext<IContextoDeDados, ContextoDeDados>(options =>
+             options.UseSqlServer(Configuration.GetConnectionString("BancoDeDados")), ServiceLifetime.Scoped);
 
             services.AddSimpleInjector(_container, options =>
             {
