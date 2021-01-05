@@ -1,9 +1,6 @@
 ﻿using Livraria.Domain.ManyToMany;
-using Livraria.Domain.Pessoas;
 
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Livraria.Domain.Livros
 {

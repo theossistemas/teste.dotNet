@@ -1,9 +1,6 @@
 ﻿using Livraria.Domain.Pessoas;
 
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Livraria.Web.Models.Livros
 {
@@ -14,6 +11,5 @@ namespace Livraria.Web.Models.Livros
 
         public virtual ICollection<string> Temas { get; set; }
         public virtual ICollection<Pessoa> Autores { get; set; }
-    } 
+    }
 }
- 

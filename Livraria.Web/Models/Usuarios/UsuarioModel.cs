@@ -1,11 +1,6 @@
 ﻿using Livraria.Domain.Usuarios;
 using Livraria.Web.Models.Pessoas;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Livraria.Web.Models.Usuarios
 {
     public class UsuarioModel

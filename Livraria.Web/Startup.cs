@@ -1,21 +1,16 @@
+using AutoMapper;
+
 using Livraria.Context;
 using Livraria.Domain;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
 
 using SimpleInjector;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
 
 namespace Livraria.Web
 {
@@ -40,7 +35,7 @@ namespace Livraria.Web
             services.AddControllersWithViews();
 
             services.AddDbContext<ContextoDeDados>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("BancoDeDados")) , ServiceLifetime.Scoped);
+            options.UseSqlServer(Configuration.GetConnectionString("BancoDeDados")), ServiceLifetime.Scoped);
 
             services.AddSimpleInjector(_container, options =>
             {

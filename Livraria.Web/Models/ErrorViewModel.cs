@@ -1,5 +1,3 @@
-using System;
-
 namespace Livraria.Web.Models
 {
     public class ErrorViewModel
