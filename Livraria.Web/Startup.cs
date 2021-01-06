@@ -13,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 
+using Newtonsoft;
+
 using SimpleInjector;
 
 using System.Text;
@@ -54,7 +56,9 @@ namespace Livraria.Web
                 };
             });
 
-            services.AddControllersWithViews();
+            services.AddControllers().AddNewtonsoftJson();
+            services.AddControllersWithViews().AddNewtonsoftJson();
+            services.AddRazorPages().AddNewtonsoftJson();
 
             services.AddDbContext<IContextoDeDados, ContextoDeDados>(options =>
              options.UseSqlServer(Configuration.GetConnectionString("BancoDeDados")), ServiceLifetime.Scoped);
@@ -77,6 +81,7 @@ namespace Livraria.Web
 
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

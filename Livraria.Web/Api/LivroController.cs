@@ -91,11 +91,15 @@ namespace Livraria.Web.Api
 
             _contexto.SaveChanges();
 
-            await AtualizarTemas(livroModel, livro);
+            livro.Temas = _contexto.LivrosTemas.Where(lt => lt.IdLivro == livro.Id).ToList();
 
-            await AtualizarAutores(livroModel, livro);
+            livro = await AtualizarTemas(livroModel, livro);
 
-            _contexto.SaveChanges();
+            livro.Autores = _contexto.AutoresLivros.Where(ul => ul.IdLivro == livro.Id).ToList();
+
+            livro = await AtualizarAutores(livroModel, livro);
+
+            //_contexto.SaveChanges();
 
             return Ok(_mapper.Map<LivroModel>(livro));
         }
@@ -117,25 +121,17 @@ namespace Livraria.Web.Api
             return Ok();
         }
 
-        private Task AtualizarAutores(LivroModel livroModel, Livro livro)
+        private Task<Livro> AtualizarAutores(LivroModel livroModel, Livro livro)
         {
             foreach (Models.Pessoas.PessoaModel autor in livroModel.Autores)
             {
                 var autorExistente = _contexto.Pessoas.FirstOrDefault(a => a.Nome == autor.Nome);
                 if (autorExistente != null)
                 {
-                    if (livro.Autores != null && livro.Autores.Count > 0 && livro.Autores.Any(t => t.Autor != autorExistente))
+                    if (livro.Autores != null && !livro.Autores.Any(t => t.Autor == autorExistente))
                     {
-                        var livroAutor = _contexto.AutoresLivros.FirstOrDefault(lt => lt.IdAutor == autorExistente.Id);
-                        if (livroAutor == null)
-                            livroAutor = new AutorLivro { IdAutor = autorExistente.Id, Autor = autorExistente, Livro = livro, IdLivro = livro.Id };
+                        var livroAutor = new AutorLivro { IdAutor = autorExistente.Id, Autor = autorExistente, Livro = livro, IdLivro = livro.Id };
 
-                        livro.Autores.Add(livroAutor);
-                        _contexto.SaveChanges();
-                    }
-                    else
-                    {
-                        var livroAutor = _contexto.AutoresLivros.FirstOrDefault(lt => lt.IdAutor == autorExistente.Id);
                         livro.Autores.Add(livroAutor);
                         _contexto.SaveChanges();
                     }
@@ -154,28 +150,20 @@ namespace Livraria.Web.Api
                 }
             }
 
-            return Task.CompletedTask;
+            return Task.FromResult(livro);
         }
 
-        private Task AtualizarTemas(LivroModel livroModel, Livro livro)
+        private Task<Livro> AtualizarTemas(LivroModel livroModel, Livro livro)
         {
             foreach (string tema in livroModel.Temas)
             {
                 var temaExistente = _contexto.Temas.FirstOrDefault(t => t.Valor == tema);
                 if (temaExistente != null)
                 {
-                    if (livro.Temas != null && livro.Temas.Count > 0 && livro.Temas.Any(t => t.Tema != temaExistente))
+                    if (livro.Temas != null && !livro.Temas.Any(t => t.Tema == temaExistente))
                     {
-                        LivroTema livroTema = _contexto.LivrosTemas.FirstOrDefault(lt => lt.IdTema == temaExistente.Id);
-                        if (livroTema == null)
-                            livroTema = new LivroTema { IdTema = temaExistente.Id, Tema = temaExistente, Livro = livro, IdLivro = livro.Id };
+                        var livroTema = new LivroTema { IdTema = temaExistente.Id, Tema = temaExistente, Livro = livro, IdLivro = livro.Id };
 
-                        livro.Temas.Add(livroTema);
-                        _contexto.SaveChanges();
-                    }
-                    else
-                    {
-                        LivroTema livroTema = _contexto.LivrosTemas.FirstOrDefault(lt => lt.IdTema == temaExistente.Id);
                         livro.Temas.Add(livroTema);
                         _contexto.SaveChanges();
                     }
@@ -194,7 +182,7 @@ namespace Livraria.Web.Api
                 }
             }
 
-            return Task.CompletedTask;
+            return Task.FromResult(livro);
         }
     }
 }

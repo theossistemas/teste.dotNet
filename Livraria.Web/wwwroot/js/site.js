@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 (function () {
-    var app = angular.module("app", []);
+    var app = angular.module("app", ['ngCookies']);
 
     app.controller("livroController", ["$scope", "$http", function (scope, http) {
 
@@ -23,8 +23,35 @@
         scope.buscarLivros();
     }]);
 
-    app.controller("loginControler", ["$scope", function (scope) {
+    app.controller("loginController", ["$scope", "$http", "$cookies", function (scope, http, cookies) {
+        scope.livro = {};
+        scope.livro.autores = [];
+        scope.livro.temas = [];
 
+        scope.logar = function () {
+            http.post("../api/usuario/logar", scope.usuario)
+                .then(function (r) {
+                    cookies.put("token", r.data.token);
+                    scope.logado = true;
+                });
+        };
 
+        scope.adicionarAutor = function () {
+            scope.livro.autores.push({ nome: scope.autorAdicionar });
+            scope.autorAdicionar = "";
+        };
+
+        scope.adicionarTema = function () {
+            scope.livro.temas.push(scope.temaAdicionar);
+            scope.temaAdicionar = "";
+        };
+
+        scope.cadastrarLivro = function () {
+            http.put("../api/livro", scope.livro, {
+                headers: {
+                    'Authorization': 'Bearer ' + cookies.get("token")
+                }
+            });
+        }
     }]);
 })()

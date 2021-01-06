@@ -117,3 +117,6 @@ C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\M
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\libman.json
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

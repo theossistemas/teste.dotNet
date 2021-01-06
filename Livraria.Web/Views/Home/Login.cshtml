@@ -4,4 +4,113 @@
 @{
 }
 
-<div ng-controller="loginController"></div>
+<div ng-controller="loginController">
+    <div class="card-body">
+        <form ng-submit="logar()"
+              validate
+              ng-hide="logado">
+            <div class="row form-group ">
+                <div class="col-sm-2">
+                    <label for="login">Login</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="usuario.login"
+                           id="login"
+                           required />
+                </div>
+            </div>
+            <div class="row form-group ">
+                <div class="col-sm-2">
+                    <label for="senha">Senha</label>
+                    <input type="password"
+                           class="form-control"
+                           ng-model="usuario.senha"
+                           id="senha"
+                           required />
+                </div>
+            </div>
+            <div class="row form-group ">
+                <div class="col-sm-2">
+                    <button class="btn btn-outline-success">Logar</button>
+                </div>
+            </div>
+        </form>
+
+        <div ng-show="logado">
+            <h3>Cadastrar Livro</h3>
+
+            <form ng-submit="cadastrarLivro()">
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="titulo">Titulo</label>
+                        <input type="text"
+                               class="form-control"
+                               required
+                               id="titulo"
+                               ng-model="livro.titulo" />
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <div class="row">Autores:</div>
+                        <div class="row" ng-repeat="autor in livro.autores">{{autor.nome}}</div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for=" nomeDoAutor">Autor</label>
+                                <input type="text"
+                                       ng-model="autorAdicionar"
+                                       id="nomeDoAutor" />
+                            </div>
+                            <div class="col-2">
+                                <button type="button"
+                                        ng-click="adicionarAutor()"
+                                        class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <div class="row">Temas:</div>
+                        <div class="row" ng-repeat="tema in livro.temas">{{tema}}</div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for=" tema">Tema</label>
+                                <input type="text"
+                                       ng-model="temaAdicionar"
+                                       id="tema" />
+                            </div>
+                            <div class="col-2">
+                                <button type="button"
+                                        ng-click="adicionarTema()"
+                                        class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row form-group ">
+                    <div class="col-sm-2">
+                        <button class="btn btn-outline-success">Cadastrar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>

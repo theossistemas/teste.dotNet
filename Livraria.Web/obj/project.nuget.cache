@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nf1F8MDVjNr1FtyJNddYgVqF/ptKzD6uxiSFGF136QzVI1fom1tXP5abupfRnnsxO6lp1Kg08oPJq7THHm+nIg==",
+  "dgSpecHash": "NPyGoqvx1vp1jM3Aq/uhrbOmLcaV0JXasGYmZJE9Q2PhowAKRzE0kjnBC3JXjUIu4ifZVPMW4hhXvRwGMEc0Nw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Web\\Livraria.Web.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,8 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.http\\2.1.0\\microsoft.aspnetcore.http.2.1.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.1\\microsoft.aspnetcore.jsonpatch.5.0.1.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.1\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.1.0\\microsoft.aspnetcore.webutilities.2.1.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -50,6 +52,7 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\simpleinjector\\5.2.0\\simpleinjector.5.2.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\simpleinjector.integration.aspnetcore\\5.2.0\\simpleinjector.integration.aspnetcore.5.2.0.nupkg.sha512",
