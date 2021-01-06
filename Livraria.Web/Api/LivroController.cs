@@ -27,14 +27,23 @@ namespace Livraria.Web.Api
             _contexto = contexto;
             _mapper = mapper;
         }
+           
 
-        [HttpGet, AllowAnonymous]
-        public ActionResult BuscarLivros(string busca, string tema = null)
+        [HttpGet, Route("{take}/{skip}"), AllowAnonymous]
+        public ActionResult BuscarLivros(int take, int skip, string busca = null, string tema = null)
         {
-            IQueryable<Livro> livros = _contexto.Livros.Where(l =>
+            IQueryable<Livro> livros = null;
+
+
+            if (busca != null)
+                livros = _contexto.Livros.Where(l =>
                                                 l.Autores.Any(a => a.Autor.Nome.Contains(busca)) ||
                                                 l.Titulo.Contains(busca)
-                                                );
+                                                ).Take(take).Skip(skip);
+            else
+                livros = _contexto.Livros.Take(take).Skip(skip);
+
+            livros = livros.OrderBy(l => l.Titulo);
 
             if (tema != null)
             {
@@ -46,7 +55,7 @@ namespace Livraria.Web.Api
             foreach (Livro livro in livros)
             {
                 var autores = _contexto.AutoresLivros.Where(al => al.IdLivro == livro.Id).ToList();
-                foreach(var autorLivro in autores)
+                foreach (var autorLivro in autores)
                 {
                     autorLivro.Autor = _contexto.Pessoas.Find(autorLivro.IdAutor);
                     livro.Autores.Add(autorLivro);
