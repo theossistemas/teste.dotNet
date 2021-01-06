@@ -27,23 +27,21 @@ namespace Livraria.Web.Api
             _contexto = contexto;
             _mapper = mapper;
         }
-           
+
 
         [HttpGet, Route("{take}/{skip}"), AllowAnonymous]
         public ActionResult BuscarLivros(int take, int skip, string busca = null, string tema = null)
         {
-            IQueryable<Livro> livros = null;
-
-
-            if (busca != null)
-                livros = _contexto.Livros.Where(l =>
-                                                l.Autores.Any(a => a.Autor.Nome.Contains(busca)) ||
-                                                l.Titulo.Contains(busca)
-                                                ).Take(take).Skip(skip);
-            else
-                livros = _contexto.Livros.Take(take).Skip(skip);
+            IQueryable<Livro> livros = _contexto.Livros;
 
             livros = livros.OrderBy(l => l.Titulo);
+
+            if (busca != null)
+                livros = livros.Where(l =>
+                                                l.Autores.Any(a => a.Autor.Nome.Contains(busca)) ||
+                                                l.Titulo.Contains(busca)
+                                                );
+
 
             if (tema != null)
             {
@@ -51,6 +49,8 @@ namespace Livraria.Web.Api
             }
 
             List<LivroModel> livrosModel = new List<LivroModel>();
+            var quantidadeLivros = livros.Count();
+            livros = livros.Take(take).Skip(skip);
 
             foreach (Livro livro in livros)
             {
@@ -67,11 +67,13 @@ namespace Livraria.Web.Api
                     livroTema.Tema = _contexto.Temas.Find(livroTema.IdTema);
                     livro.Temas.Add(livroTema);
                 }
+
                 LivroModel model = _mapper.Map<LivroModel>(livro);
                 livrosModel.Add(model);
             }
+            
 
-            return Ok(livrosModel);
+            return Ok(new { livrosModel, quantidadeLivros });
         }
 
         [HttpPut]
