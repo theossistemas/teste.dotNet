@@ -15,7 +15,11 @@ namespace Livraria.Web
     {
         public WebAutoMapperConfig()
         {
-            CreateMap<Usuario, UsuarioModel>();
+            CreateMap<Usuario, UsuarioModel>()
+                .ForMember(
+                dest => dest.Senha,
+                dest => dest.Ignore());
+
             CreateMap<UsuarioModel, Usuario>();
 
             CreateMap<Pessoa, PessoaModel>()
@@ -29,8 +33,15 @@ namespace Livraria.Web
                 dest => dest.Temas,
                 opt => opt.MapFrom(
                     src => src.Temas.Select(
-                        t => t.Tema.Valor)));
-            CreateMap<LivroModel, Livro>();
+                        t => t.Tema.Valor)))   
+                .ForMember(
+                dest => dest.Autores,
+                opt => opt.MapFrom(
+                    src => src.Autores.Select(
+                        t => t.Autor)));
+            CreateMap<LivroModel, Livro>()
+                .ForMember(dest => dest.Temas, dest => dest.Ignore())
+                .ForMember(dest => dest.Autores, dest => dest.Ignore());
         }
     }
 }

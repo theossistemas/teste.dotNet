@@ -48,7 +48,19 @@ namespace Livraria.Web.Api
             Usuario existente = _contexto.Usuarios.FirstOrDefault(u => u.Login == model.Login && u.Senha == EncriptarSenha(model.Login, model.Senha));
             Usuario usuario = _mapper.Map<Usuario>(model);
 
+            if (existente != null)
+            {
+                usuario.Senha = existente.Senha;
+                usuario.Id = existente.Id;
+                usuario.IdPessoa = existente.IdPessoa;
+                _contexto.Usuarios.Update(usuario);
+            }
 
+            else
+                _contexto.Usuarios.Add(usuario);
+
+
+            _contexto.SaveChanges();
             return Ok();
         }
 
