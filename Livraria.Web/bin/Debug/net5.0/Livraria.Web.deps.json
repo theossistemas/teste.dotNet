@@ -25,6 +25,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Livraria.Web/1.0.0": {
         "dependencies": {
+          "AngularJS.Core": "1.8.0",
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.0",
           "Livraria.Context": "1.0.0",
@@ -37,7 +38,6 @@
           "SimpleInjector": "5.2.0",
           "SimpleInjector.Integration.AspNetCore": "5.2.0",
           "SimpleInjector.Integration.Web": "5.0.0",
-          "angularjs": "1.8.2",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -328,7 +328,7 @@
           "Livraria.Web.dll": {}
         }
       },
-      "angularjs/1.8.2": {},
+      "AngularJS.Core/1.8.0": {},
       "AutoMapper/10.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -3147,12 +3147,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "angularjs/1.8.2": {
+    "AngularJS.Core/1.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PNDvzvETjTfl3JqHTuPH8XbKOLQRXrHp613vGMpllUIy2YL42tK8YIdbeBaMZxK+8VlUMShuXMVkgiH95S12rQ==",
-      "path": "angularjs/1.8.2",
-      "hashPath": "angularjs.1.8.2.nupkg.sha512"
+      "sha512": "sha512-StzfBqVlaMzvRQOAxShY3mVJKZxnkPahHR8/jJTj3LTG4IraRhex1c228Xd0VBDESdqW9phbgGLnvbIBpvxIyA==",
+      "path": "angularjs.core/1.8.0",
+      "hashPath": "angularjs.core.1.8.0.nupkg.sha512"
     },
     "AutoMapper/10.1.1": {
       "type": "package",

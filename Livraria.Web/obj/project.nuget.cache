@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+j+WBTNp8T84uZtfVQQjjdWuA1ysnbzskNaSPkMzNw02sy1DVwaZxnLSVq82l38H2ZqdJR+10i2Yyh+w1axWnw==",
+  "dgSpecHash": "nf1F8MDVjNr1FtyJNddYgVqF/ptKzD6uxiSFGF136QzVI1fom1tXP5abupfRnnsxO6lp1Kg08oPJq7THHm+nIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\source\\repos\\theos\\teste.dotNet\\Livraria.Web\\Livraria.Web.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Rodrigo\\.nuget\\packages\\angularjs\\1.8.2\\angularjs.1.8.2.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\angularjs.core\\1.8.0\\angularjs.core.1.8.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

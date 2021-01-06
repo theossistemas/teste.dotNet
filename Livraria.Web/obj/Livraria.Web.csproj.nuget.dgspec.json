@@ -217,6 +217,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AngularJS.Core": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
@@ -258,10 +262,6 @@
             "SimpleInjector.Integration.Web": {
               "target": "Package",
               "version": "[5.0.0, )"
-            },
-            "angularjs": {
-              "target": "Package",
-              "version": "[1.8.2, )"
             }
           },
           "imports": [

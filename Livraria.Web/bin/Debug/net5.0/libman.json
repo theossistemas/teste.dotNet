@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "jsdelivr",
+      "library": "angularjs@0.0.1",
+      "destination": "wwwroot/lib/angularjs/"
+    }
+  ,
+{
+  "library": "angular.js@1.8.2",
+  "destination": "wwwroot/lib/angular.js/"
+}
+,
+{
+  "library": "fontawesome-iconpicker@3.2.0",
+  "destination": "wwwroot/lib/fontawesome-iconpicker/"
+}
+,
+{
+  "library": "font-awesome@5.15.1",
+  "destination": "wwwroot/font-awesome/"
+}
+]
+}

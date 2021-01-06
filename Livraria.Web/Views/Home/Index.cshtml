@@ -2,7 +2,61 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center card-header">
+    <h1 class="display-4">Bem vindo ao nosso catalogo online.</h1>
+</div>
+
+<div ng-controller="livroController">
+    <div class="card-body">
+        <form>
+            <div class="row form-group">
+                <div class="col-8">
+                    <label for="buscarLivro">
+                        Buscar por livro ou autor
+                    </label>
+                    <input type="search"
+                           ng-model="busca"
+                           class="form-control"
+                           id="buscarLivro" />
+                </div>
+
+                <div class="col-2">
+                    <label for="selecionaTema">
+                        Tema
+                    </label>
+                    <select class="form-control"
+                            ng-model="tema"
+                            id="selecionaTema"
+                            data-size="5">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+
+                <div class="col-2">
+                    <label for="btnPesquisa"> </label>
+                    <button class="btn btn-sm btn-outline-primary form-control"
+                            id="btnPesquisa"
+                            type="button"
+                            ng-click="buscarLivros()">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+
+        <table class="table table-bordered">
+            <tr ng-repeat="livro in livros">
+                <td>
+                    Titulo: {{livro.titulo}}
+                </td>
+
+                <td> 
+                    <div>Autor(es):</div>
+                    <div ng-repeat="autor in livro.autores">{{autor.nome}}</div>                
+                </td>
+            </tr>
+           
+        </table>
+    </div>
 </div>

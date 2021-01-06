@@ -30,20 +30,20 @@ namespace Livraria.Web.Api
 
 
         [HttpGet, Route("{take}/{skip}"), AllowAnonymous]
-        public ActionResult BuscarLivros(int take, int skip, string busca = null, string tema = null)
+        public ActionResult BuscarLivros(int take, int skip, string busca, string tema)
         {
             IQueryable<Livro> livros = _contexto.Livros;
 
             livros = livros.OrderBy(l => l.Titulo);
 
-            if (busca != null)
+            if (!string.IsNullOrEmpty(busca) && !string.IsNullOrWhiteSpace(busca))
                 livros = livros.Where(l =>
                                                 l.Autores.Any(a => a.Autor.Nome.Contains(busca)) ||
                                                 l.Titulo.Contains(busca)
                                                 );
 
 
-            if (tema != null)
+            if (!string.IsNullOrEmpty(tema) && !string.IsNullOrWhiteSpace(tema))
             {
                 livros = livros.Where(l => l.Temas.Any(t => t.Tema.Valor == tema));
             }
@@ -71,7 +71,7 @@ namespace Livraria.Web.Api
                 LivroModel model = _mapper.Map<LivroModel>(livro);
                 livrosModel.Add(model);
             }
-            
+
 
             return Ok(new { livrosModel, quantidadeLivros });
         }
@@ -98,6 +98,23 @@ namespace Livraria.Web.Api
             _contexto.SaveChanges();
 
             return Ok(_mapper.Map<LivroModel>(livro));
+        }
+
+        [HttpDelete, Route("{id}")]
+        public ActionResult DeletarLivro(int id)
+        {
+            Livro livro = _contexto.Livros.Find(id);
+
+            IQueryable<AutorLivro> relacaoAutores = _contexto.AutoresLivros.Where(al => al.IdLivro == id);
+            _contexto.Remove(relacaoAutores);
+
+            IQueryable<LivroTema> relacaoTemas = _contexto.LivrosTemas.Where(al => al.IdLivro == id);
+            _contexto.Remove(relacaoTemas);
+
+            _contexto.Remove(livro);
+            _contexto.SaveChanges();
+
+            return Ok();
         }
 
         private Task AtualizarAutores(LivroModel livroModel, Livro livro)
