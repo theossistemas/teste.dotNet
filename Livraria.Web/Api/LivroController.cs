@@ -110,10 +110,12 @@ namespace Livraria.Web.Api
             Livro livro = _contexto.Livros.Find(id);
 
             IQueryable<AutorLivro> relacaoAutores = _contexto.AutoresLivros.Where(al => al.IdLivro == id);
-            _contexto.Remove(relacaoAutores);
+            foreach (var relacao in relacaoAutores)
+                _contexto.Remove(relacao);
 
             IQueryable<LivroTema> relacaoTemas = _contexto.LivrosTemas.Where(al => al.IdLivro == id);
-            _contexto.Remove(relacaoTemas);
+            foreach (var relacao in relacaoTemas)
+                _contexto.Remove(relacao);
 
             _contexto.Remove(livro);
             _contexto.SaveChanges();
