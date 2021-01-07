@@ -17,8 +17,13 @@
                 .then(function (r) {
                     scope.livros = r.data.livrosModel;
                     scope.quantidade = r.data.quantidadeLivros;
-                    scope.paginas = scope.quantidade / scope.take;
+                    scope.paginas = Math.ceil(scope.quantidade / scope.take) - 1;
                 })
+        };
+
+        scope.proximaPagina = function () {
+            scope.skip = (scope.pagina * 10) - 10;
+            scope.buscarLivros();
         };
 
         scope.buscarLivros();
