@@ -1,5 +1,4 @@
-﻿using Livraria.Domain.Pessoas;
-using Livraria.Web.Models.Pessoas;
+﻿using Livraria.Web.Models.Pessoas;
 
 using System.Collections.Generic;
 

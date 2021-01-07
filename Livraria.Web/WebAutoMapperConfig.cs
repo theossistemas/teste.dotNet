@@ -33,7 +33,7 @@ namespace Livraria.Web
                 dest => dest.Temas,
                 opt => opt.MapFrom(
                     src => src.Temas.Select(
-                        t => t.Tema.Valor)))   
+                        t => t.Tema.Valor)))
                 .ForMember(
                 dest => dest.Autores,
                 opt => opt.MapFrom(
