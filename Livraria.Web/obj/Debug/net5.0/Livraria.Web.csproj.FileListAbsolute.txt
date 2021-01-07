@@ -120,3 +120,8 @@ C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\obj\Debug\net5.0\R
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rodrigo\source\repos\theos\teste.dotNet\Livraria.Web\obj\Debug\net5.0\Livraria.Web.MvcApplicationPartsAssemblyInfo.cs

@@ -17,6 +17,7 @@
                 .then(function (r) {
                     scope.livros = r.data.livrosModel;
                     scope.quantidade = r.data.quantidadeLivros;
+                    scope.paginas = scope.quantidade / scope.take;
                 })
         };
 

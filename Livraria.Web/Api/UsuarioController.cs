@@ -64,7 +64,7 @@ namespace Livraria.Web.Api
             return Ok();
         }
 
-        public string EncriptarSenha(string login, string senha)
+        private string EncriptarSenha(string login, string senha)
         {
             byte[] salt = Encoding.UTF8.GetBytes(login);
             byte[] senhaByte = Encoding.UTF8.GetBytes(senha);
