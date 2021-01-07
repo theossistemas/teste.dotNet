@@ -82,6 +82,7 @@ namespace Livraria.Web
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -99,6 +100,11 @@ namespace Livraria.Web
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(s =>
+            s.SwaggerEndpoint("/swagger/v1/swagger.json", "API Livraria V1")
+            );
 
             app.UseRouting();
 
