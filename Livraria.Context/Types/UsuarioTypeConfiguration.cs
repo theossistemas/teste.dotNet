@@ -15,6 +15,18 @@ namespace Livraria.Context.Types
 
             builder.HasOne(u => u.Pessoa).WithMany().HasForeignKey(u => u.IdPessoa);
 
+            builder.HasData
+                (
+                    new Usuario
+                    {
+                        Id = 1,
+                        IdPessoa = 1,
+                        Email = "teste@123",
+                        Login = "admin",
+                        Senha = "123",
+                        Permissao = Permissao.Administrador
+                    }
+                );
         }
     }
 }
