@@ -1,0 +1,214 @@
+<div style="margin-bottom: 10px">
+  <button class="btn btn-success btn-lg" (click)="newLivro(template)"><i class="fa fa-plus"></i> Novo Livro</button>
+</div>
+<table class="table table-striped">
+  <thead class="thead-dark">
+  <tr>
+    <th>#</th>
+    <th>ISBN</th>
+    <th>Titulo</th>
+    <th style=" width: 150px;">Total Páginas</th>
+    <th style=" width: 50px;">Promoção</th>
+    <th style=" width: 150px;">Valor Promoção</th>
+    <th>Valor</th>
+    <th>Opçoes</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let livro of livros">
+    <td>{{livro.id}}</td>
+    <td>{{livro.isbn}}</td>
+    <td>{{livro.titulo}}</td>
+    <td style="text-align: center">{{livro.totalPagina}}</td>
+    <td style="text-align: center">
+            <span>
+              {{livro.promocao ? 'SIM' : 'NÃO'}}
+            </span>
+    </td>
+    <td class="text-danger" style="text-align: right">{{livro.valorPromocao | currency: 'BRL'}}</td>
+    <td class="text-info" style="text-align: right; font-weight: bold">{{livro.valor | currency: 'BRL'}}</td>
+    <td class="td-opcoes">
+      <div class="btn-group">
+        <button class="btn btn-sm btn-success" tooltip="Editar" placement="left" (click)="editLivro(template, livro)">
+          <i class="fa fa-edit"></i>
+        </button>
+        <button class="btn btn-sm btn-danger" tooltip="Excluir" placement="right" (click)="excluirLivro(livro, confirm)">
+          <i class="far fa-trash-alt"></i>
+        </button>
+      </div>
+
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+<!--Large modal-->
+
+<div bsModal #template="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-sizes-name1" class="modal-title pull-left">{{modoSalvar == 'post' ? 'Cadastrar' : 'Editar'}}</h4>
+        <button type="button" class="close pull-right" (click)="template.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="registerForm">
+          <div class="form-row">
+            <div class="form-group col-md-9">
+
+              <label>Nome do Livro</label>
+              <input type="text" class="form-control"
+                     [ngClass]="{'is-invalid': registerForm.get('titulo').errors && registerForm.get('titulo').touched}"
+                     formControlName="titulo"
+                     placeholder="Insira o titulo do Livro">
+              <div
+                *ngIf="registerForm.get('titulo').hasError('required') && registerForm.get('titulo').touched"
+                class="invalid-feedback">
+                Titulo do livro é obrigatório
+              </div>
+              <div *ngIf="registerForm.get('titulo').hasError('minlength') && registerForm.get('titulo').touched" class="invalid-feedback">
+                Tema deve ter no mínimo 6 caracters
+              </div>
+              <div *ngIf="registerForm.get('titulo').hasError('maxlength') && registerForm.get('titulo').touched" class="invalid-feedback">
+                Tema deve ter no máximo 80 caracteres
+              </div>
+            </div>
+            <div class="form-group col-md-3">
+
+              <label>ISBN</label>
+              <input type="text" class="form-control"
+                     [ngClass]="{'is-invalid': registerForm.get('isbn').errors && registerForm.get('isbn').touched}"
+                     formControlName="isbn"
+                     placeholder="Insira o Isbn do Livro">
+              <div
+                *ngIf="registerForm.get('isbn').hasError('required') && registerForm.get('isbn').touched"
+                class="invalid-feedback">
+                Isbn do livro é obrigatório
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <label>Autor</label>
+              <input type="text" class="form-control"
+                     [ngClass]="{'is-invalid': registerForm.get('autor').errors && registerForm.get('autor').touched}"
+                     formControlName="autor"
+                     placeholder="Insira o titulo do Livro">
+              <div
+                *ngIf="registerForm.get('autor').hasError('required') && registerForm.get('autor').touched"
+                class="invalid-feedback">
+                Autor do livro é obrigatório
+              </div>
+              <div *ngIf="registerForm.get('autor').hasError('minlength') && registerForm.get('autor').touched" class="invalid-feedback">
+                Tema deve ter no mínimo 3 caracters
+              </div>
+              <div *ngIf="registerForm.get('autor').hasError('maxlength') && registerForm.get('autor').touched" class="invalid-feedback">
+                Tema deve ter no máximo 80 caracteres
+              </div>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Total Páginas</label>
+              <input type="number" class="form-control"
+                     [ngClass]="{'is-invalid': registerForm.get('totalPagina').errors && registerForm.get('totalPagina').touched}"
+                     formControlName="totalPagina">
+              <div
+                *ngIf="registerForm.get('totalPagina').hasError('required') && registerForm.get('totalPagina').touched"
+                class="invalid-feedback">
+                Total de páginas é obrigatório
+              </div>
+              <div *ngIf="registerForm.get('totalPagina').hasError('min') && registerForm.get('totalPagina').touched" class="invalid-feedback">
+                Total de páginas deve ter no mínimo 25 páginas
+              </div>
+              <div *ngIf="registerForm.get('totalPagina').hasError('max') && registerForm.get('totalPagina').touched" class="invalid-feedback">
+                Total de páginas deve ter no máximo 1000 páginas
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label>Valor</label>
+              <input type="text" currencyMask
+                     [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }"
+                     class="form-control"
+                     [ngClass]="{'is-invalid': registerForm.get('valor').errors && registerForm.get('valor').touched}"
+                     formControlName="valor">
+
+            </div>
+            <div class="form-group col-md-3">
+              <label>Valor Promoção</label>
+              <input type="text" currencyMask
+                     [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }"
+                     class="form-control"
+                     [ngClass]="{'is-invalid': registerForm.get('valorPromocao').errors && registerForm.get('valorPromocao').touched}"
+                     formControlName="valorPromocao" >
+
+            </div>
+            <div class="form-group col-md-3">
+              <label>Promoção</label>
+              <select class="custom-select"
+                      [ngClass]="{'is-invalid': registerForm.get('promocao').errors && registerForm.get('promocao').touched}"
+                      formControlName="promocao" >
+                <option value=true>SIM</option>
+                <option value=false>NÃO</option>
+              </select>
+              <div
+                *ngIf="registerForm.get('promocao').hasError('required') && registerForm.get('promocao').touched"
+                class="invalid-feedback">
+                Escolha SIM ou NÃO
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <textarea class="form-control"
+                        [ngClass]="{'is-invalid': registerForm.get('resumo').errors && registerForm.get('resumo').touched}"
+                        formControlName="resumo"
+                        placeholder="Deixe sua opnião"></textarea>
+              <div *ngIf="registerForm.get('resumo').hasError('maxlength') && registerForm.get('resumo').touched" class="invalid-feedback">
+                Resumo deve ter no máximo 200 caracteres
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="template.hide()">
+          Fechar
+        </button>
+        <button class="btn btn-primary" [disabled]="!registerForm.valid" (click)="salvarAlteracao(template)">
+          Salvar Alterações
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--modal confirm delete-->
+<div bsModal #confirm="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">
+          Deletando Produto
+        </h4>
+        <button type="button" class="close pull-right" (click)="confirm.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>{{bodyDeleteLivro}}</p>
+      </div>
+      <div class="modal-footer btn-group d-flex">
+        <button type="button" class="btn btn-outline-primary" (click)="confirm.hide()">
+          CENCELAR
+        </button>
+        <button type="button" class="btn btn-outline-danger" (click)="confirmeDelete(confirm)">
+          DELETAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
