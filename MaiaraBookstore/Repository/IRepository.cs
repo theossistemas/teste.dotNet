@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MaiaraBookstore.Repository
+﻿namespace MaiaraBookstore.Repository
 {
     public interface IRepository<T>
     {
@@ -12,5 +7,9 @@ namespace MaiaraBookstore.Repository
         T FindByTitulo(string titulo);
 
         void Save(T objeto);
+
+        void Delete(T objeto);
+
+        void UpDate(T objeto);
     }
 }

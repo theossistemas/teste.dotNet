@@ -1,13 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MaiaraBookstore.Models
 {
     public class Livro
     {
+        public Livro() { }
+        public Livro(string Titulo) 
+        {
+            this.Titulo = Titulo;
+        }
+
         [Key]
         public int Id { get; set; }
 

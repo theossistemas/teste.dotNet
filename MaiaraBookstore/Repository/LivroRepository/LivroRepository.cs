@@ -3,7 +3,6 @@ using MaiaraBookstore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MaiaraBookstore.Repository.LivroRepository
 {
@@ -17,17 +16,32 @@ namespace MaiaraBookstore.Repository.LivroRepository
 
         public Livro FindById(int id)
         {
-            return _dataContext.Livro.Where(e => e.Id == id).FirstOrDefault();
+            return _dataContext.Livro.SingleOrDefault(l => l.Id == id);
         }
 
-        public Livro FindByTitulo(string titulo)
+        public Livro FindByTitulo(String titulo)
         {
-            return _dataContext.Livro.Where(e => e.Titulo == titulo).FirstOrDefault();
+            return _dataContext.Livro.SingleOrDefault(l => l.Titulo == titulo);
+        }
+
+        public List<Livro> FindAll()
+        {
+            return _dataContext.Livro.OrderBy(l => l.Titulo).ToList();
         }
 
         public void Save(Livro objeto)
         {
             _dataContext.Livro.Add(objeto);
+        }
+
+        public void Delete(Livro livro)
+        {
+            _dataContext.Livro.Remove(livro);
+        }
+
+        public void UpDate(Livro livro)
+        {
+            _dataContext.Livro.Update(livro);
         }
     }
 }

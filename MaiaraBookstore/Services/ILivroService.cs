@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MaiaraBookstore.Services
+﻿namespace MaiaraBookstore.Services
 {
-    public interface ILivroService
+    public interface ILivroService<T, J>
     {
         bool ValidaSeTituloDeLivroEstaCadastrado(string titulo);
+
+        void Delete(T objeto);
+
+        void SalvarLivro(T objeto);
+
+        T FindById(int Id);
+
+        T EditaLivro(T objeto, J objetoDTO);
 
     }
 }

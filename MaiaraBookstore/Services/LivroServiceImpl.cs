@@ -1,22 +1,20 @@
 ﻿using MaiaraBookstore.Data;
 using MaiaraBookstore.Models;
+using MaiaraBookstore.Models.DTO;
 using MaiaraBookstore.Repository.LivroRepository;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MaiaraBookstore.Services
 {
-    public class LivroServiceImpl : ILivroService
+    public class LivroServiceImpl : ILivroService<Livro, LivroDTO>
     {
         private LivroRepository _livroRepository;
 
-        public LivroServiceImpl()
+        public LivroServiceImpl(DataContext dataContext)
         {
-            _livroRepository = new LivroRepository(new DataContext());
+            _livroRepository = new LivroRepository(dataContext);
         }
-        public bool ValidaSeTituloDeLivroEstaCadastrado(string titulo)
+        public bool ValidaSeTituloDeLivroEstaCadastrado(String titulo)
         {
             Livro livro = _livroRepository.FindByTitulo(titulo);
             if (livro == null)
@@ -24,6 +22,29 @@ namespace MaiaraBookstore.Services
                 return false;
             }
             return true;
+        }
+
+        public void SalvarLivro(Livro livro)
+        {
+            this._livroRepository.Save(livro);
+        }
+
+        public void Delete(Livro objeto)
+        {
+            this._livroRepository.Delete(objeto);
+        }
+
+        public Livro FindById(int Id)
+        {
+            return this._livroRepository.FindById(Id);
+        }
+
+        public Livro EditaLivro(Livro livro, LivroDTO livroDTO)
+        {
+            livro.Titulo = livroDTO.Titulo;
+            this._livroRepository.UpDate(livro);
+            this._livroRepository.UpDate(livro);
+            return livro;
         }
     }
 }
