@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mt-1">{{id !== '0'? 'Editar' : 'Nova' }} Editora</h3>
+      <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input type="text" class="form-control" [(ngModel)]="item.name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Site</label>
+        <input type="text" class="form-control" [(ngModel)]="item.website">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Informações</label>
+        <input type="text" class="form-control" [(ngModel)]="item.information">
+      </div>
+
+      <a class="btn btn-primary" [routerLink]="['/publishers/']">Voltar</a>
+      <button class="btn btn-success ml-3" (click)="save()">Salvar</button>
+    </div>
+  </div>
+</div>

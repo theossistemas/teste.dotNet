@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mt-1">
+        Logs
+      </h3>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <td>Mensagem</td>
+            <td>Data</td>
+            <td>Tipo</td>
+            <td>Usuario</td>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list">
+            <td>
+              {{ item.message }}
+            </td>
+            <td>
+              {{ item.createAt | date }}
+            </td>
+            <td>
+              {{ item.type }}
+            </td>
+            <td>
+              {{ item.user.email  }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mt-1">{{id !== '0'? 'Editar' : 'Novo' }} Livro</h3>
+      <div class="mb-3">
+        <label class="form-label">Titulo</label>
+        <input type="text" class="form-control" [(ngModel)]="item.title">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Descrição</label>
+        <input type="text" class="form-control" [(ngModel)]="item.description">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Autor</label>
+        <input type="text" class="form-control" [(ngModel)]="item.author">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">ISBN</label>
+        <input type="text" class="form-control" [(ngModel)]="item.isbn">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Data lançamento</label>
+        <input type="date" class="form-control" [(ngModel)]="item.dateRelease">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Genero</label>
+        <select type="date" class="form-control" [(ngModel)]="item.genre.id">
+          <option *ngFor="let item of genres" value="{{item.id}}">{{item.name}}</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Editora</label>
+        <select type="date" class="form-control" [(ngModel)]="item.publisher.id">
+          <option *ngFor="let item of publishers" value="{{item.id}}">{{item.name}}</option>
+        </select>
+      </div>
+
+      <div class="mb-3" *ngIf="item.createAt">
+        <label class="form-label">Data criado</label>
+        {{item.createAt | date }}
+      </div>
+
+      <a class="btn btn-primary" [routerLink]="['/']">Voltar</a>
+      <button class="btn btn-success ml-3" (click)="save()">Salvar</button>
+    </div>
+  </div>
+</div>

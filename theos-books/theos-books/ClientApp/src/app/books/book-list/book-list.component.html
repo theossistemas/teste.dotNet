@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mt-1">
+        Livros <a class="btn btn-primary float-right" [routerLink]="['/book/0']" *ngIf="isAuthenticated | async">Adicionar livro</a>
+      </h3>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <td>Titulo</td>
+            <td>Descrição</td>
+            <td>Ações</td>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list">
+            <td>
+              {{ item.title }}
+            </td>
+            <td>
+              {{ item.description }}
+            </td>
+            <td>
+              <div *ngIf="isAuthenticated | async">
+                <a class="btn btn-primary" href="/book/{{item.id}}"> Editar</a>
+                <a class="btn btn-danger ml-2" (click)="delete(item.id)"> Excluir</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mt-1">
+        Gêneros <a class="btn btn-primary float-right" [routerLink]="['/genre/0']">Adicionar Gênero</a>
+      </h3>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Descrição</td>
+            <td>Ações</td>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let genre of genres">
+            <td>
+              {{ genre.name }}
+            </td>
+            <td>
+              {{ genre.description }}
+            </td>
+            <td>
+              <a class="btn btn-primary" href="/genre/{{genre.id}}"> Editar</a>
+              <a class="btn btn-danger ml-2" (click)="delete(genre.id)"> Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
