@@ -2,6 +2,7 @@
 using Bookstore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,10 +14,12 @@ namespace Bookstore.Controllers
     public class BooksController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-
-        public BooksController(ApplicationDbContext context)
+        private readonly ILogger<BooksController> _logger;
+                
+        public BooksController(ApplicationDbContext context, ILogger<BooksController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Books
@@ -58,7 +61,7 @@ namespace Bookstore.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException er)
             {
                 if (!BookExists(id))
                 {
@@ -66,6 +69,7 @@ namespace Bookstore.Controllers
                 }
                 else
                 {
+                    _logger.LogError(new EventId(), er, null);
                     throw;
                 }
             }
