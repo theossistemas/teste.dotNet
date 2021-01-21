@@ -1,1 +1,61 @@
-<p>book works!</p>
+<div class="container">
+
+  <form [formGroup]="BookForm" (ngSubmit)="this[EventValue]()">
+
+    <h3>Listagem de Livros</h3>
+    <div class="row">
+
+      <table class="table">
+        <tr>
+          <td>Nome</td>
+          <td>
+            <input type="hidden" formControlName="id">
+            <input type="text" formControlName="name">
+            <div *ngIf="submitted && BookForm.controls.name.errors" class="text-danger">
+              <div *ngIf="BookForm.controls.name.errors.required">Name is required</div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Isbn</td>
+          <td>
+            <input type="text" formControlName="isbn">
+            <div *ngIf="submitted && BookForm.controls.isbn.errors" class="text-danger">
+              <div *ngIf="BookForm.controls.isbn.errors.required">Isbn is required</div>
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+
+          <td colspan="2">
+            <button type="submit" class="btn btn-primary">{{EventValue}}</button>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="row">
+      <table class="table table-striped">
+        <tr>
+          <td>Id</td>
+          <td>Nome</td>
+          <td>Isbn</td>
+          <td>Alterar</td>
+          <td>Excluir</td>
+        </tr>
+
+        <tr *ngFor="let d of data">
+          <td>{{d.id}}</td>
+          <td>{{d.name}}</td>
+          <td>{{d.isbn}}</td>
+          <td><a (click)="EditData(d)" class="btn btn-warning">Edit</a></td>
+          <td><a (click)="deleteData(d.id)" class="btn btn-danger">Delete</a></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+
+</div>  
