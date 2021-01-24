@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MaiaraBookstore</name>
+    </assembly>
+    <members>
+        <member name="M:MaiaraBookstore.Controllers.LivroController.GetLivros">
+            <summary>
+            Retorna todos os livros cadastrados.
+            </summary>
+            <response code="200">Busca realizada com sucesso.</response>
+            <response code="404">Busca sem sucesso, título não encontrado.</response>
+            <response code="500">Erro ao obter livro.</response>
+        </member>
+        <member name="M:MaiaraBookstore.Controllers.LivroController.SalvarLivro(MaiaraBookstore.Models.DTO.LivroDTO)">
+            <summary>
+            Retorna todos os livros cadastrados.
+            </summary>
+            <param name="livroDTO">Dados do livro que será criado.</param>
+            <response code="201">Livro salvo com sucesso.</response>
+            <response code="404">Erro ao salvar livro</response>
+        </member>
+        <member name="M:MaiaraBookstore.Controllers.LivroController.DeleteLivro(System.Int32)">
+            <summary>
+            Retorna todos os livros cadastrados.
+            </summary>
+            <param name="Id">Id do livro a ser deletado.</param>
+            <response code="200">Título excluído com sucesso</response>
+            <response code="404">Erro ao deletar.</response>
+        </member>
+        <member name="M:MaiaraBookstore.Controllers.LivroController.EditaLivro(System.Int32,MaiaraBookstore.Models.DTO.LivroDTO)">
+            <summary>
+            Retorna todos os livros cadastrados.
+            </summary>
+            <param name="Id">Id do livro editado.</param>
+            <response code="200">Livro editado com sucesso.</response>
+            <response code="404">Erro ao Editar.</response>
+        </member>
+    </members>
+</doc>
