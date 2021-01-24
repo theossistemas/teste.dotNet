@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "borOqvuE2jnc69prPhdzfxm1dKXMrgFhp0Ydcbu2+uQYWYYqmHWteBI4d1OjpjO5ec4Dfk35YXcAa+O8TUIDZQ==",
+  "dgSpecHash": "3oAN5uxxdqkc4WZpZKiAJu0x+pgU3fmaaVQc1rken/Thn1l3fG32J63dGJoVf6shjlIFzqoxAwWR3h6ml2Jblw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\mfmai\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

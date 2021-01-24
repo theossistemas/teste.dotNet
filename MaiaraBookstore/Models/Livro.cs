@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace MaiaraBookstore.Models
@@ -16,5 +17,7 @@ namespace MaiaraBookstore.Models
 
         [Required(ErrorMessage ="Título do Livro obrigatório")]
         public String Titulo { get; set; }
+        public ICollection<LogBookstore> Logsbookstore { get; set; }
+
     }
 }

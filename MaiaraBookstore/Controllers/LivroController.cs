@@ -40,8 +40,8 @@ namespace MaiaraBookstore.Controllers
             return Ok("Livro já cadastrado");
         }
 
-        [HttpDelete("DeleteLivro")]
-        public async Task<ActionResult> DeleteLivro([FromBody] int Id)
+        [HttpDelete("DeleteLivro/{Id}")]
+        public async Task<ActionResult> DeleteLivro([FromHeader] int Id)
         {
             LivroServiceImpl livroService = new LivroServiceImpl(this._context);
             var livro = livroService.FindById(Id);
@@ -56,8 +56,8 @@ namespace MaiaraBookstore.Controllers
             }
         }
 
-        [HttpPut("EditLivro")]
-        public async Task<ActionResult> EditaLivro([FromBody] LivroDTO livroDTO)
+        [HttpPut("EditLivro/{Id}")]
+        public async Task<ActionResult> EditaLivro([FromHeader] int Id, [FromBody] LivroDTO livroDTO)
         {
             LivroServiceImpl livroService = new LivroServiceImpl(this._context);
             var livro = livroService.FindById(livroDTO.Id);

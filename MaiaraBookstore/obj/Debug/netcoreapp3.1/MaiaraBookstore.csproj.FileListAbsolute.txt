@@ -50,3 +50,4 @@ C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstor
 C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\obj\Debug\netcoreapp3.1\MaiaraBookstore.csproj.CopyComplete
+C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
