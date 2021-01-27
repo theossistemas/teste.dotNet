@@ -57,4 +57,3 @@ C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstor
 C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\bin\Debug\netcoreapp3.1\MaiaraBookstore.xml
 C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\obj\Debug\netcoreapp3.1\MaiaraBookstore.xml
-C:\Users\mfmai\OneDrive\Área de Trabalho\TesteTheos\teste.dotNet\MaiaraBookstore\obj\Debug\netcoreapp3.1\MaiaraBookstore.csprojAssemblyReference.cache
