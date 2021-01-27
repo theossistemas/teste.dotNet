@@ -26,7 +26,14 @@ namespace MaiaraBookstore.Services
 
         public void SalvarLivro(Livro livro)
         {
-            this._livroRepository.Save(livro);
+            if(livro!=null && !String.IsNullOrEmpty(livro.Titulo))
+            {
+                this._livroRepository.Save(livro);
+            }
+            else
+            {
+                throw new NullReferenceException("Erro ao salvar Livro verifique se titulo foi informado");
+            }
         }
 
         public void Delete(Livro objeto)
@@ -42,7 +49,6 @@ namespace MaiaraBookstore.Services
         public Livro EditaLivro(Livro livro, LivroDTO livroDTO)
         {
             livro.Titulo = livroDTO.Titulo;
-            this._livroRepository.UpDate(livro);
             this._livroRepository.UpDate(livro);
             return livro;
         }
