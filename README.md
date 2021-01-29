@@ -31,7 +31,7 @@ Para ajudar a livraria foi solicitado a você desenvolver uma aplicação web pa
      
 
 ##
-#### Será um diferencial
+#### É primordial e critério de desempate
 
 - Aplicação das boas práticas do DDD, TDD, Design Patterns, SOLID e Clean Code.
 
