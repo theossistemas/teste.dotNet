@@ -3,6 +3,7 @@ using MaiaraBookstore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace MaiaraBookstore.Repository.LivroRepository
 {
@@ -36,6 +37,7 @@ namespace MaiaraBookstore.Repository.LivroRepository
 
         public void Delete(Livro livro)
         {
+  
             _dataContext.Livro.Remove(livro);
         }
 

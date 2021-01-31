@@ -14,9 +14,8 @@ namespace MaiaraBookstore.Models
         public LogBookstore(string logDescricao, Livro livro) 
         {
             LogDescricao = logDescricao;
-            LivroId = livro.Id;
-            Livro = livro;
             DataDeRegistro = DateTime.Now;
+            LivroId = livro.Id;
         }
 
         [Key]
@@ -25,7 +24,7 @@ namespace MaiaraBookstore.Models
         public string LogDescricao { get; set; }
 
         public DateTime DataDeRegistro { get; set; }
+        
         public int LivroId { get; set; }
-        public Livro Livro { get; set; }
     }
 }

@@ -61,8 +61,9 @@ namespace MaiaraBookstore.Controllers
                 {
                     Livro livro = new Livro(livroDTO.Titulo);
                     livroService.SalvarLivro(livro);
-                    logBookService.SalvarLog(livro, "Foi registrado o livro: " + livro.Titulo);
+                    await _context.SaveChangesAsync();
 
+                    logBookService.SalvarLog(livro, "Foi registrado o livro: " + livro.Titulo);
                     _context.SaveChanges();
                     return Ok("Livro salvo com sucesso");
                 }
@@ -83,7 +84,7 @@ namespace MaiaraBookstore.Controllers
         /// <response code="200">Título excluído com sucesso</response>
         /// <response code="404">Erro ao deletar.</response>
         [HttpDelete("DeleteLivro/{Id}")]
-        public async Task<ActionResult> DeleteLivro([FromHeader] int Id)
+        public async Task<ActionResult> DeleteLivro([FromRoute] int Id)
         {
             LogBookService logBookService = new LogBookService(this._context);
             try
@@ -93,8 +94,11 @@ namespace MaiaraBookstore.Controllers
                 var livro = livroService.FindById(Id);
                 if (livro != null)
                 {
-                    logBookService.SalvarLog(livro, "Registro de livro excluído: " + livro.Titulo);
+                    
                     livroService.Delete(livro);
+                    await _context.SaveChangesAsync();
+
+                    logBookService.SalvarLog(livro, "Registro de livro excluído: " + livro.Titulo);
 
                     _context.SaveChanges();
                     return Ok("Livro deletado com sucesso!");
@@ -119,7 +123,7 @@ namespace MaiaraBookstore.Controllers
         /// <response code="200">Livro editado com sucesso.</response>
         /// <response code="404">Erro ao Editar.</response>
         [HttpPut("EditLivro/{Id}")]
-        public async Task<ActionResult> EditaLivro([FromHeader] int Id, [FromBody] LivroDTO livroDTO)
+        public async Task<ActionResult> EditaLivro([FromRoute] int Id, [FromBody] LivroDTO livroDTO)
         {
             LogBookService logBookService = new LogBookService(this._context);
             try
@@ -130,10 +134,12 @@ namespace MaiaraBookstore.Controllers
                 if (livro != null)
                 {
                     var livroEditado = livroService.EditaLivro(livro, livroDTO);
+                    await _context.SaveChangesAsync();
+
                     logBookService.SalvarLog(livro, "Atualização de Livro realizada: " + livro.Titulo);
 
                     _context.SaveChanges();
-                    return Ok(livroEditado);
+                    return Ok("Livro alterado com sucesso! " + livroEditado.Titulo);
                 }
                 else
                 {

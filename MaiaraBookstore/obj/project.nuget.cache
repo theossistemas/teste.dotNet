@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VdECQ4faPsOz4ZMXJldC4p/eHCHrpXQos4LHrgcQrL4InolTzyT0MFwN7pev9YmLl5eBz8Wi6R62BgLoQrA0HA==",
+  "dgSpecHash": "TurFEOzH27bTjNnxzHa4hl9yTfqY/KS58cSxTHue13oBM/rZ12eAmZfHVejH1ylZ4RBjrSFPVftREVcbNlXjkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
+  "projectFilePath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste_theos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\mfmai\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -3,6 +3,7 @@ using MaiaraBookstore.Models;
 using MaiaraBookstore.Models.DTO;
 using MaiaraBookstore.Repository.LivroRepository;
 using System;
+using System.Threading.Tasks;
 
 namespace MaiaraBookstore.Services
 {

@@ -5226,11 +5226,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
+      "projectUniqueName": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste_theos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
       "projectName": "MaiaraBookstore",
-      "projectPath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
+      "projectPath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste_theos\\teste.dotNet\\MaiaraBookstore\\MaiaraBookstore.csproj",
       "packagesPath": "C:\\Users\\mfmai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste.dotNet\\MaiaraBookstore\\obj\\",
+      "outputPath": "C:\\Users\\mfmai\\OneDrive\\Área de Trabalho\\TesteTheos\\teste_theos\\teste.dotNet\\MaiaraBookstore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

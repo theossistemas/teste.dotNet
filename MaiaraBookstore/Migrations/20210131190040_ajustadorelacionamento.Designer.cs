@@ -4,14 +4,16 @@ using MaiaraBookstore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MaiaraBookstore.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210131190040_ajustadorelacionamento")]
+    partial class ajustadorelacionamento
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +55,18 @@ namespace MaiaraBookstore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("LivroId");
+
                     b.ToTable("LogBookstores");
+                });
+
+            modelBuilder.Entity("MaiaraBookstore.Models.LogBookstore", b =>
+                {
+                    b.HasOne("MaiaraBookstore.Models.Livro", "Livro")
+                        .WithMany()
+                        .HasForeignKey("LivroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
