@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Test", "Theos.Livraria.Test\Theos.Livraria.Test.csproj", "{6DFB7F04-BFD5-44D0-814C-9E4C8AF4AFD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Api", "CrudNetCore.API\Theos.Livraria.Api.csproj", "{5DFCE6DD-7D60-4273-A066-17CE92B069BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Application", "Model.Crud.NetCore.Application\Theos.Livraria.Application.csproj", "{2DD33427-2B26-4D16-8516-728087034A5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Data", "Model.Crud.NetCore.Data\Theos.Livraria.Data.csproj", "{38481047-09C2-41CC-ABCB-8CA96474FEF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Domain", "Model.Crud.NetCore.Domain\Theos.Livraria.Domain.csproj", "{B1D0310E-6050-4CF7-BCF6-D4FAEF17DD34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DFB7F04-BFD5-44D0-814C-9E4C8AF4AFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFB7F04-BFD5-44D0-814C-9E4C8AF4AFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFB7F04-BFD5-44D0-814C-9E4C8AF4AFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFB7F04-BFD5-44D0-814C-9E4C8AF4AFD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFCE6DD-7D60-4273-A066-17CE92B069BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFCE6DD-7D60-4273-A066-17CE92B069BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFCE6DD-7D60-4273-A066-17CE92B069BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFCE6DD-7D60-4273-A066-17CE92B069BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD33427-2B26-4D16-8516-728087034A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD33427-2B26-4D16-8516-728087034A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD33427-2B26-4D16-8516-728087034A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD33427-2B26-4D16-8516-728087034A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38481047-09C2-41CC-ABCB-8CA96474FEF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38481047-09C2-41CC-ABCB-8CA96474FEF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38481047-09C2-41CC-ABCB-8CA96474FEF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38481047-09C2-41CC-ABCB-8CA96474FEF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D0310E-6050-4CF7-BCF6-D4FAEF17DD34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D0310E-6050-4CF7-BCF6-D4FAEF17DD34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D0310E-6050-4CF7-BCF6-D4FAEF17DD34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D0310E-6050-4CF7-BCF6-D4FAEF17DD34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44990C62-BAC4-4A4F-86F6-9C020CE06AF5}
+	EndGlobalSection
+EndGlobal
