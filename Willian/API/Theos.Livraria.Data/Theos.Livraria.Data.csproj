@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Theos.Livraria..Domain\Theos.Livraria.Domain.csproj" />
+    <ProjectReference Include="..\Theos.Livraria.Domain\Theos.Livraria.Domain.csproj" />
   </ItemGroup>
 
 </Project>

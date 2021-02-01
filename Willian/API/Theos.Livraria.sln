@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Test", "Theos.Livraria.Test\Theos.Livraria.Test.csproj", "{6DFB7F04-BFD5-44D0-814C-9E4C8AF4AFD4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Domain", "Theos.Livraria..Domain\Theos.Livraria.Domain.csproj", "{C21F0412-1198-407C-9B08-74C8FB68508C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Domain", "Theos.Livraria.Domain\Theos.Livraria.Domain.csproj", "{C21F0412-1198-407C-9B08-74C8FB68508C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Api", "Theos.Livraria.API\Theos.Livraria.Api.csproj", "{FFD672AC-F660-4052-9731-2DB521EDD341}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Application", "Theos.Livraria..Application\Theos.Livraria.Application.csproj", "{836893FE-5037-4C8A-928B-CC1C9ED0217E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Application", "Theos.Livraria.Application\Theos.Livraria.Application.csproj", "{836893FE-5037-4C8A-928B-CC1C9ED0217E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Data", "Theos.Livraria..Data\Theos.Livraria.Data.csproj", "{4C20F8D0-E808-4652-90EF-A37CA3C7404F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Livraria.Data", "Theos.Livraria.Data\Theos.Livraria.Data.csproj", "{4C20F8D0-E808-4652-90EF-A37CA3C7404F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
