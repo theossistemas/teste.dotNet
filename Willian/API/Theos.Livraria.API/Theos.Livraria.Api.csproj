@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Model.Crud.NetCore.Application\Theos.Livraria.Application.csproj" />
-    <ProjectReference Include="..\Model.Crud.NetCore.Data\Theos.Livraria.Data.csproj" />
-    <ProjectReference Include="..\Model.Crud.NetCore.Domain\Theos.Livraria.Domain.csproj" />
+    <ProjectReference Include="..\Theos.Livraria..Application\Theos.Livraria.Application.csproj" />
+    <ProjectReference Include="..\Theos.Livraria..Data\Theos.Livraria.Data.csproj" />
+    <ProjectReference Include="..\Theos.Livraria..Domain\Theos.Livraria.Domain.csproj" />
   </ItemGroup>
 
 

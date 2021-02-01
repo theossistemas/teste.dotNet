@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Model.Crud.NetCore.Domain\Theos.Livraria.Domain.csproj" />
+    <ProjectReference Include="..\Theos.Livraria..Domain\Theos.Livraria.Domain.csproj" />
   </ItemGroup>
 
 </Project>

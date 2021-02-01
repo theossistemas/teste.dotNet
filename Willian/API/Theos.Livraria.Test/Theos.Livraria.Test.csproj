@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CrudNetCore.API\Theos.Livraria.Api.csproj" />
+    <ProjectReference Include="..\Theos.Livraria.API\Theos.Livraria.Api.csproj" />
   </ItemGroup>
 
 </Project>
