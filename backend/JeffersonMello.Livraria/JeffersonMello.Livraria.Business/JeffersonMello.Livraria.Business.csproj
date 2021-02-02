@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JeffersonMello.Livraria.Common\JeffersonMello.Livraria.Common.csproj" />
+    <ProjectReference Include="..\JeffersonMello.Livraria.Repository\JeffersonMello.Livraria.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

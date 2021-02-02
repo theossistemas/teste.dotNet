@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JeffersonMello.Livraria.API</name>
+    </assembly>
+    <members>
+        <member name="M:JeffersonMello.Livraria.API.Controllers.StatusController.Alive">
+            <summary>
+            Indica se a API está em funcionamento
+            </summary>
+            <returns>Response, Succes = true se estiver tudo ok</returns>
+        </member>
+    </members>
+</doc>

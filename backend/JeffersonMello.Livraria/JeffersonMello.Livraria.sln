@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeffersonMello.Livraria.API", "JeffersonMello.Livraria.API\JeffersonMello.Livraria.API.csproj", "{96300D91-6310-4D6B-A3A5-F9C0D77FFFD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{D8CEFF55-9263-48EF-8636-3CBE037E73D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1FEC2DD6-5DA5-451F-8C0A-151BEFC3B785}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{CC22E4E2-6C0C-4307-A0CE-A1E79D3DDFDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{D8BD741D-48D9-4A9D-9439-80F90BE20D01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6846A0A-D23B-43C5-86EE-78D912482511}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeffersonMello.Livraria.Data", "JeffersonMello.Livraria.Data\JeffersonMello.Livraria.Data.csproj", "{C7BA6634-2921-4BF3-9656-3212BA2AF879}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeffersonMello.Livraria.Model", "JeffersonMello.Livraria.Model\JeffersonMello.Livraria.Model.csproj", "{8D21F12E-4547-4B37-A221-406492D69E3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3EF531A8-98A7-4869-976B-7D9E0CF53C48}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffersonMello.Livraria.Strategy", "JeffersonMello.Livraria.Strategy\JeffersonMello.Livraria.Strategy.csproj", "{1D4E54D7-5E7C-4B04-9CF4-21DFC5ABD078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffersonMello.Livraria.Repository", "JeffersonMello.Livraria.Repository\JeffersonMello.Livraria.Repository.csproj", "{4C0D4073-E567-4015-9C36-36EE37C82276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffersonMello.Livraria.Common", "JeffersonMello.Livraria.Common\JeffersonMello.Livraria.Common.csproj", "{4A4223FA-3829-49B7-8B43-03C4C4389A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffersonMello.Livraria.Business", "JeffersonMello.Livraria.Business\JeffersonMello.Livraria.Business.csproj", "{436B3778-3AA6-4C04-8F84-B40229643293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffersonMello.Livraria.DI", "JeffersonMello.Livraria.DI\JeffersonMello.Livraria.DI.csproj", "{3FA601AA-8747-4BD6-9BC4-B418BF578E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffersonMello.Livraria.Tests", "JeffersonMello.Livraria.Tests\JeffersonMello.Livraria.Tests.csproj", "{9549606B-EFB4-40C6-8A22-9F7649147655}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96300D91-6310-4D6B-A3A5-F9C0D77FFFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96300D91-6310-4D6B-A3A5-F9C0D77FFFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96300D91-6310-4D6B-A3A5-F9C0D77FFFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96300D91-6310-4D6B-A3A5-F9C0D77FFFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BA6634-2921-4BF3-9656-3212BA2AF879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BA6634-2921-4BF3-9656-3212BA2AF879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BA6634-2921-4BF3-9656-3212BA2AF879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BA6634-2921-4BF3-9656-3212BA2AF879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D21F12E-4547-4B37-A221-406492D69E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D21F12E-4547-4B37-A221-406492D69E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D21F12E-4547-4B37-A221-406492D69E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D21F12E-4547-4B37-A221-406492D69E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4E54D7-5E7C-4B04-9CF4-21DFC5ABD078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4E54D7-5E7C-4B04-9CF4-21DFC5ABD078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4E54D7-5E7C-4B04-9CF4-21DFC5ABD078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4E54D7-5E7C-4B04-9CF4-21DFC5ABD078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0D4073-E567-4015-9C36-36EE37C82276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0D4073-E567-4015-9C36-36EE37C82276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0D4073-E567-4015-9C36-36EE37C82276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0D4073-E567-4015-9C36-36EE37C82276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4223FA-3829-49B7-8B43-03C4C4389A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4223FA-3829-49B7-8B43-03C4C4389A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4223FA-3829-49B7-8B43-03C4C4389A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4223FA-3829-49B7-8B43-03C4C4389A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436B3778-3AA6-4C04-8F84-B40229643293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436B3778-3AA6-4C04-8F84-B40229643293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436B3778-3AA6-4C04-8F84-B40229643293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436B3778-3AA6-4C04-8F84-B40229643293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA601AA-8747-4BD6-9BC4-B418BF578E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA601AA-8747-4BD6-9BC4-B418BF578E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA601AA-8747-4BD6-9BC4-B418BF578E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA601AA-8747-4BD6-9BC4-B418BF578E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9549606B-EFB4-40C6-8A22-9F7649147655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9549606B-EFB4-40C6-8A22-9F7649147655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9549606B-EFB4-40C6-8A22-9F7649147655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9549606B-EFB4-40C6-8A22-9F7649147655}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96300D91-6310-4D6B-A3A5-F9C0D77FFFD8} = {D8CEFF55-9263-48EF-8636-3CBE037E73D7}
+		{C7BA6634-2921-4BF3-9656-3212BA2AF879} = {CC22E4E2-6C0C-4307-A0CE-A1E79D3DDFDF}
+		{8D21F12E-4547-4B37-A221-406492D69E3B} = {CC22E4E2-6C0C-4307-A0CE-A1E79D3DDFDF}
+		{1D4E54D7-5E7C-4B04-9CF4-21DFC5ABD078} = {1FEC2DD6-5DA5-451F-8C0A-151BEFC3B785}
+		{4C0D4073-E567-4015-9C36-36EE37C82276} = {D8BD741D-48D9-4A9D-9439-80F90BE20D01}
+		{4A4223FA-3829-49B7-8B43-03C4C4389A27} = {1FEC2DD6-5DA5-451F-8C0A-151BEFC3B785}
+		{436B3778-3AA6-4C04-8F84-B40229643293} = {CC22E4E2-6C0C-4307-A0CE-A1E79D3DDFDF}
+		{3FA601AA-8747-4BD6-9BC4-B418BF578E2F} = {1FEC2DD6-5DA5-451F-8C0A-151BEFC3B785}
+		{9549606B-EFB4-40C6-8A22-9F7649147655} = {C6846A0A-D23B-43C5-86EE-78D912482511}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFBD98F9-C923-4E22-BBBF-66F99A7777D1}
+	EndGlobalSection
+EndGlobal
