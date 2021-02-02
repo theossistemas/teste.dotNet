@@ -29,7 +29,7 @@ namespace Theos.Livraria.Api.Controllers
         [Route("login")]
         [ProducesResponseType(typeof(BaseResponseSwagger<SecurityToken>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BaseResponse), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> AutenticarUsuario([FromQuery] RequestLoginUsuario usuario) =>
+        public async Task<IActionResult> AutenticarUsuario([FromBody] RequestLoginUsuario usuario) =>
             await TratarResultadoAsync(async () =>
             {
                 var resultado = await _usuarioService.AutenticarUsuario(usuario);

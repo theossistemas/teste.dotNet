@@ -1,0 +1,135 @@
+<div class="row">
+    <div class="col-lg-8">
+      <div class="card bg-light">
+          <div class="card-body">
+            <div class="control-group">
+            
+              <div class="row">
+                <div class="col-lg-9">
+                <h4><strong> {{title}} Livro </strong> </h4> 
+              </div>   
+          </div>
+        </div>
+        </div> 
+    </div>
+  </div> 
+  </div>
+  <br>
+<div class="row" >
+    <div class="col-lg-8">
+      <div class="card">        
+        <div class="card-body"> 
+            <div class="form-group"> 
+                <form [formGroup]="livroForm">
+                <div class="row">
+                    <div class="col-lg-11"> 
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-12">
+                          <label class="col-form-label" for="titulo" >Título</label>
+                          <div class="controls"> 
+                            <input asp-for="titulo" type="text" class="form-control"  formControlName="titulo"  >
+                          </div>
+                        </div> 
+                      </div>
+                      <br>                      
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-4">
+                          <label class="col-form-label" for="edicao" >Edição</label>
+                          <div class="controls"> 
+                            <input asp-for="edicao" type="text" class="form-control"  formControlName="edicao"  >
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-4">
+                          <label class="col-form-label" for="editora" >Editora</label>
+                          <div class="controls"> 
+                            <input asp-for="editora" type="text" class="form-control"  formControlName="editora"  >
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-4">
+                          <label class="col-form-label" for="autor" >Autor</label>
+                          <div class="controls"> 
+                            <input asp-for="autor" type="text" class="form-control"  formControlName="autor"  >
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-2">
+                          <label class="col-form-label" for="paginas" >Qtd Paginas</label>
+                          <div class="controls"> 
+                            <input asp-for="paginas" type="number" class="form-control"  formControlName="paginas"  >
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-2">
+                          <label class="col-form-label" for="estoque" >Estoque</label>
+                          <div class="controls"> 
+                            <input asp-for="estoque" type="number" class="form-control"  formControlName="estoque"  >
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-4">
+                          <label class="col-form-label" for="idioma" >Idioma</label>
+                          <div class="controls"> 
+                            <input asp-for="idioma" type="text" class="form-control"  formControlName="idioma"  >
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-4">
+                          <label class="col-form-label" for="dataPublicacao" >Data Publicação</label>
+                          <div class="controls"> 
+                            <input asp-for="dataPublicacao" type="date" class="form-control"  formControlName="dataPublicacao"  >
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-12">
+                          <label class="col-form-label" for="descricao" >Descrição</label>
+                          <div class="controls"> 
+                            <textarea asp-for="descricao" type="text" class="form-control"  formControlName="descricao"  ></textarea>
+                          </div>
+                        </div> 
+                      </div>
+                      <br> 
+                      <div class="row" > 
+                      <div class="col-md-10 col-lg-12">
+                        <label class="col-form-label" for="imagem" >Imagem</label>
+                        <div class="controls"> 
+                          <input asp-for="imagem" type="text" class="form-control"  formControlName="imagem"  >
+                        </div>
+                      </div> 
+                     </div>
+                     <br>
+                      <div class="row" > 
+                          <div class="col-md-10 col-lg-12">
+                            <img [src]="livroForm.controls['imagem'].value" style="max-width: 100%;">
+                          </div>
+                      </div>  
+      
+                    </div>
+                     
+                  </div>
+            <div class="form-actions">
+                <div class="row my-2">
+                    <div class="col-md-10 col-lg-11 text-right">
+                        <button type="submit"
+                            id="button" 
+                              class="btn btn-blue" (click)="onFormSubmit()">
+                              Salvar
+                         </button>
+                        &nbsp;&nbsp;
+                        <button 
+                            id="button"  
+                         
+                            class="btn btn-secondary" [routerLink]="['/listaLivro']" >
+                            Cancelar
+                        </button>  
+                    </div>
+                </div>
+            </div>
+                </form>
+          </div> 
+        </div>
+      </div>
+    </div> <!--/.col-->
+  </div>
+
+  <app-loader [show]="isLoadPanelVisible" [text]="'Aguarde...'"></app-loader>  

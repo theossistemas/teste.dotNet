@@ -130,9 +130,13 @@ namespace Theos.Livraria.Application.Services
 
                 var token = tokenHandler.CreateToken(tokenDescriptor) as JwtSecurityToken;
 
+                ResponseLoginUsuario response = new ResponseLoginUsuario();
+                response.IdUsuario = usuario.Id;
+                response.Token = token.RawData;
+
                 _logger.LogInformation("Fim da autenticação do usuário");
 
-                return await ObterStatusCode("Autenticação realizada com sucesso.", StatusCodes.Status200OK, token.RawData);
+                return await ObterStatusCode("Autenticação realizada com sucesso.", StatusCodes.Status200OK, response);
             }
             catch (Exception ex)
             {

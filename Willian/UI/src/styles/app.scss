@@ -1,0 +1,335 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/bootstrap";
+@import "spinner";
+@import "utils";
+@import "rtl";
+@import "responsive";
+
+@import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
+@media print {
+    .breadcrumb {
+        display: none !important;
+    }
+}
+
+.button-link{
+font-size: x-large;
+
+}
+.button-link:hover{
+    cursor: pointer;
+}
+
+.exemplo-link{
+    font-size: 1em;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.exemplo-link:hover{
+    cursor: pointer;
+}
+
+.centralizado{
+    text-align: center;
+}
+.nomesistema{
+    color:#008fdc;
+    position: absolute; /* Reposition logo from the natural layout */
+    left: 75px;
+    bottom: 4px;
+    font-size: 16pt;
+    font-weight: bold;
+    z-index: 2;
+}
+.icon-erro{
+    margin-bottom: 0;
+    i{
+        font-size: 3em;
+        color: red;
+    }
+}
+
+.msgErro{
+    color:red;
+    font-size: large;
+    padding: 10px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.msgErroFundoAmarelo{
+    color:red;
+    font-size: large;
+    background-color: #008fdc;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.icon-sucesso{
+    margin-bottom: 0;
+    i{
+        font-size: 3em;
+        color: green;
+    }
+}
+
+.msgSucesso{
+    color:green;
+    font-size: large;
+    padding: 10px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.dx-popup-title.dx-toolbar {  
+  background-color:#008fdc;
+  color: #343a40;
+}  
+
+.popUpScrollable
+{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidebar[_ngcontent-kmo-c3] .list-group[_ngcontent-kmo-c3] .a[_ngcontent-kmo-c3]:hover
+{  
+    background-color:#008fdc;
+    color: #343a40;
+  }
+
+#container .dx-popup-normal {  
+    border: 10px solid #222 !important;  
+    border-radius: 5px !important;  
+}
+
+.dx-datagrid-headers {  
+    position: relative;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+    background-color: #343a40;  
+    color:#008fdc;
+    font-weight: bold;
+}
+
+.dx-datagrid .dx-header-filter-empty{
+    color:#008fdc;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.labelForFile{
+    display: flex !important;
+    -moz-display: flex !important;
+    -webkit-display: flex !important;
+    -ms-display: flex !important;
+    display: flex !important;
+    align-items: center !important;
+    -moz-align-items: center !important;
+    -ms-align-items: center !important;
+    -webkit-align-items: center !important;
+}
+
+.col-form-label-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dx-texteditor.dx-state-readonly {
+    border-style: solid;
+    background-color: #ddd;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1em 1em 1em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+    legend.scheduler-border {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
+
+    .text-align-right {
+        text-align: right;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .btn-fino
+    {
+        width:300px;
+        padding: 0px;        
+    }
+
+    .btn-blue
+    {
+        background-color: #008fdc;   
+        color: #fff;
+    }
+
+    .btn-blue:hover
+    {  
+    background-color:#008fdc;
+    color: #343a40;
+    cursor: pointer;
+  }
+
+
+ 
+
+    .breadcrumb{
+        background-color: #008fdc;
+    }
+
+    .breadcrumb-item.active{
+        color: #000;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .forgottenPws{
+        color: #008fdc;
+    }
+
+    .forgottenPws:hover {
+        cursor: pointer;
+    }
+
+    .bottom-zero {
+        margin-bottom:0px;
+    }
+
+    .margin-left-10 {
+        margin-left: 10px;
+    }
+
+    #bg {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+          
+        /* Preserve aspet ratio */
+        min-width: 100%;
+        min-height: 100%;        
+      }
+
+      .tinted {    
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+
+    .NomeSistema {
+        color: #008fdc;
+        font-size: 2em;
+        font-weight: bold; 
+    }
+
+    .TextoNegritoVermelho {
+        color: red;
+        font-weight: bold;
+    }
+
+    .divCampoObrigatorio {
+        background-color: #D9534F;
+        color: white;
+        padding: 2px;
+        width: 120px;
+        height: 36px;
+        font-size: 11px;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 9px;
+    }
+
+    .iconeVerde {
+        color:green;
+    }
+
+    .iconeVermelho {
+        color:red;
+    }
+
+    .dx-datagrid-header-panel .dx-apply-button .dx-icon {
+        color: #008fdc;
+    }
+
+    .dx-datagrid-header-panel .dx-apply-button {
+        background-color: black;
+        border-color: #008fdc;
+    }
+    .dx-datagrid .dx-link {
+        color: #343a40;
+    }
+
+    .dx-datagrid .dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit-with-icons .dx-link {
+        width: 18px;
+        height: 18px;
+        background-position: 0px 0px;
+        background-size: 18px 18px;
+        padding: 0px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 18px;
+        margin: 0 3px;
+    }
+
+    
+    .dx-state-disabled.dx-widget, .dx-state-disabled .dx-widget 
+    {
+        opacity: 1;        
+
+    }
+
+    .dx-state-disabled.dx-button .dx-icon, .dx-state-disabled .dx-button .dx-icon{
+        opacity: .96
+    }
+
+    .dx-toolbar-after .dx-toolbar-item:first-child {
+        cursor: pointer;
+    }
+
+    .dx-datagrid .dx-column-lines > td {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+    }
+
+    .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+        border-bottom: 1px solid #fff;
+    }
+
+    .dx-datagrid-borders .dx-datagrid-rowsview, .dx-datagrid-headers + .dx-datagrid-rowsview {
+        border-top: 1px solid #fff;
+    }
+
+    .dx-datagrid-borders > .dx-datagrid-rowsview, .dx-datagrid-borders > .dx-datagrid-total-footer {
+        border-bottom: 1px solid #fff;
+    }
+
+    .dx-datagrid-borders > .dx-datagrid-headers, .dx-datagrid-borders > .dx-datagrid-rowsview, .dx-datagrid-borders > .dx-datagrid-total-footer {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .dx-datagrid-borders > .dx-datagrid-pager, .dx-datagrid-borders > .dx-datagrid-headers, .dx-datagrid-borders > .dx-datagrid-filter-panel {
+        border-top: 1px solid #fff;
+    }

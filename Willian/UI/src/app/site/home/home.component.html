@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-film mr-2"></i>
+           Livraria WMG
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link nav-link-1 active" aria-current="page" [routerLink]="['/']">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-2" [routerLink]="['/login']">Login</a>
+            </li> 
+        </ul>
+        </div>
+    </div>
+</nav>
+ 
+
+<div class="container-fluid tm-container-content tm-mt-60">
+    <div class="row mb-4">
+        <h2 class="col-6 tm-text-primary">
+            Livros
+        </h2>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+             
+        </div>
+    </div>
+    <div class="row tm-mb-90 tm-gallery">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" *ngFor="let item of listLivro">
+            <figure class="effect-ming tm-video-item">
+                <img src="{{ item.imagem }}" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>{{item.titulo}}</h2>
+                    <a (click)="viewLivro(item)">+ Detalhes</a>
+                </figcaption>                    
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">{{ item.autor }}</span>
+                <span>{{ item.editora }}</span>
+            </div>
+        </div>
+ 
+        
+    </div> <!-- row --> 
+</div> <!-- container-fluid, tm-container-content -->
+ 
