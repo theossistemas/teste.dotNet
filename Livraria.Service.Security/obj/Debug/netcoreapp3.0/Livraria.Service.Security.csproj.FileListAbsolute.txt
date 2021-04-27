@@ -1,0 +1,11 @@
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\bin\Debug\netcoreapp3.0\Livraria.Service.Security.deps.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\bin\Debug\netcoreapp3.0\Livraria.Service.Security.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\bin\Debug\netcoreapp3.0\Livraria.Service.Security.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\bin\Debug\netcoreapp3.0\Livraria.Domain.Security.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\bin\Debug\netcoreapp3.0\Livraria.Domain.Security.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\obj\Debug\netcoreapp3.0\Livraria.Service.Security.csprojAssemblyReference.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\obj\Debug\netcoreapp3.0\Livraria.Service.Security.AssemblyInfoInputs.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\obj\Debug\netcoreapp3.0\Livraria.Service.Security.AssemblyInfo.cs
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\obj\Debug\netcoreapp3.0\Livraria.Service.Security.csproj.CopyComplete
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\obj\Debug\netcoreapp3.0\Livraria.Service.Security.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service.Security\obj\Debug\netcoreapp3.0\Livraria.Service.Security.pdb

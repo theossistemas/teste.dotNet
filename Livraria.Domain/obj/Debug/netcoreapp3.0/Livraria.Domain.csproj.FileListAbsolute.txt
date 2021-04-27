@@ -1,0 +1,8 @@
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\bin\Debug\netcoreapp3.0\Livraria.Domain.deps.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\bin\Debug\netcoreapp3.0\Livraria.Domain.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\bin\Debug\netcoreapp3.0\Livraria.Domain.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\obj\Debug\netcoreapp3.0\Livraria.Domain.csprojAssemblyReference.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\obj\Debug\netcoreapp3.0\Livraria.Domain.AssemblyInfoInputs.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\obj\Debug\netcoreapp3.0\Livraria.Domain.AssemblyInfo.cs
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\obj\Debug\netcoreapp3.0\Livraria.Domain.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain\obj\Debug\netcoreapp3.0\Livraria.Domain.pdb

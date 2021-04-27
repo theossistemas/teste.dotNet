@@ -1,0 +1,8 @@
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\bin\Debug\netcoreapp3.0\Livraria.Domain.Security.deps.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\bin\Debug\netcoreapp3.0\Livraria.Domain.Security.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\bin\Debug\netcoreapp3.0\Livraria.Domain.Security.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\obj\Debug\netcoreapp3.0\Livraria.Domain.Security.csprojAssemblyReference.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\obj\Debug\netcoreapp3.0\Livraria.Domain.Security.AssemblyInfoInputs.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\obj\Debug\netcoreapp3.0\Livraria.Domain.Security.AssemblyInfo.cs
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\obj\Debug\netcoreapp3.0\Livraria.Domain.Security.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Domain.Security\obj\Debug\netcoreapp3.0\Livraria.Domain.Security.pdb

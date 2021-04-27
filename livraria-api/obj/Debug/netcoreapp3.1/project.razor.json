@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Users\\lpith\\source\\theo\\teste.dotNet\\livraria-api\\livraria-api.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 800
+  },
+  "RootNamespace": "livraria_api",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

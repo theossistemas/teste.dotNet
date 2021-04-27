@@ -1,0 +1,526 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\livraria-api\\livraria-api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\livraria-api\\livraria-api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\livraria-api\\livraria-api.csproj",
+        "projectName": "livraria-api",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\livraria-api\\livraria-api.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\livraria-api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj"
+              },
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj"
+              },
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data.Security\\Livraria.Infra.Data.Security.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data.Security\\Livraria.Infra.Data.Security.csproj"
+              },
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj"
+              },
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service.Security\\Livraria.Service.Security.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service.Security\\Livraria.Service.Security.csproj"
+              },
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service\\Livraria.Service.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service\\Livraria.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj",
+        "projectName": "Livraria.Domain.Security",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj",
+        "projectName": "Livraria.Domain",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data.Security\\Livraria.Infra.Data.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data.Security\\Livraria.Infra.Data.Security.csproj",
+        "projectName": "Livraria.Infra.Data.Security",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data.Security\\Livraria.Infra.Data.Security.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj",
+        "projectName": "Livraria.Infra.Data",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Infra\\Livraria.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service.Security\\Livraria.Service.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service.Security\\Livraria.Service.Security.csproj",
+        "projectName": "Livraria.Service.Security",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service.Security\\Livraria.Service.Security.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain.Security\\Livraria.Domain.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service\\Livraria.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service\\Livraria.Service.csproj",
+        "projectName": "Livraria.Service",
+        "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service\\Livraria.Service.csproj",
+        "packagesPath": "C:\\Users\\lpith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lpith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj": {
+                "projectPath": "C:\\Users\\lpith\\source\\theo\\teste.dotNet\\Livraria.Domain\\Livraria.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

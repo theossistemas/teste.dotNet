@@ -1,0 +1,11 @@
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\bin\Debug\netcoreapp3.0\Livraria.Service.deps.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\bin\Debug\netcoreapp3.0\Livraria.Service.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\bin\Debug\netcoreapp3.0\Livraria.Service.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\bin\Debug\netcoreapp3.0\Livraria.Domain.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\bin\Debug\netcoreapp3.0\Livraria.Domain.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\obj\Debug\netcoreapp3.0\Livraria.Service.csprojAssemblyReference.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\obj\Debug\netcoreapp3.0\Livraria.Service.AssemblyInfoInputs.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\obj\Debug\netcoreapp3.0\Livraria.Service.AssemblyInfo.cs
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\obj\Debug\netcoreapp3.0\Livraria.Service.csproj.CopyComplete
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\obj\Debug\netcoreapp3.0\Livraria.Service.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Service\obj\Debug\netcoreapp3.0\Livraria.Service.pdb

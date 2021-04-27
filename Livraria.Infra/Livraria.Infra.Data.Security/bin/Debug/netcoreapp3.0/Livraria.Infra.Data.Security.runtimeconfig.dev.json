@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\lpith\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lpith\\.nuget\\packages"
+    ]
+  }
+}

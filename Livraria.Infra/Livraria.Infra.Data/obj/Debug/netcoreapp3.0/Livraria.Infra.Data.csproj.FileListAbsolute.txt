@@ -1,0 +1,13 @@
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Infra.Data.deps.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Infra.Data.runtimeconfig.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Infra.Data.runtimeconfig.dev.json
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Infra.Data.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Infra.Data.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Domain.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\bin\Debug\netcoreapp3.0\Livraria.Domain.pdb
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\obj\Debug\netcoreapp3.0\Livraria.Infra.Data.csprojAssemblyReference.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\obj\Debug\netcoreapp3.0\Livraria.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\obj\Debug\netcoreapp3.0\Livraria.Infra.Data.AssemblyInfo.cs
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\obj\Debug\netcoreapp3.0\Livraria.Infra.Data.csproj.CopyComplete
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\obj\Debug\netcoreapp3.0\Livraria.Infra.Data.dll
+C:\Users\lpith\source\theo\teste.dotNet\Livraria.Infra\Livraria.Infra.Data\obj\Debug\netcoreapp3.0\Livraria.Infra.Data.pdb
