@@ -6,6 +6,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using teste.dotNet.API.Data;
+using teste.dotNet.API.Repository;
+using teste.dotNet.API.Repository.Impl;
+using teste.dotNet.API.Services;
+using teste.dotNet.API.Services.Impl;
 
 namespace teste.dotNet.API
 {
@@ -30,6 +34,10 @@ namespace teste.dotNet.API
             services.AddDbContext<ApplicationDbContext>(
                 options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection")
             );
+            services.AddTransient<BooksService, BooksServiceImpl>();
+            services.AddTransient<WritersService, WritersServiceImpl>();
+            services.AddTransient<BooksRepository, BooksRepositoryImpl>();
+            services.AddTransient<WritersRepository, WritersRepositoryImpl>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

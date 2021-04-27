@@ -14,6 +14,6 @@ namespace  teste.dotNet.API.Entities {
         public DateTime RegistrationDate { get; set; }
         [Required]
         public DateTime ReleaseDate { get; set; }
-        public virtual ICollection<Writer> Writers { get; set; }
+        public virtual ICollection<BookWriter> BookWriters { get; set; }
     }
 }
