@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using teste.dotNet.API.Data;
 
 namespace teste.dotNet.API
 {
@@ -24,6 +26,10 @@ namespace teste.dotNet.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "teste.dotNet.API", Version = "v1" });
             });
+
+            services.AddDbContext<ApplicationDbContext>(
+                options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection")
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
