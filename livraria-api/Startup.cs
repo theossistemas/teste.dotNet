@@ -38,15 +38,15 @@ namespace livraria_api
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddCors(o => o.AddDefaultPolicy(b => b.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials()));
-     
+        {            
+            services.AddCors();
+
             services.AddControllers();
 
             services.AddCustomizedDatabase(Configuration, _env);
-
-            services.AddScoped<IBaseRepository<Livro>, BaseRepository<Livro>>();
-            services.AddScoped<IBaseService<Livro>, BaseService<Livro>>();
+            
+            services.AddScoped<ILivroRepository, LivroRepository>();
+            services.AddScoped<ILivroService, LivroService>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISecurityUserService, UserSecurityService>();
 
@@ -98,12 +98,21 @@ namespace livraria_api
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
+
+            app.UseCustomizedSwagger(_env);
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
 
-            app.UseCustomizedSwagger(_env);
+            // app.UseCors("CorsPolicy");
+            
         }
     }
 }

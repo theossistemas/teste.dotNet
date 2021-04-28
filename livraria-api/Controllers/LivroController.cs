@@ -1,14 +1,10 @@
-using Livraria.Service.Validators;
 using Livraria.Domain.Entities;
 using Livraria.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using livraria_api.Models;
 using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Livraria.Domain.Security.Interfaces;
-using Livraria.Domain.Security.Models;
-using livraria_api.Services;
+using AutoMapper;
 
 namespace livraria_api.Controllers
 {
@@ -16,12 +12,14 @@ namespace livraria_api.Controllers
     public class LivroController : ControllerBase
     {
 
-        private IBaseService<Livro> _baseLivroService;        
+        private ILivroService _livroService;
+        private readonly IMapper _mapper;
 
-        public LivroController(IBaseService<Livro> baseLivroService)
+        public LivroController(ILivroService livroService, IMapper mapper)
         {
-            _baseLivroService = baseLivroService;            
-        }       
+            _livroService = livroService;
+            _mapper = mapper;
+        }
 
         [HttpPost("create")]
         [Authorize(Roles = "Admin")]
@@ -29,10 +27,10 @@ namespace livraria_api.Controllers
         {
             if (livroModels == null)
                 return NotFound();
-
-            return  Execute(() => _baseLivroService.Add<LivroModels, LivroModels, LivroValidator>(livroModels));            
+            var novoLivro = _mapper.Map<Livro>(livroModels);
+            return Execute(() => _livroService.Insert(novoLivro));
         }
-        
+
 
         [HttpPut("update")]
         [Authorize(Roles = "Admin")]
@@ -41,11 +39,12 @@ namespace livraria_api.Controllers
             if (livroModels == null)
                 return NotFound();
 
-            var existe = _baseLivroService.VerifyLivro(livroModels.Id);
-            if (!existe)
+            var livro = _livroService.Select(livroModels.Id);
+            if (livro == null)
                 return NotFound();
-
-            return Execute(() => _baseLivroService.Update<LivroModels, LivroModels, LivroValidator>(livroModels));            
+            var novoLivro = _mapper.Map<Livro>(livroModels);
+            novoLivro.DataCriacao = livro.DataCriacao;
+            return Execute(() => _livroService.Update(novoLivro));
         }
 
         [HttpDelete("delete/{id}")]
@@ -57,7 +56,7 @@ namespace livraria_api.Controllers
 
             Execute(() =>
             {
-                _baseLivroService.Delete(id);
+                _livroService.Delete(id);
                 return true;
             });
 
@@ -68,7 +67,7 @@ namespace livraria_api.Controllers
         [Authorize]
         public IActionResult GetAll()
         {
-            return Execute(() => _baseLivroService.Get<LivroModels>());
+            return Execute(() => _livroService.Select());
         }
 
         [HttpGet("{id}")]
@@ -78,7 +77,17 @@ namespace livraria_api.Controllers
             if (id == 0)
                 return NotFound();
 
-            return Execute(() => _baseLivroService.GetById<LivroModels>(id));
+            return Execute(() => _livroService.Select(id));
+        }
+
+        [HttpGet("Name")]
+        [Authorize]
+        public IActionResult GetName(string name)
+        {
+            if (name == null || name == "")
+                return NotFound();
+
+            return Execute(() => _livroService.GetName(name));
         }
 
         private IActionResult Execute(Func<object> func)

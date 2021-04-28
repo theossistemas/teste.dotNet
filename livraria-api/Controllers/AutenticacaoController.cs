@@ -1,17 +1,10 @@
-// public class AutenticacaoController
-using Livraria.Service.Validators;
-using Livraria.Domain.Entities;
-using Livraria.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using livraria_api.Models;
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Livraria.Domain.Security.Interfaces;
-using Livraria.Domain.Security.Models;
 using livraria_api.Services;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using AutoMapper;
 using Livraria.Domain.Security.Entities;
 using BC = BCrypt.Net.BCrypt;
@@ -20,7 +13,7 @@ using Livraria.Infra.Data.Security.Authorization;
 namespace livraria_api.Controllers
 {
     [Route("livraria-api/[controller]")]
-    
+
     public class AutenticacaoController : ControllerBase
     {
 
@@ -59,9 +52,10 @@ namespace livraria_api.Controllers
             };
             return usuarioAutenticado;
         }
-
+       
         [HttpPost("create")]
         [AllowAnonymous]
+
         public IActionResult Create([FromBody] UsuarioModels usuarioModels)
         {
             if (usuarioModels == null)
@@ -96,13 +90,15 @@ namespace livraria_api.Controllers
             {
                 return NotFound();
             }
-            
+
 
             if (!string.IsNullOrEmpty(usuarioModels.Password))
             {
                 var password = BC.HashPassword(usuarioModels.Password);
                 usuarioModels.Password = password;
-            }else {
+            }
+            else
+            {
                 usuarioModels.Password = usuario.Password;
             }
             // if (!string.IsNullOrEmpty(usuarioModels.Login))

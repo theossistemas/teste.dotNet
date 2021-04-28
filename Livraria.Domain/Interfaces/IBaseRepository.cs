@@ -1,9 +1,7 @@
 using System.Collections.Generic;
-using Livraria.Domain.Entities;
-
 namespace Livraria.Domain.Interfaces
 {
-    public interface IBaseRepository<TEntity> where TEntity : BaseEntity
+    public interface IBaseRepository<TEntity> where TEntity : class
     {
         void Insert(TEntity obj);
         void Update(TEntity obj);

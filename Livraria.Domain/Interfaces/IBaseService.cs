@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using Livraria.Domain.Entities;
 using FluentValidation;
 
 namespace Livraria.Domain.Interfaces
 {
-    public interface IBaseService<TEntity> where TEntity : BaseEntity
+    public interface IBaseService<TEntity> where TEntity : class
     {
         TOutputModel Add<TInputModel, TOutputModel,TValidator>(TInputModel inputModel) 
             where TValidator : AbstractValidator<TEntity>

@@ -4,17 +4,13 @@ using AutoMapper;
 using FluentValidation;
 using Livraria.Domain.Security.Entities;
 using Livraria.Domain.Security.Interfaces;
-using Livraria.Domain.Security.Models;
 using Livraria.Service.Security.Validators;
 
 namespace Livraria.Service.Security.Services
-{
-    // public class UserSecurityService<TEntity> :ISecurityUserService<TEntity> where TEntity : class{
-    // public class UserSecurityService : SecurityBaseServices<User>, ISecurityUserService
+{    
     public class UserSecurityService : ISecurityUserService
     {
-        private readonly IUserRepository _userRepository;
-        // private readonly ISecurityBaseRepository<User> _baseRepository;
+        private readonly IUserRepository _userRepository;       
         private readonly IMapper _mapper;
 
         public UserSecurityService(IUserRepository userRepository, IMapper mapper)
