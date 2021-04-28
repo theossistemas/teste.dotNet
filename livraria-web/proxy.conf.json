@@ -1,0 +1,10 @@
+{
+    " /livraria-api ": {
+        " target ": " https://localhost5001/livraria-api",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/livraria-api": ""
+        }
+    }
+}

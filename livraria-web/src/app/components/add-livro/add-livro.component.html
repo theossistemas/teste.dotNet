@@ -1,0 +1,37 @@
+<div>
+    <div class="submit-form">
+        <div *ngIf="!submitted">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="Name" required [(ngModel)]="livro.nome" name="Name" />
+            </div>
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input class="form-control" id="autor" required [(ngModel)]="livro.autor"
+                    name="autor" />
+            </div>
+            <div class="form-group">
+                <label for="autor">Editora</label>
+                <input class="form-control" id="editora" required [(ngModel)]="livro.editora"
+                    name="editora" />
+            </div>
+            <div class="form-group">
+                <label for="autor">Genero</label>
+                <input class="form-control" id="genero" required [(ngModel)]="livro.genero"
+                    name="genero" />
+            </div>
+            <div class="form-group">
+                <label for="autor">Sinopse</label>
+                <textarea rows="4" class="form-control" id="sinopse" required [(ngModel)]="livro.sinopse"
+                    name="sinopse"></textarea>
+            </div>
+
+            <button (click)="salvarLivro()" class="btn btn-success">Salvar</button>
+        </div>
+
+        <div *ngIf="submitted">
+            <h4>Livro cadastrado com sucesso!</h4>
+            <button class="btn btn-success" (click)="novoLivro()">Adicionar</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div>
+    <div *ngIf="currentLivro.id" class="edit-form">
+        <h4>Livro</h4>
+        <form>
+            <div class="form-group">
+                <label for="title">Nome</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="currentLivro.nome" name="name" />
+            </div>
+            <div class="form-group">
+                <label for="title">Autor</label>
+                <input type="text" class="form-control" id="autor" [(ngModel)]="currentLivro.autor" name="autor" />
+            </div>
+            <div class="form-group">
+                <label for="title">Editora</label>
+                <input type="text" class="form-control" id="editora" [(ngModel)]="currentLivro.editora" name="editora" />
+            </div>
+            <div class="form-group">
+                <label for="title">Genero</label>
+                <input type="text" class="form-control" id="genero" [(ngModel)]="currentLivro.genero" name="genero" />
+            </div>
+            <div class="form-group">
+                <label for="title">Sinopse</label>
+                <input type="text" class="form-control" id="sinopse" [(ngModel)]="currentLivro.sinopse" name="sinopse" />
+            </div>
+          
+        </form>     
+
+        <button class="badge badge-danger mr-2" (click)="deleteLivro()">
+            Remover
+        </button>
+
+        <button type="submit" class="badge badge-success mb-2" (click)="updateLivro()">
+            Atualizar
+        </button>
+        <p>{{ message }}</p>
+    </div>
+
+    <div *ngIf="!currentLivro.id">
+        <br />
+        <p>Acesso negado a esse livro...</p>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Busque por nome" [(ngModel)]="nome" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" (click)="searchNome()">
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4>Lista livros</h4>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let book of livros; let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveLivro(book, i)">
+        {{ book.nome }}
+      </li>
+    </ul>
+
+    <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllLivros()">
+        Remove todos
+      </button> -->
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentLivro">
+      <h4>Nome</h4>
+      <div>
+        <label><strong>Nome:</strong></label> {{ currentLivro.nome }}
+      </div>
+      <div>
+        <label><strong>Autor:</strong></label> {{ currentLivro.autor }}
+      </div>
+      <div>
+        <label><strong>Editora:</strong></label> {{ currentLivro.editora }}
+      </div>
+      <div>
+        <label><strong>Genero:</strong></label> {{ currentLivro.genero }}
+      </div>
+      <div>
+        <label><strong>Sinopse:</strong></label> {{ currentLivro.sinopse }}
+      </div>
+      <div *ngIf="isAdmin">
+        <a class="badge badge-warning" routerLink="/livros/{{ currentLivro.id }}">
+          Edit
+        </a>
+      </div>
+
+    </div>
+
+    <div *ngIf="!currentLivro">
+      <br />
+      <p>Por favor, selecione um livro...</p>
+    </div>
+  </div>
+</div>

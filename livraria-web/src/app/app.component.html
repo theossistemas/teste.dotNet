@@ -1,0 +1,20 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">bezKoder</a>
+    <div class="navbar-nav mr-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a routerLink="livros" class="nav-link">Livros</a>
+      </li>
+      <li class="nav-item" *ngIf="isAdmin">
+        <a routerLink="add" class="nav-link">Adicionar</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="logout()" class="nav-link">Sair</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
