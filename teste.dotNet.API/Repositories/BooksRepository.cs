@@ -6,9 +6,9 @@ namespace teste.dotNet.API.Repository {
     public interface BooksRepository {        
         public BookResponseDTO Get(int bookId);
         public ICollection<BookResponseDTO> List();
-        public void Add(BookRequestDTO book);
-        public void Update(int bookId, BookRequestDTO book);
-        public void Delete(int bookId);      
+        public string Add(BookRequestDTO book);
+        public string Update(int bookId, BookRequestDTO book);
+        public string Delete(int bookId);      
         
     }
 }

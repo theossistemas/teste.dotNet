@@ -23,18 +23,21 @@ namespace teste.dotNet.API.Services.Impl {
             return books;
         }
 
-        public void Add(BookRequestDTO book)
+        public string Add(BookRequestDTO book)
         {
-            _bookRepository.Add(book);
+            var message =_bookRepository.Add(book);
+            return message;
         }      
 
-        public void Update(int bookId, BookRequestDTO book)
+        public string Update(int bookId, BookRequestDTO book)
         {
-            throw new System.NotImplementedException();
+            var message =_bookRepository.Update(bookId, book);
+            return message;
         }        
-        public void Delete(int bookId)
+        public string Delete(int bookId)
         {
-            throw new System.NotImplementedException();
+            var message =_bookRepository.Delete(bookId);
+            return message;
         } 
     }
 }

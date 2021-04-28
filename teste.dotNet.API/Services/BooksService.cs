@@ -6,8 +6,8 @@ namespace teste.dotNet.API.Services {
     public interface BooksService {
         public BookResponseDTO Get(int bookId);
         public ICollection<BookResponseDTO> List();
-        public void Add(BookRequestDTO book);
-        public void Update(int bookId, BookRequestDTO book);
-        public void Delete(int bookId);        
+        public string Add(BookRequestDTO book);
+        public string Update(int bookId, BookRequestDTO book);
+        public string Delete(int bookId);        
     }
 }

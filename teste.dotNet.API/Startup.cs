@@ -1,11 +1,15 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using teste.dotNet.API.Data;
+using teste.dotNet.API.Entities;
 using teste.dotNet.API.Repository;
 using teste.dotNet.API.Repository.Impl;
 using teste.dotNet.API.Services;
@@ -22,7 +26,6 @@ namespace teste.dotNet.API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -31,9 +34,10 @@ namespace teste.dotNet.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "teste.dotNet.API", Version = "v1" });
             });
 
-            services.AddDbContext<ApplicationDbContext>(
-                options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection")
-            );
+            services.AddDbContext<ApplicationDbContext>( options => options
+                .UseSqlServer("name=ConnectionStrings:DefaultConnection")
+            );       
+
             services.AddTransient<BooksService, BooksServiceImpl>();
             services.AddTransient<WritersService, WritersServiceImpl>();
             services.AddTransient<BooksRepository, BooksRepositoryImpl>();
@@ -53,6 +57,8 @@ namespace teste.dotNet.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

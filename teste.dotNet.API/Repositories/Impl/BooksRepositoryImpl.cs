@@ -34,10 +34,7 @@ namespace teste.dotNet.API.Repository.Impl {
         {
             var books = _context.Books
             .OrderBy(book => book.Title)
-            .Join(_context.Writers, 
-                book => book.Id,
-                writer => writer.Id,
-                (book, writer) => new BookResponseDTO() {
+            .Select(book => new BookResponseDTO() {
                     Id = book.Id,
                     ReleaseDate = book.ReleaseDate,
                     Title = book.Title,
@@ -48,8 +45,12 @@ namespace teste.dotNet.API.Repository.Impl {
             return books;
         }
 
-        public void Add(BookRequestDTO book)
+        public string Add(BookRequestDTO book)
         {
+            var titleExists = _context.Books.Any(book => book.Title.ToLower().Trim() == book.Title.ToLower().Trim());
+            if(titleExists) 
+                return "Não foi possível cadastrar o livro. Este título já existe na base de dados.";
+
             var bookEntity = new Book {
                 Title = book.Title,
                 RegistrationDate = DateTime.Now,
@@ -59,16 +60,44 @@ namespace teste.dotNet.API.Repository.Impl {
 
             _context.Add<Book>(bookEntity);
             _context.SaveChanges();
+            return "";
         }
 
-        public void Update(int bookId, BookRequestDTO book)
+        public string Update(int bookId, BookRequestDTO book)
         {
-            throw new System.NotImplementedException();
+            var titleExists = _context.Books.Any(book => book.Title.ToLower().Trim() == book.Title.ToLower().Trim());
+            if(titleExists)
+                return "Não foi possível alterar o livro. Este título já existe na base de dados.";
+
+            var bookEntity = _context.Books
+            .Include(book => book.BookWriters)
+            .Where(book => book.Id == bookId)
+            .FirstOrDefault();
+
+            if(bookEntity != null) {
+                bookEntity.ReleaseDate = book.ReleaseDate;
+                bookEntity.Title = book.Title;
+                bookEntity.BookWriters = book.WritersId.Select(writerId => new BookWriter(){BookId= bookId, WriterId = writerId}).ToList();
+
+                _context.Update<Book>(bookEntity);
+                _context.SaveChanges();
+                return "";
+            }
+            return "Livro não encontrado na base de dados";
         }
 
-        public void Delete(int bookId)
+        public string Delete(int bookId)
         {
-            throw new System.NotImplementedException();
+            var book =_context.Books
+            .Include(book => book.BookWriters)
+            .Where(book => book.Id == bookId)
+            .FirstOrDefault();
+            if(book != null) {
+                _context.Remove(book);
+                _context.SaveChanges();
+                return "";
+            }
+            return "Livro não encontrado na base de dados";
         }
     }
 }
