@@ -1,0 +1,11 @@
+C:\Users\sergi\source\repos\Theos\Theos.Model\bin\Debug\netcoreapp3.1\Theos.Model.deps.json
+C:\Users\sergi\source\repos\Theos\Theos.Model\bin\Debug\netcoreapp3.1\Theos.Model.runtimeconfig.json
+C:\Users\sergi\source\repos\Theos\Theos.Model\bin\Debug\netcoreapp3.1\Theos.Model.runtimeconfig.dev.json
+C:\Users\sergi\source\repos\Theos\Theos.Model\bin\Debug\netcoreapp3.1\Theos.Model.dll
+C:\Users\sergi\source\repos\Theos\Theos.Model\bin\Debug\netcoreapp3.1\Theos.Model.pdb
+C:\Users\sergi\source\repos\Theos\Theos.Model\obj\Debug\netcoreapp3.1\Theos.Model.AssemblyInfoInputs.cache
+C:\Users\sergi\source\repos\Theos\Theos.Model\obj\Debug\netcoreapp3.1\Theos.Model.AssemblyInfo.cs
+C:\Users\sergi\source\repos\Theos\Theos.Model\obj\Debug\netcoreapp3.1\Theos.Model.csproj.CoreCompileInputs.cache
+C:\Users\sergi\source\repos\Theos\Theos.Model\obj\Debug\netcoreapp3.1\Theos.Model.dll
+C:\Users\sergi\source\repos\Theos\Theos.Model\obj\Debug\netcoreapp3.1\Theos.Model.pdb
+C:\Users\sergi\source\repos\Theos\Theos.Model\obj\Debug\netcoreapp3.1\Theos.Model.genruntimeconfig.cache

@@ -1,0 +1,17 @@
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Service.deps.json
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Service.runtimeconfig.json
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Service.runtimeconfig.dev.json
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Service.dll
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Service.pdb
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Data.dll
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Model.dll
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Data.pdb
+C:\Users\sergi\source\repos\Theos\Theos.Service\bin\Debug\netcoreapp3.1\Theos.Model.pdb
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.csprojAssemblyReference.cache
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.AssemblyInfoInputs.cache
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.AssemblyInfo.cs
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.csproj.CoreCompileInputs.cache
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.csproj.CopyComplete
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.dll
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.pdb
+C:\Users\sergi\source\repos\Theos\Theos.Service\obj\Debug\netcoreapp3.1\Theos.Service.genruntimeconfig.cache
