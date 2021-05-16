@@ -1,0 +1,50 @@
+html {
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+}
+
+.background-layout {
+  background-color: #14083d;
+}
+
+.height-max {
+  min-height: 58rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:active {
+  color: #007bff;
+}
+
+a:visited {
+  color: #79797c;
+}
+
+.p-invalid{
+  color: red;
+}
+
+@media screen and (max-width: 3200px) and (max-height: 1800px) {
+}
+@media screen and (max-width: 2560px) and (max-height: 1440px) {
+}
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+}
+@media screen and (max-width: 1680px) and (max-height: 1050px) {
+}
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+}
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+}
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+}
+@media screen and (max-width: 1280px) and (max-height: 960px) {
+}
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+}
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+}

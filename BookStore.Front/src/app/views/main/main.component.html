@@ -1,0 +1,41 @@
+<div class="p-d-flex p-flex-column">
+  <div class="p-m-2">
+    <div class="p-grid">
+      <div class="p-col-11">
+        <div class="box">
+          <app-menu [index]="0"></app-menu>
+        </div>
+      </div>
+      <div class="p-col">
+        <div class="box p-d-flex p-jc-center">
+          <button
+            *ngIf="loggedIn && isAdmin"
+            pButton
+            pRipple
+            type="button"
+            icon="pi pi-sign-out"
+            class="p-button-raised p-button-danger"
+            pTooltip="Sair"
+            tooltipPosition="top"
+            (click)="logout()"
+          ></button>
+          <button
+            *ngIf="loggedIn && !isAdmin"
+            pButton
+            pRipple
+            type="button"
+            icon="pi pi-sign-in"
+            class="p-button-raised p-button-success"
+            pTooltip="Logar"
+            tooltipPosition="top"
+            (click)="login()"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-m-2">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="p-m-2">@BookStore</div>
+</div>

@@ -1,0 +1,128 @@
+<div class="p-d-flex p-flex-column">
+  <div class="p-m-2" *ngIf="isAdmin">
+    <div class="card">
+      <div class="p-grid p-m-2">
+        <div class="p-col">
+          <p-toolbar>
+            <div class="p-toolbar-group-left">
+              <p-button
+                label="Adicionar Usuário"
+                styleClass="p-button-success"
+                icon="pi pi-user-plus"
+                (click)="showDialog()"
+              ></p-button>
+              <i class="pi pi-bars p-m-2"></i>
+            </div>
+          </p-toolbar>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-m-2">
+    <app-grid
+      [result]="result"
+      [displayedColumns]="displayedColumns"
+      [totalRecords]="totalRecords"
+      [loading]="loading"
+      (gridLoad)="onGridLoad($event)"
+    ></app-grid>
+  </div>
+</div>
+<p-dialog header="" [(visible)]="display">
+  <ng-template pTemplate="content">
+    <div class="p-fluid p-formgrid p-grid">
+      <div class="p-field p-col-12">
+        <label for="name">Nome</label>
+        <input id="name" type="text" [(ngModel)]="register.name" pInputText />
+        <small class="p-invalid" *ngIf="submitted && !register.name"
+          >O nome é obrigatório.</small
+        >
+      </div>
+      <div class="p-field p-col-6">
+        <label for="email">E-mail</label>
+        <input
+          id="email"
+          type="email"
+          [(ngModel)]="register.email"
+          pInputText
+        />
+        <small class="p-invalid" *ngIf="submitted && !register.email"
+          >O e-mail é obrigatório.</small
+        >
+        <small class="p-invalid" *ngIf="submitted && register.email && (register.confirmEmail != register.email)"
+          >Os e-mails estão diferentes.</small
+        >
+      </div>
+      <div class="p-field p-col-6">
+        <label for="confirmEmail">Confirmar E-mail</label>
+        <input
+          id="confirmEmail"
+          type="email"
+          [(ngModel)]="register.confirmEmail"
+          pInputText
+        />
+        <small class="p-invalid" *ngIf="submitted && !register.confirmEmail"
+          >Confirmar e-mail é obrigatório.</small
+        >
+        <small class="p-invalid" *ngIf="submitted && register.confirmEmail && (register.confirmEmail != register.email)"
+          >Os e-mails estão diferentes.</small
+        >
+      </div>
+      <div class="p-field p-col-6">
+        <label for="password">Senha</label>
+        <input
+          id="password"
+          type="password"
+          [(ngModel)]="register.password"
+          pInputText
+        />
+        <small class="p-invalid" *ngIf="submitted && !register.password"
+          >A senha é obrigatória.</small
+        >
+        <small class="p-invalid" *ngIf="submitted && register.password && (register.password != register.confirmPassword)"
+          >As senhas estão diferentes.</small
+        >
+      </div>
+      <div class="p-field p-col-6">
+        <label for="confirmPassword">Confirmar Password</label>
+        <input
+          id="confirmPassword"
+          type="password"
+          [(ngModel)]="register.confirmPassword"
+          pInputText
+        />
+        <small class="p-invalid" *ngIf="submitted && !register.confirmPassword"
+          >Confirmar a senha é obrigatória.</small
+        >
+        <small class="p-invalid" *ngIf="submitted && register.confirmPassword && (register.password != register.confirmPassword)"
+          >As senhas estão diferentes.</small
+        >
+      </div>
+      <div class="p-field p-col-6">
+        <label for="role">Perfil</label>
+        <p-dropdown
+          [options]="roles"
+          [(ngModel)]="register.role"
+          placeholder="Selecione o perfil"
+        ></p-dropdown>
+        <small class="p-invalid" *ngIf="submitted && !register.confirmPassword"
+          >O perfil é obrigatório.</small
+        >
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <p-button
+      label="Cancelar"
+      styleClass="p-button-danger"
+      icon="pi pi-trash"
+      (click)="cancel()"
+    ></p-button>
+    <p-button
+      label="Salvar"
+      styleClass="p-button-success"
+      icon="pi pi-save"
+      (click)="save()"
+    ></p-button>
+  </ng-template>
+</p-dialog>

@@ -1,0 +1,51 @@
+<div class="p-d-flex p-flex-column p-jc-center p-ai-center height-max">
+  <div
+    class="
+      p-d-flex p-flex-column p-jc-center p-ai-center
+      border-layout
+      p-shadow-7 p-px-4 p-py-6 p-m-6
+    "
+  >
+    <b>BookStore</b>
+    <div class="p-fluid p-py-6 p-px-2">
+      <div class="p-field p-grid">
+        <label for="email" class="p-col-12 p-mb-2">E-mail</label>
+        <div class="p-col-12">
+          <input id="email" [(ngModel)]="username" type="email" pInputText />
+          <small class="p-invalid" *ngIf="submitted && !username"
+            >O e-mail é obrigatório.</small
+          >
+        </div>
+      </div>
+      <div class="p-field p-grid">
+        <label for="password" class="p-col-12 p-mb-2">Senha</label>
+        <div class="p-col-12">
+          <input
+            id="password"
+            [(ngModel)]="password"
+            type="password"
+            pInputText
+          />
+          <small class="p-invalid" *ngIf="submitted && !password"
+            >A senha é obrigatória.</small
+          >
+        </div>
+      </div>
+      <div class="p-field p-grid">
+        <div class="p-col-12">
+          <button
+            pButton
+            type="button"
+            label="Submit"
+            (click)="login()"
+          ></button>
+        </div>
+      </div>
+      <div class="p-field p-grid">
+        <div class="p-col-6">
+          <a href="/main/home">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

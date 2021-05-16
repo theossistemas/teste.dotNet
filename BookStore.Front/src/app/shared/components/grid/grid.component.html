@@ -1,0 +1,78 @@
+<div class="card">
+  <div class="p-grid p-m-2">
+    <div class="p-col">
+      <p-table
+        #dt
+        [value]="result"
+        [columns]="displayedColumns"
+        [rows]="rows"
+        [rowsPerPageOptions]="rowsPerPage"
+        [totalRecords]="totalRecords"
+        [(first)]="firstPage"
+        [rowHover]="false"
+        [paginator]="true"
+        [lazy]="true"
+        [loading]="loading"
+        [lazyLoadOnInit]="false"
+        (onLazyLoad)="onGridLoad($event)"
+        [showCurrentPageReport]="true"
+        currentPageReportTemplate="Exibindo de {first} à {last} de um total {totalRecords} registros"
+        styleClass="p-datatable-striped p-datatable-sm"
+      >
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns">
+              {{ col.header }}
+            </th>
+            <th *ngIf="hasEdit || hasDelete"></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+            <td *ngFor="let col of columns; let i = index">
+              {{ rowData[col.field] | dynamic: dt.columns[i].pipe }}
+            </td>
+            <td *ngIf="hasEdit || hasDelete">
+              <button
+                pButton
+                pRipple
+                icon="pi pi-pencil"
+                class="p-button-rounded p-button-success p-mx-2"
+                (click)="onEdit(rowData.id)"
+                pTooltip="Alterar"
+                tooltipPosition="bottom"
+                *ngIf="hasEdit"
+              ></button>
+              <button
+                pButton
+                pRipple
+                icon="pi pi-trash"
+                class="p-button-rounded p-button-warning p-mx-2"
+                (click)="onDelete(rowData.id)"
+                pTooltip="Excluir"
+                tooltipPosition="bottom"
+                *ngIf="hasDelete"
+              ></button>
+            </td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+          <div class="p-d-flex p-ai-center p-jc-between">
+            Total de {{ result ? result.length : 0 }} registros.
+          </div>
+        </ng-template>
+        <ng-template pTemplate="emptymessage" let-columns>
+          <tr>
+            <td
+              [attr.colspan]="
+                hasEdit || hasDelete ? columns.length + 1 : columns.length
+              "
+            >
+              Registros não encontrados.
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

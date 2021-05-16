@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Architecture/bin/Debug/netcoreapp3.1
+/Architecture/obj/Debug/netcoreapp3.1
+/Architecture/obj
+/BookStore/bin/Debug/netcoreapp3.1
+/BookStore/Logs
+/BookStore/obj
+/BookStore.Front/bin/Debug/netcoreapp3.1
+/BookStore.Front/obj/Debug/netcoreapp3.1
+/BookStore.Front/obj
+/Domain/bin/Debug/netcoreapp3.1
+/Domain/obj/Debug/netcoreapp3.1
+/Domain/obj
+/Repository/bin/Debug/netcoreapp3.1
+/Repository/obj/Debug/netcoreapp3.1
+/Repository/obj
+/Seed/bin/Debug/netcoreapp3.1
+/Seed/obj
+/Service/bin/Debug/netcoreapp3.1
+/Service/obj/Debug/netcoreapp3.1
+/Service/obj
+/BookStore.Front/dist/BookStore
+/BookStore.Front/node_modules
+/BookStore.Front/dist/out-tsc

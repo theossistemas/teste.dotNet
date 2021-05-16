@@ -1,0 +1,61 @@
+<div class="p-d-flex p-flex-column">
+  <div class="p-m-2" *ngIf="isAdmin">
+    <div class="card">
+      <div class="p-grid p-m-2">
+        <div class="p-col">
+          <p-toolbar>
+            <div class="p-toolbar-group-left">
+              <p-button
+                label="Adicionar Livro"
+                styleClass="p-button-success"
+                icon="pi pi-plus"
+                (click)="showDialog()"
+              ></p-button>
+              <i class="pi pi-bars p-m-2"></i>
+            </div>
+          </p-toolbar>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-m-2">
+    <app-grid
+      [result]="result"
+      [displayedColumns]="displayedColumns"
+      [totalRecords]="totalRecords"
+      [loading]="loading"
+      (gridLoad)="onGridLoad($event)"
+      [hasDelete]="true"
+      [hasEdit]="true"
+      (delete)="delete($event)"
+      (edit)="edit($event)"
+    ></app-grid>
+  </div>
+</div>
+<p-dialog header="" [(visible)]="display">
+  <ng-template pTemplate="content">
+    <div class="p-fluid p-formgrid p-grid">
+      <div class="p-field p-col-12">
+        <label for="title">Título</label>
+        <input id="title" type="text" [(ngModel)]="register.title" pInputText />
+        <small class="p-invalid" *ngIf="submitted && !register.title"
+          >O título é obrigatório.</small
+        >
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <p-button
+      label="Cancelar"
+      styleClass="p-button-danger"
+      icon="pi pi-trash"
+      (click)="cancel()"
+    ></p-button>
+    <p-button
+      label="Salvar"
+      styleClass="p-button-success"
+      icon="pi pi-save"
+      (click)="save()"
+    ></p-button>
+  </ng-template>
+</p-dialog>
