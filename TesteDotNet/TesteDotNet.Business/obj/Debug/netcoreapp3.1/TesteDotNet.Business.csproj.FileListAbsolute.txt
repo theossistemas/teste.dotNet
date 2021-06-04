@@ -1,0 +1,9 @@
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\bin\Debug\netcoreapp3.1\TesteDotNet.Business.deps.json
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\bin\Debug\netcoreapp3.1\TesteDotNet.Business.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\bin\Debug\netcoreapp3.1\TesteDotNet.Business.pdb
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\obj\Debug\netcoreapp3.1\TesteDotNet.Business.csprojAssemblyReference.cache
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\obj\Debug\netcoreapp3.1\TesteDotNet.Business.AssemblyInfoInputs.cache
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\obj\Debug\netcoreapp3.1\TesteDotNet.Business.AssemblyInfo.cs
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\obj\Debug\netcoreapp3.1\TesteDotNet.Business.csproj.CoreCompileInputs.cache
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\obj\Debug\netcoreapp3.1\TesteDotNet.Business.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Business\obj\Debug\netcoreapp3.1\TesteDotNet.Business.pdb

@@ -1,0 +1,15 @@
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Business.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.csprojAssemblyReference.cache
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.AssemblyInfoInputs.cache
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.AssemblyInfo.cs
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.csproj.CoreCompileInputs.cache
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Data.deps.json
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Data.runtimeconfig.json
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Data.runtimeconfig.dev.json
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Data.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Data.pdb
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\bin\Debug\netcoreapp3.1\TesteDotNet.Business.pdb
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.csproj.CopyComplete
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.pdb
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Data\obj\Debug\netcoreapp3.1\TesteDotNet.Data.genruntimeconfig.cache
