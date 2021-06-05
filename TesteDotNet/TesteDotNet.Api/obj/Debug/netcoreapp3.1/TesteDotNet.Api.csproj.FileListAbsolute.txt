@@ -137,3 +137,11 @@ C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\zh-Hans\Micr
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\obj\Debug\netcoreapp3.1\TesteDotNet.Api.MvcApplicationPartsAssemblyInfo.cs

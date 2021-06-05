@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -11,6 +12,8 @@ using TesteDotNet.Business.Models;
 using TesteDotNet.Data.Context;
 using TesteDotNet.Data.Repository;
 using AutoMapper;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.Swagger;
 
 namespace TesteDotNet.Api
 {
@@ -35,6 +38,14 @@ namespace TesteDotNet.Api
             services.AddScoped<DataDbContext>();
             services.AddScoped<ILivroRepository, LivroRepository>();
             services.AddAutoMapper(typeof(Startup));
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "TesteDotNet"
+                });
+            });
         }
 
   
@@ -55,6 +66,12 @@ namespace TesteDotNet.Api
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Teste Dot Net");
+            });
+
         }
     }
 }
