@@ -1,17 +1,16 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using TesteDotNet.Api.ViewModel;
+using TesteDotNet.Business.Interfaces;
+using TesteDotNet.Business.Models;
 using TesteDotNet.Data.Context;
+using TesteDotNet.Data.Repository;
+using AutoMapper;
 
 namespace TesteDotNet.Api
 {
@@ -27,12 +26,15 @@ namespace TesteDotNet.Api
   
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services.AddDbContext<DataDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
 
             });
+            services.AddControllers();
+            services.AddScoped<DataDbContext>();
+            services.AddScoped<ILivroRepository, LivroRepository>();
+            services.AddAutoMapper(typeof(Startup));
         }
 
   
