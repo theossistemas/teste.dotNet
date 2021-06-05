@@ -39,7 +39,7 @@ namespace TesteDotNet.Api.Controllers
                 return Ok(registeruser);
             }
 
-            return NotFound();
+            return BadRequest("Operação Não Realizada");
         }
 
         [HttpPost("login")]
