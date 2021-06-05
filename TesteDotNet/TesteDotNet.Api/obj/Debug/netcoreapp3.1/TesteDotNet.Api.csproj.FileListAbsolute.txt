@@ -145,3 +145,11 @@ C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\obj\Debug\netcoreapp3.1\TesteDotNet.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\WebActivatorEx.dll

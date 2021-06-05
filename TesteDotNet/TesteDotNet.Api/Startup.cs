@@ -14,6 +14,7 @@ using TesteDotNet.Data.Repository;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.Swagger;
+using TesteDotNet.Api.Configuration;
 
 namespace TesteDotNet.Api
 {
@@ -34,6 +35,7 @@ namespace TesteDotNet.Api
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
 
             });
+            services.AddIdentityConfiguration(Configuration);
             services.AddControllers();
             services.AddScoped<DataDbContext>();
             services.AddScoped<ILivroRepository, LivroRepository>();
@@ -60,6 +62,7 @@ namespace TesteDotNet.Api
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -71,6 +74,7 @@ namespace TesteDotNet.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Teste Dot Net");
             });
+            
 
         }
     }
