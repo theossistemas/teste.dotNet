@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace TesteDotNet.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LivroController : ControllerBase
     {
         private readonly DataDbContext _context;
@@ -28,6 +30,7 @@ namespace TesteDotNet.Api.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         // GET: api/Livro
         [HttpGet]
         public async Task<IEnumerable<LivroViewModel>> GetLivros()

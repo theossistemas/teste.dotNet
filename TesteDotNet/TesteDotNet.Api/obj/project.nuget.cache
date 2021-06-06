@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V+ikd9v5NsVpBPEBPCdBKjLfb4uhRJ9zHWWiuPQPFOvWrbCdi9/N5jLOHquHnOHwEWpnelewpIQ2KWgTvb05kg==",
+  "dgSpecHash": "TbGI3xqoYHmQ4MzslOuLKRMZ4CDQknPa7oi5ztYzvaBzpW39xzaUFL307iJv3Ihx1i6ffJrkcSYtdD7Nms0IOA==",
   "success": true,
   "projectFilePath": "C:\\teste.dotNet\\TesteDotNet\\TesteDotNet.Api\\TesteDotNet.Api.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnet.webapi.core\\4.0.20710\\microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnet.webapi.webhost\\4.0.20710\\microsoft.aspnet.webapi.webhost.4.0.20710.nupkg.sha512",
+    "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.4\\microsoft.aspnetcore.authentication.jwtbearer.3.1.4.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.4\\microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
