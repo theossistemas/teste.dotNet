@@ -1,0 +1,17 @@
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Infra.deps.json
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Infra.runtimeconfig.json
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Infra.runtimeconfig.dev.json
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Infra.dll
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Infra.pdb
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Domain.dll
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.dll
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Domain.pdb
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.pdb
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.csprojAssemblyReference.cache
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.AssemblyInfoInputs.cache
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.AssemblyInfo.cs
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.csproj.CoreCompileInputs.cache
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.csproj.CopyComplete
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.dll
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.pdb
+C:\Projeto\BibliotecaWeb\BibliotecaWeb.Infra\obj\Debug\netcoreapp3.1\LivrariaWeb.Infra.genruntimeconfig.cache

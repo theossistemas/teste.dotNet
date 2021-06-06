@@ -1,0 +1,14 @@
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Service.deps.json
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Service.dll
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Service.pdb
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Domain.dll
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.dll
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Domain.pdb
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.pdb
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.csprojAssemblyReference.cache
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.AssemblyInfoInputs.cache
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.AssemblyInfo.cs
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.csproj.CoreCompileInputs.cache
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.csproj.CopyComplete
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.dll
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Service\obj\Debug\netcoreapp3.1\LivrariaWeb.Service.pdb

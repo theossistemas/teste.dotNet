@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LivrariaWeb.Api</name>
+    </assembly>
+    <members>
+        <member name="M:LivrariaWeb.Api.Controllers.LivroController.GetAllLivros">
+            <summary>
+            Obter todos os Livros
+            </summary>
+            <remarks>
+            
+            
+                Obtém todos os Livros cadastrados.
+                
+            </remarks>
+        </member>
+        <member name="M:LivrariaWeb.Api.Controllers.LivroController.Cadastrar(LivrariaWeb.Dto.DtoLivro)">
+            <summary>
+            Cadastrar Livro - Requer Autenticação
+            </summary>
+            <remarks>
+            
+             Cadastra livros de acordo com as seguintes regras
+                Não é permitido a inclusão de Livros com nome já existente na base de dados.
+                Não é permitido a inclusão de Livros com nome do autor já existente na base de dados.
+            </remarks>
+        </member>
+        <member name="M:LivrariaWeb.Api.Controllers.LivroController.GetByIdLivro(System.Int32)">
+            <summary>
+            Obter Livro por id
+            </summary>
+            <remarks>
+            
+            
+                Obtêm o Livro por id. Caso você não tenha o id consulte o endpoint GetAllLivros
+                
+            </remarks>
+        </member>
+        <member name="M:LivrariaWeb.Api.Controllers.LivroController.EditarLivro(LivrariaWeb.Dto.DtoLivro)">
+            <summary>
+            Editar um Livro - Requer Autenticação
+            </summary>
+            <remarks>
+            Edita um Livro já cadastrado
+            
+                A edição do livro segue a regra do endpoint Cadastrar.
+                
+            </remarks>
+        </member>
+        <member name="M:LivrariaWeb.Api.Controllers.LivroController.DeleteCurso(System.Int32)">
+            <summary>
+            Deletar um Livro - Requer Autenticação
+            </summary>
+            <remarks>
+            Para deletar um livro passe o Id como parâmetro. Caso você não tenha o id consulte o endpoint GetAllLivros
+            
+                Assim que o endpoint DeleteLivro for executado essa operação não terá como ser desfeita.
+                
+            </remarks>
+        </member>
+        <member name="M:LivrariaWeb.Api.Controllers.TokenController.Login(System.String,System.String)">
+            <summary>
+            Retorna (JWT) Token de autenticação.
+            </summary>
+            <remarks>
+            
+             Retorna um token valido por 20 minutos caso as credencias de login estejam corretas.
+                Para utlizar este token basta adicionar ao Header (Authorize no Swagger), Bearer + Token segue o exemplo:
+               "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJJbnZlbnRvc..."
+            </remarks>
+        </member>
+        <member name="M:LivrariaWeb.Api.Controllers.TokenController.Cadastrar(System.String,System.String,System.String)">
+            <summary>
+            Cadastra um novo usuario.
+            </summary>
+            <remarks>
+            
+             Cadastra um novo usuario.
+            </remarks>
+        </member>
+    </members>
+</doc>

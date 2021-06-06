@@ -1,0 +1,8 @@
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.deps.json
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.dll
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\bin\Debug\netcoreapp3.1\LivrariaWeb.Dto.pdb
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\obj\Debug\netcoreapp3.1\LivrariaWeb.Dto.AssemblyInfoInputs.cache
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\obj\Debug\netcoreapp3.1\LivrariaWeb.Dto.AssemblyInfo.cs
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\obj\Debug\netcoreapp3.1\LivrariaWeb.Dto.csproj.CoreCompileInputs.cache
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\obj\Debug\netcoreapp3.1\LivrariaWeb.Dto.dll
+C:\Projeto\BibliotecaWeb\LivrariaWeb.Dto\obj\Debug\netcoreapp3.1\LivrariaWeb.Dto.pdb
