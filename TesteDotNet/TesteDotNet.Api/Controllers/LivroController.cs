@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using TesteDotNet.Api.ViewModel;
 using TesteDotNet.Business.Interfaces;
 using TesteDotNet.Business.Models;
@@ -23,17 +24,20 @@ namespace TesteDotNet.Api.Controllers
         private readonly ILivroRepository _livroRespository;
         private readonly IMapper _mapper;
         private readonly ILivroService _livroService;
+        private readonly ILogger _logger;
 
         public LivroController(INotificador notificador, 
                                 DataDbContext context, 
                                 ILivroRepository livroRespository, 
                                 IMapper mapper,
-                                ILivroService livroService) : base(notificador)
+                                ILivroService livroService,
+                                ILogger<AuthController> logger) : base(notificador)
         {
             _context = context;
             _livroRespository = livroRespository;
             _mapper = mapper;
             _livroService = livroService;
+            _logger = logger;
         }
 
         [AllowAnonymous]
@@ -69,6 +73,7 @@ namespace TesteDotNet.Api.Controllers
             livroAtualizacao.Edicao = livroViewModel.Edicao;
 
             await _livroRespository.Atualizar(_mapper.Map<Livro>(livroAtualizacao));
+            _logger.LogInformation("Livro Cadastrado com sucesso");
             return CustomResponse(livroViewModel);
 
         }
@@ -80,6 +85,7 @@ namespace TesteDotNet.Api.Controllers
 
             await _livroService.Adicionar(_mapper.Map<Livro>(livroViewModel));
 
+            _logger.LogInformation("Livro Atualizado com sucesso");
             return CustomResponse(livroViewModel);
         }
 
@@ -92,6 +98,7 @@ namespace TesteDotNet.Api.Controllers
 
             await _livroRespository.Remover(id);
 
+            _logger.LogInformation("Livro Excluido com sucesso");
             return CustomResponse(livro);
         }
 

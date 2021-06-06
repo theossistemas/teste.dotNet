@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
@@ -22,11 +23,13 @@ namespace TesteDotNet.Api.Controllers
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly AppSettings _appSettings;
+        private readonly ILogger _logger;
 
         public AuthController(INotificador notificador,
                               SignInManager<IdentityUser> signInManager,
                               UserManager<IdentityUser> userManager,
-                              IOptions<AppSettings> appSettings) : base(notificador)
+                              IOptions<AppSettings> appSettings,
+                              ILogger<AuthController> logger) : base(notificador)
         {
             _signInManager = signInManager;
             _userManager = userManager;
@@ -48,6 +51,7 @@ namespace TesteDotNet.Api.Controllers
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, false);
+                _logger.LogInformation("Usuário Cadastrado com sucesso");
                 return CustomResponse(GerarJWT());
             }
             foreach (var error in result.Errors)
@@ -70,6 +74,7 @@ namespace TesteDotNet.Api.Controllers
             if (result.IsLockedOut)
             {
                 NotificarErro("Usuário temporariamente bloqueado por tentativas inválidas");
+                _logger.LogWarning("Usuário temporariamente bloqueado por tentativas inválidas");
                 return CustomResponse(loginUser);
             }
 
