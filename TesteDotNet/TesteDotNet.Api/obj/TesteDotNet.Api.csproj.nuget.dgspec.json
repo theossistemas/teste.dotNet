@@ -150,6 +150,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

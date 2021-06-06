@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TbGI3xqoYHmQ4MzslOuLKRMZ4CDQknPa7oi5ztYzvaBzpW39xzaUFL307iJv3Ihx1i6ffJrkcSYtdD7Nms0IOA==",
+  "dgSpecHash": "yiLU4zCFCMAJlTOYXNnfQgkufSpZf0jLzqeRhDrJrjhuKG0+lSxD4+57szGoxKBu4k/+iMlwoMtSiKAACXTFsA==",
   "success": true,
   "projectFilePath": "C:\\teste.dotNet\\TesteDotNet\\TesteDotNet.Api\\TesteDotNet.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jefer\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\jefer\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnet.webapi.core\\4.0.20710\\microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.aspnet.webapi.webhost\\4.0.20710\\microsoft.aspnet.webapi.webhost.4.0.20710.nupkg.sha512",

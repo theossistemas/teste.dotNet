@@ -17,17 +17,23 @@ namespace TesteDotNet.Api.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class LivroController : ControllerBase
+    public class LivroController : MainController
     {
         private readonly DataDbContext _context;
         private readonly ILivroRepository _livroRespository;
         private readonly IMapper _mapper;
+        private readonly ILivroService _livroService;
 
-        public LivroController(DataDbContext context, ILivroRepository livroRespository, IMapper mapper)
+        public LivroController(INotificador notificador, 
+                                DataDbContext context, 
+                                ILivroRepository livroRespository, 
+                                IMapper mapper,
+                                ILivroService livroService) : base(notificador)
         {
             _context = context;
             _livroRespository = livroRespository;
             _mapper = mapper;
+            _livroService = livroService;
         }
 
         [AllowAnonymous]
@@ -50,9 +56,10 @@ namespace TesteDotNet.Api.Controllers
         {
             if (id != livroViewModel.Id)
             {
-                return BadRequest();
+                NotificarErro("O id informado não é válido");
+                return CustomResponse(livroViewModel); 
             }
-
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
             var livroAtualizacao = _mapper.Map<LivroViewModel>(await _livroRespository.ObterPorId(id));
 
             livroAtualizacao.DataLancamento = livroViewModel.DataLancamento;
@@ -62,7 +69,7 @@ namespace TesteDotNet.Api.Controllers
             livroAtualizacao.Edicao = livroViewModel.Edicao;
 
             await _livroRespository.Atualizar(_mapper.Map<Livro>(livroAtualizacao));
-            return Ok(livroViewModel);
+            return CustomResponse(livroViewModel);
 
         }
 
@@ -71,9 +78,9 @@ namespace TesteDotNet.Api.Controllers
         {
             if (!ModelState.IsValid) return BadRequest();
 
-            await _livroRespository.Adicionar(_mapper.Map<Livro>(livroViewModel));
+            await _livroService.Adicionar(_mapper.Map<Livro>(livroViewModel));
 
-            return Ok(livroViewModel);
+            return CustomResponse(livroViewModel);
         }
 
         [HttpDelete("{id}")]
@@ -85,7 +92,7 @@ namespace TesteDotNet.Api.Controllers
 
             await _livroRespository.Remover(id);
 
-            return Ok(livro);
+            return CustomResponse(livro);
         }
 
         private bool LivroExists(Guid id)

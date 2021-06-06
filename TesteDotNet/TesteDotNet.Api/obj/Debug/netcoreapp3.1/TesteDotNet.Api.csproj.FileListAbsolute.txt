@@ -154,3 +154,4 @@ C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\System.Web.H
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\WebActivatorEx.dll
 C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\teste.dotNet\TesteDotNet\TesteDotNet.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll

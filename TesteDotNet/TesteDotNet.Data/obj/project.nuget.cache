@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "++KJ/jNalAzzzxLjF/+G3XkApkRJbxFGC3WAz1g2SwSiyr9nl1t4rN6kntrLt1toz+d2/rl1oIraJh8qt+f5Tw==",
+  "dgSpecHash": "Se1LghPJnm7VgidWtRmgD9HjX5uextLPk6vjwJ/H0A+57aVgSt4V9TqJrz42A+Ju2qSNnZTsJQKh6bwO9ghgbw==",
   "success": true,
   "projectFilePath": "C:\\teste.dotNet\\TesteDotNet\\TesteDotNet.Data\\TesteDotNet.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jefer\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\jefer\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -18,6 +18,8 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.Application;
 using Swashbuckle.Swagger;
 using TesteDotNet.Api.Configuration;
+using TesteDotNet.Business.Notificacoes;
+using TesteDotNet.Business.Services;
 
 namespace TesteDotNet.Api
 {
@@ -42,6 +44,8 @@ namespace TesteDotNet.Api
             services.AddControllers();
             services.AddScoped<DataDbContext>();
             services.AddScoped<ILivroRepository, LivroRepository>();
+            services.AddScoped<ILivroService, LivroService>();
+            services.AddScoped<INotificador, Notificador>();
             services.AddAutoMapper(typeof(Startup));
             services.AddSwaggerConfig();
         }

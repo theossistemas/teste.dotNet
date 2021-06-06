@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DFMVpe8szpipptzdeDvkYngJbmTjH2JZUuumh9LgPa/JeEUV+Gxt3MVI9r6DLCCAJ1KVy83bhrhVL3Xgj9mZ+Q==",
+  "dgSpecHash": "ZVATiJ23hAvbIjDc2hKYE4kig06JJ2ZXLUIqJSPeb7WCgGr6X4NCeljBs0QFd1ZOQAhYG4ptb70mdwz04DZbIQ==",
   "success": true,
   "projectFilePath": "C:\\teste.dotNet\\TesteDotNet\\TesteDotNet.Business\\TesteDotNet.Business.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jefer\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512"
+  ],
   "logs": []
 }

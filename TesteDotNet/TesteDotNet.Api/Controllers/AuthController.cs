@@ -11,20 +11,22 @@ using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 using TesteDotNet.Api.Extensions;
 using TesteDotNet.Api.ViewModel;
+using TesteDotNet.Business.Interfaces;
 
 namespace TesteDotNet.Api.Controllers
 {
     [Route("api")]
     [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthController : MainController
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly AppSettings _appSettings;
 
-        public AuthController(SignInManager<IdentityUser> signInManager,
+        public AuthController(INotificador notificador,
+                              SignInManager<IdentityUser> signInManager,
                               UserManager<IdentityUser> userManager,
-                              IOptions<AppSettings> appSettings)
+                              IOptions<AppSettings> appSettings) : base(notificador)
         {
             _signInManager = signInManager;
             _userManager = userManager;
@@ -34,7 +36,7 @@ namespace TesteDotNet.Api.Controllers
         [HttpPost("nova-conta")]
         public async Task<ActionResult> Registrar(RegisterUserViewModel registeruser)
         {
-            if (!ModelState.IsValid) return NotFound();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
             var user = new IdentityUser
             {
                 UserName = registeruser.Email,
@@ -46,22 +48,33 @@ namespace TesteDotNet.Api.Controllers
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, false);
-                return Ok(GerarJWT());
+                return CustomResponse(GerarJWT());
             }
-
-            return BadRequest("Operação Não Realizada");
+            foreach (var error in result.Errors)
+            {
+                NotificarErro(error.Description);
+            }
+            return CustomResponse(registeruser);
         }
 
         [HttpPost("login")]
         public async Task<ActionResult> Login(LoginUserViewModel loginUser)
         {
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
             var result = await _signInManager.PasswordSignInAsync(loginUser.Email, loginUser.Password, false, true);
             if (result.Succeeded)
             {
-                return Ok(GerarJWT());
+                return CustomResponse( GerarJWT());
             }
 
-            return BadRequest("Usuário ou Senha Incorreto");
+            if (result.IsLockedOut)
+            {
+                NotificarErro("Usuário temporariamente bloqueado por tentativas inválidas");
+                return CustomResponse(loginUser);
+            }
+
+            NotificarErro("Usuário ou Senha incorretos");
+            return CustomResponse(loginUser);
         }
 
         private string GerarJWT()

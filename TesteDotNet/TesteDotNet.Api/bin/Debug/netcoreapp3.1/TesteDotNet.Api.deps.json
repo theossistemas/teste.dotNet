@@ -346,6 +346,17 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FluentValidation/10.2.3": {
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.2.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/4.0.20710": {
         "dependencies": {
           "Microsoft.Net.Http": "2.0.20710",
@@ -2470,6 +2481,9 @@
         }
       },
       "TesteDotNet.Business/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "10.2.3"
+        },
         "runtime": {
           "TesteDotNet.Business.dll": {}
         },
@@ -4102,6 +4116,13 @@
       "sha512": "sha512-xSWoVzOipuDU4PeZcUfaZQ+xqXU8QmGv5jrdlxt3MYm9xaOmrefqcfzGQ3SQ+D+8wfBa/ZwSuL0qKOVj080inA==",
       "path": "automapper.extensions.microsoft.dependencyinjection/8.1.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512"
+    },
+    "FluentValidation/10.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2w/E6jgg9RPSlg7JQSTHg6AWDwlOXARaV4ZUKrPJ1gi1e+oaBEcomxmo29j9BLZivkyQhOpAboJ9nKZS4/xYA==",
+      "path": "fluentvalidation/10.2.3",
+      "hashPath": "fluentvalidation.10.2.3.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/4.0.20710": {
       "type": "package",
