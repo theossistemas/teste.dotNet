@@ -1,0 +1,12 @@
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\bin\Debug\net5.0\LoggerService.deps.json
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\bin\Debug\net5.0\LoggerService.dll
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\bin\Debug\net5.0\ref\LoggerService.dll
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\bin\Debug\net5.0\LoggerService.pdb
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.csprojAssemblyReference.cache
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.AssemblyInfoInputs.cache
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.AssemblyInfo.cs
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.dll
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
+C:\Users\Nakati\source\repos\teste.dotNet\Projeto\LoggerService\obj\Debug\net5.0\LoggerService.pdb
