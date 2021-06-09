@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OlOhw7JPgLL3/V+YDNSFX8KswRBmBbRs3xTgRw6ytj54pRPpmxuEGswvdqgtePs8H8RuHyUBk4LZyEHHNFvttA==",
+  "success": true,
+  "projectFilePath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yngwi\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

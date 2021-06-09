@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TMSA.Livraria.Domain\TMSA.Livraria.Domain.csproj" />
+    <ProjectReference Include="..\TMSA.Livraria.Infra.CrossCutting\TMSA.Livraria.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>

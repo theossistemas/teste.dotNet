@@ -1,0 +1,305 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.API\\TMSA.Livraria.API.csproj": {}
+  },
+  "projects": {
+    "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.API\\TMSA.Livraria.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.API\\TMSA.Livraria.API.csproj",
+        "projectName": "TMSA.Livraria.API",
+        "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.API\\TMSA.Livraria.API.csproj",
+        "packagesPath": "C:\\Users\\yngwi\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yngwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj": {
+                "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj"
+              },
+              "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.CrossCutting\\TMSA.Livraria.Infra.CrossCutting.csproj": {
+                "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.CrossCutting\\TMSA.Livraria.Infra.CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj",
+        "projectName": "TMSA.Livraria.Domain",
+        "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj",
+        "packagesPath": "C:\\Users\\yngwi\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yngwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.CrossCutting\\TMSA.Livraria.Infra.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.CrossCutting\\TMSA.Livraria.Infra.CrossCutting.csproj",
+        "projectName": "TMSA.Livraria.Infra.CrossCutting",
+        "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.CrossCutting\\TMSA.Livraria.Infra.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\yngwi\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yngwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj": {
+                "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj"
+              },
+              "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.Data\\TMSA.Livraria.Infra.Data.csproj": {
+                "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.Data\\TMSA.Livraria.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.Data\\TMSA.Livraria.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.Data\\TMSA.Livraria.Infra.Data.csproj",
+        "projectName": "TMSA.Livraria.Infra.Data",
+        "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.Data\\TMSA.Livraria.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\yngwi\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yngwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj": {
+                "projectPath": "D:\\Estudo\\Desafio 1\\Livraria\\src\\TMSA.Livraria.Domain\\TMSA.Livraria.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
