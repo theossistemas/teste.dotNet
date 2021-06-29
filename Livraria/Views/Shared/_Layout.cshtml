@@ -1,0 +1,198 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Livraria Disney</title>
+    <meta name="description" content="Livraria Disney" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="canonical" href="https://keenthemes.com/metronic" />
+    <!--begin::Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <!--end::Fonts-->
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link href="~/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Theme Styles-->
+    <!--begin::Layout Themes(used by all pages)-->
+    <!--end::Layout Themes-->
+    <link rel="shortcut icon" href="~/assets/media/logos/favicon.ico" />
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_body" class="header-fixed header-mobile-fixed page-loading">
+    <div class="d-flex flex-column flex-root">
+        <!--begin::Page-->
+        <div class="d-flex flex-row flex-column-fluid page">
+            <!--begin::Aside-->
+            <div class="aside aside-left d-flex flex-column" id="kt_aside">
+                <!--begin::Brand-->
+                <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-4 py-lg-8">
+                    <a href="index.html">
+                        <img alt="Logo" src="~/assets/media/logos/logo-letter-9.png" class="max-h-30px" />
+                    </a>
+                </div>
+                <div class="aside-nav d-flex flex-column align-items-center flex-column-fluid pt-7">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body"
+                            data-boundary="window" title="Página Inicial">
+                            <a href="/Home/Index"
+                               class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg">
+                                <i class="flaticon2-protection icon-lg"></i>
+                            </a>
+                        </li>
+                        
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body"
+                                data-boundary="window" title="Sair">
+                                <a href="/Account/Logoff"
+                                   class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg">
+                                    <i class="flaticon2-user icon-lg"></i>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body"
+                                data-boundary="window" title="Login">
+                                <a href="/Account/Login"
+                                   class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg">
+                                    <i class="flaticon2-user icon-lg"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body"
+                                data-boundary="window" title="Registrar">
+                                <a href="/Account/Register"
+                                   class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg">
+                                    <i class="flaticon2-add-square icon-lg"></i>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <!--end::Aside-->
+            <!--begin::Wrapper-->
+            <div class="d-flex flex-column flex-row-fluid wrapper pt-0 m-0" id="kt_wrapper">
+                <!--begin::Content-->
+                <div class="content d-flex flex-column flex-column-fluid m-0" id="kt_content">
+                    @RenderBody()
+                </div>
+                <!--end::Content-->
+                <!--begin::Footer-->
+                <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+                    <!--begin::Container-->
+                    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                        <!--begin::Copyright-->
+                        <div class="text-dark order-2 order-md-1">
+                            <span class="text-muted font-weight-bold mr-2">@DateTime.Now.Year &copy;</span>
+                            <a href="#" target="_blank"
+                               class="text-dark-75 text-hover-primary">Livraria</a>
+                        </div>
+                        <!--end::Copyright-->
+                        <!--begin::Nav-->
+                        <div class="nav nav-dark order-1 order-md-2">
+                            <a href="#" target="_blank"
+                               class="nav-link pr-3 pl-0">Institucional</a>
+                            <a href="#" target="_blank" class="nav-link px-3">Política de Entrega Devolução</a>
+                            <a href="#" target="_blank"
+                               class="nav-link pl-3 pr-0">Política de Privacidade</a>
+                        </div>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Footer-->
+            </div>
+            <!--end::Wrapper-->
+        </div>
+        <!--end::Page-->
+    </div>
+    <!--end::Main-->
+    <!--begin::Scrolltop-->
+    <div id="kt_scrolltop" class="scrolltop">
+        <span class="svg-icon">
+            <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                 height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon points="0 0 24 0 24 24 0 24" />
+                    <rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+                    <path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                          fill="#000000" fill-rule="nonzero" />
+                </g>
+            </svg>
+            <!--end::Svg Icon-->
+        </span>
+    </div>
+    <!--begin::Global Theme Bundle(used by all pages)-->
+    <script src="~/js/jquery-3.3.1.js"></script>
+    <script src="~/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="~/assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+    <script src="~/assets/js/scripts.bundle.js"></script>
+    <script src="~/assets/js/pages/crud/forms/widgets/bootstrap-select.js"></script>
+    <script src="~/assets/js/pages/features/miscellaneous/toastr.js"></script>
+    <script src="~/js/site.js"></script>
+    <!--end::Global Theme Bundle-->
+
+    @if (TempData["error"] != null)
+    {
+        <script>
+    $(document).ready(function () {
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        };
+
+        toastr.error('@TempData["error"]', "Opsss!!");
+    });
+        </script>
+    }
+
+    @if (TempData["success"] != null)
+    {
+        <script type="text/javascript">
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        };
+
+        toastr.success('@TempData["success"]', "Sucesso!!");
+
+        </script>
+    }
+</body>
+<!--end::Body-->
+</html>

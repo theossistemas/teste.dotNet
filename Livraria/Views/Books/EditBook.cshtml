@@ -1,0 +1,107 @@
+﻿@model Livraria.Models.BookModel.BookViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row mx-3">
+    <div class="col-12">
+        <!--begin::Signin-->
+        <div class="card card-custom card-stretch gutter-b">
+            <div class="card-body p-15 pb-20">
+                <div class="text-center mb-10 mb-lg-20">
+                    <h3 class="font-size-h1">Faça o Login</h3>
+                    <p class="text-muted font-weight-bold">Insira seu Email e Senha</p>
+                </div>
+                <form asp-action="EditBook" asp-controller="Books" method="post" class="col-lg-12">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="Id" value="@Model.SingleBook.Id" />
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Title" name="Title" class="control-label"></label>
+                        <input value="@Model.SingleBook.Title" name="Title" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.AuthorId" class="control-label"></label>
+                        <select value="@Model.SingleBook.AuthorId" name="AuthorId" class="form-control">
+                            @{
+                                var selectedAuthor = "";
+                            }
+                            @foreach (var author in Model.Authors)
+                            {
+                                if (author.Id.Equals(Model.SingleBook.AuthorId))
+                                    selectedAuthor = "selected";
+                                <option value="@author.Id" selected="@selectedAuthor">@author.Name</option>
+                            }
+
+                        </select>
+                        <span asp-validation-for="@Model.SingleBook.AuthorId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.PublisherId" class="control-label"></label>
+                        <select value="@Model.SingleBook.PublisherId" name="PublisherId" class="form-control">
+                            @{
+                                var selectedPublisher = "";
+                            }
+                            @foreach (var publisher in Model.Publishers)
+                            {
+                                if (publisher.Id.Equals(Model.SingleBook.PublisherId))
+                                    selectedPublisher = "selected";
+                                <option value="@publisher.Id" selected="@selectedPublisher">@publisher.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="@Model.SingleBook.PublisherId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Country" class="control-label"></label>
+                        <input value="@Model.SingleBook.Country" name="Country" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Country" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Language" class="control-label"></label>
+                        <input value="@Model.SingleBook.Language" name="Language" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Language" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Year" class="control-label"></label>
+                        <input value="@Model.SingleBook.Year" name="Year" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Year" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.ISBN" class="control-label"></label>
+                        <input value="@Model.SingleBook.ISBN" name="ISBN" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.ISBN" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Edition" class="control-label"></label>
+                        <input value="@Model.SingleBook.Edition" name="Edition" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Edition" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Pages" class="control-label"></label>
+                        <input value="@Model.SingleBook.Pages" name="Pages" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Pages" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Stock" class="control-label"></label>
+                        <input value="@Model.SingleBook.Stock" name="Stock" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Stock" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.Price" class="control-label"></label>
+                        <input value="@Model.SingleBook.Price" name="Price" class="form-control" />
+                        <span asp-validation-for="@Model.SingleBook.Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label value="@Model.SingleBook.BookInfo" class="control-label"></label>
+                        <textarea name="BookInfo" class="form-control">@Model.SingleBook.BookInfo</textarea>
+                        <span asp-validation-for="@Model.SingleBook.BookInfo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

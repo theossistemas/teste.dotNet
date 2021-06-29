@@ -1,0 +1,55 @@
+﻿@model Livraria.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex flex-column-fluid flex-center mt-30 mt-lg-0 bg-white container">
+    <!--begin::Signin-->
+    <div class="login-form login-signin">
+        <div class="text-center mb-10 mb-lg-20">
+            <h3 class="font-size-h1">Faça o Login</h3>
+            <p class="text-muted font-weight-bold">Insira seu Email e Senha</p>
+        </div>        <!--begin::Form-->
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @id = "login-form", @class = "check-form has-icon validate-form", role = "form", enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "alert align-center full-width bg-red c-white" })
+            <div class="row">
+                <div class="col-md-12 col-sm-12 align-left validate-input">
+                    @Html.LabelFor(m => m.UserName)
+                    <sup>&nbsp;<i class="fas fa-asterisk fa-xs c-red"></i></sup>
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "input100 form-control", @id = "email", @type = "email", @placeholder = "E-mail", @required = "required" })
+                    @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "c-red" }, "label")
+                </div>
+
+                <div class="col-md-12 col-sm-12 align-left validate-input">
+                    @Html.LabelFor(m => m.Email)
+                    <sup>&nbsp;<i class="fas fa-asterisk fa-xs c-red"></i></sup>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "input100 form-control", @id = "email", @type = "email", @placeholder = "E-mail", @required = "required" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "c-red" }, "label")
+                </div>
+
+                <div class="col-md-12 col-sm-12 align-left validate-input">
+                    @Html.LabelFor(m => m.Password)
+                    <sup>&nbsp;<i class="fas fa-asterisk fa-xs c-red"></i></sup>
+                    @Html.TextBoxFor(m => m.Password, new { @class = "input100 form-control", @id = "password", @type = "password", @placeholder = "Senha", @required = "required" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "c-red" }, "label")
+                </div>
+                <div class="col-md-12 col-sm-12 align-left validate-input">
+                    @Html.LabelFor(m => m.ConfirmPassword)
+                    <sup>&nbsp;<i class="fas fa-asterisk fa-xs c-red"></i></sup>
+                    @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "input100 form-control", @id = "password", @type = "password", @placeholder = "Senha", @required = "required" })
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "c-red" }, "label")
+                </div>
+            </div>
+            <div class="form-group d-flex flex-wrap flex-center">
+                <button type="submit" id="kt_login_signup_submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4" control-id="ControlID-10">Cadastrar</button>
+                <button type="button" id="kt_login_signup_cancel" class="btn btn-light-primary font-weight-bold px-9 py-4 my-3 mx-4" control-id="ControlID-11">Cancel</button>
+            </div>
+            <div></div>
+        }
+        <!--end::Form-->
+    </div>
+    <!--end::Signup-->
+</div>

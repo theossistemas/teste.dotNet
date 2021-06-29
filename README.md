@@ -1,3 +1,7 @@
+## Comentários Adicionais
+Ao inicializar o sistema, ele criara um usuário "admin@livraria.com.br", cuja senha é "admin".
+Para acessar a página de edição de Livros é necessário estar logado, então aparecerá uma aba de cadastro e edição.
+
 ## Desafio 1
 
 Uma livraria da cidade teve um aumento no número de seus exemplares e está com um problema para identificar todos os livros que possui em estoque. 

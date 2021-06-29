@@ -1,0 +1,44 @@
+﻿@model Livraria.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex flex-column-fluid flex-center mt-30 mt-lg-0 bg-white container">
+    <!--begin::Signin-->
+    <div class="login-form login-signin">
+        <div class="text-center mb-10 mb-lg-20">
+            <h3 class="font-size-h1">Faça o Login</h3>
+            <p class="text-muted font-weight-bold">Insira seu Email e Senha</p>
+        </div>
+
+        <div class="content bg-grey">
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @id = "login-form", @class = "check-form has-icon validate-form", role = "form", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "alert align-center full-width bg-red c-white" })
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 align-left validate-input">
+                        @Html.LabelFor(m => m.Email)
+                        <sup>&nbsp;<i class="fas fa-asterisk fa-xs c-red"></i></sup>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "input100 form-control", @id = "email", @type = "email", @placeholder = "E-mail", @required = "required" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "c-red" }, "label")
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 align-left validate-input">
+                        @Html.LabelFor(m => m.Password)
+                        <sup>&nbsp;<i class="fas fa-asterisk fa-xs c-red"></i></sup>
+                        @Html.TextBoxFor(m => m.Password, new { @class = "input100 form-control", @id = "password", @type = "password", @placeholder = "Senha", @required = "required" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "c-red" }, "label")
+                    </div>
+                </div>
+                <div class="full-width align-center">
+                    <button id="btn-login" class="btn btn-orange" type="submit">
+                        <i class="fas fa-sign-in-alt"></i>&ensp;
+                        Entrar
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
