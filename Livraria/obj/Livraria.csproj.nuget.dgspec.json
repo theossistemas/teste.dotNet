@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fnava\\source\\repos\\teste.dotNet\\Livraria\\Livraria.csproj": {}
+    "C:\\Users\\fnava\\source\\repos\\TesteTheos\\Livraria\\Livraria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fnava\\source\\repos\\teste.dotNet\\Livraria\\Livraria.csproj": {
+    "C:\\Users\\fnava\\source\\repos\\TesteTheos\\Livraria\\Livraria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fnava\\source\\repos\\teste.dotNet\\Livraria\\Livraria.csproj",
+        "projectUniqueName": "C:\\Users\\fnava\\source\\repos\\TesteTheos\\Livraria\\Livraria.csproj",
         "projectName": "Livraria",
-        "projectPath": "C:\\Users\\fnava\\source\\repos\\teste.dotNet\\Livraria\\Livraria.csproj",
+        "projectPath": "C:\\Users\\fnava\\source\\repos\\TesteTheos\\Livraria\\Livraria.csproj",
         "packagesPath": "C:\\Users\\fnava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fnava\\source\\repos\\teste.dotNet\\Livraria\\obj\\",
+        "outputPath": "C:\\Users\\fnava\\source\\repos\\TesteTheos\\Livraria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

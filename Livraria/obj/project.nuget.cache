@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQZjvf7D23dRbzd4TPZPRvaqTRajAai83WlE4btl/osNKDM7yLhNSR6nvnMgrJwIJ5QfegobHgvOrCm7LmXogQ==",
+  "dgSpecHash": "Ae6DRFmBk61rZ2ObcpZjKMqJ/f1CExKXBupe9EVfm2OkD6srN2lFd2vP8zG/6S7t60LlfkjlUrSuPgXc/XUBfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fnava\\source\\repos\\teste.dotNet\\Livraria\\Livraria.csproj",
+  "projectFilePath": "C:\\Users\\fnava\\source\\repos\\TesteTheos\\Livraria\\Livraria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fnava\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\fnava\\.nuget\\packages\\automapper.ef6\\2.0.0\\automapper.ef6.2.0.0.nupkg.sha512",

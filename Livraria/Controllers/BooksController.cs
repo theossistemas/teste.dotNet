@@ -65,7 +65,7 @@ namespace Livraria.Controllers
             if (!BookExistsByTitleUsingContains(bookTitle))
             {
                 var errorMessage = "Livro não encontrado";
-                var function = GetType().Name.ToString() + "|GetBook";
+                var function = GetType().Name.ToString() + "|FindBook";
                 await _error.GenerateErrorLog(errorMessage, function);
                 TempData["error"] = errorMessage;
                 return RedirectToAction("Index", "Home");
@@ -81,7 +81,7 @@ namespace Livraria.Controllers
             if (!BookExistsById(bookId))
             {
                 var errorMessage = "Livro não encontrado";
-                var function = GetType().Name.ToString() + "|GetBook";
+                var function = GetType().Name.ToString() + "|EditBook";
                 await _error.GenerateErrorLog(errorMessage, function);
                 TempData["error"] = errorMessage;
                 return RedirectToAction("Index", "Home");
@@ -98,7 +98,7 @@ namespace Livraria.Controllers
             if (!BookExistsById(model.Id))
             {
                 var errorMessage = "Livro não encontrado";
-                var function = GetType().Name.ToString() + "|DeleteBook";
+                var function = GetType().Name.ToString() + "|EditBook";
                 await _error.GenerateErrorLog(errorMessage, function);
                 TempData["error"] = errorMessage;
                 return RedirectToAction("EditBook", "Books", new { bookId = model.Id });
@@ -124,7 +124,7 @@ namespace Livraria.Controllers
                 catch (DbUpdateConcurrencyException ex)
                 {
                     var errorMessage = "Erro ao atualizar o banco de dados -> " + ex.Message;
-                    var function = GetType().Name.ToString() + "|DeleteBook";
+                    var function = GetType().Name.ToString() + "|EditBook";
                     await _error.GenerateErrorLog(errorMessage, function);
                     TempData["error"] = errorMessage;
                     return RedirectToAction("EditBook", "Books", new { bookId = model.Id });
