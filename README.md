@@ -1,44 +1,31 @@
-## Desafio 1
+## Script Das tabelas para o banco [BancoTheoLib]
+* na pasta: ScriptBanco
+*   ScriptTabela_BancoTheoLib.sql
 
-Uma livraria da cidade teve um aumento no número de seus exemplares e está com um problema para identificar todos os livros que possui em estoque. 
-Para ajudar a livraria foi solicitado a você desenvolver uma aplicação web para gerenciar estes exemplares.Requisitos
+## Antes de executar (Inserir o usuário amd comsenha 1234)
+* descomentar a linha 86 do contreller UsuarioController 
 
+**//var resultado = await _usuarioServico.Inserir( new RequisicaoUsuario{ Nome = "adm",Email="adm@adm.com.br", Senha="123456" });**
+* Fazer uma chamada ao método da API  [POST] url/Usuario/Inserir
 
-* O sistema deverá mostrar todos os livros cadastrados ordenados de forma ascendente pelo nome.
-* Ao persistir, validar se o livra já foi cadastrado.
-* O sistema deverá permitir criar, editar e excluir um livro.
-* Os livros devem ser persistidos em um banco de dados.
-* Criar algum mecanismo de log de registro e de erro.
+## A soluction (API) está em Onion Architecture.
+**Está na pasta: TheoAPI**
+* Evitando assim o acoplamento.
+* separação de responsabilidades
+* Aplicado os conceitos iniciais do SOLID e padrão DDD
+* Usado o Microsfot SqlServer 2017
+* Para a persistência dos dados foi utilizado o Dapper.
+* Documentação com o Swagger
 
-#### Outros Requisitos:
-* Para a persistência dos dados deve ser utilizado o Dapper ou EF Core.
-* Configurar o Swagger na aplicação(fundamental)
-* Usar Microsfot SqlServer 2014 ou superior.
-* Utilizar migrations ou Gerar Scripts e disponibilizá-los em uma pasta.
+#### Para consumiros métodos de criação e alteração deve primeiro gerar o token:
 
-#### Observações:
-* O sistema deverá ser desenvolvido na plataforma .NET com C#, usando o framework ASP.NET CORE 
-	(preferêncialmente 3.0+, caso for usado outra versão, informar no pull-request)
-* Deve conter autenticação com dois níveis de acesso, um administrador e um público, o usuário de nível 
-	público não terá autenticação, ou seja, terá acesso livre.
-* Atenção aos princípio do SOLID.
-
-
-#### Diferencial do desafio 1:
-* Implementar front-end para consumir a API em  Angular como framework Javascript.
-* obs: Teste terá como avaliação principal os requisitos solicitados para o backend,  porém o frontend 
-    poderá ser critério de desempate.
-     
-
-##
-#### Critério de desempate
-
-- Aplicação das boas práticas do DDD, TDD, Design Patterns, SOLID e Clean Code.
-
-
-## Como deverá ser entregue:
-
-    1. Faça um fork deste repositório;
-    2. Realize o teste;
-    3. Adicione seu currículo na raiz do repositório;
-    4. Envie-nos o PULL-REQUEST para que seja avaliado;
+**Token** 
+`/Usuario/login`
+    
+ * Email: adm@amd.com.br
+ * Senha: 123456
+ 
+ 
+ 
+## APP Web em angular material 
+   *Está na pastas:WepUI_Angular
