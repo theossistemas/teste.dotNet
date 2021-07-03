@@ -1,0 +1,100 @@
+<div class="row">
+    <div class="col-lg-8">
+      <div class="card bg-light">
+          <div class="card-body">
+            <div class="control-group">
+            
+              <div class="row">
+                <div class="col-lg-9">
+                <h4><strong> {{title}} Livro </strong> </h4> 
+              </div>   
+          </div>
+        </div>
+        </div> 
+    </div>
+  </div> 
+  </div>
+  <br>
+<div class="row" >
+    <div class="col-lg-8">
+      <div class="card">        
+        <div class="card-body"> 
+            <div class="form-group"> 
+                <form [formGroup]="livroForm">
+                <div class="row">
+                    <div class="col-lg-11"> 
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-12">
+                          <label class="col-form-label" for="titulo" >Título</label>
+                          <div class="controls"> 
+                            <input asp-for="titulo" type="text" class="form-control"  formControlName="titulo"  >
+                          </div>
+                        </div> 
+                      </div>
+
+                      <br> 
+
+
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-12">
+                          <label class="col-form-label" for="descricao" >Descrição</label>
+                          <div class="controls"> 
+                            <textarea asp-for="descricao" type="text" class="form-control"  formControlName="descricao"  ></textarea>
+                          </div>
+                        </div> 
+                      </div>
+
+                      <br>
+
+                      <div class="row"> 
+                        <div class="col-md-10 col-lg-4">
+                          <label class="col-form-label" for="autor" >Autor</label>
+                          <div class="controls"> 
+                            <input asp-for="autor" type="text" class="form-control"  formControlName="autor"  >
+                          </div>
+                        </div>
+                      </div>
+
+                      <br>
+
+                      <div class="row"> 
+                        
+                        <div class="col-md-10 col-lg-2">
+                          <label class="col-form-label" for="estoque" >Estoque</label>
+                          <div class="controls"> 
+                            <input asp-for="estoque" type="number" class="form-control"  formControlName="estoque"  >
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-10 col-lg-6">
+                          <label class="col-form-label" for="dataPublicacao" >Data PublicaÃ§Ã£o</label>
+                          <div class="controls"> 
+                            <input asp-for="dataPublicacao" type="date" class="form-control"  formControlName="dataPublicacao"  >
+                          </div>
+                        </div>
+
+                      </div>
+
+      
+                    </div>
+                     
+                  </div>
+
+                  <div class="form-actions">
+                      <div class="row my-2">
+                          <div class="col-md-10 col-lg-11 text-right">
+                              <button type="submit" id="button" class="btn btn-blue" (click)="onFormSubmit()">Salvar</button>
+
+                              <button  id="button" class="btn btn-secondary" [routerLink]="['/listaLivro']" >Cancelar</button>  
+                          </div>
+                      </div>
+                  </div>
+
+              </form>
+          </div> 
+        </div>
+      </div>
+    </div> <!--/.col-->
+  </div>
+
+  <app-loader [show]="isLoadPanelVisible" [text]="'Aguarde...'"></app-loader>  

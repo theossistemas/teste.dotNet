@@ -1,0 +1,36 @@
+<nav    class="sidebar" [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }">
+    
+   
+
+    <div class="list-group">
+        <div class="nested-menu">
+            <a (click)="toggleCollapsed()" id="collapseMenuButton" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                <i class="fa menuArrow" [ngClass]="collapsed? 'fa-angle-double-right':'fa-angle-double-left'"></i>&nbsp;
+            </a>
+        </div>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('pages')">
+                <i class="fa fa-fw fa-wrench"></i>&nbsp;
+                <span>Cadastros&nbsp;
+                    <i class="fa"[ngClass]="showMenu === 'pages'? 'fa-angle-up': 'fa-angle-down'"></i>
+                </span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'pages'">
+                <ul class="submenu">
+                    <li>
+                        <a
+                            href="javascript:void(0)"
+                            [routerLink]="['/listaLivro']"
+                            [routerLinkActive]="['router-link-active']"
+                        >
+                            <i class="fa fa-folder"></i>&nbsp;
+                            <span>Livro</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div> 
+
+    </div>
+ 
+</nav>

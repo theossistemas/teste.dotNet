@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-film mr-2"></i>
+           Livraria WMG
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link nav-link-1 active" aria-current="page" [routerLink]="['/']">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-2" [routerLink]="['/login']">Login</a>
+            </li> 
+        </ul>
+        </div>
+    </div>
+</nav>
+ 
+<div class="container-fluid tm-container-content tm-mt-60">
+    <div class="row mb-4">
+        <h2 class="col-12 tm-text-primary">{{livro.titulo}}</h2>
+    </div>
+    <div class="row tm-mb-90">            
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+            <div class="tm-bg-gray tm-video-details">
+                <h3 class="tm-text-gray-dark mb-3">Descrição do livro</h3>
+                <p class="mb-4"> {{livro.descricao }}</p>        
+                <div class="mr-4 mb-2">
+                    <span class="tm-text-gray-dark">Autor: </span><span class="tm-text-primary">{{ livro.autor }}</span>
+                </div>                  
+                <div class="mr-4 mb-2">
+                    <span class="tm-text-gray-dark">Publicação: </span><span class="tm-text-primary">{{ livro.dataPublicacao | date: 'dd/MM/yyyy'}}</span>
+                </div>  
+                <div class="mr-4 mb-2">
+                    
+                </div>  
+            </div>
+        </div>
+    </div>
+  </div>  

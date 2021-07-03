@@ -1,0 +1,478 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Teste\\TheoLib.Teste.csproj": {}
+  },
+  "projects": {
+    "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.API\\TheoLib.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.API\\TheoLib.API.csproj",
+        "projectName": "TheoLib.API",
+        "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.API\\TheoLib.API.csproj",
+        "packagesPath": "C:\\Users\\Arleys\\.nuget\\packages\\",
+        "outputPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arleys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.CoreAplicacao\\TheoLib.CoreAplicacao.csproj": {
+                "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.CoreAplicacao\\TheoLib.CoreAplicacao.csproj"
+              },
+              "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dados\\TheoLib.Dados.csproj": {
+                "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dados\\TheoLib.Dados.csproj"
+              },
+              "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj": {
+                "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "Serilog.Enrichers.Process": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
+            "Serilog.Formatting.Compact": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.Sinks.RollingFile": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.CoreAplicacao\\TheoLib.CoreAplicacao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.CoreAplicacao\\TheoLib.CoreAplicacao.csproj",
+        "projectName": "TheoLib.CoreAplicacao",
+        "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.CoreAplicacao\\TheoLib.CoreAplicacao.csproj",
+        "packagesPath": "C:\\Users\\Arleys\\.nuget\\packages\\",
+        "outputPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.CoreAplicacao\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arleys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj": {
+                "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dados\\TheoLib.Dados.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dados\\TheoLib.Dados.csproj",
+        "projectName": "TheoLib.Dados",
+        "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dados\\TheoLib.Dados.csproj",
+        "packagesPath": "C:\\Users\\Arleys\\.nuget\\packages\\",
+        "outputPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dados\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arleys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj": {
+                "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj",
+        "projectName": "TheoLib.Dominio",
+        "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Arleys\\.nuget\\packages\\",
+        "outputPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arleys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Teste\\TheoLib.Teste.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Teste\\TheoLib.Teste.csproj",
+        "projectName": "TheoLib.Teste",
+        "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Teste\\TheoLib.Teste.csproj",
+        "packagesPath": "C:\\Users\\Arleys\\.nuget\\packages\\",
+        "outputPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Teste\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arleys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.API\\TheoLib.API.csproj": {
+                "projectPath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.API\\TheoLib.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.15.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

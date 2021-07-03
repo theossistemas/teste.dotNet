@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "AhK+qMctrN7UjhdDGpM/8HI74NkMiH2oAlrHkuam3//BtAhRIZ1zQlBgfUVpO+HvFgMahxRioOF49BoJj4borg==",
+  "success": true,
+  "projectFilePath": "D:\\Temp\\TheoSistemas\\DesafdioTheoSistema\\teste.dotNet\\WebAPI\\TheoAPI\\TheoLib.Dominio\\TheoLib.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Arleys\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Arleys\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\Arleys\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\Arleys\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Arleys\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Arleys\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\Arleys\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
