@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Livraria.WebAPI.DTO;
-using Livraria.WebAPI.Factories;
+using Livraria.WebAPI.Mapper;
 using Livraria.Domain.Interfaces;
 using Livraria.Services.LivrosServices;
 

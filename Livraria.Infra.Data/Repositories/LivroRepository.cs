@@ -50,5 +50,10 @@ namespace Livraria.Infra.Data.Repositories
         {
             return await _Context.Livros.AsNoTracking().OrderBy(x => x.Nome).ToListAsync();
         }
+
+        Task<Livro> ILivrosRepository.BuscarPorNome(string nome)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
