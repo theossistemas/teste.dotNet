@@ -149,3 +149,9 @@ D:\Projeto_C#\Livraria.WebAPI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Wo
 D:\Projeto_C#\Livraria.WebAPI\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Projeto_C#\Livraria.WebAPI\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Projeto_C#\Livraria.WebAPI\bin\Debug\net5.0\Livraria.WebAPI.xml
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.WebAPI\obj\Debug\net5.0\Livraria.WebAPI.csprojAssemblyReference.cache
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.WebAPI\obj\Debug\net5.0\Livraria.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.WebAPI\obj\Debug\net5.0\Livraria.WebAPI.AssemblyInfoInputs.cache
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.WebAPI\obj\Debug\net5.0\Livraria.WebAPI.AssemblyInfo.cs
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.WebAPI\obj\Debug\net5.0\Livraria.WebAPI.csproj.CoreCompileInputs.cache
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.WebAPI\obj\Debug\net5.0\Livraria.WebAPI.MvcApplicationPartsAssemblyInfo.cache

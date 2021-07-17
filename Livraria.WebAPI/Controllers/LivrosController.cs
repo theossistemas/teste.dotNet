@@ -1,119 +1,95 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Livraria.Domain;
-using Livraria.Infra.Data;
-using Livraria.Infra.Data.Repositories;
+using Livraria.WebAPI.DTO;
+using Livraria.WebAPI.Factories;
+using Livraria.Domain.Interfaces;
+using Livraria.Services.LivrosServices;
 
 namespace Livraria.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class LivrosController : ControllerBase
+    [Route("api/livros")]
+    public class LivroController : ControllerBase
     {
-        private readonly Context _Context;
+        private readonly CriarLivro _criarLivro;
+        private readonly AlterarLivro _alterarLivro;
+        private readonly ExcluirLivro _excluirLivro;
+        private readonly ConsultarLivro _consultarLivro;
 
-        private static LivroRepository LivroRepository;
-        public LivrosController(Context context)
+        public LivroController(ILivrosRepository livrosRepository)
         {
-            _Context = context;
+            _criarLivro = new CriarLivro(livrosRepository);
+            _alterarLivro = new AlterarLivro(livrosRepository);
+            _excluirLivro = new ExcluirLivro(livrosRepository);
+            _consultarLivro = new ConsultarLivro(livrosRepository);
         }
 
-        // GET: api/Livros
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Livro>>> GetLivros()
+        [HttpPost("criar")]
+        public async Task<IActionResult> Criar([FromBody] LivroDTO livroDTO)
         {
-            var TodosLivros =  await LivroRepository.BuscarTodosLivros();
-            return TodosLivros.ToList();
+            var livroExistente = await _consultarLivro.BuscarPorNome(livroDTO.Nome);
+            if (livroExistente != null)
+                return NotFound(new { msg = "Livro já cadastrado na biblioteca" });
+
+            var livro = LivroFactory.MapearLivro(livroDTO);
+
+            await _criarLivro.Executar(livro);
+
+            return Ok(new { msg = "Livro criado com sucesso" });
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Livro>>> BuscarLivros(string Nome)
+        [HttpPut("alterar/{id}")]
+        public async Task<IActionResult> Alterar(int id, [FromBody] LivroDTO livroDTO)
         {
-            var NomeLivro = BuscarLivros(Nome);
-            return  Ok(NomeLivro);
+            if (id != livroDTO.Id)
+                return NotFound(new { msg = "Livro não encontrada" });
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var livro = LivroFactory.MapearLivro(livroDTO);
+
+            await _alterarLivro.Executar(id, livro);
+
+            return Ok(new { msg = "Livro alterado com sucesso" });
         }
 
-
-        // GET: api/Livros/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Livro>> GetLivro(int id)
+        [HttpGet("buscar-livro/{id}")]
+        public async Task<ActionResult<LivroDTO>> BuscarPorId(int id)
         {
-            var livro = await _Context.Livros.FindAsync(id);
+            var livro = await _consultarLivro.BuscarPorId(id);
 
             if (livro == null)
-            {
-                return NotFound();
-            }
+                return NotFound(new { msg = "Livro não encontrada" });
 
-            return livro;
+            var livroViewMovel = LivroFactory.MapearLivroDTO(livro);
+
+            return livroViewMovel;
         }
 
-        // PUT: api/Livros/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutLivro(int id, Livro livro)
+        [HttpGet("listar-todos")]
+        public async Task<IEnumerable<LivroDTO>> ListarTodos()
         {
-            if (id != livro.Id)
-            {
-                return BadRequest();
-            }
 
-            _Context.Entry(livro).State = EntityState.Modified;
+            var livros = await _consultarLivro.ListarTodos();
 
-            try
-            {
-                await _Context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!LivroExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var listaLivrosViewMovel = LivroFactory.MapearListaDeLivrosDTO(livros);
 
-            return NoContent();
+            return listaLivrosViewMovel;
         }
 
-        // POST: api/Livros
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Livro>> PostLivro(Livro livro)
+        [HttpDelete("excluir")]
+        public async Task<IActionResult> Excluir(int id)
         {
-            _Context.Livros.Add(livro);
-            await _Context.SaveChangesAsync();
+            var livro = await _consultarLivro.BuscarPorId(id);
 
-            return CreatedAtAction("GetLivro", new { id = livro.Id }, livro);
-        }
-
-        // DELETE: api/Livros/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteLivro(int id)
-        {
-            var livro = await _Context.Livros.FindAsync(id);
             if (livro == null)
-            {
-                return NotFound();
-            }
+                return NotFound(new { msg = "Livro não encontrada" });
 
-            _Context.Livros.Remove(livro);
-            await _Context.SaveChangesAsync();
+            await _excluirLivro.Executar(livro);
 
-            return NoContent();
-        }
-
-        private bool LivroExists(int id)
-        {
-            return _Context.Livros.Any(e => e.Id == id);
+            return Ok(new { msg = "Livro excluído com sucesso" });
         }
     }
+    
 }

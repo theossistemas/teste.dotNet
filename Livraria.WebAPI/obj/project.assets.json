@@ -2867,6 +2867,19 @@
         "runtime": {
           "bin/placeholder/Livraria.Infra.Data.dll": {}
         }
+      },
+      "Livraria.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Livraria.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Livraria.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Livraria.Services.dll": {}
+        }
       }
     }
   },
@@ -9012,12 +9025,18 @@
       "type": "project",
       "path": "../Livraria.Infra.Data/Livraria.Infra.Data.csproj",
       "msbuildProject": "../Livraria.Infra.Data/Livraria.Infra.Data.csproj"
+    },
+    "Livraria.Services/1.0.0": {
+      "type": "project",
+      "path": "../Livraria.Services/Livraria.Services.csproj",
+      "msbuildProject": "../Livraria.Services/Livraria.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Livraria.Domain >= 1.0.0",
       "Livraria.Infra.Data >= 1.0.0",
+      "Livraria.Services >= 1.0.0",
       "Microsoft.AspNetCore >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 5.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.8",
@@ -9059,6 +9078,9 @@
             },
             "D:\\Projeto_C#\\Livraria.WebAPI\\Testedotnet\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj": {
               "projectPath": "D:\\Projeto_C#\\Livraria.WebAPI\\Testedotnet\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj"
+            },
+            "D:\\Projeto_C#\\Livraria.WebAPI\\Testedotnet\\Livraria.Services\\Livraria.Services.csproj": {
+              "projectPath": "D:\\Projeto_C#\\Livraria.WebAPI\\Testedotnet\\Livraria.Services\\Livraria.Services.csproj"
             }
           }
         }

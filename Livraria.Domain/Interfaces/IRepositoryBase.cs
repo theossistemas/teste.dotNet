@@ -9,6 +9,7 @@ namespace Livraria.Domain
    public interface IRepositoryBase<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
+
         TEntity GetById(int id);
 
         IEnumerable<TEntity> GetAll();

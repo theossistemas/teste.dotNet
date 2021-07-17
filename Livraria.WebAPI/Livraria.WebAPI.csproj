@@ -27,6 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Livraria.Domain\Livraria.Domain.csproj" />
     <ProjectReference Include="..\Livraria.Infra.Data\Livraria.Infra.Data.csproj" />
+    <ProjectReference Include="..\Livraria.Services\Livraria.Services.csproj" />
   </ItemGroup>
 
 </Project>

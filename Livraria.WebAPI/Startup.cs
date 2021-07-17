@@ -1,5 +1,7 @@
 
+using Livraria.Domain.Interfaces;
 using Livraria.Infra.Data;
+using Livraria.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -31,11 +33,23 @@ namespace Livraria.WebAPI
             {
                 options.UseSqlServer(Configuration.GetConnectionString("ConnectionString"));
             });
-
+            services.AddScoped<ILivrosRepository, LivroRepository>();
+            services.AddScoped<Context, Context>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Livraria.WebAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Livraria API",
+                    Description = "API theosLivraria",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Arthur Pereira",
+                        Email = "arthuraapsilva@gmail.com",
+                        Url = new Uri("https://www.linkedin.com/in/arthur-pereira-9b928b202/"),
+                    }
+                });
             });
 
         }

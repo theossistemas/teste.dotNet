@@ -16,3 +16,8 @@ D:\Projeto_C#\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.dll
 D:\Projeto_C#\Livraria.Infra.Data\obj\Debug\net5.0\ref\Livraria.Infra.Data.dll
 D:\Projeto_C#\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.pdb
 D:\Projeto_C#\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.genruntimeconfig.cache
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.csprojAssemblyReference.cache
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.AssemblyInfoInputs.cache
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.AssemblyInfo.cs
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Infra.Data\obj\Debug\net5.0\Livraria.Infra.Data.csproj.CoreCompileInputs.cache
