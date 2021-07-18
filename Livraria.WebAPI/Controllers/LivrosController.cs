@@ -51,7 +51,7 @@ namespace Livraria.WebAPI.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var livro = LivroMapper.MapperLivro(livroDTO);
+            var livro = LivroMapper.ReturnLivro(livroDTO);
 
             await _alterarLivro.Alterar(id, livro);
 

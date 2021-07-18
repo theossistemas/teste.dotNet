@@ -19,7 +19,7 @@ namespace Livraria.WebAPI.Mapper
             };
             return livroDTO;
         }
-        public static Livro MapperLivro(LivroDTO livroDTO)
+        public static Livro ReturnLivro(LivroDTO livroDTO)
         {
             var livro = new Livro(livroDTO.Id, livroDTO.Nome);
 

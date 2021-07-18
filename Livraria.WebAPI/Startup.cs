@@ -29,7 +29,7 @@ namespace Livraria.WebAPI
         {
             services.AddDbContext<Context>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("ConnectionString"));
+                options.UseSqlServer(Configuration.GetConnectionString("DeafaultConnection"));
             });
             services.AddScoped<ILivrosRepository, LivroRepository>();
             services.AddScoped<Context, Context>();
