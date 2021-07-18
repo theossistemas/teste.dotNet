@@ -1,5 +1,6 @@
 
 using Livraria.Domain.Interfaces;
+using Livraria.Domain.Interfaces.Repositories;
 using Livraria.Infra.Data;
 using Livraria.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -8,12 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace Livraria.WebAPI
 {
@@ -35,6 +33,7 @@ namespace Livraria.WebAPI
             });
             services.AddScoped<ILivrosRepository, LivroRepository>();
             services.AddScoped<Context, Context>();
+            //services.AddSingleton<ILivrosRepository, LivroRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -42,7 +41,7 @@ namespace Livraria.WebAPI
                 {
                     Version = "v1",
                     Title = "Livraria API",
-                    Description = "API theosLivraria",
+                    Description = "API Theos Livraria",
                     Contact = new OpenApiContact
                     {
                         Name = "Arthur Pereira",

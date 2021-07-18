@@ -1,10 +1,10 @@
 ﻿using Livraria.Domain;
 using Livraria.Domain.Interfaces;
+using Livraria.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-
 
 namespace Livraria.Services.LivrosServices
 {

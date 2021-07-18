@@ -2,94 +2,105 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Livraria.WebAPI.DTO;
-using Livraria.WebAPI.Mapper;
-using Livraria.Domain.Interfaces;
 using Livraria.Services.LivrosServices;
+using Livraria.WebAPI.Mapper;
+using Livraria.Domain.Interfaces.Repositories;
+using Livraria.Domain;
 
 namespace Livraria.WebAPI.Controllers
 {
-    [Route("api/livros")]
-    public class LivroController : ControllerBase
+    [Route("/[controller]")]
+    [ApiController]
+    public class LivrosController : ControllerBase
     {
+
         private readonly CriarLivro _criarLivro;
         private readonly AlterarLivro _alterarLivro;
         private readonly ExcluirLivro _excluirLivro;
         private readonly ConsultarLivro _consultarLivro;
 
-        public LivroController(ILivrosRepository livrosRepository)
+        public LivrosController(ILivrosRepository livroRepository)
         {
-            _criarLivro = new CriarLivro(livrosRepository);
-            _alterarLivro = new AlterarLivro(livrosRepository);
-            _excluirLivro = new ExcluirLivro(livrosRepository);
-            _consultarLivro = new ConsultarLivro(livrosRepository);
+            _criarLivro = new CriarLivro(livroRepository);
+            _alterarLivro = new AlterarLivro(livroRepository);
+            _excluirLivro = new ExcluirLivro(livroRepository);
+            _consultarLivro = new ConsultarLivro(livroRepository);
         }
 
-        [HttpPost("criar")]
-        public async Task<IActionResult> Criar([FromBody] LivroDTO livroDTO)
+        [HttpPost("Criar")]
+        #region Criar
+        public async Task<IActionResult> Criar([FromBody] Livro livro)
         {
-            var livroExistente = await _consultarLivro.BuscarPorNome(livroDTO.Nome);
+            var livroExistente = await _consultarLivro.BuscarPorNome(livro.Nome);
             if (livroExistente != null)
                 return NotFound(new { msg = "Livro já cadastrado na biblioteca" });
 
-            var livro = LivroFactory.MapearLivro(livroDTO);
+             await _criarLivro.Executar(livro);
 
-            await _criarLivro.Executar(livro);
-
-            return Ok(new { msg = "Livro criado com sucesso" });
+            return Ok(new { msg = "Livro criado com sucesso!" });
         }
+        #endregion
 
-        [HttpPut("alterar/{id}")]
+        [HttpPut("Alterar/{id}")]
+        #region Alterar/{id}
         public async Task<IActionResult> Alterar(int id, [FromBody] LivroDTO livroDTO)
         {
             if (id != livroDTO.Id)
-                return NotFound(new { msg = "Livro não encontrada" });
+                return NotFound(new { msg = "Livro não encontrada!" });
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var livro = LivroFactory.MapearLivro(livroDTO);
+            var livro = LivroMapper.MapperLivro(livroDTO);
 
-            await _alterarLivro.Executar(id, livro);
+            await _alterarLivro.Alterar(id, livro);
 
-            return Ok(new { msg = "Livro alterado com sucesso" });
+            return Ok(new { msg = "Livro alterado com sucesso!" });
         }
+        #endregion
 
-        [HttpGet("buscar-livro/{id}")]
+        [HttpGet("Buscar-livro/{id}")]
+        #region Buscar-Livro/{id}
         public async Task<ActionResult<LivroDTO>> BuscarPorId(int id)
         {
             var livro = await _consultarLivro.BuscarPorId(id);
 
             if (livro == null)
-                return NotFound(new { msg = "Livro não encontrada" });
+                return NotFound(new { msg = "Livro não encontrada!" });
 
-            var livroViewMovel = LivroFactory.MapearLivroDTO(livro);
+            var LivrosDTO = LivroMapper.MapperLivroDTO(livro);
 
-            return livroViewMovel;
+            return LivrosDTO;
         }
+        #endregion
 
-        [HttpGet("listar-todos")]
+        [HttpGet("Listar-Todos")]
+        #region Listar-Todos
         public async Task<IEnumerable<LivroDTO>> ListarTodos()
         {
 
             var livros = await _consultarLivro.ListarTodos();
 
-            var listaLivrosViewMovel = LivroFactory.MapearListaDeLivrosDTO(livros);
+            var ListaDeLivrosDTO = LivroMapper.MapperListaDeLivrosDTO(livros);
 
-            return listaLivrosViewMovel;
+            return ListaDeLivrosDTO;
         }
+        #endregion
 
-        [HttpDelete("excluir")]
-        public async Task<IActionResult> Excluir(int id)
+        [HttpDelete("Excluir")]
+        #region Excluir
+        public async Task<IActionResult> Excluir(Livro livro)
         {
-            var livro = await _consultarLivro.BuscarPorId(id);
+            var livroA = await _consultarLivro.BuscarPorNome(livro.Nome);
 
-            if (livro == null)
-                return NotFound(new { msg = "Livro não encontrada" });
+            if (livroA == null)
+                return NotFound(new { msg = "Livro não encontrada!" });
 
-            await _excluirLivro.Executar(livro);
+            await _excluirLivro.Executar(livroA);
 
-            return Ok(new { msg = "Livro excluído com sucesso" });
+            return Ok(new { msg = "Livro excluído com sucesso!" });
         }
+        #endregion
     }
-    
+
 }

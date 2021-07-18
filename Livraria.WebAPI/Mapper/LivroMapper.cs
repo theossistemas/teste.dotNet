@@ -6,11 +6,11 @@ using Livraria.Domain;
 using Livraria.WebAPI;
 using Livraria.WebAPI.DTO;
 
-namespace Livraria.WebAPI.Factories
+namespace Livraria.WebAPI.Mapper
 {
-    public static class LivroFactory
+    public static class LivroMapper
     {
-        public static LivroDTO MapearLivroDTO(Livro livro)
+        public static LivroDTO MapperLivroDTO(Livro livro)
         {
             var livroDTO = new LivroDTO()
             {
@@ -19,19 +19,19 @@ namespace Livraria.WebAPI.Factories
             };
             return livroDTO;
         }
-        public static Livro MapearLivro(LivroDTO livroDTO)
+        public static Livro MapperLivro(LivroDTO livroDTO)
         {
             var livro = new Livro(livroDTO.Id, livroDTO.Nome);
 
             return livro;
         }
-        public static IEnumerable<LivroDTO> MapearListaDeLivrosDTO(IEnumerable<Livro> livros)
+        public static IEnumerable<LivroDTO> MapperListaDeLivrosDTO(IEnumerable<Livro> livros)
         {
             var lista = new List<LivroDTO>();
 
             foreach (var item in livros)
             {
-                lista.Add(MapearLivroDTO(item));
+                lista.Add(MapperLivroDTO(item));
             }
             return lista;
         }

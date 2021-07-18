@@ -14,6 +14,7 @@ D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\bin\Debug\net5.0\Livra
 D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\bin\Debug\net5.0\Livraria.Domain.dll
 D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\bin\Debug\net5.0\ref\Livraria.Domain.dll
 D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\bin\Debug\net5.0\Livraria.Domain.pdb
+D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.csprojAssemblyReference.cache
 D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.AssemblyInfoInputs.cache
 D:\Projeto_C#\Livraria.WebAPI\Testedotnet\Livraria.Domain\obj\Debug\net5.0\Livraria.Domain.AssemblyInfo.cs

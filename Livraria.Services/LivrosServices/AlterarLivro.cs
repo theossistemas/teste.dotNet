@@ -1,5 +1,6 @@
 ﻿using Livraria.Domain;
 using Livraria.Domain.Interfaces;
+using Livraria.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,16 +18,16 @@ namespace Livraria.Services.LivrosServices
             _livrosRepository = livrosRepository;
         }
 
-        public async Task Executar(int id, Livro livro)
+        public async Task Alterar(int id, Livro livro)
         {
             try
             {
-                var dadoDoLivro = await _livrosRepository.BuscarPorId(id);
-                dadoDoLivro.AtualizarDadosDoLivro(livro.Nome);
+                var RLivro = await _livrosRepository.BuscarPorId(id);
+                RLivro.AtualizarDadosDoLivro(livro.Nome);
 
-                await _livrosRepository.Atualizar(dadoDoLivro);
+                await _livrosRepository.Atualizar(RLivro);
             }
-            catch (System.Exception)
+            catch (Exception)
             {
                 this.Erros.Add("Erro", "Ocorreu um erro ao alterar um livro.");
             }

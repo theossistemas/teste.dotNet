@@ -1,5 +1,6 @@
 ﻿
 using Livraria.Domain;
+using Livraria.Domain.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,12 @@ namespace Livraria.Infra.Data.Repositories
     {
         protected readonly Context _Context;
 
-        void IRepositoryBase<TEntity>.Add(TEntity obj)
+        public RepositoryBase(Context context)
+        {
+            _Context = context;
+        }
+        public IQueryable<TEntity> All => _Context.Set<TEntity>().AsQueryable();
+        void IRepositoryBase<TEntity> .Add(TEntity obj)
         {
             _Context.Set<TEntity>().Add(obj);
             _Context.SaveChanges();
