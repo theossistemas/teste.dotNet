@@ -27,9 +27,9 @@ namespace Livraria.Services.LivrosServices
             {
                 await _livrosRepository.Criar(livro);
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
-                this.Erros.Add("Erro", "Ocorreu um erro ao criar um livro.");
+                throw ex;
             }
 
         }

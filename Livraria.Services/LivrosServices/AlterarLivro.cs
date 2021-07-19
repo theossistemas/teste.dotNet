@@ -10,7 +10,6 @@ namespace Livraria.Services.LivrosServices
 {
     public class AlterarLivro
     {
-        public Dictionary<string, string> Erros { get; private set; } = new Dictionary<string, string>();
         private readonly ILivrosRepository _livrosRepository;
 
         public AlterarLivro(ILivrosRepository livrosRepository)
@@ -27,9 +26,9 @@ namespace Livraria.Services.LivrosServices
 
                 await _livrosRepository.Atualizar(RLivro);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                this.Erros.Add("Erro", "Ocorreu um erro ao alterar um livro.");
+                throw ex;
             }
 
         }

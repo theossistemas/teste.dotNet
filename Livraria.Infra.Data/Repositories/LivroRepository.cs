@@ -58,33 +58,8 @@ namespace Livraria.Infra.Data.Repositories
         {
             return await _Context.Livros.AsNoTracking().OrderBy(x => x.Nome).ToListAsync();
         }
-        void IRepositoryBase<Livro>.Dispose()
-        {
-            throw new NotImplementedException();
-        }
 
-
-        public void Add(Livro obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Livro GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Livro> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Livro obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(Livro obj)
+        void ILivrosRepository.Dispose()
         {
             throw new NotImplementedException();
         }

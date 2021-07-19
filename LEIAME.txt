@@ -1,0 +1,6 @@
+
+Para instalaçao do projeto colocar sua string de conexao no campo Deafaultconnection no appsettings
+
+caso o seu projeto nao tenha a pasta migrations criar uma no Nuget "Add-Migration "nomemigration""
+
+apos a instalaçao do migration criar as tabelas com o comando "update-database"

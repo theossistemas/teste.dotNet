@@ -23,7 +23,6 @@ namespace Livraria.Infra.Data.Repositories
             _Context.SaveChanges();
         }
 
-
         IEnumerable<TEntity> IRepositoryBase<TEntity>.GetAll()
         {
             return _Context.Set<TEntity>().AsNoTracking().ToList();

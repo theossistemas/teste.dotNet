@@ -6,7 +6,7 @@ using Livraria.Services.LivrosServices;
 using Livraria.WebAPI.Mapper;
 using Livraria.Domain.Interfaces.Repositories;
 using Livraria.Domain;
-
+using Livraria.Domain.Entities;
 namespace Livraria.WebAPI.Controllers
 {
     [Route("/[controller]")]
@@ -101,6 +101,7 @@ namespace Livraria.WebAPI.Controllers
             return Ok(new { msg = "Livro excluído com sucesso!" });
         }
         #endregion
+
     }
 
 }

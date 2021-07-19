@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Livraria.Domain.Interfaces.Repositories
 {
-    public interface ILivrosRepository : IRepositoryBase<Livro>
+    public interface ILivrosRepository 
     {
         public Task Criar(Livro livro);
 
@@ -19,5 +19,7 @@ namespace Livraria.Domain.Interfaces.Repositories
         public Task<Livro> BuscarPorNome(string nome);
 
         public Task<IEnumerable<Livro>> ListarTodos();
+
+         void Dispose();
     }
 }
