@@ -1,0 +1,32 @@
+.flex-row1{
+  /*background: red;*/
+  display: flex;
+  justify-content: space-between;
+}
+.flex-box1{
+
+  border: 1px solid black;
+  margin-right: 5px;
+  width: 250px;
+  height: 350px;
+  align-content: center;
+  align-items: center;
+
+
+}
+.box-1{
+  margin-right: 5px;
+}
+.box-2{
+  background-image: url("src/assets/exposition.jpg");
+  background-repeat: no-repeat;
+}
+.box-3{
+  background-image: url("src/assets/workshop.jpg");
+  background-repeat: no-repeat;
+}
+.box-4{
+  background-image: url("src/assets/show2.jpg");
+  background-repeat: no-repeat;
+
+}

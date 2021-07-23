@@ -1,0 +1,220 @@
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: E:\MEUS DADOS\NetCore\TesteLivros\teste.dotNet\BooksApi
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 19/07/2021 : Hora:: 19:52
+Error: 20004 - An error occurred using the connection to database 'books' on server 'DESKTOP-1FJVSBF\SQLEXPRESS'.
+Error: 10100 - An exception occurred while iterating over the results of a query for context type 'BooksApi.Data.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Error: 0 - Error metdodo GetAllLivros :: 19/07/2021 :: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 19/07/2021 : Hora:: 19:52
+Error: 20004 - An error occurred using the connection to database 'books' on server 'DESKTOP-1FJVSBF\SQLEXPRESS'.
+Error: 10100 - An exception occurred while iterating over the results of a query for context type 'BooksApi.Data.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Error: 0 - Error metdodo GetAllLivros :: 19/07/2021 :: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+Error: 20004 - An error occurred using the connection to database 'books' on server 'DESKTOP-1FJVSBF\SQLEXPRESS'.
+Error: 10100 - An exception occurred while iterating over the results of a query for context type 'BooksApi.Data.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Error: 0 - Error metdodo register :: 19/07/2021 :: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: E:\MEUS DADOS\NetCore\TesteLivros\teste.dotNet\BooksApi
+Information: 0 - Metodo Register  : UsuarioController - > Usuario j.robertoamaral@gmail.com se registrar :: Dia :: 19/07/2021 : Hora:: 20:05
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 19/07/2021 : Hora:: 20:05
+Information: 0 - Metodo Login  : UsuarioController - > Usuario j.robertoamaral@gmail.com Logou :: Dia :: 19/07/2021 : Hora:: 20:05
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 19/07/2021 : Hora:: 20:05
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 19/07/2021 : Hora:: 20:05
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 20/07/2021 : Hora:: 08:24
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 20/07/2021 : Hora:: 08:25
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 20/07/2021 : Hora:: 08:25
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 20/07/2021 : Hora:: 08:25
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: E:\MEUS DADOS\NetCore\TesteLivros\teste.dotNet\BooksApi
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: F:\Workspaces\teste.dotNet\BooksApi
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:25
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:25
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:25
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 11:26
+Warning: 0 - Metodo Login  : UsuarioController - > Usuario ou senha Inválidos Dia :: 22/07/2021 : Hora:: 11:26
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 11:26
+Warning: 0 - Metodo Login  : UsuarioController - > Usuario ou senha Inválidos Dia :: 22/07/2021 : Hora:: 11:26
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 11:27
+Warning: 0 - Metodo Login  : UsuarioController - > Usuario ou senha Inválidos Dia :: 22/07/2021 : Hora:: 11:27
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 11:27
+Warning: 0 - Metodo Login  : UsuarioController - > Usuario ou senha Inválidos Dia :: 22/07/2021 : Hora:: 11:27
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 11:28
+Information: 0 - Metodo Login  : UsuarioController - > Usuario j.robertoamaral@gmail.com Logou :: Dia :: 22/07/2021 : Hora:: 11:28
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:28
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:28
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:29
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 123456789101579 atualizado :: 22/07/2021 : Hora:: 11:29
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:29
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 11:30
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 20:33
+Information: 0 - Metodo Login  : UsuarioController - > Usuario admin@email.com Logou :: Dia :: 22/07/2021 : Hora:: 20:33
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:33
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:33
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:35
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:35
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:35
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:35
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:35
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Metodo RegisterLivro  : LivroController - > Registrou Livro Isbn 1234567859 :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:36
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: F:\Workspaces\teste.dotNet\BooksApi
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:41
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:44
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:45
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:47:: Livro Duplicado 
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:47
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:48:: Livro Duplicado 
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:48
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:48:: Livro Duplicado 
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: F:\Workspaces\teste.dotNet\BooksApi
+Information: 0 - Now listening on: http://localhost:5000
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: F:\Workspaces\teste.dotNet\BooksApi
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:59
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:59:: Livro Duplicado 
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:59
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:59:: Livro Duplicado 
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:59
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 20:59:: Livro Duplicado 
+Information: 0 - Metodo RegisterLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo RegisterLivro  : LivroController - > Registrou Livro Isbn 12345678598 :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:00
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 22/07/2021 : Hora:: 21:01
+Information: 0 - Metodo Login  : UsuarioController - > Usuario admin@email.com Logou :: Dia :: 22/07/2021 : Hora:: 21:01
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:01
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:01
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:02
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:02
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:03
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 123456789101579 atualizado :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 12345678598 atualizado :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:04
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 22/07/2021 : Hora:: 21:05
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 23/07/2021 : Hora:: 07:49
+Warning: 0 - Metodo Login  : UsuarioController - > Usuario ou senha Inválidos Dia :: 23/07/2021 : Hora:: 07:49
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 23/07/2021 : Hora:: 07:49
+Warning: 0 - Metodo Login  : UsuarioController - > Usuario ou senha Inválidos Dia :: 23/07/2021 : Hora:: 07:49
+Information: 0 - Metodo Login  : UsuarioController - > executou Dia :: 23/07/2021 : Hora:: 07:49
+Information: 0 - Metodo Login  : UsuarioController - > Usuario admin@email.com Logou :: Dia :: 23/07/2021 : Hora:: 07:49
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 07:49
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 07:54
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 07:54
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 07:55
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 12345678598 atualizado :: 23/07/2021 : Hora:: 07:55
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 07:55
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 07:56
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:02
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:04
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:05
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 12345678598 atualizado :: 23/07/2021 : Hora:: 08:05
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:05
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:06
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:06
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:09
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 753214789 atualizado :: 23/07/2021 : Hora:: 08:09
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:09
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:09
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:10
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:11
+Information: 0 - Metodo AtualizarLivro  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:11
+Information: 0 - Metodo AtualizarLivro  : LivroController - > Livro ISBN 753214789 atualizado :: 23/07/2021 : Hora:: 08:11
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:11
+Information: 0 - Metodo GetAllLivros  : LivroController - > executou Dia :: 23/07/2021 : Hora:: 08:11
