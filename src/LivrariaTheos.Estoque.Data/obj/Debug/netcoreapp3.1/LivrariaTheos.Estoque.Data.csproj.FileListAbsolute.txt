@@ -1,0 +1,17 @@
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.deps.json
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.runtimeconfig.json
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.runtimeconfig.dev.json
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.csproj.AssemblyReference.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.AssemblyInfoInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.AssemblyInfo.cs
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.csproj.CoreCompileInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.csproj.CopyComplete
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Data\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Data.genruntimeconfig.cache

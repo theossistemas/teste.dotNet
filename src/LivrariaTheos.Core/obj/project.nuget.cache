@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g4+l8JjF7T2rszQkEpDLcPN9RJ+Bq/LilC8SXHkI4P9ge0iY93e0RGiT72CEo4fffwAcPvMlQQ3qT/6AKT3qfQ==",
+  "success": true,
+  "projectFilePath": "F:\\Projetos\\DesafioTheos\\src\\LivrariaTheos.Core\\LivrariaTheos.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\i5\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

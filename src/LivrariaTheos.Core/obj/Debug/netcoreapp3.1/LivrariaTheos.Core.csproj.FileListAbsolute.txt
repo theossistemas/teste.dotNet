@@ -1,0 +1,9 @@
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.deps.json
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\obj\Debug\netcoreapp3.1\LivrariaTheos.Core.csproj.AssemblyReference.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\obj\Debug\netcoreapp3.1\LivrariaTheos.Core.AssemblyInfoInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\obj\Debug\netcoreapp3.1\LivrariaTheos.Core.AssemblyInfo.cs
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\obj\Debug\netcoreapp3.1\LivrariaTheos.Core.csproj.CoreCompileInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\obj\Debug\netcoreapp3.1\LivrariaTheos.Core.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Core\obj\Debug\netcoreapp3.1\LivrariaTheos.Core.pdb

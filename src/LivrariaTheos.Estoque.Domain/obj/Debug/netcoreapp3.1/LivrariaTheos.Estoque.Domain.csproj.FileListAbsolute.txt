@@ -1,0 +1,12 @@
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.deps.json
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.csproj.AssemblyReference.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.AssemblyInfoInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.AssemblyInfo.cs
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.csproj.CoreCompileInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.csproj.CopyComplete
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Domain\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.pdb

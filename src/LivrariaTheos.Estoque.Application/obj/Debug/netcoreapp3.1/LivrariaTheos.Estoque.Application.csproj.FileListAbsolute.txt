@@ -1,0 +1,9 @@
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.deps.json
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.csproj.AssemblyReference.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.AssemblyInfoInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.AssemblyInfo.cs
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.csproj.CoreCompileInputs.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.pdb
