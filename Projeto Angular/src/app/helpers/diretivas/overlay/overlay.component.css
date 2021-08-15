@@ -1,0 +1,16 @@
+.overlay {
+  opacity: .75;
+  background-color: #e3ecf8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+  .overlay .svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    background: url('../../../../assets/images/loader-circle.svg') no-repeat center center;
+  }

@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<sin-login *ngIf="!estaLogado" (respostaLogin)="receiverLogin($event)"></sin-login>
+<mk-layout-wrapper *ngIf="estaLogado">
+  <mk-layout-sidebar-right>
+    Sidebar right HTML
+  </mk-layout-sidebar-right>
+  <mk-layout-header [isSidebarLeftToggle]="true" [isSidebarRightToggle]="true" [logoLink]="['/', 'boxs', 'info-box']" >
+    <mk-layout-header-logo><b>Livraria Theos</b></mk-layout-header-logo>
+    <mk-layout-header-logo-mini><b>SZT</b></mk-layout-header-logo-mini>
+    <app-header-inner></app-header-inner>
+  </mk-layout-header>
+  <mk-layout-sidebar-left *ngIf="!usuario.visitante">
+    <!-- <div class="user-panel">
+      <div class="pull-left image">
+        <img src="assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+      </div>      
+    </div> -->
+    <form action="#" method="get" class="sidebar-form">
+      <div class="input-group">
+        <input type="text" name="q" class="form-control" placeholder="Pesquisar...">
+        <span class="input-group-btn">
+          <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+          </button>
+        </span>
+      </div>
+    </form>
+  </mk-layout-sidebar-left>
+  <mk-layout-content>
+    <router-outlet></router-outlet>
+  </mk-layout-content>
+  <!-- <mk-layout-footer>
+    <mk-layout-footer-left>
+      <b>Rua 14 de Julho, 4721 - São Francisco, Campo Grande - MS, 79010-470</b>
+    </mk-layout-footer-left>
+     <mk-layout-footer-right>
+      Footer right HTML
+    </mk-layout-footer-right>
+  </mk-layout-footer> -->
+</mk-layout-wrapper>
+<!-- <mk-layout-sidebar-left>
+  
+  </mk-layout-sidebar-left> -->
+<!-- <router-outlet *ngIf="!estaLogado"></router-outlet> -->

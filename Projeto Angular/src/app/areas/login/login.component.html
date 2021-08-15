@@ -1,0 +1,124 @@
+<!--Main Navigation-->
+<header class="intro-header">
+    <!--Intro Section-->
+    <section class="view intro-2">
+      <div class="full-bg-img mask rgba-gradient">
+        <div class="container flex-center" style="padding-left: 339px;">>
+          <div class="d-flex align-items-center content-height w-100">
+            <div class="row flex-center pt-5 mt-3 w-100">
+              <!-- <div class="col-md-6 text-center text-md-left mb-5" style="padding-top: 17%;">
+                <div class="white-text">
+                  <h2 class="h1 h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.3s">Preencha os campos para acessar! </h2>
+                  <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                  <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
+                    elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat!
+                    Commodi sequi
+                    non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</h6>
+                  <br>
+                  <a mdbBtn color="white" outline="true" class="wow fadeInLeft waves-light" data-wow-delay="0.3s"
+                    mdbWavesEffect>Learn more</a>
+                </div>
+              </div> -->
+
+              <div class="col-md-6 col-xl-5 offset-xl-1" style="padding-top: 17%;">
+                <!--Form-->
+                <mat-card class="wow fadeInRight" data-wow-delay="0.3s">
+                  <div class="text-center mt-4">
+                    <button mat-raised-button (click)="admin = true" class="btn btn-primary">Administrador</button>
+                    
+                    <button mat-raised-button (click)="abrirAcervo()" class="btn btn-success">Visitante</button>                    
+                  </div>
+                  <mat-card *ngIf="admin">
+                   
+                    <div class="text-center">
+                      <h3 class="white-text">
+                        <i  class="fa fa-user"></i > Entrar</h3>
+                      <hr class="hr-light">
+                    </div>
+                    <form class="example-form"  [formGroup]="login">
+                        <div class="md-form">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="CPF"  mask="999.999.999-99" class="text-white form-control" formControlName="matricula">
+                             </mat-form-field>
+                          <!-- <mat-icon fas icon="user" class="text-white active"></mat-icon>
+                          <input type="text" id="form3" class="text-white form-control" >
+                          <label for="form3" class="text-white">Your name</label> -->
+                        </div>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Senha" formControlName="senha"type="password" >
+                        </mat-form-field>
+                        <!-- <div class="md-form">
+                          <mat-icon fas icon="envelope" class="text-white active"></mat-icon>
+                          <input type="email" id="form2" class="text-white form-control" >
+                          <label for="form2" class="text-white">Your email</label>
+                        </div>
+                        <div class="md-form">
+                          <mat-icon fas icon="lock" class="text-white active"></mat-icon>
+                          <input type="password" id="form4" class="text-white form-control" >
+                          <label for="form4" class="text-white">Your password</label>
+                        </div> -->
+                        <div class="text-center mt-4">
+                          <!-- <button mdbBtn color="indigo" mdbWavesEffect>Sign up</button> -->
+                          <button mat-raised-button (click)="logar()" color="primary">Entrar</button>
+                          <hr class="hr-light mb-3 mt-4">
+                          <div class="inline-ul text-center d-flex justify-content-center">
+                            <a class="p-2 m-2 tw-ic">
+                              <mat-icon fab icon="twitter" class="text-white"></mat-icon>
+                            </a>
+                            <a class="p-2 m-2 li-ic">
+                              <mat-icon fab icon="linkedin-in" class="text-white"></mat-icon>
+                            </a>
+                            <a class="p-2 m-2 ins-ic">
+                              <mat-icon fab icon="instagram" class="text-white"></mat-icon>
+                            </a>
+                          </div>
+                        </div>
+                    </form>
+                    
+                  </mat-card>
+                </mat-card>
+                <!--/.Form-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <!--Main Navigation-->
+
+
+<!-- <block-ui>
+    <div style="background-image: url(assets/image1.jpg);">
+        <mat-grid-tile style="background-image: url('assets/image1.jpg');">
+
+        <mat-card class="example-card" >
+            <mat-card-header>
+              <mat-card-title>Login</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <form class="example-form"  [formGroup]="login">
+                <table class="example-full-width" cellspacing="0">
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Matrícula" formControlName="matricula">
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td><mat-form-field class="example-full-width">
+                    <input matInput placeholder="Senha" formControlName="senha"type="password" >
+                  </mat-form-field></td>
+                </tr></table>
+              </form>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button (click)="logar()" color="primary">Entrar</button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+    </div>
+</block-ui> -->

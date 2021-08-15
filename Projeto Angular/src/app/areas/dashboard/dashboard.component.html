@@ -1,0 +1,31 @@
+<block-ui></block-ui>
+<div class="row">
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Acervo</mat-card-title>    
+    </mat-card-header>  
+    <mat-card-content>
+      
+    </mat-card-content>
+   
+  </mat-card>
+</div>
+<br>
+  <div class="row" *ngFor="let item of livros" style="padding-bottom: 2%;">
+    <mat-card class="col-md-4" >
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{item.nome}}</mat-card-title>    
+      </mat-card-header>  
+      <mat-card-content>
+        <p>Autor: {{item.autor.nome}}</p>
+        <br>
+        <p>Gênero: {{item.genero.nome}}</p>
+        <br>
+        <p>Sinopse: {{item.sinopse}} </p>
+        <br>
+        <p>Páginas: {{item.quantidadePaginas}} </p>
+      </mat-card-content>      
+    </mat-card>   
+</div>

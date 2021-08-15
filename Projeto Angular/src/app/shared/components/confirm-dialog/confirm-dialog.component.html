@@ -1,0 +1,16 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
+        <!-- <button type="button" class="close" aria-label="Close" [mat-dialog-close]="false"
+        tooltip [tooltipPlacement]="'top'" [tooltipType]="'tooltip'" [tooltipTitle]="'Fechar'">x</button> -->
+      </div>
+      <div class="modal-body" [innerHTML]="mensagem">
+        
+      </div>
+      <div class="modal-footer">
+        <button  [mat-dialog-close]="true" class="btn btn-success">Sim</button>
+        <button  [mat-dialog-close]="false"  class="btn btn-danger" data-dismiss="modal">Cancelar</button>          
+      </div>
+    </div>
+</div>

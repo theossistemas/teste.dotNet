@@ -1,0 +1,22 @@
+<div>
+    <div>
+      <div class="chart">
+        <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [colors]="pieChartColors"
+          [legend]="pieChartLegend">
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <button mat-button mat-raised-button color="primary" (click)="pieChartLegend=!pieChartLegend">Alternar Legenda</button>
+    <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Alterar Labels</button>
+    <button mat-button mat-raised-button color="primary" (click)="addSlice()">Adicionar Fatia</button>
+    <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Remover Fatia</button>
+    <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Alterar Posição da Legenda </button>
+  </div>

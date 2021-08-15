@@ -1,0 +1,9 @@
+.card-livro {
+    max-width: 400px;
+}
+  
+  .example-header-image {
+    background-image: url('../../../assets/logo.png');
+    width: 58px;
+    background-size: cover;
+  }
