@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{93055B23-B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivrariaTheos.Core", "..\src\LivrariaTheos.Core\LivrariaTheos.Core.csproj", "{DB7C7A45-64A4-48AD-BCCA-7F42624B1B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivrariaTheos.WebApp.Api", "..\src\LivrariaTheos.WebApp.Api\LivrariaTheos.WebApp.Api.csproj", "{3540ED1E-F662-4283-8368-064D13F0F3A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivrariaTheos.WebApp.Api", "..\src\LivrariaTheos.WebApp.Api\LivrariaTheos.WebApp.Api.csproj", "{3540ED1E-F662-4283-8368-064D13F0F3A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LivrariaTheosWebAngular", "LivrariaTheosWebAngular", "{F71E65C7-B203-409E-A9A3-BF171E6D1B7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,7 @@ Global
 		{93055B23-B919-4059-BE42-8FC772555A89} = {E95295E5-851E-43DF-90E2-84EB05B8EDD8}
 		{DB7C7A45-64A4-48AD-BCCA-7F42624B1B47} = {93055B23-B919-4059-BE42-8FC772555A89}
 		{3540ED1E-F662-4283-8368-064D13F0F3A2} = {890AB4EE-589F-4D09-8956-059CF21898DE}
+		{F71E65C7-B203-409E-A9A3-BF171E6D1B7E} = {890AB4EE-589F-4D09-8956-059CF21898DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47F554BA-DDC8-401C-889B-4134B1756594}

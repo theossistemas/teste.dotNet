@@ -190,6 +190,14 @@ namespace LivrariaTheos.Estoque.Data.Migrations
                             DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1, 0, DateTimeKind.Unspecified),
                             Nome = "Fantasia/Sobrenatural",
                             UsuarioInclusao = "Seed"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Ativo = true,
+                            DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1, 0, DateTimeKind.Unspecified),
+                            Nome = "Terror",
+                            UsuarioInclusao = "Seed"
                         });
                 });
 
@@ -209,7 +217,7 @@ namespace LivrariaTheos.Estoque.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("CaminhoCapa")
-                        .HasColumnType("varchar(350)");
+                        .HasColumnType("varchar(500)");
 
                     b.Property<DateTime?>("DataAlteracao")
                         .HasColumnType("datetime2");
@@ -223,6 +231,9 @@ namespace LivrariaTheos.Estoque.Data.Migrations
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("varchar(250)");
+
+                    b.Property<string>("NomeCapa")
+                        .HasColumnType("varchar(150)");
 
                     b.Property<int>("QuantidadePaginas")
                         .HasColumnType("int");
@@ -244,6 +255,78 @@ namespace LivrariaTheos.Estoque.Data.Migrations
                     b.HasIndex("GeneroId");
 
                     b.ToTable("Livro");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ativo = true,
+                            AutorId = 5,
+                            CaminhoCapa = "StaticFiles\\Capas",
+                            DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1, 0, DateTimeKind.Unspecified),
+                            GeneroId = 4,
+                            Nome = "Harry Potter e o Prisioneiro de Azkaban",
+                            NomeCapa = "ID_1",
+                            QuantidadePaginas = 250,
+                            Sinopse = "Sinopse de Harry Potter",
+                            UsuarioInclusao = "Seed"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Ativo = true,
+                            AutorId = 4,
+                            CaminhoCapa = "StaticFiles\\Capas",
+                            DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1, 0, DateTimeKind.Unspecified),
+                            GeneroId = 1,
+                            Nome = "A Montanha Mágica",
+                            NomeCapa = "ID_2",
+                            QuantidadePaginas = 250,
+                            Sinopse = "Sinopse de a Montanha Mágica",
+                            UsuarioInclusao = "Seed"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Ativo = true,
+                            AutorId = 1,
+                            CaminhoCapa = "StaticFiles\\Capas",
+                            DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1, 0, DateTimeKind.Unspecified),
+                            GeneroId = 5,
+                            Nome = "O Iluminado",
+                            NomeCapa = "ID_1",
+                            QuantidadePaginas = 250,
+                            Sinopse = "Sinopse de O Iluminado",
+                            UsuarioInclusao = "Seed"
+                        });
+                });
+
+            modelBuilder.Entity("LivrariaTheos.Estoque.Domain.Logs.LogAplicacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DataInclusao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MensagemErro")
+                        .HasColumnType("varchar(max)");
+
+                    b.Property<string>("Metodo")
+                        .IsRequired()
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("StackTrace")
+                        .HasColumnType("varchar(max)");
+
+                    b.Property<string>("UsuarioInclusao")
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LogAplicacao");
                 });
 
             modelBuilder.Entity("LivrariaTheos.Estoque.Domain.Livros.Livro", b =>

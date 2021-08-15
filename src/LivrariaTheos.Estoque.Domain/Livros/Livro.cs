@@ -1,10 +1,11 @@
-﻿using LivrariaTheos.Core.DomainObjects;
+﻿using LivrariaTheos.Core;
+using LivrariaTheos.Core.DomainObjects;
 using LivrariaTheos.Estoque.Domain.Autores;
 using LivrariaTheos.Estoque.Domain.Generos;
 
 namespace LivrariaTheos.Estoque.Domain.Livros
 {
-    public class Livro : Entity<int, Livro>
+    public class Livro : Entity<int, Livro>, IAggregateRoot
     {
         public int AutorId { get; set; }
         public int GeneroId { get; set; }
@@ -12,22 +13,24 @@ namespace LivrariaTheos.Estoque.Domain.Livros
         public string Sinopse { get; private set; }       
         public int QuantidadePaginas { get; private set; }        
         public string CaminhoCapa { get; private set; }
+        public string NomeCapa { get; private set; }
         public bool Ativo { get; private set; }
 
         public virtual Autor Autor { get; set; }
         public virtual Genero Genero { get; private set; }
 
-        protected Livro() { }
-        
+        protected Livro() { }       
+
         public Livro(int autorId, int generoId, string nome, string sinopse, int quantidadePaginas, bool ativo)
         {
             AutorId = autorId;
             GeneroId = generoId;
             Nome = nome;
             Sinopse = sinopse;
-            QuantidadePaginas = quantidadePaginas;           
-            Ativo = ativo;
-
+            QuantidadePaginas = quantidadePaginas;
+            CaminhoCapa = Resources.CaminhoCapas;            
+            Ativo = ativo;       
+            
             Validar();
         }
 
@@ -58,10 +61,26 @@ namespace LivrariaTheos.Estoque.Domain.Livros
             CaminhoCapa = caminhoCapa;
         }
 
+        public void VincularGenero(Genero genero)
+        {
+            Genero = genero;
+            GeneroId = genero.Id;
+
+            Validar();
+        }
+
         public void AlterarGenero(Genero genero)
         {
             Genero = genero;
             GeneroId = genero.Id;
+        }
+
+        public void VincularAutor(Autor autor)
+        {
+            Autor = autor;
+            AutorId = autor.Id;
+
+            Validar();
         }
 
         public void AlterarAutor(Autor autor)

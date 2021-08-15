@@ -2,6 +2,7 @@
 using LivrariaTheos.Estoque.Domain.Autores;
 using LivrariaTheos.Estoque.Domain.Generos;
 using LivrariaTheos.Estoque.Domain.Livros;
+using LivrariaTheos.Estoque.Domain.Logs;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace LivrariaTheos.Estoque.Data
         public DbSet<Livro> Livros { get; set; }
         public DbSet<Genero> Generos { get; set; }
         public DbSet<Autor> Autores { get; set; }
+        public DbSet<LogAplicacao> LogsAplicacao { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace LivrariaTheos.Estoque.Domain.Autores
 {
-    public class Autor : Entity<int, Autor>
+    public class Autor : Entity<int, Autor>, IAggregateRoot
     {
         public string Nome { get; private set; }
         public int Nacionalidade { get; private set; }
@@ -12,6 +12,20 @@ namespace LivrariaTheos.Estoque.Domain.Autores
         public bool Ativo { get; set; }
 
         private readonly List<Livro> _livros;
+
+        protected Autor()
+        {
+
+        }
+
+        public Autor(string nome, int nacionalidade, string informacoesRelevantes, bool ativo)
+        {
+            Nome = nome;
+            Nacionalidade = nacionalidade;
+            InformacoesRelevantes = informacoesRelevantes;
+            Ativo = ativo;
+        }
+
         public IReadOnlyCollection<Livro> Livros => _livros;
 
         public void Ativar() => Ativo = true;
@@ -26,8 +40,7 @@ namespace LivrariaTheos.Estoque.Domain.Autores
         }
 
         public void AlterarNacionalidade(int nacionalidade)
-        {
-            //TODO: Validar o tamanho do campo
+        {          
             Validacoes.ValidarSeIgual(nacionalidade, 0, "O campo Nacionalidade do autor não pode ser igual a 0");
             Nacionalidade = nacionalidade;
         }

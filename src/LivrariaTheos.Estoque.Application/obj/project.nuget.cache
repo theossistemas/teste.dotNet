@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uRbREjHbaW/YW26/QsqWrCY6d2edOddM1Pt2M3kbt9pej1B8s7AVH41ebUkTUm+a8Ixh2X3+wsIbeSqQPu7h2w==",
+  "dgSpecHash": "iIzdjAiCEPsBtm6jd7D4WIqIZrtydPB/mV1IP/fGLdT+YKAp1IMgPJzsjZ16fpMcNzS2aql6nhpwwyzluDviig==",
   "success": true,
   "projectFilePath": "F:\\Projetos\\DesafioTheos\\src\\LivrariaTheos.Estoque.Application\\LivrariaTheos.Estoque.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\i5\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\i5\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512",
+    "C:\\Users\\i5\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\i5\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

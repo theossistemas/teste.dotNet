@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Livros\Dto\" />
     <Folder Include="Livros\Enums\" />
   </ItemGroup>
 

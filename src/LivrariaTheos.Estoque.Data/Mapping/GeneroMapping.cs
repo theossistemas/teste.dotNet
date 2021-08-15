@@ -29,7 +29,7 @@ namespace LivrariaTheos.Estoque.Data.Mapping
 
             builder.HasData(
               new
-              {        
+              {
                   Id = 1,
                   Nome = "Drama",
                   Ativo = true,
@@ -75,6 +75,15 @@ namespace LivrariaTheos.Estoque.Data.Mapping
                   Ativo = true,
                   UsuarioInclusao = "Seed",
                   DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1)
+              },
+              new
+              {
+                  Id = 7,
+                  Nome = "Terror",
+                  Ativo = true,
+                  UsuarioInclusao = "Seed",
+                  DataInclusao = new DateTime(2021, 1, 1, 1, 1, 1)
+
               });
         }
     }

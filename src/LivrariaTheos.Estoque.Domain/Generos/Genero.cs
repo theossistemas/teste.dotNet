@@ -4,12 +4,21 @@ using System.Collections.Generic;
 
 namespace LivrariaTheos.Estoque.Domain.Generos
 {
-    public class Genero : Entity<int, Genero>
+    public class Genero : Entity<int, Genero>, IAggregateRoot
     {
         public string Nome { get; private set; }
         public bool Ativo { get; private set; }
 
         private readonly List<Livro> _livros;
+
+        protected Genero() { }
+
+        public Genero(string nome, bool ativo)
+        {
+            Nome = nome;
+            Ativo = ativo;
+        }
+
         public IReadOnlyCollection<Livro> Livros => _livros;
 
         public void Ativar() => Ativo = true;

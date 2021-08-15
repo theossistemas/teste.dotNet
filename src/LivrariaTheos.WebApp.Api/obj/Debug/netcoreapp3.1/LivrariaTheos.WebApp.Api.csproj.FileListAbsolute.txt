@@ -73,3 +73,7 @@ F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\obj\Debug\netcoreapp3.1\Li
 F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\obj\Debug\netcoreapp3.1\LivrariaTheos.WebApp.Api.dll
 F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\obj\Debug\netcoreapp3.1\LivrariaTheos.WebApp.Api.pdb
 F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\obj\Debug\netcoreapp3.1\LivrariaTheos.WebApp.Api.genruntimeconfig.cache
+F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.WebApp.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -7,3 +7,8 @@ F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcore
 F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.csproj.CoreCompileInputs.cache
 F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.dll
 F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.dll
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Domain.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\bin\Debug\netcoreapp3.1\LivrariaTheos.Core.pdb
+F:\Projetos\DesafioTheos\src\LivrariaTheos.Estoque.Application\obj\Debug\netcoreapp3.1\LivrariaTheos.Estoque.Application.csproj.CopyComplete
