@@ -12,8 +12,8 @@ namespace LivrariaTheos.Estoque.Domain.Autores.Interfaces
         Task<IEnumerable<Autor>> ObterPorNacionalidade(int nacionalidade);
         Task<IEnumerable<Autor>> ObterPorNome(string nome);
 
-        void Adicionar(Autor Autor);
-        void Atualizar(Autor Autor);
-        void Excluir(int id);
+        void Adicionar(Autor autor);
+        void Atualizar(Autor autor);
+        void Excluir(Autor autor);
     }
 }

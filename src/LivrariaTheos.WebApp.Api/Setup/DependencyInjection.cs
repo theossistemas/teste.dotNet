@@ -1,6 +1,7 @@
 ﻿using LivrariaTheos.Estoque.Application.Services;
 using LivrariaTheos.Estoque.Data;
 using LivrariaTheos.Estoque.Data.Repository;
+using LivrariaTheos.Estoque.Domain.Autores;
 using LivrariaTheos.Estoque.Domain.Autores.Interfaces;
 using LivrariaTheos.Estoque.Domain.Generos;
 using LivrariaTheos.Estoque.Domain.Livros;
@@ -21,9 +22,11 @@ namespace LivrariaTheos.WebApp.Api.Setup
 
             services.AddScoped<IAutorRepository, AutorRepository>();
             services.AddScoped<IAutorAppService, AutorAppService>();
+            services.AddScoped<ArmazenadorDeAutor>();
 
             services.AddScoped<IGeneroRepository, GeneroRepository>();
             services.AddScoped<IGeneroAppService, GeneroAppService>();
+            services.AddScoped<ArmazenadorDeGenero>();
 
             services.AddScoped<ILogAplicacaoRepository, LogAplicacaoRepository>();       
             services.AddScoped<ArmazenadorDeLogAplicacao>();

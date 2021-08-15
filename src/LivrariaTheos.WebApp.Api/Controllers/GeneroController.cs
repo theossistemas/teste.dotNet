@@ -1,5 +1,7 @@
-﻿using LivrariaTheos.Estoque.Application.Services;
+﻿using AutoMapper;
+using LivrariaTheos.Estoque.Application.Services;
 using LivrariaTheos.Estoque.Domain.Dtos;
+using LivrariaTheos.Estoque.Domain.Generos;
 using LivrariaTheos.Estoque.Domain.Logs;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,11 +15,17 @@ namespace LivrariaTheos.WebApp.Api.Controllers
     public class GeneroController : BaseController
     {
         private readonly IGeneroAppService _generoAppService;
+        ArmazenadorDeGenero _armazenadorDeGenero;
+        private readonly IMapper _mapper;
 
         public GeneroController(IGeneroAppService generoAppService,
+            ArmazenadorDeGenero armazenadorDeGenero,
+            IMapper mapper,
             ArmazenadorDeLogAplicacao armazenadorDeLogAplicacao) : base(armazenadorDeLogAplicacao)
         {
             _generoAppService = generoAppService;
+            _armazenadorDeGenero = armazenadorDeGenero;
+            _mapper = mapper;
         }
 
         [HttpGet("ObterGenero/{id}")]
@@ -81,6 +89,67 @@ namespace LivrariaTheos.WebApp.Api.Controllers
                 var resultado = await _generoAppService.ObterTodos();
 
                 return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return await ErroComLogAsync(ex);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> AlterarGenero(int id, GeneroDto generoDto)
+        {
+            if (id != generoDto.Id)
+            {
+                return BadRequest();
+            }
+
+            var Livro = await _generoAppService.ObterPorId(id);
+
+            if (Livro == null)
+            {
+                return NotFound();
+            }
+
+            try
+            {
+                var resultado = await _armazenadorDeGenero.Armazenar(_mapper.Map<Genero>(generoDto));
+
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return await ErroComLogAsync(ex);
+            }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<GeneroDto>> CriarGenero(GeneroDto generoDto)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+
+                var resultado = await _armazenadorDeGenero.Armazenar(_mapper.Map<Genero>(generoDto));
+
+                return Ok(_mapper.Map<GeneroDto>(resultado));
+            }
+            catch (Exception ex)
+            {
+                return await ErroComLogAsync(ex);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> ExcluirGenero(int id)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+
+                await _armazenadorDeGenero.Excluir(id);
+
+                return Ok();
             }
             catch (Exception ex)
             {

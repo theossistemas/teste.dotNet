@@ -13,6 +13,6 @@ namespace LivrariaTheos.Estoque.Domain.Generos
 
         void Adicionar(Genero genero);
         void Atualizar(Genero genero);
-        void Excluir(int id);
+        void Excluir(Genero genero);
     }
 }

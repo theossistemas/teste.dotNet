@@ -46,24 +46,19 @@ namespace LivrariaTheos.Estoque.Data.Repository
             return await _context.Autores.AsNoTracking().Where(c => c.Nacionalidade == nacionalidadeAutor).ToListAsync();
         }
 
-        public void Adicionar(Autor Autor)
+        public void Adicionar(Autor autor)
         {
-            _context.Add(Autor);
+            _context.Add(autor);
         }
 
-        public void Atualizar(Autor Autor)
+        public void Atualizar(Autor autor)
         {
-            _context.Update(Autor);
+            _context.Update(autor);
         }
 
-        public async void Excluir(int id)
+        public void Excluir(Autor autor)
         {
-            var Autor = await ObterPorId(id);
-
-            if (Autor == null)
-                throw new Exception("Autor não encontrado.");
-
-            _context.Remove(Autor);
+            _context.Remove(autor);
         }
 
         public void Dispose()

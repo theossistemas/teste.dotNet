@@ -49,13 +49,8 @@ namespace LivrariaTheos.Estoque.Data.Repository
             _context.Update(genero);
         }        
 
-        public async void Excluir(int id)
+        public async void Excluir(Genero genero)
         {
-            var genero = await ObterPorId(id);
-
-            if (genero == null)
-                throw new Exception("Genero não encontrado.");
-
             _context.Remove(genero);
         }
 
