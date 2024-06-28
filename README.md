@@ -18,7 +18,7 @@ Para ajudar a livraria foi solicitado a você desenvolver uma aplicação web pa
 
 #### Observações:
 * O sistema deverá ser desenvolvido na plataforma .NET com C#, usando o framework ASP.NET CORE 
-	(preferêncialmente 3.0+, caso for usado outra versão, informar no pull-request)
+	(preferêncialmente 8.0, caso for usado outra versão, informar no pull-request)
 * Deve conter autenticação com dois níveis de acesso, um administrador e um público, o usuário de nível 
 	público não terá autenticação, ou seja, terá acesso livre.
 * Atenção aos princípio do SOLID.
