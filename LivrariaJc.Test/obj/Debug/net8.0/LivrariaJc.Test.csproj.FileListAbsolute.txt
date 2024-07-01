@@ -1,0 +1,11 @@
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\bin\Debug\net8.0\LivrariaJc.Test.deps.json
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\bin\Debug\net8.0\LivrariaJc.Test.dll
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\bin\Debug\net8.0\LivrariaJc.Test.pdb
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\LivrariaJc.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\LivrariaJc.Test.AssemblyInfoInputs.cache
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\LivrariaJc.Test.AssemblyInfo.cs
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\LivrariaJc.Test.csproj.CoreCompileInputs.cache
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\LivrariaJc.Test.dll
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\refint\LivrariaJc.Test.dll
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\LivrariaJc.Test.pdb
+C:\Repositorio\TesteParaEmpresas\Theos\LivrariaJc.Test\obj\Debug\net8.0\ref\LivrariaJc.Test.dll

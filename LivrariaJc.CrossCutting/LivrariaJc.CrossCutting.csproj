@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LivrariaJc.Data\LivrariaJc.Data.csproj" />
+    <ProjectReference Include="..\LivrariaJc.Domain\LivrariaJc.Domain.csproj" />
+    <ProjectReference Include="..\LivrariaJc.Service\LivrariaJc.Service.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LivrariaJc.Application.props" />
+</Project>
