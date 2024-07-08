@@ -25,8 +25,4 @@
     <ProjectReference Include="..\Gerenciador.Livraria.DTOs\Gerenciador.Livraria.DTOs.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\Usuario\" />
-  </ItemGroup>
-
 </Project>
