@@ -1,0 +1,310 @@
+2024-07-13 10:36:21.949 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-13 10:36:23.269 -03:00 [DBG] Hosting starting
+2024-07-13 10:36:23.398 -03:00 [INF] User profile is available. Using 'C:\Users\Anderson\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-13 10:36:23.476 -03:00 [DBG] Reading data from file 'C:\Users\Anderson\AppData\Local\ASP.NET\DataProtection-Keys\key-2b5ad117-799a-4091-b95b-835e5a764c91.xml'.
+2024-07-13 10:36:23.579 -03:00 [DBG] Reading data from file 'C:\Users\Anderson\AppData\Local\ASP.NET\DataProtection-Keys\key-b39a6f09-1547-409d-a9cb-0ef7960ef7b4.xml'.
+2024-07-13 10:36:23.681 -03:00 [DBG] Found key {2b5ad117-799a-4091-b95b-835e5a764c91}.
+2024-07-13 10:36:23.689 -03:00 [DBG] Found key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4}.
+2024-07-13 10:36:23.766 -03:00 [DBG] Considering key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4} with expiration date 2024-10-10 12:30:33Z as default key.
+2024-07-13 10:36:23.770 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-13 10:36:23.773 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-13 10:36:23.776 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-13 10:36:23.787 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-13 10:36:23.788 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-13 10:36:23.793 -03:00 [DBG] Using key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4} as the default key.
+2024-07-13 10:36:23.794 -03:00 [DBG] Key ring with default key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4} was loaded during application startup.
+2024-07-13 10:36:25.324 -03:00 [INF] Now listening on: https://localhost:7245
+2024-07-13 10:36:25.326 -03:00 [INF] Now listening on: http://localhost:5282
+2024-07-13 10:36:25.327 -03:00 [DBG] Loaded hosting startup assembly CatalogoLivros
+2024-07-13 10:36:25.327 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-07-13 10:36:25.327 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-07-13 10:36:25.327 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-13 10:36:25.329 -03:00 [INF] Hosting environment: Development
+2024-07-13 10:36:25.329 -03:00 [INF] Content root path: C:\Users\Anderson\Desktop\anderson\Dev\projetos\CatalogoLivros\CatalogoLivros\CatalogoLivros
+2024-07-13 10:36:25.330 -03:00 [DBG] Hosting started
+2024-07-13 10:36:25.403 -03:00 [DBG] Connection id "0HN53835BF2EB" accepted.
+2024-07-13 10:36:25.403 -03:00 [DBG] Connection id "0HN53835BF2EA" accepted.
+2024-07-13 10:36:25.405 -03:00 [DBG] Connection id "0HN53835BF2EB" started.
+2024-07-13 10:36:25.405 -03:00 [DBG] Connection id "0HN53835BF2EA" started.
+2024-07-13 10:36:25.413 -03:00 [DBG] Connection id "0HN53835BF2EB" received FIN.
+2024-07-13 10:36:25.415 -03:00 [DBG] Connection id "0HN53835BF2EA" received FIN.
+2024-07-13 10:36:25.437 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-07-13 10:36:25.450 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-07-13 10:36:25.637 -03:00 [DBG] Connection id "0HN53835BF2EB" stopped.
+2024-07-13 10:36:25.637 -03:00 [DBG] Connection id "0HN53835BF2EA" stopped.
+2024-07-13 10:36:25.644 -03:00 [DBG] Connection id "0HN53835BF2EB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-13 10:36:25.644 -03:00 [DBG] Connection id "0HN53835BF2EA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-13 10:36:32.299 -03:00 [DBG] Connection id "0HN53835BF2EC" accepted.
+2024-07-13 10:36:32.300 -03:00 [DBG] Connection id "0HN53835BF2EC" started.
+2024-07-13 10:36:32.381 -03:00 [DBG] Connection 0HN53835BF2EC established using the following protocol: "Tls12"
+2024-07-13 10:36:33.123 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2024-07-13 10:36:33.536 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-13 10:36:33.587 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-07-13 10:36:33.588 -03:00 [DBG] Request did not match any endpoints
+2024-07-13 10:36:33.843 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-07-13 10:36:33.845 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-07-13 10:36:33.975 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-07-13 10:36:33.977 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-07-13 10:36:33.981 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 865.8767ms
+2024-07-13 10:36:34.050 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-13 10:36:34.052 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2024-07-13 10:36:34.068 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 17.5503ms
+2024-07-13 10:36:34.194 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 141.7759ms
+2024-07-13 10:36:34.468 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2024-07-13 10:36:34.499 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-07-13 10:36:34.499 -03:00 [DBG] Request did not match any endpoints
+2024-07-13 10:36:34.785 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 317.2064ms
+2024-07-13 10:36:39.057 -03:00 [DBG] Connection id "0HN53835BF2EC" received FIN.
+2024-07-13 10:36:39.063 -03:00 [DBG] The connection queue processing loop for 0HN53835BF2EC completed.
+2024-07-13 10:36:39.064 -03:00 [DBG] Connection id "0HN53835BF2EC" is closed. The last processed stream ID was 7.
+2024-07-13 10:36:39.065 -03:00 [DBG] Connection id "0HN53835BF2EC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-13 10:36:39.076 -03:00 [DBG] Connection id "0HN53835BF2EC" stopped.
+2024-07-13 10:36:43.136 -03:00 [DBG] Connection id "0HN53835BF2ED" accepted.
+2024-07-13 10:36:43.136 -03:00 [DBG] Connection id "0HN53835BF2ED" started.
+2024-07-13 10:36:43.143 -03:00 [DBG] Connection 0HN53835BF2ED established using the following protocol: "Tls12"
+2024-07-13 10:36:43.146 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/Generos - null null
+2024-07-13 10:36:43.159 -03:00 [DBG] 1 candidate(s) found for the request path '/Generos'
+2024-07-13 10:36:43.162 -03:00 [DBG] Endpoint 'CatalogoLivros.Controllers.GenerosController.Get (CatalogoLivros)' with route pattern 'Generos' is valid for the request path '/Generos'
+2024-07-13 10:36:43.162 -03:00 [DBG] Request matched endpoint 'CatalogoLivros.Controllers.GenerosController.Get (CatalogoLivros)'
+2024-07-13 10:36:43.164 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-07-13 10:36:43.307 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-13 10:36:43.315 -03:00 [DBG] Policy authentication schemes  did not succeed
+2024-07-13 10:36:43.320 -03:00 [DBG] Authorization was successful.
+2024-07-13 10:36:43.323 -03:00 [INF] Executing endpoint 'CatalogoLivros.Controllers.GenerosController.Get (CatalogoLivros)'
+2024-07-13 10:36:43.349 -03:00 [INF] Route matched with {action = "Get", controller = "Generos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CatalogoLivros.DTOs.GeneroDTO]] Get() on controller CatalogoLivros.Controllers.GenerosController (CatalogoLivros).
+2024-07-13 10:36:43.352 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-13 10:36:43.352 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-13 10:36:43.353 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-13 10:36:43.353 -03:00 [DBG] Execution plan of exception filters (in the following order): ["CatalogoLivros.Exceptions.ExceptionFilter"]
+2024-07-13 10:36:43.353 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-13 10:36:43.356 -03:00 [DBG] Executing controller factory for controller CatalogoLivros.Controllers.GenerosController (CatalogoLivros)
+2024-07-13 10:36:43.927 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-07-13 10:36:43.962 -03:00 [DBG] Executed controller factory for controller CatalogoLivros.Controllers.GenerosController (CatalogoLivros)
+2024-07-13 10:36:43.964 -03:00 [INF] Iniciando a solicitação GET para obter todos os gêneros.
+2024-07-13 10:36:45.793 -03:00 [DBG] Entity Framework Core 8.0.7 initialized 'CatalogoLivrosContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.7' with options: None
+2024-07-13 10:36:45.860 -03:00 [DBG] Compiling query expression: 
+'DbSet<Genero>()'
+2024-07-13 10:36:46.164 -03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Genero>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Genero.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Genero.Nome (string) Required MaxLength(80), 1] }
+        SELECT g.Id, g.Nome
+        FROM Generos AS g), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Genero>, 
+    CatalogoLivros.Context.CatalogoLivrosContext, 
+    False, 
+    False, 
+    True
+)'
+2024-07-13 10:36:46.197 -03:00 [DBG] Creating DbConnection.
+2024-07-13 10:36:46.228 -03:00 [DBG] Created DbConnection. (29ms).
+2024-07-13 10:36:46.231 -03:00 [DBG] Opening connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 10:36:47.239 -03:00 [DBG] Opened connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 10:36:47.243 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-13 10:36:47.250 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2024-07-13 10:36:47.252 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (10ms).
+2024-07-13 10:36:47.264 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Nome]
+FROM [Generos] AS [g]
+2024-07-13 10:36:47.332 -03:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Nome]
+FROM [Generos] AS [g]
+2024-07-13 10:36:47.407 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.427 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.428 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.428 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.428 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.428 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.429 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.429 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.429 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.429 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.429 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.430 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 10:36:47.433 -03:00 [DBG] Closing data reader to 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 10:36:47.442 -03:00 [DBG] A data reader for 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS' is being disposed after spending 100ms reading results.
+2024-07-13 10:36:47.445 -03:00 [DBG] Closing connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 10:36:47.456 -03:00 [DBG] Closed connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS' (10ms).
+2024-07-13 10:36:47.457 -03:00 [INF] Solicitação GET para obter todos os gêneros concluída com sucesso.
+2024-07-13 10:36:47.463 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-07-13 10:36:47.469 -03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-07-13 10:36:47.472 -03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-07-13 10:36:47.472 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-13 10:36:47.473 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-13 10:36:47.473 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-13 10:36:47.474 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CatalogoLivros.DTOs.GeneroDTO, CatalogoLivros, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-13 10:36:47.518 -03:00 [INF] Executed action CatalogoLivros.Controllers.GenerosController.Get (CatalogoLivros) in 4158.9182ms
+2024-07-13 10:36:47.522 -03:00 [INF] Executed endpoint 'CatalogoLivros.Controllers.GenerosController.Get (CatalogoLivros)'
+2024-07-13 10:36:47.528 -03:00 [DBG] 'CatalogoLivrosContext' disposed.
+2024-07-13 10:36:47.542 -03:00 [DBG] Disposing connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 10:36:47.546 -03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2024-07-13 10:36:47.546 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/Generos - 200 null application/json; charset=utf-8 4400.5927ms
+2024-07-13 11:10:31.094 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-13 11:10:31.298 -03:00 [DBG] Hosting starting
+2024-07-13 11:10:31.383 -03:00 [INF] User profile is available. Using 'C:\Users\Anderson\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-13 11:10:31.419 -03:00 [DBG] Reading data from file 'C:\Users\Anderson\AppData\Local\ASP.NET\DataProtection-Keys\key-2b5ad117-799a-4091-b95b-835e5a764c91.xml'.
+2024-07-13 11:10:31.430 -03:00 [DBG] Reading data from file 'C:\Users\Anderson\AppData\Local\ASP.NET\DataProtection-Keys\key-b39a6f09-1547-409d-a9cb-0ef7960ef7b4.xml'.
+2024-07-13 11:10:31.438 -03:00 [DBG] Found key {2b5ad117-799a-4091-b95b-835e5a764c91}.
+2024-07-13 11:10:31.445 -03:00 [DBG] Found key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4}.
+2024-07-13 11:10:31.455 -03:00 [DBG] Considering key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4} with expiration date 2024-10-10 12:30:33Z as default key.
+2024-07-13 11:10:31.461 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-13 11:10:31.464 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-13 11:10:31.466 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-13 11:10:31.475 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-13 11:10:31.477 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-13 11:10:31.479 -03:00 [DBG] Using key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4} as the default key.
+2024-07-13 11:10:31.480 -03:00 [DBG] Key ring with default key {b39a6f09-1547-409d-a9cb-0ef7960ef7b4} was loaded during application startup.
+2024-07-13 11:10:31.861 -03:00 [INF] Now listening on: https://localhost:7245
+2024-07-13 11:10:31.862 -03:00 [INF] Now listening on: http://localhost:5282
+2024-07-13 11:10:31.864 -03:00 [DBG] Loaded hosting startup assembly CatalogoLivros
+2024-07-13 11:10:31.864 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-07-13 11:10:31.864 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-07-13 11:10:31.864 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-13 11:10:31.867 -03:00 [INF] Hosting environment: Development
+2024-07-13 11:10:31.868 -03:00 [INF] Content root path: C:\Users\Anderson\Desktop\anderson\Dev\projetos\CatalogoLivros\CatalogoLivros\CatalogoLivros
+2024-07-13 11:10:31.869 -03:00 [DBG] Hosting started
+2024-07-13 11:10:32.299 -03:00 [DBG] Connection id "0HN538M7C67LF" received FIN.
+2024-07-13 11:10:32.305 -03:00 [DBG] Connection id "0HN538M7C67LF" accepted.
+2024-07-13 11:10:32.307 -03:00 [DBG] Connection id "0HN538M7C67LF" started.
+2024-07-13 11:10:33.004 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-07-13 11:10:33.889 -03:00 [DBG] Connection id "0HN538M7C67LF" stopped.
+2024-07-13 11:10:33.894 -03:00 [DBG] Connection id "0HN538M7C67LF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-13 11:10:34.439 -03:00 [DBG] Connection id "0HN538M7C67LG" accepted.
+2024-07-13 11:10:34.497 -03:00 [DBG] Connection id "0HN538M7C67LG" started.
+2024-07-13 11:10:35.205 -03:00 [DBG] Connection 0HN538M7C67LG established using the following protocol: "Tls12"
+2024-07-13 11:10:37.703 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2024-07-13 11:10:45.760 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-13 11:10:45.954 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-07-13 11:10:45.954 -03:00 [DBG] Request did not match any endpoints
+2024-07-13 11:10:46.498 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-07-13 11:10:46.500 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-07-13 11:10:47.416 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-07-13 11:10:47.416 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-07-13 11:10:47.715 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-13 11:10:47.757 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2024-07-13 11:10:47.762 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 10067.3382ms
+2024-07-13 11:10:49.401 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 1686.2901ms
+2024-07-13 11:10:49.784 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2027.5864ms
+2024-07-13 11:10:50.044 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2024-07-13 11:10:50.853 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-07-13 11:10:50.853 -03:00 [DBG] Request did not match any endpoints
+2024-07-13 11:10:51.118 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1073.4018ms
+2024-07-13 11:10:59.820 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7245/Generos/livros - null null
+2024-07-13 11:10:59.859 -03:00 [DBG] 1 candidate(s) found for the request path '/Generos/livros'
+2024-07-13 11:10:59.863 -03:00 [DBG] Endpoint 'CatalogoLivros.Controllers.GenerosController.GetGenerosLivros (CatalogoLivros)' with route pattern 'Generos/livros' is valid for the request path '/Generos/livros'
+2024-07-13 11:10:59.864 -03:00 [DBG] Request matched endpoint 'CatalogoLivros.Controllers.GenerosController.GetGenerosLivros (CatalogoLivros)'
+2024-07-13 11:10:59.868 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-07-13 11:11:00.007 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-13 11:11:00.015 -03:00 [DBG] Policy authentication schemes  did not succeed
+2024-07-13 11:11:00.020 -03:00 [DBG] Authorization was successful.
+2024-07-13 11:11:00.022 -03:00 [INF] Executing endpoint 'CatalogoLivros.Controllers.GenerosController.GetGenerosLivros (CatalogoLivros)'
+2024-07-13 11:11:00.151 -03:00 [INF] Route matched with {action = "GetGenerosLivros", controller = "Generos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CatalogoLivros.DTOs.GeneroDTO]] GetGenerosLivros() on controller CatalogoLivros.Controllers.GenerosController (CatalogoLivros).
+2024-07-13 11:11:00.161 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-13 11:11:00.161 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-13 11:11:00.162 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-13 11:11:00.162 -03:00 [DBG] Execution plan of exception filters (in the following order): ["CatalogoLivros.Exceptions.ExceptionFilter"]
+2024-07-13 11:11:00.162 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-13 11:11:00.166 -03:00 [DBG] Executing controller factory for controller CatalogoLivros.Controllers.GenerosController (CatalogoLivros)
+2024-07-13 11:11:00.620 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-07-13 11:11:00.664 -03:00 [DBG] Executed controller factory for controller CatalogoLivros.Controllers.GenerosController (CatalogoLivros)
+2024-07-13 11:11:00.666 -03:00 [INF] Iniciando a solicitação GET para obter todos os gêneros com seus livros.
+2024-07-13 11:11:02.084 -03:00 [DBG] Entity Framework Core 8.0.7 initialized 'CatalogoLivrosContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.7' with options: None
+2024-07-13 11:11:02.200 -03:00 [DBG] Compiling query expression: 
+'DbSet<Genero>()
+    .Include(g => g.Livros)'
+2024-07-13 11:11:02.338 -03:00 [DBG] Including navigation: 'Genero.Livros'.
+2024-07-13 11:11:02.857 -03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Genero>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Genero.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Genero.Nome (string) Required MaxLength(80), 1] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: Livro.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Livro.Ano (int) Required, 3], [Property: Livro.Autor (string) Required MaxLength(80), 4], [Property: Livro.DataCadastro (DateTime) Required, 5], [Property: Livro.Editora (string) Required MaxLength(80), 6], [Property: Livro.GeneroId (int) Required FK Index, 7], [Property: Livro.Nome (string) Required MaxLength(300), 8], [Property: Livro.QtdEstoque (int) Required, 9] }
+            3 -> 2
+        SELECT g.Id, g.Nome, l.Id, l.Ano, l.Autor, l.DataCadastro, l.Editora, l.GeneroId, l.Nome, l.QtdEstoque
+        FROM Generos AS g
+        LEFT JOIN Livros AS l ON g.Id == l.GeneroId
+        ORDER BY g.Id ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Genero>, 
+    CatalogoLivros.Context.CatalogoLivrosContext, 
+    False, 
+    False, 
+    True
+)'
+2024-07-13 11:11:02.923 -03:00 [DBG] Creating DbConnection.
+2024-07-13 11:11:02.977 -03:00 [DBG] Created DbConnection. (49ms).
+2024-07-13 11:11:02.981 -03:00 [DBG] Opening connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 11:11:03.581 -03:00 [DBG] Opened connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 11:11:03.586 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-13 11:11:03.599 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2024-07-13 11:11:03.602 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (17ms).
+2024-07-13 11:11:03.617 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Nome], [l].[Id], [l].[Ano], [l].[Autor], [l].[DataCadastro], [l].[Editora], [l].[GeneroId], [l].[Nome], [l].[QtdEstoque]
+FROM [Generos] AS [g]
+LEFT JOIN [Livros] AS [l] ON [g].[Id] = [l].[GeneroId]
+ORDER BY [g].[Id]
+2024-07-13 11:11:03.712 -03:00 [INF] Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Nome], [l].[Id], [l].[Ano], [l].[Autor], [l].[DataCadastro], [l].[Editora], [l].[GeneroId], [l].[Nome], [l].[QtdEstoque]
+FROM [Generos] AS [g]
+LEFT JOIN [Livros] AS [l] ON [g].[Id] = [l].[GeneroId]
+ORDER BY [g].[Id]
+2024-07-13 11:11:03.791 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.864 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.892 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.893 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.894 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.897 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.897 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.898 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.898 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.898 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.898 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.898 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.898 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.899 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.899 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.899 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.900 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.901 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.902 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.902 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Livro' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.902 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.902 -03:00 [DBG] Context 'CatalogoLivrosContext' started tracking 'Genero' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-13 11:11:03.910 -03:00 [DBG] Closing data reader to 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 11:11:03.923 -03:00 [DBG] A data reader for 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS' is being disposed after spending 198ms reading results.
+2024-07-13 11:11:03.926 -03:00 [DBG] Closing connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 11:11:03.973 -03:00 [DBG] Closed connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS' (44ms).
+2024-07-13 11:11:03.973 -03:00 [INF] Solicitação GET para obter todos os gêneros com seus livros concluída com sucesso.
+2024-07-13 11:11:04.052 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-07-13 11:11:04.057 -03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-07-13 11:11:04.059 -03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-07-13 11:11:04.059 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-13 11:11:04.059 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-13 11:11:04.060 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-13 11:11:04.061 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CatalogoLivros.Models.Genero, CatalogoLivros, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-13 11:11:04.115 -03:00 [INF] Executed action CatalogoLivros.Controllers.GenerosController.GetGenerosLivros (CatalogoLivros) in 3946.8252ms
+2024-07-13 11:11:04.118 -03:00 [INF] Executed endpoint 'CatalogoLivros.Controllers.GenerosController.GetGenerosLivros (CatalogoLivros)'
+2024-07-13 11:11:04.124 -03:00 [DBG] 'CatalogoLivrosContext' disposed.
+2024-07-13 11:11:04.296 -03:00 [DBG] Disposing connection to database 'CatalogoLivros' on server 'ANDERSON-NOTE\SQLEXPRESS'.
+2024-07-13 11:11:04.300 -03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2024-07-13 11:11:04.301 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7245/Generos/livros - 200 null application/json; charset=utf-8 4480.6873ms

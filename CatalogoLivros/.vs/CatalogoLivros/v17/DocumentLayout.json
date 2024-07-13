@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Anderson\\Desktop\\anderson\\Dev\\projetos\\CatalogoLivros\\CatalogoLivros\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54C5792F-1497-49C0-8283-9ACCC74F8BCF}|CatalogoLivros\\CatalogoLivros.csproj|c:\\users\\anderson\\desktop\\anderson\\dev\\projetos\\catalogolivros\\catalogolivros\\catalogolivros\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C5792F-1497-49C0-8283-9ACCC74F8BCF}|CatalogoLivros\\CatalogoLivros.csproj|solutionrelative:catalogolivros\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C5792F-1497-49C0-8283-9ACCC74F8BCF}|CatalogoLivros\\CatalogoLivros.csproj|c:\\users\\anderson\\desktop\\anderson\\dev\\projetos\\catalogolivros\\catalogolivros\\catalogolivros\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C5792F-1497-49C0-8283-9ACCC74F8BCF}|CatalogoLivros\\CatalogoLivros.csproj|solutionrelative:catalogolivros\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 255,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenerosController.cs",
+              "DocumentMoniker": "C:\\Users\\Anderson\\Desktop\\anderson\\Dev\\projetos\\CatalogoLivros\\CatalogoLivros\\CatalogoLivros\\Controllers\\GenerosController.cs",
+              "RelativeDocumentMoniker": "CatalogoLivros\\Controllers\\GenerosController.cs",
+              "ToolTip": "C:\\Users\\Anderson\\Desktop\\anderson\\Dev\\projetos\\CatalogoLivros\\CatalogoLivros\\CatalogoLivros\\Controllers\\GenerosController.cs",
+              "RelativeToolTip": "CatalogoLivros\\Controllers\\GenerosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T13:31:58.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivrosController.cs",
+              "DocumentMoniker": "C:\\Users\\Anderson\\Desktop\\anderson\\Dev\\projetos\\CatalogoLivros\\CatalogoLivros\\CatalogoLivros\\Controllers\\LivrosController.cs",
+              "RelativeDocumentMoniker": "CatalogoLivros\\Controllers\\LivrosController.cs",
+              "ToolTip": "C:\\Users\\Anderson\\Desktop\\anderson\\Dev\\projetos\\CatalogoLivros\\CatalogoLivros\\CatalogoLivros\\Controllers\\LivrosController.cs",
+              "RelativeToolTip": "CatalogoLivros\\Controllers\\LivrosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T22:20:56.342Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
