@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: TheosLivraria-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=TheosLivraria@2025
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./sql:/docker-entrypoint-initdb.d
+    networks:
+      - TheosLivraria-network
+    restart: unless-stopped
+
+
+volumes:
+  sqlserver_data:
+    driver: local
+
+networks:
+  TheosLivraria-network:
+    driver: bridge
