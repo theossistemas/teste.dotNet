@@ -20,7 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheosLivraria.API", "TheosL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheosLivraria.Domain.Tests", "TheosLivraria.Domain.Tests\TheosLivraria.Domain.Tests.csproj", "{16CBD43C-8FA7-481B-B45B-7E63E264B1C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheosLivraria.Unit.tests", "TheosLivraria.Unit.tests\TheosLivraria.Unit.tests.csproj", "{8DE36A49-5586-4548-9366-10164C5E366A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheosLivraria.Unit.Tests", "TheosLivraria.Unit.tests\TheosLivraria.Unit.Tests.csproj", "{8DE36A49-5586-4548-9366-10164C5E366A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheosLivraria.Integration.Tests", "TheosLivraria.Integration.Tests\TheosLivraria.Integration.Tests.csproj", "{435ED82C-57FD-4208-B761-727681938D2F}"
 EndProject

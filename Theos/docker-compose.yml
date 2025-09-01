@@ -12,11 +12,24 @@ services:
       - "1433:1433"
     volumes:
       - sqlserver_data:/var/opt/mssql
-      - ./sql:/docker-entrypoint-initdb.d
     networks:
       - TheosLivraria-network
-    restart: unless-stopped
 
+  api:
+    image: your-dotnet-image:latest
+    container_name: TheosLivraria-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;User Id=sa;Password=TheosLivraria@2025;Database=TheosLivraria;TrustServerCertificate=True;
+      - Jwt__Key=6gvt5EFIyn2gG9CnTjAanwzUSfAYYi4zuyCxyW6a9maxhpTU02
+      - Jwt__Issuer=TheosLivraria
+      - Jwt__Audience=TheosLivrariaUsers
+    ports:
+      - "5000:80"
+    depends_on:
+      - sqlserver
+    networks:
+      - TheosLivraria-network
 
 volumes:
   sqlserver_data:
