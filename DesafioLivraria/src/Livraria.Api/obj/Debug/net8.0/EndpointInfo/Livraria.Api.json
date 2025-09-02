@@ -1,0 +1,138 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Livraria.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Livros": {
+      "get": {
+        "tags": [
+          "Livros"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Livro"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Livro"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Livro"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Livros"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LivroCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LivroCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LivroCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Livro": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "autor": {
+            "type": "string",
+            "nullable": true
+          },
+          "anoPublicacao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LivroCreateDto": {
+        "required": [
+          "autor",
+          "isbn",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          },
+          "autor": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "anoPublicacao": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "isbn": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\bin\Debug\net8.0\Livraria.Application.deps.json
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\bin\Debug\net8.0\Livraria.Application.dll
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\bin\Debug\net8.0\Livraria.Application.pdb
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\bin\Debug\net8.0\Livraria.Domain.dll
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\bin\Debug\net8.0\Livraria.Domain.pdb
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.csproj.AssemblyReference.cache
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.AssemblyInfoInputs.cache
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.AssemblyInfo.cs
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.csproj.CoreCompileInputs.cache
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.422A9370.Up2Date
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.dll
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\refint\Livraria.Application.dll
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\Livraria.Application.pdb
+C:\Users\Douglas\Desktop\Desafio Theos\src\Livraria.Application\obj\Debug\net8.0\ref\Livraria.Application.dll

@@ -1,0 +1,270 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.application\\dtos\\livrocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|solutionrelative:src\\livraria.application\\dtos\\livrocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.infra.data\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|solutionrelative:src\\livraria.infra.data\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.infra.data\\migrations\\livrariadbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|solutionrelative:src\\livraria.infra.data\\migrations\\livrariadbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.infra.data\\migrations\\20250831213319_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|solutionrelative:src\\livraria.infra.data\\migrations\\20250831213319_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.infra.data\\context\\livrariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC19B78F-B405-453A-A493-AD14D67C7D97}|src\\Livraria.Infra.Data\\Livraria.Infra.Data.csproj|solutionrelative:src\\livraria.infra.data\\context\\livrariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FBD0792-27EF-40F6-8AB6-E8461BDBAEAE}|src\\Livraria.Domain\\Livraria.Domain.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.domain\\interfaces\\ilivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FBD0792-27EF-40F6-8AB6-E8461BDBAEAE}|src\\Livraria.Domain\\Livraria.Domain.csproj|solutionrelative:src\\livraria.domain\\interfaces\\ilivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FBD0792-27EF-40F6-8AB6-E8461BDBAEAE}|src\\Livraria.Domain\\Livraria.Domain.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.domain\\entities\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FBD0792-27EF-40F6-8AB6-E8461BDBAEAE}|src\\Livraria.Domain\\Livraria.Domain.csproj|solutionrelative:src\\livraria.domain\\entities\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.application\\validations\\livrovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|solutionrelative:src\\livraria.application\\validations\\livrovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|solutionrelative:src\\livraria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.api\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|solutionrelative:src\\livraria.api\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.application\\livraria.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|solutionrelative:src\\livraria.application\\livraria.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FBD0792-27EF-40F6-8AB6-E8461BDBAEAE}|src\\Livraria.Domain\\Livraria.Domain.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.domain\\livraria.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4FBD0792-27EF-40F6-8AB6-E8461BDBAEAE}|src\\Livraria.Domain\\Livraria.Domain.csproj|solutionrelative:src\\livraria.domain\\livraria.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.application\\interfaces\\ilivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB8A162-5EA5-4F04-8C75-6E5A39B4126A}|src\\Livraria.Application\\Livraria.Application.csproj|solutionrelative:src\\livraria.application\\interfaces\\ilivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|solutionrelative:src\\livraria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|c:\\users\\douglas\\desktop\\desafio theos\\src\\livraria.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AE99892-7B35-437C-A018-D207655662DB}|src\\Livraria.Api\\Livraria.Api.csproj|solutionrelative:src\\livraria.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LivroValidation.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Validations\\LivroValidation.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Application\\Validations\\LivroValidation.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Validations\\LivroValidation.cs",
+              "RelativeToolTip": "src\\Livraria.Application\\Validations\\LivroValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T01:02:01.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250831213319_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Migrations\\20250831213319_InitialCreate.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Infra.Data\\Migrations\\20250831213319_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Migrations\\20250831213319_InitialCreate.cs",
+              "RelativeToolTip": "src\\Livraria.Infra.Data\\Migrations\\20250831213319_InitialCreate.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T22:48:34.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Livraria.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\appsettings.json",
+              "RelativeToolTip": "src\\Livraria.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-31T21:21:47.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\Program.cs",
+              "RelativeToolTip": "src\\Livraria.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T21:20:02.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Livro.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Domain\\Entities\\Livro.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Domain\\Entities\\Livro.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Domain\\Entities\\Livro.cs",
+              "RelativeToolTip": "src\\Livraria.Domain\\Entities\\Livro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T21:13:54.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILivro.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Domain\\Interfaces\\ILivro.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Domain\\Interfaces\\ILivro.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Domain\\Interfaces\\ILivro.cs",
+              "RelativeToolTip": "src\\Livraria.Domain\\Interfaces\\ILivro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T21:15:15.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LivrariaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Context\\LivrariaDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Infra.Data\\Context\\LivrariaDbContext.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Context\\LivrariaDbContext.cs",
+              "RelativeToolTip": "src\\Livraria.Infra.Data\\Context\\LivrariaDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T21:17:57.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LivrariaDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Migrations\\LivrariaDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Infra.Data\\Migrations\\LivrariaDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Migrations\\LivrariaDbContextModelSnapshot.cs",
+              "RelativeToolTip": "src\\Livraria.Infra.Data\\Migrations\\LivrariaDbContextModelSnapshot.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T22:48:41.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Repositories\\LivroRepository.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Infra.Data\\Repositories\\LivroRepository.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Infra.Data\\Repositories\\LivroRepository.cs",
+              "RelativeToolTip": "src\\Livraria.Infra.Data\\Repositories\\LivroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T21:18:17.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LivroCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Dtos\\LivroCreateDto.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Application\\Dtos\\LivroCreateDto.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Dtos\\LivroCreateDto.cs",
+              "RelativeToolTip": "src\\Livraria.Application\\Dtos\\LivroCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T00:49:41.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "src\\Livraria.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\appsettings.Development.json",
+              "RelativeToolTip": "src\\Livraria.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-31T21:22:33.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LivrosController.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\Controllers\\LivrosController.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Api\\Controllers\\LivrosController.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Api\\Controllers\\LivrosController.cs",
+              "RelativeToolTip": "src\\Livraria.Api\\Controllers\\LivrosController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T22:21:41.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ILivro.cs",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Interfaces\\ILivro.cs",
+              "RelativeDocumentMoniker": "src\\Livraria.Application\\Interfaces\\ILivro.cs",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Interfaces\\ILivro.cs",
+              "RelativeToolTip": "src\\Livraria.Application\\Interfaces\\ILivro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T22:23:41.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Livraria.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Domain\\Livraria.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\Livraria.Domain\\Livraria.Domain.csproj",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Domain\\Livraria.Domain.csproj",
+              "RelativeToolTip": "src\\Livraria.Domain\\Livraria.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-01T01:00:56.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Livraria.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Livraria.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Livraria.Application\\Livraria.Application.csproj",
+              "ToolTip": "C:\\Users\\Douglas\\Desktop\\Desafio Theos\\src\\Livraria.Application\\Livraria.Application.csproj",
+              "RelativeToolTip": "src\\Livraria.Application\\Livraria.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-01T01:01:22.105Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

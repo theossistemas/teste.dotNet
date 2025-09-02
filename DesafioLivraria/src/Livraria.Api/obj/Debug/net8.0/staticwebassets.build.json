@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1ekMuRyLIrA0YY9+rN6GbvTPHZldNmQEPwGuPSL9iqs=",
+  "Source": "Livraria.Api",
+  "BasePath": "_content/Livraria.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

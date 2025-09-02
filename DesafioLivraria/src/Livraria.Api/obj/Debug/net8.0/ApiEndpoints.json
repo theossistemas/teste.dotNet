@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "Livraria.Api.Controllers.LivrosController",
+    "Method": "GetAll",
+    "RelativePath": "api/Livros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Livraria.Domain.Entities.Livro, Livraria.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Livraria.Api.Controllers.LivrosController",
+    "Method": "Create",
+    "RelativePath": "api/Livros",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroDto",
+        "Type": "Livraria.Application.Dtos.LivroCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
