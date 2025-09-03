@@ -9,10 +9,10 @@ using TheosLivraria.Infrastructure.Data;
 
 #nullable disable
 
-namespace TheosLivraria.Infrastructure.Migrations
+namespace TheosLivraria.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250903185738_InitialCreate")]
+    [Migration("20250903191306_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

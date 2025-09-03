@@ -8,7 +8,7 @@ using TheosLivraria.Infrastructure.Data;
 
 #nullable disable
 
-namespace TheosLivraria.Infrastructure.Migrations
+namespace TheosLivraria.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
