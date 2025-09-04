@@ -7,10 +7,10 @@ namespace TheosLivraria.Infrastructure.Data.Repositories;
 
 public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
 {
-    protected readonly DbContext _context;
+    protected readonly AppDbContext _context;
     protected readonly DbSet<TEntity> _dbSet;
 
-    public BaseRepository(DbContext context)
+    public BaseRepository(AppDbContext context)
     {
         _context = context;
         _dbSet = context.Set<TEntity>();

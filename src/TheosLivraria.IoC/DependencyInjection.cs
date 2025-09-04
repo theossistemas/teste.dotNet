@@ -1,9 +1,12 @@
-// TheosLivraria.IoC/DependencyInjection.cs
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TheosLivraria.Domain.Interfaces.Data;
+using TheosLivraria.Domain.Interfaces.Repositories;
+using TheosLivraria.Domain.Interfaces.Services;
 using TheosLivraria.Infrastructure.Data;
+using TheosLivraria.Infrastructure.Data.Repositories;
+using TheosLivraria.Infrastructure.Services;
 using TheosLivraria.Infrastructure.UnitOfWork;
 
 
@@ -27,10 +30,13 @@ public static class DependencyInjection
                 configuration.GetConnectionString("DefaultConnection"),
                 sqlOptions => sqlOptions.MigrationsAssembly("TheosLivraria.Infrastructure")
             ));
-
+        services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<ILogService, LogService>();
+        services.AddScoped<IJwtService, JwtService>();
         // Registrar repositórios
 
-        services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
 
         return services;
