@@ -1,0 +1,20 @@
+﻿@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject NavigationManager Navigation
+
+@code {
+    private bool _checkedAuth = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_checkedAuth)
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                Navigation.NavigateTo("/login", true);
+            }
+            _checkedAuth = true;
+            StateHasChanged();
+        }
+    }
+}

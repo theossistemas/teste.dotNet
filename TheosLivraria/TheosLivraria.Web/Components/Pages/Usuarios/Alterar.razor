@@ -1,0 +1,170 @@
+﻿@page "/usuarios/alterar/{id:guid}"
+@using TheosLivraria.Web.Request.Usuarios
+@using TheosLivraria.Web.ServicesAPI
+@inject IUsuarioService UsuarioService
+@inject NavigationManager NavigationManager
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+
+<RadzenCard Style="max-width:500px;margin:auto;margin-top:32px;">
+    <h3 style="text-align:center;">Alterar Usuário</h3>
+    @if (usuario is null)
+    {
+        <RadzenAlert Severity="AlertSeverity.Info" Summary="Carregando..." />
+    }
+    else
+    {
+        <div style="margin-bottom:16px;">
+            <RadzenTextBox @bind-Value="usuario.Nome" Name="Nome" Placeholder="Nome" Style="width:100%;" />
+            @if (showValidation && string.IsNullOrWhiteSpace(usuario.Nome))
+            {
+                <RadzenAlert Severity="AlertSeverity.Error" Summary="Nome obrigatório" />
+            }
+        </div>
+        <div style="margin-bottom:16px;">
+            <RadzenTextBox @bind-Value="usuario.Documento" Name="Documento" Placeholder="Documento" Style="width:100%;" />
+            @if (showValidation && string.IsNullOrWhiteSpace(usuario.Documento))
+            {
+                <RadzenAlert Severity="AlertSeverity.Error" Summary="Documento obrigatório" />
+            }
+        </div>
+        <div style="margin-bottom:16px;">
+            <RadzenTextBox @bind-Value="usuario.Email" Name="Email" Placeholder="E-mail" Style="width:100%;" />
+            @if (showValidation && string.IsNullOrWhiteSpace(usuario.Email))
+            {
+                <RadzenAlert Severity="AlertSeverity.Error" Summary="E-mail obrigatório" />
+            }
+        </div>
+        <div style="margin-bottom:16px;">
+            <RadzenTextBox @bind-Value="usuario.Telefone" Name="Telefone" Placeholder="Telefone" Style="width:100%;" />
+            @if (showValidation && string.IsNullOrWhiteSpace(usuario.Telefone))
+            {
+                <RadzenAlert Severity="AlertSeverity.Error" Summary="Telefone obrigatório" />
+            }
+        </div>
+        <div style="margin-bottom:16px;">
+            <RadzenDatePicker @bind-Value="usuario.DataAniversario" Name="DataAniversario" Placeholder="Data de Aniversário" Style="width:100%;" />
+            @if (showValidation && usuario.DataAniversario == default)
+            {
+                <RadzenAlert Severity="AlertSeverity.Error" Summary="Data de aniversário obrigatória" />
+            }
+        </div>
+        <div style="margin-bottom:16px;">
+            <RadzenDropDown @bind-Value="usuario.Perfil"
+                            Name="Perfil"
+                            Data="@perfis"
+                            TextProperty="Text"
+                            ValueProperty="Value"
+                            Placeholder="Selecione o perfil"
+                            Style="width:100%;" />
+            @if (showValidation && usuario.Perfil == 0)
+            {
+                <RadzenAlert Severity="AlertSeverity.Error" Summary="Perfil obrigatório" />
+            }
+        </div>
+        <RadzenButton Text="Salvar" Style="width:100%;margin-top:8px;" Click="@AlterarUsuario" />
+        <RadzenButton Text="Cancelar" Style="width:100%;margin-top:8px;" ButtonStyle="ButtonStyle.Secondary" Click="@(() => NavigationManager.NavigateTo("/usuarios"))" />
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <RadzenAlert Severity="AlertSeverity.Error" Summary="Erro" Detail="@errorMessage" Style="margin-top:16px;" />
+        }
+        @if (sucesso)
+        {
+            <RadzenAlert Severity="AlertSeverity.Success" Summary="Sucesso" Detail="Usuário alterado com sucesso!" Style="margin-top:16px;" />
+        }
+    }
+</RadzenCard>
+
+@code {
+    [Parameter] public Guid id { get; set; }
+    private AlterarUsuarioRequest? usuario;
+    private string? errorMessage;
+    private bool sucesso = false;
+    private bool showValidation = false;
+
+    private List<PerfilItem> perfis = new()
+    {
+        new PerfilItem { Value = 1, Text = "Administrador" },
+        new PerfilItem { Value = 2, Text = "Público" }
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://localhost:7187");
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var usuarioService = Refit.RestService.For<IUsuarioService>(httpClient);
+            var result = await usuarioService.ObterPorId(id);
+            if (result.Success && result.Data is not null)
+            {
+                usuario = new AlterarUsuarioRequest
+                {
+                    Id = result.Data.Id,
+                    Nome = result.Data.Nome,
+                    Documento = result.Data.Documento,
+                    Email = result.Data.Email,
+                    Telefone = result.Data.Telefone,
+                    DataAniversario = result.Data.DataNascimento,
+                    Perfil = result.Data.Perfil
+                };
+            }
+            else
+                errorMessage = result.Message ?? "Usuário não encontrado.";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao carregar usuário: {ex.Message}";
+        }
+    }
+
+    private async Task AlterarUsuario()
+    {
+        errorMessage = null;
+        sucesso = false;
+        showValidation = true;
+
+        if (usuario is null ||
+            string.IsNullOrWhiteSpace(usuario.Nome) ||
+            string.IsNullOrWhiteSpace(usuario.Documento) ||
+            string.IsNullOrWhiteSpace(usuario.Email) ||
+            string.IsNullOrWhiteSpace(usuario.Telefone) ||
+            usuario.DataAniversario == default ||
+            usuario.Perfil == 0)
+        {
+            return;
+        }
+
+        try
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://localhost:7187");
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var usuarioService = Refit.RestService.For<IUsuarioService>(httpClient);
+            var result = await usuarioService.Alterar(id.ToString(), usuario);
+            if (result.Success)
+            {
+                sucesso = true;
+                NavigationManager.NavigateTo("/usuarios");
+            }
+            else
+            {
+                errorMessage = result.Message ?? "Erro ao alterar usuário.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao alterar usuário: {ex.Message}";
+        }
+    }
+
+    public class PerfilItem
+    {
+        public int Value { get; set; }
+        public string Text { get; set; } = string.Empty;
+    }
+}

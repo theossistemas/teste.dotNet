@@ -1,0 +1,110 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Visual Studio files
+.vs/
+.vscode/
+*.dbmdl
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+*.cache
+*.pdb
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored if not using package restore
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# DotCover
+*.dotCover
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.ipdb
+*.tlog
+*.log
+*.vsix
+*.psess
+*.vsp
+*.vsix
+*.cache
+*.pdb
+
+# Others
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.sln.ide
+
+# Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Docker
+**/Dockerfile*
+**/docker-compose*
+
+# Local environment
+.env
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NCrunch
+*.ncrunch*
+_NCrunch_*
+
+# Resharper
+*.DotSettings.user
+
+# Entity Framework
+Migrations/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Web publish
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+# Azure Functions
+.local.settings.json

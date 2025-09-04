@@ -1,0 +1,57 @@
+﻿@page "/usuarios/visualizar/{id:guid}"
+@using TheosLivraria.Web.ServicesAPI
+@using TheosLivraria.Web.Util.Response.Ususarios
+@inject IUsuarioService UsuarioService
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+
+<RadzenCard Style="max-width:500px;margin:auto;margin-top:32px;">
+    <h3 style="text-align:center;">Visualizar Usuário</h3>
+    @if (usuario is null)
+    {
+        <RadzenAlert Severity="AlertSeverity.Info" Summary="Carregando..." />
+    }
+    else
+    {
+        <RadzenTextBox Value="@usuario.Nome" Name="Nome" Placeholder="Nome" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@usuario.Documento" Name="Documento" Placeholder="Documento" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@usuario.Email" Name="Email" Placeholder="E-mail" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@usuario.Telefone" Name="Telefone" Placeholder="Telefone" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@usuario.DataNascimento.ToString("dd/MM/yyyy")" Name="DataAniversario" Placeholder="Data de Aniversário" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        
+        
+        <RadzenButton Text="Voltar" Style="width:100%;margin-top:8px;" Click="@(() => NavigationManager.NavigateTo("/usuarios"))" />
+    }
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <RadzenAlert Severity="AlertSeverity.Error" Summary="Erro" Detail="@errorMessage" Style="margin-top:16px;" />
+    }
+</RadzenCard>
+
+@code {
+    [Parameter] public Guid id { get; set; }
+    private UsuarioDTO? usuario;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://localhost:7187");
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var usuarioService = Refit.RestService.For<IUsuarioService>(httpClient);
+            var result = await usuarioService.ObterPorId(id);
+            if (result.Success && result.Data is not null)
+                usuario = result.Data;
+            else
+                errorMessage = result.Message ?? "Usuário não encontrado.";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao carregar usuário: {ex.Message}";
+        }
+    }
+}

@@ -1,0 +1,55 @@
+﻿@page "/livros/visualizar/{id:guid}"
+@using TheosLivraria.Web.ServicesAPI
+@using TheosLivraria.Web.Util.Response.Livro
+@inject ILivroService LivroService
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+
+<RadzenCard Style="max-width:500px;margin:auto;margin-top:32px;">
+    <h3 style="text-align:center;">Visualizar Livro</h3>
+    @if (livro is null)
+    {
+        <RadzenAlert Severity="AlertSeverity.Info" Summary="Carregando..." />
+    }
+    else
+    {
+        <RadzenTextBox Value="@livro.Titulo" Name="Titulo" Placeholder="Título" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@livro.Autor" Name="Autor" Placeholder="Autor" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@livro.Isbn" Name="Isbn" Placeholder="ISBN" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@livro.Preco.ToString("C")" Name="Preco" Placeholder="Preço" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenTextBox Value="@livro.Estoque.ToString()" Name="Estoque" Placeholder="Estoque" Style="width:100%;margin-bottom:16px;" ReadOnly="true" />
+        <RadzenButton Text="Voltar" Style="width:100%;margin-top:8px;" Click="@(() => NavigationManager.NavigateTo("/livros"))" />
+    }
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <RadzenAlert Severity="AlertSeverity.Error" Summary="Erro" Detail="@errorMessage" Style="margin-top:16px;" />
+    }
+</RadzenCard>
+
+@code {
+    [Parameter] public Guid id { get; set; }
+    private LivroDTO? livro;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://localhost:7187");
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var livroService = Refit.RestService.For<ILivroService>(httpClient);
+            var result = await livroService.ObterPorId(id);
+            if (result.Success && result.Data is not null)
+                livro = result.Data;
+            else
+                errorMessage = result.Message ?? "Livro não encontrado.";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao carregar livro: {ex.Message}";
+        }
+    }
+}

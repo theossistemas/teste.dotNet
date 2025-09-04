@@ -1,0 +1,102 @@
+﻿@page "/usuarios"
+@using Refit
+@using TheosLivraria.Web.ServicesAPI
+@using TheosLivraria.Web.Request.Usuarios
+@using TheosLivraria.Web.Util.Response.Ususarios
+@inject IUsuarioService UsuarioService
+@inject NavigationManager NavigationManager
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject IHttpClientFactory HttpClientFactory
+
+<RadzenButton Text="Adicionar Usuário" Icon="add_circle" Style="margin-bottom:16px;" Click="@AdicionarUsuario" />
+
+<RadzenDataGrid TItem="UsuariosGridDTO" Data="@usuarios" Style="width:100%;" ColumnWidth="200px" AllowPaging="true" PageSize="10" AllowFiltering="true" FilterMode="FilterMode.Simple"
+                AllowSorting="true">
+    <Columns>
+        <RadzenDataGridColumn TItem="UsuariosGridDTO" Visible=false Property="Id" Title="ID" />
+        <RadzenDataGridColumn TItem="UsuariosGridDTO" Property="Nome" Title="Nome" />
+        <RadzenDataGridColumn TItem="UsuariosGridDTO" Property="Email" Title="E-mail" />
+        <RadzenDataGridColumn TItem="UsuariosGridDTO" Property="Documento" Title="Documento" />
+        <RadzenDataGridColumn TItem="UsuariosGridDTO" Property="Telefone" Title="Telefone" />
+        <RadzenDataGridColumn TItem="UsuariosGridDTO" Title="Ações">
+            <Template Context="usuarioLinha">
+                <RadzenButton Icon="edit" Size="ButtonSize.Small" Style="margin-right:8px;" Click="@(() => AlterarUsuario(usuarioLinha.Id))" />
+                <RadzenButton Icon="visibility" Size="ButtonSize.Small" Click="@(() => VisualizarUsuario(usuarioLinha))" />
+                <RadzenButton Icon="delete" Size="ButtonSize.Small" ButtonStyle="ButtonStyle.Danger" Click="@(() => ExcluirUsuario(usuarioLinha.Id))" />
+
+            </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    private List<UsuariosGridDTO> usuarios = new();
+    private bool _carregado = false;
+    private string? errorMessage;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = HttpClientFactory.CreateClient("IUsuarioServices");
+            if (!string.IsNullOrEmpty(token))
+                httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            else
+                NavigationManager.NavigateTo("/login");
+
+            
+            var usuarioService = RestService.For<IUsuarioService>(httpClient);
+
+            var result = await usuarioService.ObterTodos();
+            if (result.Success && result.Data is not null)
+                usuarios = result.Data;
+
+            StateHasChanged();
+        }
+    }
+
+    private void AdicionarUsuario()
+    {
+        NavigationManager.NavigateTo("/usuarios/adicionar");
+    }
+
+    private void AlterarUsuario(Guid id)
+    {
+        NavigationManager.NavigateTo($"/usuarios/alterar/{id}");
+    }
+
+    private void VisualizarUsuario(UsuariosGridDTO usuario)
+    {
+        NavigationManager.NavigateTo($"/usuarios/visualizar/{usuario.Id}");
+    }
+
+     private async Task ExcluirUsuario(Guid id)
+    {
+        errorMessage = null;
+        try
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://localhost:7187");
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var usuarioService = Refit.RestService.For<IUsuarioService>(httpClient);
+            var result = await usuarioService.Delete(id);
+            if (result.Success && result.Data)
+            {
+                NavigationManager.NavigateTo("/usuarios",true);
+            }
+            else
+            {
+                errorMessage = result.Message ?? "Erro ao excluir usuário.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao excluir usuário: {ex.Message}";
+        }
+    }
+
+    
+}

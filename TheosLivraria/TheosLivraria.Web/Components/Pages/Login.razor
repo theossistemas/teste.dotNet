@@ -1,0 +1,71 @@
+﻿@page "/login"
+@layout LoginLayout
+@using TheosLivraria.Web.Components.Layout
+@using TheosLivraria.Web.Request.Seguranca
+@using TheosLivraria.Web.ServicesAPI
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+@inject ISegurancaService SegurancaService
+
+<div style="display:flex;justify-content:center;align-items:center;min-height:100vh;">
+    <RadzenCard Style="width:400px;padding:32px;">
+        <div style="text-align:center;margin-bottom:24px;">
+            <img src="/images/logo.png" alt="Logo" style="width:150px;height:80px;box-shadow:0 0 8px #ccc;" />
+        </div>
+        <h3 style="text-align:center;margin-bottom:24px;">Login</h3>
+        <div style="margin-bottom:16px;">
+            <RadzenTextBox @bind-Value="loginModel.Email" Name="Email" Placeholder="E-mail" Style="width:100%;" />
+        </div>
+        <div style="margin-bottom:16px;">
+            <RadzenPassword @bind-Value="loginModel.Senha" Name="Senha" Placeholder="Senha" Style="width:100%;" />
+        </div>
+        <RadzenButton Text="Entrar" Style="width:100%;margin-top:8px;" Click="@Entrar" />
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <RadzenAlert Severity="AlertSeverity.Error" Summary="Erro" Detail="@errorMessage" Style="margin-top:16px;" />
+        }
+    </RadzenCard>
+</div>
+
+@code {
+    private LoginRequest loginModel = new();
+    private string? errorMessage;
+
+    private async Task Entrar()
+    {
+        errorMessage = null;
+
+        // Validação simples
+        if (string.IsNullOrWhiteSpace(loginModel.Email))
+        {
+            errorMessage = "E-mail obrigatório.";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(loginModel.Senha))
+        {
+            errorMessage = "Senha obrigatória.";
+            return;
+        }
+
+        try
+        {
+            var result = await SegurancaService.Login(loginModel);
+            if (string.IsNullOrEmpty(result.Data))
+            {
+                errorMessage = "Usuário ou senha inválidos.";
+                return;
+            }
+
+            await LocalStorage.SetItemAsync("theosAuthToken", result.Data);
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Refit.ApiException ex)
+        {
+            errorMessage = $"Erro ao efetuar login: {ex.Message}\nConteúdo retornado: {ex.Content}";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao efetuar login: {ex.Message}";
+        }
+    }
+}

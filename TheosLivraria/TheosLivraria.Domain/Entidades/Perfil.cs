@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TheosLivraria.Domain.Entidades
+{
+    public enum Perfil
+    {
+        Administrador,
+        Publico,
+    }
+}

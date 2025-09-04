@@ -1,0 +1,93 @@
+﻿@page "/livros"
+@using TheosLivraria.Web.ServicesAPI
+@using TheosLivraria.Web.Util.Response.Livro
+@inject ILivroService LivroService
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+
+<RadzenButton Text="Adicionar Livro" Icon="add_circle" Style="margin-bottom:16px;" Click="@AdicionarLivro" />
+
+<RadzenDataGrid TItem="LivrosGridDTO" Data="@livros" Style="width:100%;" ColumnWidth="200px" AllowPaging="true" PageSize="10" AllowFiltering="true" FilterMode="FilterMode.Simple"
+                AllowSorting="true">
+    <Columns>
+        <RadzenDataGridColumn TItem="LivrosGridDTO" Property="Titulo" Title="Título" />
+        <RadzenDataGridColumn TItem="LivrosGridDTO" Property="Autor" Title="Autor" />
+        <RadzenDataGridColumn TItem="LivrosGridDTO" Property="Isbn" Title="ISBN" />
+        <RadzenDataGridColumn TItem="LivrosGridDTO" Property="Preco" Title="Preço" />
+        <RadzenDataGridColumn TItem="LivrosGridDTO" Property="Estoque" Title="Estoque" />
+        <RadzenDataGridColumn TItem="LivrosGridDTO" Title="Ações">
+            <Template Context="livroLinha">
+                <RadzenButton Icon="edit" Size="ButtonSize.Small" Style="margin-right:8px;" Click="@(() => AlterarLivro(livroLinha.Id))" />
+                <RadzenButton Icon="visibility" Size="ButtonSize.Small" Style="margin-right:8px;" Click="@(() => VisualizarLivro(livroLinha))" />
+                <RadzenButton Icon="delete" Size="ButtonSize.Small" ButtonStyle="ButtonStyle.Danger" Click="@(() => ExcluirLivro(livroLinha.Id))" />
+            </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    private List<LivrosGridDTO> livros = new();
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregarLivros();
+    }
+
+    private async Task CarregarLivros()
+    {
+        var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+        var httpClient = new HttpClient();
+        httpClient.BaseAddress = new Uri("https://localhost:7187");
+        httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+        var livroService = Refit.RestService.For<ILivroService>(httpClient);
+        var result = await livroService.ObterTodos();
+        if (result.Success && result.Data is not null)
+            livros = result.Data;
+        else
+            errorMessage = result.Message ?? "Erro ao carregar livros.";
+    }
+
+    private void AdicionarLivro()
+    {
+        NavigationManager.NavigateTo("/livros/adicionar");
+    }
+
+    private void AlterarLivro(Guid id)
+    {
+        NavigationManager.NavigateTo($"/livros/alterar/{id}");
+    }
+
+    private void VisualizarLivro(LivrosGridDTO livro)
+    {
+        NavigationManager.NavigateTo($"/livros/visualizar/{livro.Id}");
+    }
+
+    private async Task ExcluirLivro(Guid id)
+    {
+        errorMessage = null;
+        try
+        {
+            var token = await LocalStorage.GetItemAsync<string>("theosAuthToken");
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("https://localhost:7187");
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var livroService = Refit.RestService.For<ILivroService>(httpClient);
+            var result = await livroService.Delete(id);
+            if (result.Success && result.Data)
+            {
+                await CarregarLivros();
+            }
+            else
+            {
+                errorMessage = result.Message ?? "Erro ao excluir livro.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Erro ao excluir livro: {ex.Message}";
+        }
+    }
+}
