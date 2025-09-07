@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TheosLivraria.Domain.Models.Entities;
-//using TheosLivraria.Domain.Entities
+using TheosLivraria.Domain.Models.Enums;
 
 namespace TheosLivraria.Infrastructure.Data
 {
@@ -15,7 +15,6 @@ namespace TheosLivraria.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
     }

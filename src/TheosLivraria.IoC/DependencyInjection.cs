@@ -1,8 +1,15 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TheosLivraria.Application.UseCases.Abstractions;
+using TheosLivraria.Application.UseCases.User.Auth;
+using TheosLivraria.Application.UseCases.User.Auth.DTOs;
+using TheosLivraria.Application.UseCases.User.Create;
+using TheosLivraria.Application.UseCases.User.Create.DTOs;
 using TheosLivraria.Domain.Interfaces.Data;
 using TheosLivraria.Domain.Interfaces.Repositories;
+using TheosLivraria.Domain.Interfaces.Repository;
 using TheosLivraria.Domain.Interfaces.Services;
 using TheosLivraria.Infrastructure.Data;
 using TheosLivraria.Infrastructure.Data.Repositories;
@@ -16,8 +23,12 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        // Registrar use cases
+        services.AddScoped<IUseCase<CreateUserInput, CreateUserOutput>, CreateUserUseCase>();
+        services.AddScoped<IUseCase<AuthUserInput, AuthUserOutput>, AuthUserUseCase>();
 
+
+        services.AddScoped<IValidator<CreateUserInput>, CreateUserInputValidator>();
+        services.AddScoped<IValidator<AuthUserInput>, AuthUserInputValidator>();
         return services;
     }
 
@@ -31,6 +42,7 @@ public static class DependencyInjection
                 sqlOptions => sqlOptions.MigrationsAssembly("TheosLivraria.Infrastructure")
             ));
         services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+        services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ILogService, LogService>();
         services.AddScoped<IJwtService, JwtService>();
@@ -40,5 +52,12 @@ public static class DependencyInjection
 
 
         return services;
+    }
+
+    public static void ExecuteSeeds(this IServiceProvider services)
+    {
+        using var scope = services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        SeedData.Initialize(db);
     }
 }

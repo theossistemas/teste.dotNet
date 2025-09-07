@@ -7,7 +7,7 @@ namespace TheosLivraria.Domain.Models.Enums
     {
         [Display(Name = "Admin")]
         Admin = 1,
-        [Display(Name = "Public")]
+        [Display(Name = "User")]
         User = 2
     }
 }

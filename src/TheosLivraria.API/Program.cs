@@ -3,6 +3,7 @@ using Microsoft.OpenApi.Models;
 using TheosLivraria.IoC;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Security.Claims;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -71,7 +72,8 @@ builder.Services.AddAuthentication(options =>
         ValidIssuer = jwtSettings["Issuer"],
         ValidAudience = jwtSettings["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(key),
-        ClockSkew = TimeSpan.Zero
+        ClockSkew = TimeSpan.Zero,
+        RoleClaimType = ClaimTypes.Role
     };
 });
 
@@ -86,7 +88,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -94,6 +95,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseHttpsRedirection();
+
+app.Services.ExecuteSeeds();
 
 app.Run();
 

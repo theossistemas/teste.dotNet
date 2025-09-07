@@ -3,8 +3,8 @@ using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using TheosLivraria.Domain.Interfaces.Services;
 using TheosLivraria.Domain.Models.Enums;
+using TheosLivraria.Domain.Interfaces.Services;
 
 namespace TheosLivraria.Infrastructure.Services
 {

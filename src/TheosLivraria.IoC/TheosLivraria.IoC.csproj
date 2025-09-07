@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TheosLivraria.Domain\TheosLivraria.Domain.csproj" />
     <ProjectReference Include="..\TheosLivraria.Infrastructure\TheosLivraria.Infrastructure.csproj" />
+    <ProjectReference Include="..\TheosLivraria.Application\TheosLivraria.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

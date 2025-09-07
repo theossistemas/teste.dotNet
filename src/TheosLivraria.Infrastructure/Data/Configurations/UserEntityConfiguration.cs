@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TheosLivraria.Domain.Models.Entities;
+using TheosLivraria.Domain.Models.Enums;
 
 namespace TheosLivraria.Infrastructure.Data.Configurations;
 
@@ -25,9 +26,10 @@ public class UserEntityConfiguration : IEntityTypeConfiguration<UserEntity>
             .HasMaxLength(200);
 
         builder.Property(u => u.Role)
-            .IsRequired()
-            .HasConversion<string>()
-            .HasMaxLength(50);
+               .HasConversion<string>()
+               .HasMaxLength(50)
+               .IsRequired()
+               .HasDefaultValue(RolesEnum.User);
 
         builder.Property(u => u.CreatedAt)
             .HasDefaultValueSql("GETUTCDATE()");

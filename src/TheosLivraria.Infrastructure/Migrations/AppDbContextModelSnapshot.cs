@@ -8,7 +8,7 @@ using TheosLivraria.Infrastructure.Data;
 
 #nullable disable
 
-namespace TheosLivraria.Infrastructure.Data.Migrations
+namespace TheosLivraria.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -161,8 +161,10 @@ namespace TheosLivraria.Infrastructure.Data.Migrations
 
                     b.Property<string>("Role")
                         .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasDefaultValue("User");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
