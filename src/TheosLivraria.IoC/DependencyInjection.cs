@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using TheosLivraria.Application.UseCases.Abstractions;
 using TheosLivraria.Application.UseCases.Book.Create;
 using TheosLivraria.Application.UseCases.Book.Create.DTOs;
+using TheosLivraria.Application.UseCases.Book.list;
+using TheosLivraria.Application.UseCases.Book.list.DTOs;
 using TheosLivraria.Application.UseCases.Book.Update;
 using TheosLivraria.Application.UseCases.Book.Update.DTOs;
 using TheosLivraria.Application.UseCases.User.Auth;
@@ -30,6 +32,7 @@ public static class DependencyInjection
         services.AddScoped<IUseCase<CreateUserInput, CreateUserOutput>, CreateUserUseCase>();
         services.AddScoped<IUseCase<CreateBookInput, CreateBookOutput>, CreateBookUseCase>();
         services.AddScoped<IUseCase<UpdateBookInput, UpdateBookOutput>, UpdateBookUseCase>();
+        services.AddScoped<IUseCase<ListBooksInput, ListBooksOutput>, ListBooksUseCase>();
         services.AddScoped<IUseCase<AuthUserInput, AuthUserOutput>, AuthUserUseCase>();
 
 
@@ -37,6 +40,7 @@ public static class DependencyInjection
         services.AddScoped<IValidator<AuthUserInput>, AuthUserInputValidator>();
         services.AddScoped<IValidator<CreateBookInput>, CreateBookInputValidator>();
         services.AddScoped<IValidator<UpdateBookInput>, UpdateBookInputValidator>();
+        services.AddScoped<IValidator<ListBooksInput>, ListBooksInputValidator>();
         return services;
     }
 
@@ -55,10 +59,6 @@ public static class DependencyInjection
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ILogService, LogService>();
         services.AddScoped<IJwtService, JwtService>();
-        // Registrar repositórios
-
-
-
 
         return services;
     }

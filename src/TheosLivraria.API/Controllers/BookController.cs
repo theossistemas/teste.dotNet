@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TheosLivraria.Application.UseCases.Abstractions;
 using TheosLivraria.Application.UseCases.Book.Create.DTOs;
+using TheosLivraria.Application.UseCases.Book.list.DTOs;
 using TheosLivraria.Application.UseCases.Book.Update.DTOs;
 
 namespace TheosLivraria.API.Controllers
@@ -12,13 +13,16 @@ namespace TheosLivraria.API.Controllers
     {
         private readonly IUseCase<CreateBookInput, CreateBookOutput> _createBookUseCase;
         private readonly IUseCase<UpdateBookInput, UpdateBookOutput> _updateBookUseCase;
+        private readonly IUseCase<ListBooksInput, ListBooksOutput> _listBooksUseCase;
 
         public BookController(
             IUseCase<CreateBookInput, CreateBookOutput> createBookUseCase,
-            IUseCase<UpdateBookInput, UpdateBookOutput> updateBookUseCase)
+            IUseCase<UpdateBookInput, UpdateBookOutput> updateBookUseCase,
+            IUseCase<ListBooksInput, ListBooksOutput> listBooksUseCase)
         {
             _createBookUseCase = createBookUseCase;
             _updateBookUseCase = updateBookUseCase;
+            _listBooksUseCase = listBooksUseCase;
         }
 
         /// <summary>
@@ -50,6 +54,36 @@ namespace TheosLivraria.API.Controllers
         public async Task<IActionResult> Update([FromBody] UpdateBookInput input)
         {
             var result = await _updateBookUseCase.ExecuteAsync(input);
+
+            if (!result.Success)
+            {
+                return BadRequest(new
+                {
+                    Message = result.ErrorMessage,
+                    Errors = result.MetaData
+                });
+            }
+
+            return Ok(result.Value);
+        }
+
+        /// <summary>
+        /// Lista livros com paginação
+        /// </summary>
+        /// <param name="page">Número da página (começa em 1)</param>
+        /// <param name="pageSize">Quantidade de itens por página</param>
+        /// <returns>Lista paginada de livros</returns>
+        [HttpGet("books")]
+        [AllowAnonymous]
+        public async Task<IActionResult> ListBooks([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+            var input = new ListBooksInput
+            {
+                Page = page,
+                PageSize = pageSize
+            };
+
+            var result = await _listBooksUseCase.ExecuteAsync(input);
 
             if (!result.Success)
             {
