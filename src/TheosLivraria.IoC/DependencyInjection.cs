@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TheosLivraria.Application.UseCases.Abstractions;
+using TheosLivraria.Application.UseCases.Book.Create;
+using TheosLivraria.Application.UseCases.Book.Create.DTOs;
 using TheosLivraria.Application.UseCases.User.Auth;
 using TheosLivraria.Application.UseCases.User.Auth.DTOs;
 using TheosLivraria.Application.UseCases.User.Create;
@@ -24,11 +26,13 @@ public static class DependencyInjection
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
         services.AddScoped<IUseCase<CreateUserInput, CreateUserOutput>, CreateUserUseCase>();
+        services.AddScoped<IUseCase<CreateBookInput, CreateBookOutput>, CreateBookUseCase>();
         services.AddScoped<IUseCase<AuthUserInput, AuthUserOutput>, AuthUserUseCase>();
 
 
         services.AddScoped<IValidator<CreateUserInput>, CreateUserInputValidator>();
         services.AddScoped<IValidator<AuthUserInput>, AuthUserInputValidator>();
+        services.AddScoped<IValidator<CreateBookInput>, CreateBookInputValidator>();
         return services;
     }
 
@@ -43,6 +47,7 @@ public static class DependencyInjection
             ));
         services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IBookRepository, BookRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ILogService, LogService>();
         services.AddScoped<IJwtService, JwtService>();
