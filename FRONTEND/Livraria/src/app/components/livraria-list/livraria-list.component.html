@@ -1,0 +1,77 @@
+<h1 style="text-align: center; margin-bottom: 2rem; color: #242424; font-weight: 700;">Livros Cadastrados</h1>
+<div style="display: flex; justify-content: space-evenly; margin-bottom: 2rem;">
+    <p-floatLabel>
+        <input id="filter" type="text" pInputText [(ngModel)]="filtro" style="width: 250px; padding: 8px; border-radius: 6px; border: 1px solid #000000;" />
+        <label for="filter" style="color: #000000;">Pesquisar...</label>
+    </p-floatLabel>
+    <div>
+        <app-livraria-create
+          [livroParaEditar]="livroParaEditar"
+          [visible]="createModal"
+          (salvarLivro)="onSalvarLivro($event)"
+          (visibleChange)="createModal = $event"
+        ></app-livraria-create>
+    </div>
+</div>
+
+<div *ngIf="loading" class="loading-overlay">
+  <p-progressSpinner></p-progressSpinner>
+</div>
+<div *ngIf="!loading" class="table-container">
+    <p-table [value]="livrosFiltrados" [tableStyle]="{ 'min-width': '50rem', 'box-shadow': '0 2px 12px rgba(0,0,0,0.08)' }" styleClass="p-datatable-striped p-datatable-gridlines custom-table-border">
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="titulo">Título <p-sortIcon field="titulo"></p-sortIcon></th>
+                <th pSortableColumn="autor">Autor <p-sortIcon field="autor"></p-sortIcon></th>
+                <th>ISBN</th>
+                <th pSortableColumn="anoPublicacao">Ano de Publicação <p-sortIcon field="anoPublicacao"></p-sortIcon></th>
+                <th pSortableColumn="quantidade">Quantidade<p-sortIcon field="quantidade"></p-sortIcon></th>
+                <th pSortableColumn="preco">Preço <p-sortIcon field="preco"></p-sortIcon></th>
+                <th>Status</th>
+                <th>Criado em</th>
+                <th>Atualizado em</th>
+                <th>Deletado em</th>
+                <th *ngIf="isLoggedIn">Opções</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-livro>
+            <tr>
+                <td>{{ livro.titulo }}</td>
+                <td>{{ livro.autor }}</td>
+                <td>{{ livro.isbn }}</td>
+                <td style="font-size: large;">{{ livro.anoPublicacao }}</td>
+                <td>{{ livro.quantidade }}</td>
+                <td>{{ livro.preco }}</td>  
+                <td>
+                    <p-tag 
+                        [value]="livro.ativo === true ? 'Ativo' : 'Inativo'" 
+                        [severity]="livro.ativo === true ? 'success' : 'danger'" 
+                        [style]="{ width: '80px', display: 'flex', 'justify-content': 'center', 'align-items': 'center', 'font-weight': 'bold', 'font-size': '14px' }"
+                    ></p-tag>
+                </td>
+                <td>{{ livro.criadoEm ? (livro.criadoEm | localeDate:'pt-BR') : '---' }}</td>
+                <td>{{ livro.atualizadoEm ? (livro.atualizadoEm | localeDate:'pt-BR') : '---' }}</td> 
+                <td>{{ livro.excluidoEm ? (livro.excluidoEm | localeDate:'pt-BR') : '---' }}</td>
+                <td *ngIf="isLoggedIn">
+                  <i class="pi pi-pencil icon-options" style="color: grey" (click)="openEditModal(livro)"></i>
+                  <i class="pi pi-trash icon-options" style="color: grey" (click)="confirmDelete(livro)"></i>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+    
+</div>
+<p-paginator
+  [rows]="pageSize"
+  [totalRecords]="totalRecords"
+  [rowsPerPageOptions]="[5, 10, 20, 50]"
+  (onPageChange)="getLivrosPaged($event)">
+</p-paginator>
+
+
+<p-confirmDialog></p-confirmDialog>
+<p-toast />
+
+
+
+

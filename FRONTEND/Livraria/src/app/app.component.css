@@ -1,0 +1,54 @@
+.app-footer {
+  width: 100%;
+  background: #92caff;
+  color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 1rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  transition: background 0.3s, color 0.3s;
+}
+.app-footer:hover {
+  background: #6eb6ff;
+  color: #fff;
+  cursor: pointer;
+}
+.app-header {
+  width: 100%;
+  background: #004483;         /* cor escura, inverso do footer */
+  color: #f0f0eb;           /* cor clara para o texto */
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+  font-weight: 700;
+}
+.main-content {
+  padding: 5rem 1rem 3rem; /* espaço para header e footer */
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.linkedin {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.linkedin-icon {
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.app-footer:hover {
+  background: #6eb6ff;   /* cor mais escura no hover */
+  color: #fff;           /* texto branco no hover */
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+<p-sidebar [(visible)]="sidebarVisible" position="left" styleClass="custom-sidebar">
+  <h3>Menu</h3>
+  <p-button label="Login" icon="pi pi-sign-in" (onClick)="login()" styleClass="p-button-text p-button-lg" />
+  <p-button label="Deslogar" icon="pi pi-sign-out" (onClick)="logout()" styleClass="p-button-text p-button-lg" />
+</p-sidebar>
+<p-button icon="pi pi-bars" (onClick)="sidebarVisible = true" styleClass="open-sidebar-btn" />

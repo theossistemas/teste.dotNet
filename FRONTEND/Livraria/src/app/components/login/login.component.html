@@ -1,0 +1,11 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <input type="text" placeholder="Usuário" [(ngModel)]="username" name="username" required>
+    <input type="password" placeholder="Senha" [(ngModel)]="password" name="password" required>
+    <button type="submit">Entrar</button>
+  </form>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <button (click)="entrarSemLogin()">Entrar sem login</button>
+</div>
+<p-toast></p-toast>

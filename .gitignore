@@ -1,0 +1,45 @@
+# Angular/Node
+node_modules/
+dist/
+out-tsc/
+coverage/
+.angular/
+npm-debug.log*
+yarn-error.log
+.env
+
+# .NET/Entity Framework
+bin/
+obj/
+*.user
+*.suo
+*.dbmdl
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.ncrunch*
+_ReSharper*/
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# IDEs
+.vscode/
+*.vs/
+*.idea/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Others
+*.swp
+*.swo

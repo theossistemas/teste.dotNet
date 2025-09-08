@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import 'primeng/resources/themes/saga-blue/theme.css';
+@import 'primeng/resources/primeng.min.css';
+@import 'primeicons/primeicons.css';
+
+
+body, html {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
+.p-table {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}

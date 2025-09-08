@@ -1,0 +1,92 @@
+.create-book-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: transparent;
+}
+
+.form-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.form-actions {
+  margin-top: 1rem;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.form-row {
+  width: 100%;
+  margin: 1.5rem 0
+
+}
+.input-full {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #1976d2;
+  box-sizing: border-box;
+}
+.btn-salvar {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.btn-cancelar {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #d21919da; 
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.btn-cancelar:hover {
+  background-color: #d21919;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.form-rows {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex: 1;
+}
+.action-item {
+    margin: 6px;
+    gap: 1;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}

@@ -1,0 +1,67 @@
+:host ::ng-deep .p-datatable th,
+:host ::ng-deep .p-datatable td {
+  text-align: center;
+}
+
+:host ::ng-deep .custom-table-border {
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.livraria-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* ou defina conforme a largura da tabela */
+  margin-bottom: 1rem;
+}
+
+.float-label-container {
+  flex: 0 0 auto;
+  /* Alinhamento à esquerda */
+}
+
+.livraria-create-container {
+  flex: 0 0 auto;
+  /* Alinhamento à direita */
+}
+.speeddial-right {
+  position: absolute;
+  height: 12px;
+  right: 1rem;
+  bottom: 1rem;
+}
+.icon-options{
+    margin: 0 7px;
+    cursor: pointer;
+}
+.icon-options {
+  transition: transform 0.2s ease;
+}
+
+.icon-options:hover {
+  transform: scale(1.3);
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.table-scroll-container {
+  overflow-x: auto;
+  width: 100%;
+}
+.table-container{
+  display: flex;
+  justify-content: center;
+}
