@@ -1,0 +1,36 @@
+LivrariaTheos/
+├─ src/
+│  ├─ LivrariaTheos.Api/
+│  ├─ LivrariaTheos.Application/
+│  ├─ LivrariaTheos.Domain/
+│  └─ LivrariaTheos.Infrastructure/
+├─ tests/
+│  └─ LivrariaTheos.Tests/
+├─ db/
+│  └─ scripts/        # exporte aqui os .sql (migrations, create, seed)
+└─ docs/
+   ├─ Plano de Ataque.md
+   ├─ Desafio Theòs.md
+   └─ Status do Projeto.md
+dotnet new webapi -n  LivrariaTheos.Api --use-controllers
+dotnet add src\LivrariaTheos.Application\LivrariaTheos.Application.csproj reference src\LivrariaTheos.Domain\LivrariaTheos.Domain.csproj
+dotnet add src\LivrariaTheos.Infrastructure\LivrariaTheos.Infrastructure.csproj reference src\LivrariaTheos.Domain\LivrariaTheos.Domain.csproj
+dotnet add src\LivrariaTheos.Api\LivrariaTheos.Api.csproj reference src\LivrariaTheos.Application\LivrariaTheos.Application.csproj
+dotnet add src\LivrariaTheos.Api\LivrariaTheos.Api.csproj reference src\LivrariaTheos.Infrastructure\LivrariaTheos.Infrastructure.csproj
+dotnet add src/LivrariaTheos.Api/LivrariaTheos.Api.csproj reference ../LivrariaTheos.Infrastructure/LivrariaTheos.Infrastructure.csproj
+
+
+dotnet add src\LivrariaTheos.Api package Serilog.AspNetCore
+dotnet add src\LivrariaTheos.Api package Serilog.Sinks.File
+dotnet add src\LivrariaTheos.Api package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add src\LivrariaTheos.Api package Swashbuckle.AspNetCore
+
+dotnet add tests\LivrariaTheos.Tests package FluentAssertions
+dotnet add tests\LivrariaTheos.Tests package Microsoft.EntityFrameworkCore.Sqlite
+
+mkdir src\LivrariaTheos.Domain\Entities
+mkdir src\LivrariaTheos.Infrastructure\Data
+mkdir src\LivrariaTheos.Api\Controllers
+mkdir db\scripts
+
+C:\Users\wilks\OneDrive\Documentos\APRENDENDO A PROGRAMAR\PROJETOS\DeasafioTheos\src\LivrariaTheos.Infrastructure\Data

@@ -1,0 +1,18 @@
+# Build
+bin/
+obj/
+# IDE/Editor
+.vs/
+.vscode/
+*.suo
+*.user
+# Logs
+logs/
+*.log
+# Publish
+*.Publish.xml
+# Secrets (se usar)
+secrets.json
+# Sistema/OS
+.DS_Store
+Thumbs.db

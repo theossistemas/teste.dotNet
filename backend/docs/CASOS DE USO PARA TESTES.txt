@@ -1,0 +1,17 @@
+Lista de testes
+POST - /api/Auth/login (AUTENTICAÇÃO)
+loguim com email e senha autorizado (caso feliz)
+Email com formato incorreto
+senha incorreta
+
+GET - /api/Livros (BUSCA POR LIVROS)
+cmapo de busca banco ou nulo => retorna todos os livros (caso feliz)
+Campo de busca com algo => retorna se nome do autor ou titulo do livro existir (caso feliz)
+	=> se existir mais de um livro ele vai retornar todos os itens
+
+GET - /api/Livros/{id} (BUSCA POR LIVROS POR ID)
+campo com o Id completo => retorna o livro qeu bate com a referencia (caso feliz)
+cmapo com Id inexitente => retorna com erro 404 (Not Foud)
+
+PUT - /api/Livros/{id} (ALTERAÇÃO DE ITENS)
+cmapo com 

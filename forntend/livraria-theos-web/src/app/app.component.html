@@ -1,0 +1,22 @@
+<header class="p-3" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+  <nav>
+    <a routerLink="/livros">Listar</a>
+    <span *ngIf="isAdmin"> | <a routerLink="/livros/novo">Novo</a></span>
+  </nav>
+
+  <div>
+    <ng-container *ngIf="isAuth; else loginLink">
+      <small>Olá, {{ email }} <span *ngIf="roles?.length"> ({{ roles.join(', ') }})</span></small>
+      <button (click)="sair()" class="ml-2">Sair</button>
+    </ng-container>
+    <ng-template #loginLink>
+      <a routerLink="/login">Entrar</a>
+    </ng-template>
+  </div>
+</header>
+
+<main class="p-3">
+  <router-outlet />
+</main>
+
+<!-- Componente raiz que define a estrutura básica da aplicação -->
