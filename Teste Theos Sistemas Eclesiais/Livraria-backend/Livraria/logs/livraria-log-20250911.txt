@@ -1,0 +1,454 @@
+2025-09-11 15:06:47.705 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:06:47.752 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:06:47.851 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:06:47.852 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:06:47.853 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:06:49.233 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger - null null
+2025-09-11 15:06:49.444 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger - 301 0 null 218.7755ms
+2025-09-11 15:06:49.450 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:06:49.529 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/swagger-ui.css - null null
+2025-09-11 15:06:49.529 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 79.1697ms
+2025-09-11 15:06:49.530 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-11 15:06:49.529 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:06:49.530 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:06:49.529 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/swagger-ui-bundle.js - null null
+2025-09-11 15:06:49.566 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 36.8533ms
+2025-09-11 15:06:49.592 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-11 15:06:49.593 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-11 15:06:49.595 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/swagger-ui.css - 200 152034 text/css 65.7984ms
+2025-09-11 15:06:49.599 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 69.3303ms
+2025-09-11 15:06:49.623 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-11 15:06:49.625 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 95.7638ms
+2025-09-11 15:06:49.695 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 164.3399ms
+2025-09-11 15:06:49.783 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:06:49.795 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.4408ms
+2025-09-11 15:06:49.808 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/favicon-32x32.png - null null
+2025-09-11 15:06:49.811 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-11 15:06:49.813 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/favicon-32x32.png - 200 628 image/png 5.2948ms
+2025-09-11 15:08:30.064 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:08:30.143 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:08:30.352 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:08:30.353 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:08:30.354 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:08:31.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:08:31.302 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 264.5836ms
+2025-09-11 15:08:31.311 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:08:31.311 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:08:31.333 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 22.2225ms
+2025-09-11 15:08:31.376 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.7107ms
+2025-09-11 15:08:31.539 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:08:31.554 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.0985ms
+2025-09-11 15:12:46.283 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:12:46.316 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:12:46.490 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:12:46.491 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:12:46.492 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:12:47.410 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:12:47.642 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 237.4786ms
+2025-09-11 15:12:47.656 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:12:47.657 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:12:47.668 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.9242ms
+2025-09-11 15:12:47.711 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.523ms
+2025-09-11 15:12:47.751 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:12:47.765 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.1563ms
+2025-09-11 15:13:54.340 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:13:54.374 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:13:54.454 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:13:54.456 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:13:54.456 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:13:55.219 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:13:55.465 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:13:55.465 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:13:55.467 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 257.3981ms
+2025-09-11 15:13:55.487 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 19.9206ms
+2025-09-11 15:13:55.528 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.4405ms
+2025-09-11 15:13:55.565 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:13:55.583 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.9819ms
+2025-09-11 15:34:22.926 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 15:34:23.254 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:34:23.256 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:34:23.382 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:34:23.383 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:34:23.384 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:34:23.784 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:34:25.361 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 1588.0014ms
+2025-09-11 15:34:25.370 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:34:25.370 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:34:25.383 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 12.9133ms
+2025-09-11 15:34:25.426 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.9842ms
+2025-09-11 15:34:25.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:34:25.492 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.2016ms
+2025-09-11 15:35:30.763 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 15:35:31.026 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:35:31.028 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:35:31.113 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:35:31.114 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:35:31.115 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:35:31.858 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:35:32.169 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 318.3395ms
+2025-09-11 15:35:32.179 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:35:32.179 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:35:32.190 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.1821ms
+2025-09-11 15:35:32.230 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.7156ms
+2025-09-11 15:35:32.272 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:35:32.297 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.543ms
+2025-09-11 15:36:40.083 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 15:36:40.351 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:36:40.353 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:36:40.432 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:36:40.433 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:36:40.434 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:36:41.152 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:36:41.462 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:36:41.462 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:36:41.465 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 321.4761ms
+2025-09-11 15:36:41.478 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 14.5049ms
+2025-09-11 15:36:41.517 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.8895ms
+2025-09-11 15:36:41.559 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:36:41.582 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.4218ms
+2025-09-11 15:37:21.596 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:37:21.617 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:37:21.644 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:39:07.029 -03:00 [INF] Executed action AuthController.Login (Livraria) in 105379.0939ms
+2025-09-11 15:39:07.032 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:39:07.056 -03:00 [ERR] Erro não tratado: Value cannot be null. (Parameter 's')
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at AuthController.Login(LoginDTO login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 29
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 22
+2025-09-11 15:39:07.130 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 400 null application/json 105534.8332ms
+2025-09-11 15:39:11.666 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:39:11.671 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:39:11.672 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:40:33.876 -03:00 [INF] Executed action AuthController.Login (Livraria) in 82202.2287ms
+2025-09-11 15:40:33.888 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:40:33.908 -03:00 [ERR] Erro não tratado: Value cannot be null. (Parameter 's')
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at AuthController.Login(LoginDTO login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 29
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 22
+2025-09-11 15:40:33.912 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 400 null application/json 82246.4481ms
+2025-09-11 15:40:38.597 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:40:38.600 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:40:38.602 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:40:45.577 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 15:40:45.879 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:40:45.883 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:40:46.055 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:40:46.056 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:40:46.057 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:40:46.347 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:40:46.705 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 365.1185ms
+2025-09-11 15:40:46.724 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:40:46.724 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:40:46.737 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 13.0823ms
+2025-09-11 15:40:46.787 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.014ms
+2025-09-11 15:40:46.829 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:40:46.851 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.6752ms
+2025-09-11 15:40:54.387 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 50
+2025-09-11 15:40:54.406 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:40:54.450 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:40:54.507 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-11 15:40:54.536 -03:00 [INF] Executed action AuthController.Login (Livraria) in 79.2908ms
+2025-09-11 15:40:54.537 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:40:54.538 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/problem+json; charset=utf-8 151.3857ms
+2025-09-11 15:41:10.907 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:41:10.911 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:41:10.912 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:41:10.916 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-11 15:41:10.918 -03:00 [INF] Executed action AuthController.Login (Livraria) in 4.4444ms
+2025-09-11 15:41:10.920 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:41:10.921 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/problem+json; charset=utf-8 14.7299ms
+2025-09-11 15:41:15.826 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:41:15.829 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:41:15.830 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:41:15.833 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-11 15:41:15.835 -03:00 [INF] Executed action AuthController.Login (Livraria) in 2.4271ms
+2025-09-11 15:41:15.836 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:41:15.838 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/problem+json; charset=utf-8 11.8406ms
+2025-09-11 15:41:35.017 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:41:35.019 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:41:35.020 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:41:52.540 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-11 15:41:52.544 -03:00 [INF] Executed action AuthController.Login (Livraria) in 17522.5626ms
+2025-09-11 15:41:52.551 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:41:52.552 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/problem+json; charset=utf-8 17535.8451ms
+2025-09-11 15:42:04.128 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:42:04.131 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:42:04.133 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:42:27.370 -03:00 [INF] Executed action AuthController.Login (Livraria) in 23236.5405ms
+2025-09-11 15:42:27.373 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:42:27.390 -03:00 [ERR] Erro não tratado: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '152' bits. (Parameter 'keyBytes')
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '152' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AuthController.Login(LoginDTO login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 38
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 22
+2025-09-11 15:42:27.434 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 500 null application/json 23306.4787ms
+2025-09-11 15:45:06.134 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 15:45:06.393 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 15:45:06.395 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 15:45:06.476 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 15:45:06.477 -03:00 [INF] Hosting environment: Development
+2025-09-11 15:45:06.478 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 15:45:07.058 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 15:45:07.341 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 290.9167ms
+2025-09-11 15:45:07.350 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 15:45:07.351 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 15:45:07.365 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 15.2062ms
+2025-09-11 15:45:07.402 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.8482ms
+2025-09-11 15:45:07.436 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 15:45:07.463 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.4672ms
+2025-09-11 15:45:40.579 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 47
+2025-09-11 15:45:40.591 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:45:40.617 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 15:45:42.542 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 15:45:42.553 -03:00 [INF] Executed action AuthController.Login (Livraria) in 1931.8993ms
+2025-09-11 15:45:42.554 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 15:45:42.555 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 200 null application/json; charset=utf-8 1976.0095ms
+2025-09-11 17:08:09.910 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 17:08:10.282 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 17:08:10.284 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 17:08:10.370 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 17:08:10.372 -03:00 [INF] Hosting environment: Development
+2025-09-11 17:08:10.373 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 17:08:11.299 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:08:11.663 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 373.7616ms
+2025-09-11 17:08:11.681 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:08:11.681 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:08:11.692 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.863ms
+2025-09-11 17:08:11.735 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.9609ms
+2025-09-11 17:08:11.780 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:08:11.813 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.1699ms
+2025-09-11 17:08:35.385 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 52
+2025-09-11 17:08:35.403 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:08:35.429 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:08:35.493 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-11 17:08:35.519 -03:00 [INF] Executed action AuthController.Login (Livraria) in 85.5848ms
+2025-09-11 17:08:35.521 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:08:35.521 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 400 null application/problem+json; charset=utf-8 136.3893ms
+2025-09-11 17:08:53.473 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+2025-09-11 17:08:53.477 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:08:53.478 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:08:53.538 -03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:08:53.545 -03:00 [INF] Executed action AuthController.Login (Livraria) in 65.7842ms
+2025-09-11 17:08:53.547 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:08:53.548 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json; charset=utf-8 74.6667ms
+2025-09-11 17:09:15.450 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 70
+2025-09-11 17:09:15.453 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:09:15.454 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:09:15.486 -03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:09:15.487 -03:00 [INF] Executed action AuthController.Login (Livraria) in 30.0102ms
+2025-09-11 17:09:15.488 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:09:15.489 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json; charset=utf-8 39.6102ms
+2025-09-11 17:09:23.135 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 69
+2025-09-11 17:09:23.143 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:09:23.145 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:09:23.186 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:09:23.190 -03:00 [INF] Executed action AuthController.Login (Livraria) in 43.0152ms
+2025-09-11 17:09:23.191 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:09:23.192 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 200 null application/json; charset=utf-8 56.8472ms
+2025-09-11 17:12:47.019 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 70
+2025-09-11 17:12:47.028 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:12:47.029 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:12:47.057 -03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:12:47.059 -03:00 [INF] Executed action AuthController.Login (Livraria) in 28.5546ms
+2025-09-11 17:12:47.066 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:12:47.066 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json; charset=utf-8 48.0324ms
+2025-09-11 17:12:57.893 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:12:57.927 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 34.515ms
+2025-09-11 17:12:57.937 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:12:57.939 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:12:57.957 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 12.4226ms
+2025-09-11 17:12:57.981 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.8792ms
+2025-09-11 17:12:58.049 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:12:58.062 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.7955ms
+2025-09-11 17:13:04.527 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+2025-09-11 17:13:04.547 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:13:04.550 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:13:04.586 -03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:13:04.588 -03:00 [INF] Executed action AuthController.Login (Livraria) in 35.997ms
+2025-09-11 17:13:04.589 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:13:04.590 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json; charset=utf-8 62.7716ms
+2025-09-11 17:15:53.692 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 17:15:53.971 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 17:15:53.973 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 17:15:54.055 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 17:15:54.056 -03:00 [INF] Hosting environment: Development
+2025-09-11 17:15:54.057 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 17:15:54.626 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:15:54.945 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 328.1985ms
+2025-09-11 17:15:54.953 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:15:54.953 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:15:54.965 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.8111ms
+2025-09-11 17:15:55.004 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.9383ms
+2025-09-11 17:15:55.038 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:15:55.063 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.2164ms
+2025-09-11 17:15:59.509 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+2025-09-11 17:15:59.536 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:15:59.576 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:16:04.927 -03:00 [INF] Executed action AuthController.Login (Livraria) in 5344.8031ms
+2025-09-11 17:16:04.929 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:16:04.948 -03:00 [ERR] Erro não tratado: Usuário não autorizados!
+Livraria.API.Exceptions.AutenticacaoJWTException: Usuário não autorizados!
+   at Livraria.Api.Authentication.AutenticacaoJWT.GerarToken(String username, String password, String role) in C:\Livraria\Livraria\API\Authentication\AutenticacaoJWT.cs:line 19
+   at AuthController.Login(LoginDTO login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 22
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+2025-09-11 17:16:05.006 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json 5497.0725ms
+2025-09-11 17:16:18.883 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+2025-09-11 17:16:18.887 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:16:18.889 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:16:49.146 -03:00 [INF] Executed action AuthController.Login (Livraria) in 30254.8906ms
+2025-09-11 17:16:49.151 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:16:53.308 -03:00 [ERR] Erro não tratado: Usuário não autorizados!
+Livraria.API.Exceptions.AutenticacaoJWTException: Usuário não autorizados!
+   at Livraria.Api.Authentication.AutenticacaoJWT.GerarToken(String username, String password, String role) in C:\Livraria\Livraria\API\Authentication\AutenticacaoJWT.cs:line 19
+   at AuthController.Login(LoginDTO login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 22
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+2025-09-11 17:17:00.510 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json 41625.604ms
+2025-09-11 17:20:10.427 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:20:10.460 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 33.6286ms
+2025-09-11 17:20:10.470 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:20:10.472 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:20:10.477 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 5.0474ms
+2025-09-11 17:20:10.503 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.6548ms
+2025-09-11 17:20:10.550 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:20:10.560 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.0929ms
+2025-09-11 17:20:42.340 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:20:42.355 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 11.318ms
+2025-09-11 17:20:42.372 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:20:42.378 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:20:42.387 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 9.3538ms
+2025-09-11 17:20:42.409 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.4268ms
+2025-09-11 17:20:42.487 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:20:42.500 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.0605ms
+2025-09-11 17:21:01.082 -03:00 [INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-11 17:21:01.386 -03:00 [INF] Now listening on: https://localhost:7173
+2025-09-11 17:21:01.389 -03:00 [INF] Now listening on: http://localhost:5065
+2025-09-11 17:21:01.473 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-11 17:21:01.474 -03:00 [INF] Hosting environment: Development
+2025-09-11 17:21:01.475 -03:00 [INF] Content root path: C:\Livraria\Livraria
+2025-09-11 17:21:01.987 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:21:02.356 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:21:02.356 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:21:02.357 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 379.6517ms
+2025-09-11 17:21:02.380 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 23.5ms
+2025-09-11 17:21:02.417 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.7431ms
+2025-09-11 17:21:02.455 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:21:02.486 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.5054ms
+2025-09-11 17:21:06.080 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+2025-09-11 17:21:06.100 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:21:06.158 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:21:20.519 -03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:21:20.559 -03:00 [INF] Executed action AuthController.Login (Livraria) in 14389.2818ms
+2025-09-11 17:21:20.561 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:21:23.042 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json; charset=utf-8 16962.1389ms
+2025-09-11 17:21:30.317 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+2025-09-11 17:21:30.322 -03:00 [INF] Executing endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:21:30.331 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Livraria.API.DTOs.LoginDTO) on controller AuthController (Livraria).
+2025-09-11 17:21:33.502 -03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-11 17:21:33.504 -03:00 [INF] Executed action AuthController.Login (Livraria) in 3166.3256ms
+2025-09-11 17:21:33.505 -03:00 [INF] Executed endpoint 'AuthController.Login (Livraria)'
+2025-09-11 17:21:33.506 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json; charset=utf-8 3189.1407ms
+2025-09-11 17:21:50.808 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+2025-09-11 17:21:50.831 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 22.7186ms
+2025-09-11 17:21:50.841 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-11 17:21:50.841 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+2025-09-11 17:21:50.845 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.9505ms
+2025-09-11 17:21:50.870 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.7809ms
+2025-09-11 17:21:50.919 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+2025-09-11 17:21:50.934 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.7695ms

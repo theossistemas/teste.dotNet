@@ -1,0 +1,1275 @@
+[2025-09-12 11:03:08 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 11:03:08 INF] Now listening on: https://localhost:7173
+[2025-09-12 11:03:08 INF] Now listening on: http://localhost:5065
+[2025-09-12 11:03:08 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 11:03:08 INF] Hosting environment: Development
+[2025-09-12 11:03:08 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 11:03:08 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:03:09 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 252.9653ms
+[2025-09-12 11:03:09 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:03:09 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:03:09 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 12.6321ms
+[2025-09-12 11:03:09 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.6869ms
+[2025-09-12 11:03:09 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:03:09 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.3086ms
+[2025-09-12 11:06:40 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 11:06:40 INF] Now listening on: https://localhost:7173
+[2025-09-12 11:06:40 INF] Now listening on: http://localhost:5065
+[2025-09-12 11:06:40 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 11:06:40 INF] Hosting environment: Development
+[2025-09-12 11:06:40 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 11:06:40 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:06:41 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 244.3215ms
+[2025-09-12 11:06:41 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:06:41 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:06:41 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 16.9932ms
+[2025-09-12 11:06:41 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.3556ms
+[2025-09-12 11:06:41 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:06:41 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5028ms
+[2025-09-12 11:07:14 INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 77
+[2025-09-12 11:07:14 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 11:07:14 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 11:07:14 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 97.2614ms
+[2025-09-12 11:07:14 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 11:07:14 ERR] Erro não tratado: Usuário não autorizado!
+Livraria.API.Exceptions.AutenticacaoJWTException: Usuário não autorizado!
+   at Livraria.Api.Authentication.AutenticacaoJWT.GerarTokenAsync(String username, String password, String role) in C:\Livraria\Livraria\API\Authentication\AutenticacaoJWT.cs:line 24
+   at Livraria.API.Controllers.AuthController.Login(LoginRequest login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+[2025-09-12 11:07:15 INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 401 null application/json 308.9884ms
+[2025-09-12 11:07:32 INF] Request starting HTTP/2 POST https://localhost:7173/api/Auth/login - application/json 73
+[2025-09-12 11:07:32 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 11:07:32 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 11:07:32 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 11:07:32 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 11:07:32 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 49.1399ms
+[2025-09-12 11:07:32 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 11:07:32 INF] Request finished HTTP/2 POST https://localhost:7173/api/Auth/login - 200 null application/json; charset=utf-8 79.5553ms
+[2025-09-12 11:30:04 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 11:30:05 INF] Now listening on: https://localhost:7173
+[2025-09-12 11:30:05 INF] Now listening on: http://localhost:5065
+[2025-09-12 11:30:05 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 11:30:05 INF] Hosting environment: Development
+[2025-09-12 11:30:05 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 11:30:06 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:30:06 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 238.3794ms
+[2025-09-12 11:30:06 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:30:06 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:30:06 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.4632ms
+[2025-09-12 11:30:06 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.6271ms
+[2025-09-12 11:30:06 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:30:06 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.5401ms
+[2025-09-12 11:30:26 INF] Request starting HTTP/2 GET https://localhost:7173/api/Categorias - null null
+[2025-09-12 11:30:26 INF] Executing endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:30:26 INF] Route matched with {action = "Listar", controller = "Categorias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller CategoriasController (Livraria).
+[2025-09-12 11:31:39 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 11:31:40 INF] Now listening on: https://localhost:7173
+[2025-09-12 11:31:40 INF] Now listening on: http://localhost:5065
+[2025-09-12 11:31:40 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 11:31:40 INF] Hosting environment: Development
+[2025-09-12 11:31:40 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 11:31:41 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:31:41 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 291.6306ms
+[2025-09-12 11:31:41 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:31:41 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:31:41 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 20.2187ms
+[2025-09-12 11:31:41 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.5397ms
+[2025-09-12 11:31:41 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:31:41 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.105ms
+[2025-09-12 11:31:52 INF] Request starting HTTP/2 GET https://localhost:7173/api/Categorias - null null
+[2025-09-12 11:31:52 INF] Executing endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:31:52 INF] Route matched with {action = "Listar", controller = "Categorias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller CategoriasController (Livraria).
+[2025-09-12 11:31:52 INF] CategoriaService inicializada
+[2025-09-12 11:31:54 INF] Executed action CategoriasController.Listar (Livraria) in 1202.4104ms
+[2025-09-12 11:31:54 INF] Executed endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:31:54 ERR] Erro não tratado: Invalid object name 'Categorias'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Categorias'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at Livraria.Infrastructure.Repositories.CategoriaRepository.ListarAsync() in C:\Livraria\Livraria\Infrastructure\Repositories\CategoriaRepository.cs:line 47
+   at CategoriaService.ListarCategoriasAsync() in C:\Livraria\Livraria\Application\Services\CategoriaService.cs:line 63
+   at CategoriasController.Listar() in C:\Livraria\Livraria\API\Controllers\CategoriasController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+ClientConnectionId:04782fa8-2b0c-4760-aa64-4d7c4a4d177b
+Error Number:208,State:1,Class:16
+[2025-09-12 11:31:54 INF] Request finished HTTP/2 GET https://localhost:7173/api/Categorias - 500 null application/json 1478.7765ms
+[2025-09-12 11:33:36 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:33:36 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 24.073ms
+[2025-09-12 11:33:36 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:33:36 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:33:36 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 5.6695ms
+[2025-09-12 11:33:36 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1466ms
+[2025-09-12 11:33:37 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:33:37 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.6448ms
+[2025-09-12 11:35:04 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:35:04 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 13.9874ms
+[2025-09-12 11:35:04 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:35:04 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:35:04 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 6.1276ms
+[2025-09-12 11:35:04 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.291ms
+[2025-09-12 11:35:04 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:35:04 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.0675ms
+[2025-09-12 11:35:13 INF] Request starting HTTP/2 GET https://localhost:7173/api/Categorias - null null
+[2025-09-12 11:35:13 INF] Executing endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:35:13 INF] Route matched with {action = "Listar", controller = "Categorias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller CategoriasController (Livraria).
+[2025-09-12 11:35:13 INF] CategoriaService inicializada
+[2025-09-12 11:35:13 INF] Executed action CategoriasController.Listar (Livraria) in 169.3653ms
+[2025-09-12 11:35:13 INF] Executed endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:35:13 ERR] Erro não tratado: A parameterless default constructor or one matching signature (System.Guid Id, System.String Nome) is required for Livraria.Domain.Entities.Categoria materialization
+System.InvalidOperationException: A parameterless default constructor or one matching signature (System.Guid Id, System.String Nome) is required for Livraria.Domain.Entities.Categoria materialization
+   at Dapper.SqlMapper.GenerateDeserializerFromMap(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing, ILGenerator il) in /_/Dapper/SqlMapper.cs:line 3502
+   at Dapper.SqlMapper.GetTypeDeserializerImpl(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3333
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 151
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 50
+   at Dapper.SqlMapper.GetTypeDeserializer(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3287
+   at Dapper.SqlMapper.GetDeserializer(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 1974
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 442
+   at Livraria.Infrastructure.Repositories.CategoriaRepository.ListarAsync()
+   at CategoriaService.ListarCategoriasAsync()
+   at CategoriasController.Listar()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+[2025-09-12 11:35:13 INF] Request finished HTTP/2 GET https://localhost:7173/api/Categorias - 500 null application/json 279.5219ms
+[2025-09-12 11:36:05 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 11:36:05 INF] Now listening on: https://localhost:7173
+[2025-09-12 11:36:05 INF] Now listening on: http://localhost:5065
+[2025-09-12 11:36:05 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 11:36:05 INF] Hosting environment: Development
+[2025-09-12 11:36:05 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 11:36:06 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:36:06 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 357.5272ms
+[2025-09-12 11:36:06 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:36:06 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:36:06 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 21.9775ms
+[2025-09-12 11:36:06 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.6056ms
+[2025-09-12 11:36:06 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:36:06 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.2408ms
+[2025-09-12 11:36:33 INF] Request starting HTTP/2 GET https://localhost:7173/api/Categorias - null null
+[2025-09-12 11:36:33 INF] Executing endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:36:33 INF] Route matched with {action = "Listar", controller = "Categorias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller CategoriasController (Livraria).
+[2025-09-12 11:36:34 INF] CategoriaService inicializada
+[2025-09-12 11:36:34 INF] Executed action CategoriasController.Listar (Livraria) in 289.3604ms
+[2025-09-12 11:36:34 INF] Executed endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:36:34 ERR] Erro não tratado: A parameterless default constructor or one matching signature (System.Guid Id, System.String Nome) is required for Livraria.Domain.Entities.Categoria materialization
+System.InvalidOperationException: A parameterless default constructor or one matching signature (System.Guid Id, System.String Nome) is required for Livraria.Domain.Entities.Categoria materialization
+   at Dapper.SqlMapper.GenerateDeserializerFromMap(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing, ILGenerator il) in /_/Dapper/SqlMapper.cs:line 3502
+   at Dapper.SqlMapper.GetTypeDeserializerImpl(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3333
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 151
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 50
+   at Dapper.SqlMapper.GetTypeDeserializer(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3287
+   at Dapper.SqlMapper.GetDeserializer(Type type, DbDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 1974
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 442
+   at Livraria.Infrastructure.Repositories.CategoriaRepository.ListarAsync() in C:\Livraria\Livraria\Infrastructure\Repositories\CategoriaRepository.cs:line 47
+   at CategoriaService.ListarCategoriasAsync() in C:\Livraria\Livraria\Application\Services\CategoriaService.cs:line 63
+   at CategoriasController.Listar() in C:\Livraria\Livraria\API\Controllers\CategoriasController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+[2025-09-12 11:36:34 INF] Request finished HTTP/2 GET https://localhost:7173/api/Categorias - 500 null application/json 574.9381ms
+[2025-09-12 11:41:59 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 11:41:59 INF] Now listening on: https://localhost:7173
+[2025-09-12 11:41:59 INF] Now listening on: http://localhost:5065
+[2025-09-12 11:41:59 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 11:41:59 INF] Hosting environment: Development
+[2025-09-12 11:41:59 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 11:42:00 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:42:00 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 241.1063ms
+[2025-09-12 11:42:00 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:42:00 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:42:00 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 9.5757ms
+[2025-09-12 11:42:00 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.832ms
+[2025-09-12 11:42:00 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:42:00 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.6847ms
+[2025-09-12 11:42:08 INF] Request starting HTTP/2 GET https://localhost:7173/api/Categorias - null null
+[2025-09-12 11:42:08 INF] Executing endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:42:08 INF] Route matched with {action = "Listar", controller = "Categorias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller CategoriasController (Livraria).
+[2025-09-12 11:42:08 INF] CategoriaService inicializada
+[2025-09-12 11:42:09 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.Domain.Entities.Categoria, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 11:42:09 INF] Executed action CategoriasController.Listar (Livraria) in 1104.7764ms
+[2025-09-12 11:42:09 INF] Executed endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 11:42:09 INF] Request finished HTTP/2 GET https://localhost:7173/api/Categorias - 200 null application/json; charset=utf-8 1223.2849ms
+[2025-09-12 11:42:31 INF] Request starting HTTP/2 GET https://localhost:7173/api/Livros - null null
+[2025-09-12 11:42:32 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 11:42:32 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 11:42:32 INF] LivroService iniciado
+[2025-09-12 11:42:32 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 11:42:32 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 26.7999ms
+[2025-09-12 11:42:32 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 11:42:32 INF] Request finished HTTP/2 GET https://localhost:7173/api/Livros - 200 null application/json; charset=utf-8 84.8698ms
+[2025-09-12 11:44:58 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 11:44:58 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 15.9291ms
+[2025-09-12 11:44:58 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 11:44:58 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 11:44:58 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 15.3608ms
+[2025-09-12 11:44:58 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.5794ms
+[2025-09-12 11:44:58 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 11:44:58 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.5463ms
+[2025-09-12 12:02:48 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 12:02:49 INF] Now listening on: https://localhost:7173
+[2025-09-12 12:02:49 INF] Now listening on: http://localhost:5065
+[2025-09-12 12:02:49 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 12:02:49 INF] Hosting environment: Development
+[2025-09-12 12:02:49 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 12:02:49 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 12:02:50 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 238.4646ms
+[2025-09-12 12:02:50 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 12:02:50 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 12:02:50 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 16.3728ms
+[2025-09-12 12:02:50 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.838ms
+[2025-09-12 12:02:50 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 12:02:50 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.2909ms
+[2025-09-12 12:03:26 INF] Request starting HTTP/2 GET https://localhost:7173/api/Categorias - null null
+[2025-09-12 12:03:26 INF] Executing endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 12:03:26 INF] Route matched with {action = "Listar", controller = "Categorias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller CategoriasController (Livraria).
+[2025-09-12 12:03:26 INF] CategoriaService inicializada
+[2025-09-12 12:03:26 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.Domain.Entities.Categoria, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 12:03:26 INF] Executed action CategoriasController.Listar (Livraria) in 306.4243ms
+[2025-09-12 12:03:26 INF] Executed endpoint 'CategoriasController.Listar (Livraria)'
+[2025-09-12 12:03:26 INF] Request finished HTTP/2 GET https://localhost:7173/api/Categorias - 200 null application/json; charset=utf-8 484.3855ms
+[2025-09-12 12:03:42 INF] Request starting HTTP/2 GET https://localhost:7173/api/Livros - null null
+[2025-09-12 12:03:42 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 12:03:42 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 12:03:42 INF] LivroService iniciado
+[2025-09-12 12:03:42 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 105.6791ms
+[2025-09-12 12:03:42 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 12:03:43 ERR] Erro não tratado: Must declare the scalar variable "@SELECT".
+System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@SELECT".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at Livraria.Infrastructure.Repositories.LivroRepository.ListarAsync() in C:\Livraria\Livraria\Infrastructure\Repositories\LivroRepository.cs:line 52
+   at Livraria.Application.Services.LivroService.ListarLivrosAsync() in C:\Livraria\Livraria\Application\Services\LivroService.cs:line 44
+   at Livraria.Api.Controllers.LivrosController.Listar() in C:\Livraria\Livraria\API\Controllers\LivrosController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+ClientConnectionId:a38957a1-89ab-45ca-8d6d-a58b6b456c31
+Error Number:137,State:2,Class:15
+[2025-09-12 12:03:43 INF] Request finished HTTP/2 GET https://localhost:7173/api/Livros - 500 null application/json 299.722ms
+[2025-09-12 12:04:05 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 12:04:05 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 17.3014ms
+[2025-09-12 12:04:05 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 12:04:05 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 12:04:05 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.7213ms
+[2025-09-12 12:04:05 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.5734ms
+[2025-09-12 12:04:05 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 12:04:05 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.1745ms
+[2025-09-12 12:04:19 INF] Request starting HTTP/2 GET https://localhost:7173/api/Livros - null null
+[2025-09-12 12:04:19 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 12:04:19 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 12:04:19 INF] LivroService iniciado
+[2025-09-12 12:04:19 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 12:04:19 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 51.276ms
+[2025-09-12 12:04:19 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 12:04:19 INF] Request finished HTTP/2 GET https://localhost:7173/api/Livros - 200 null application/json; charset=utf-8 69.3303ms
+[2025-09-12 12:05:32 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 12:05:33 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 9.2209ms
+[2025-09-12 12:05:33 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 12:05:33 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 12:05:33 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.5866ms
+[2025-09-12 12:05:33 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.302ms
+[2025-09-12 12:05:33 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 12:05:33 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.9561ms
+[2025-09-12 12:06:10 INF] Request starting HTTP/2 GET https://localhost:7173/api/Livros - null null
+[2025-09-12 12:06:10 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 12:06:10 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 12:06:10 INF] LivroService iniciado
+[2025-09-12 12:06:10 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 12:06:10 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 24.4533ms
+[2025-09-12 12:06:10 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 12:06:10 INF] Request finished HTTP/2 GET https://localhost:7173/api/Livros - 200 null application/json; charset=utf-8 39.323ms
+[2025-09-12 15:03:22 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 15:03:22 INF] Now listening on: https://localhost:7173
+[2025-09-12 15:03:22 INF] Now listening on: http://localhost:5065
+[2025-09-12 15:03:23 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 15:03:23 INF] Hosting environment: Development
+[2025-09-12 15:03:23 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 15:03:23 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 15:03:24 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 229.4108ms
+[2025-09-12 15:03:24 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 15:03:24 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 15:03:24 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 44.7032ms
+[2025-09-12 15:03:24 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.8037ms
+[2025-09-12 15:03:24 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 15:03:24 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.031ms
+[2025-09-12 17:25:27 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 17:25:28 INF] Now listening on: https://localhost:7173
+[2025-09-12 17:25:28 INF] Now listening on: http://localhost:5065
+[2025-09-12 17:25:28 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 17:25:28 INF] Hosting environment: Development
+[2025-09-12 17:25:28 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 17:25:29 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 17:25:29 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 265.8554ms
+[2025-09-12 17:25:29 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 17:25:29 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 17:25:29 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 19.7156ms
+[2025-09-12 17:25:29 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.9139ms
+[2025-09-12 17:25:29 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 17:25:29 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.946ms
+[2025-09-12 18:42:36 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 18:42:37 INF] Now listening on: https://localhost:7173
+[2025-09-12 18:42:37 INF] Now listening on: http://localhost:5065
+[2025-09-12 18:42:37 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 18:42:37 INF] Hosting environment: Development
+[2025-09-12 18:42:37 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 18:42:39 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 18:42:41 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 18:42:41 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 18:42:41 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 2258.4961ms
+[2025-09-12 18:42:42 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 355.1468ms
+[2025-09-12 18:42:42 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 578.0005ms
+[2025-09-12 18:42:42 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 18:42:42 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.2731ms
+[2025-09-12 18:43:41 INF] Request starting HTTP/2 GET https://localhost:7173/api/Livros - null null
+[2025-09-12 18:43:42 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 18:43:42 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 18:43:42 INF] LivroService iniciado
+[2025-09-12 18:43:43 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 18:43:43 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 1367.011ms
+[2025-09-12 18:43:43 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 18:43:43 INF] Request finished HTTP/2 GET https://localhost:7173/api/Livros - 200 null application/json; charset=utf-8 1627.2366ms
+[2025-09-12 18:43:43 INF] Request starting HTTP/2 GET https://localhost:7173/favicon.ico - null null
+[2025-09-12 18:43:43 INF] Request finished HTTP/2 GET https://localhost:7173/favicon.ico - 404 0 null 6.2992ms
+[2025-09-12 18:43:43 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7173/favicon.ico, Response status code: 404
+[2025-09-12 18:50:07 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 18:50:07 INF] Now listening on: https://localhost:7173
+[2025-09-12 18:50:07 INF] Now listening on: http://localhost:5065
+[2025-09-12 18:50:07 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 18:50:07 INF] Hosting environment: Development
+[2025-09-12 18:50:07 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 18:50:08 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 18:50:08 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 243.7434ms
+[2025-09-12 18:50:08 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 18:50:08 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 18:50:08 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 12.5071ms
+[2025-09-12 18:50:08 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.5891ms
+[2025-09-12 18:50:08 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 18:50:08 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.071ms
+[2025-09-12 18:56:11 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 18:56:11 INF] Now listening on: https://localhost:7173
+[2025-09-12 18:56:11 INF] Now listening on: http://localhost:5065
+[2025-09-12 18:56:11 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 18:56:11 INF] Hosting environment: Development
+[2025-09-12 18:56:11 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 18:56:12 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 18:56:12 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 240.5789ms
+[2025-09-12 18:56:12 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 18:56:12 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 18:56:12 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 29.6715ms
+[2025-09-12 18:56:12 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.7478ms
+[2025-09-12 18:56:12 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 18:56:12 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.2031ms
+[2025-09-12 18:58:14 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 18:58:15 INF] Now listening on: https://localhost:7173
+[2025-09-12 18:58:15 INF] Now listening on: http://localhost:5065
+[2025-09-12 18:58:15 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 18:58:15 INF] Hosting environment: Development
+[2025-09-12 18:58:15 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 18:58:15 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/index.html - null null
+[2025-09-12 18:58:16 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/index.html - 200 null text/html;charset=utf-8 249.6717ms
+[2025-09-12 18:58:16 INF] Request starting HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 18:58:16 INF] Request starting HTTP/2 GET https://localhost:7173/_vs/browserLink - null null
+[2025-09-12 18:58:16 INF] Request finished HTTP/2 GET https://localhost:7173/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 16.1954ms
+[2025-09-12 18:58:16 INF] Request finished HTTP/2 GET https://localhost:7173/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.4219ms
+[2025-09-12 18:58:16 INF] Request starting HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - null null
+[2025-09-12 18:58:16 INF] Request finished HTTP/2 GET https://localhost:7173/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.9447ms
+[2025-09-12 19:01:55 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 19:01:56 ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7173: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+ ---> System.Net.Sockets.SocketException (10048): Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2025-09-12 19:03:23 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 19:03:24 INF] Now listening on: http://localhost:5065
+[2025-09-12 19:03:24 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 19:03:24 INF] Hosting environment: Development
+[2025-09-12 19:03:24 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger - null null
+[2025-09-12 19:03:26 WRN] Failed to determine the https port for redirect.
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger - 301 0 null 405.3862ms
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 170.0184ms
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-bundle.js - null null
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui.css - null null
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-standalone-preset.js - null null
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 19:03:26 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 16.683ms
+[2025-09-12 19:03:26 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2025-09-12 19:03:26 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui.css - 200 152034 text/css 104.2481ms
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 101.4283ms
+[2025-09-12 19:03:26 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 130.0171ms
+[2025-09-12 19:03:26 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 133.8118ms
+[2025-09-12 19:03:27 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 19:03:27 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.6886ms
+[2025-09-12 19:03:27 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/favicon-32x32.png - null null
+[2025-09-12 19:03:27 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2025-09-12 19:03:27 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/favicon-32x32.png - 200 628 image/png 7.7353ms
+[2025-09-12 19:05:03 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:05:03 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:05:03 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:05:03 INF] LivroService iniciado
+[2025-09-12 19:05:05 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:05:05 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 1151.4201ms
+[2025-09-12 19:05:05 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:05:05 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 1274.8928ms
+[2025-09-12 19:05:34 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:05:34 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:05:34 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:05:34 INF] LivroService iniciado
+[2025-09-12 19:05:34 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:05:34 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 18.1871ms
+[2025-09-12 19:05:34 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:05:34 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 67.3801ms
+[2025-09-12 19:08:28 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:08:28 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:08:28 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:08:28 INF] LivroService iniciado
+[2025-09-12 19:08:28 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:08:28 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 22.3985ms
+[2025-09-12 19:08:28 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:08:28 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 38.0544ms
+[2025-09-12 19:08:28 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:08:28 INF] CORS policy execution successful.
+[2025-09-12 19:08:28 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:08:28 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:08:28 INF] LivroService iniciado
+[2025-09-12 19:08:28 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:08:28 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 19.0637ms
+[2025-09-12 19:08:28 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:08:28 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 36.2552ms
+[2025-09-12 19:09:09 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:09:09 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:09:09 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:09:09 INF] LivroService iniciado
+[2025-09-12 19:09:09 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:09:09 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 22.1735ms
+[2025-09-12 19:09:09 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:09:09 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 36.5683ms
+[2025-09-12 19:09:09 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:09:09 INF] CORS policy execution successful.
+[2025-09-12 19:09:09 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:09:09 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:09:09 INF] LivroService iniciado
+[2025-09-12 19:09:09 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:09:09 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 33.645ms
+[2025-09-12 19:09:09 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:09:09 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 82.9651ms
+[2025-09-12 19:10:27 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - null null
+[2025-09-12 19:10:27 INF] CORS policy execution successful.
+[2025-09-12 19:10:27 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 204 null null 4.186ms
+[2025-09-12 19:10:27 INF] Request starting HTTP/1.1 DELETE http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - null null
+[2025-09-12 19:10:27 INF] CORS policy execution successful.
+[2025-09-12 19:10:27 INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[2025-09-12 19:10:27 INF] AuthenticationScheme: Bearer was challenged.
+[2025-09-12 19:10:27 INF] Request finished HTTP/1.1 DELETE http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 401 0 null 26.1404ms
+[2025-09-12 19:20:10 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:20:10 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:10 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:20:10 INF] LivroService iniciado
+[2025-09-12 19:20:11 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:20:11 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 874.3824ms
+[2025-09-12 19:20:11 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:11 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 882.9359ms
+[2025-09-12 19:20:12 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:20:12 INF] CORS policy execution successful.
+[2025-09-12 19:20:12 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:12 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:20:12 INF] LivroService iniciado
+[2025-09-12 19:20:12 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:20:12 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 23.2679ms
+[2025-09-12 19:20:12 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:12 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 42.4798ms
+[2025-09-12 19:20:13 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:20:13 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:13 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:20:13 INF] LivroService iniciado
+[2025-09-12 19:20:13 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:20:13 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 18.2186ms
+[2025-09-12 19:20:13 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:13 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 26.4419ms
+[2025-09-12 19:20:13 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:20:13 INF] CORS policy execution successful.
+[2025-09-12 19:20:13 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:13 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:20:13 INF] LivroService iniciado
+[2025-09-12 19:20:13 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:20:13 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 22.3013ms
+[2025-09-12 19:20:13 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:20:13 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 30.6772ms
+[2025-09-12 19:21:37 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:21:37 INF] CORS policy execution successful.
+[2025-09-12 19:21:37 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:21:37 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:21:37 INF] LivroService iniciado
+[2025-09-12 19:21:37 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:21:37 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 18.3665ms
+[2025-09-12 19:21:37 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:21:37 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 31.3121ms
+[2025-09-12 19:27:53 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:27:53 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:27:53 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:27:53 INF] LivroService iniciado
+[2025-09-12 19:27:54 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:27:54 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 755.2138ms
+[2025-09-12 19:27:54 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:27:54 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 764.4088ms
+[2025-09-12 19:27:56 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:27:56 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:27:56 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:27:56 INF] LivroService iniciado
+[2025-09-12 19:27:56 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:27:56 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 28.3128ms
+[2025-09-12 19:27:56 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:27:56 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 36.029ms
+[2025-09-12 19:27:56 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:27:56 INF] CORS policy execution successful.
+[2025-09-12 19:27:56 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:27:56 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:27:56 INF] LivroService iniciado
+[2025-09-12 19:27:56 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:27:56 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 28.3347ms
+[2025-09-12 19:27:56 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:27:56 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 100.0982ms
+[2025-09-12 19:28:25 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - null null
+[2025-09-12 19:28:25 INF] CORS policy execution successful.
+[2025-09-12 19:28:25 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 204 null null 7.4573ms
+[2025-09-12 19:28:25 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - application/json 407
+[2025-09-12 19:28:25 INF] CORS policy execution successful.
+[2025-09-12 19:28:25 INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[2025-09-12 19:28:25 INF] AuthenticationScheme: Bearer was challenged.
+[2025-09-12 19:28:25 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 401 0 null 6.047ms
+[2025-09-12 19:28:28 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - application/json 407
+[2025-09-12 19:28:28 INF] CORS policy execution successful.
+[2025-09-12 19:28:28 INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[2025-09-12 19:28:28 INF] AuthenticationScheme: Bearer was challenged.
+[2025-09-12 19:28:28 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 401 0 null 6.2893ms
+[2025-09-12 19:28:33 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - null null
+[2025-09-12 19:28:33 INF] CORS policy execution successful.
+[2025-09-12 19:28:33 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 204 null null 3.1292ms
+[2025-09-12 19:28:33 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - application/json 407
+[2025-09-12 19:28:33 INF] CORS policy execution successful.
+[2025-09-12 19:28:33 INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[2025-09-12 19:28:33 INF] AuthenticationScheme: Bearer was challenged.
+[2025-09-12 19:28:33 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 401 0 null 6.4486ms
+[2025-09-12 19:28:36 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:28:36 INF] CORS policy execution successful.
+[2025-09-12 19:28:36 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:28:36 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:28:36 INF] LivroService iniciado
+[2025-09-12 19:28:36 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:28:36 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 21.6092ms
+[2025-09-12 19:28:36 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:28:36 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 30.717ms
+[2025-09-12 19:50:32 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:50:33 INF] CORS policy execution successful.
+[2025-09-12 19:50:33 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:50:33 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:50:33 INF] LivroService iniciado
+[2025-09-12 19:50:33 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:50:33 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 918.296ms
+[2025-09-12 19:50:33 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:50:33 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 946.0435ms
+[2025-09-12 19:57:35 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 19:57:35 INF] CORS policy execution successful.
+[2025-09-12 19:57:35 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 8.9088ms
+[2025-09-12 19:57:35 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 51
+[2025-09-12 19:57:35 INF] CORS policy execution successful.
+[2025-09-12 19:57:35 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:57:35 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 19:57:35 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 110.2267ms
+[2025-09-12 19:57:35 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:57:35 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 51
+[2025-09-12 19:57:35 ERR] Erro não tratado: Usuário não autorizado!
+Livraria.API.Exceptions.AutenticacaoJWTException: Usuário não autorizado!
+   at Livraria.Api.Authentication.AutenticacaoJWT.GerarTokenAsync(String username, String password, String role) in C:\Livraria\Livraria\API\Authentication\AutenticacaoJWT.cs:line 24
+   at Livraria.API.Controllers.AuthController.Login(LoginRequest login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+[2025-09-12 19:57:35 INF] CORS policy execution successful.
+[2025-09-12 19:57:35 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:57:35 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 19:57:35 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 30.581ms
+[2025-09-12 19:57:35 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:57:35 ERR] Erro não tratado: Usuário não autorizado!
+Livraria.API.Exceptions.AutenticacaoJWTException: Usuário não autorizado!
+   at Livraria.Api.Authentication.AutenticacaoJWT.GerarTokenAsync(String username, String password, String role) in C:\Livraria\Livraria\API\Authentication\AutenticacaoJWT.cs:line 24
+   at Livraria.API.Controllers.AuthController.Login(LoginRequest login) in C:\Livraria\Livraria\API\Controllers\AuthController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Livraria\Livraria\API\Middlewares\ExceptionMiddleware.cs:line 23
+[2025-09-12 19:57:35 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 401 null application/json 118.792ms
+[2025-09-12 19:57:35 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 401 null application/json 276.0925ms
+[2025-09-12 19:58:49 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 19:58:49 INF] CORS policy execution successful.
+[2025-09-12 19:58:49 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 8.8231ms
+[2025-09-12 19:58:49 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 19:58:49 INF] CORS policy execution successful.
+[2025-09-12 19:58:49 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:58:49 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 19:58:49 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 19:58:49 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:58:49 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 55.5527ms
+[2025-09-12 19:58:49 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:58:49 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 63.0577ms
+[2025-09-12 19:58:49 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 19:58:49 INF] CORS policy execution successful.
+[2025-09-12 19:58:49 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 4.1422ms
+[2025-09-12 19:58:49 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:58:49 INF] CORS policy execution successful.
+[2025-09-12 19:58:49 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:58:49 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:58:49 INF] LivroService iniciado
+[2025-09-12 19:58:50 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:58:50 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 867.9353ms
+[2025-09-12 19:58:50 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:58:50 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 950.2328ms
+[2025-09-12 19:59:08 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/832d6881-ff44-43ee-aee1-6267eb1a8860 - null null
+[2025-09-12 19:59:08 INF] CORS policy execution successful.
+[2025-09-12 19:59:08 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/832d6881-ff44-43ee-aee1-6267eb1a8860 - 204 null null 4.2306ms
+[2025-09-12 19:59:08 INF] Request starting HTTP/1.1 DELETE http://localhost:5065/api/Livros/832d6881-ff44-43ee-aee1-6267eb1a8860 - null null
+[2025-09-12 19:59:08 INF] CORS policy execution successful.
+[2025-09-12 19:59:08 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Deletar (Livraria)'
+[2025-09-12 19:59:08 INF] Route matched with {action = "Deletar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Deletar(System.Guid) on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:59:08 INF] LivroService iniciado
+[2025-09-12 19:59:08 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-09-12 19:59:08 INF] Executed action Livraria.Api.Controllers.LivrosController.Deletar (Livraria) in 52.4697ms
+[2025-09-12 19:59:08 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Deletar (Livraria)'
+[2025-09-12 19:59:08 INF] Request finished HTTP/1.1 DELETE http://localhost:5065/api/Livros/832d6881-ff44-43ee-aee1-6267eb1a8860 - 204 null null 66.7027ms
+[2025-09-12 19:59:08 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 19:59:08 INF] CORS policy execution successful.
+[2025-09-12 19:59:08 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 2.1224ms
+[2025-09-12 19:59:08 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:59:08 INF] CORS policy execution successful.
+[2025-09-12 19:59:08 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:59:08 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:59:08 INF] LivroService iniciado
+[2025-09-12 19:59:08 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:59:08 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 14.2428ms
+[2025-09-12 19:59:08 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:59:08 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 19.4651ms
+[2025-09-12 19:59:37 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 19:59:37 INF] CORS policy execution successful.
+[2025-09-12 19:59:37 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 8.7158ms
+[2025-09-12 19:59:37 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 19:59:37 INF] CORS policy execution successful.
+[2025-09-12 19:59:37 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:59:37 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 19:59:37 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 19:59:37 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:59:37 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 2.415ms
+[2025-09-12 19:59:37 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 19:59:37 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 8.9565ms
+[2025-09-12 19:59:37 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 19:59:37 INF] CORS policy execution successful.
+[2025-09-12 19:59:37 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 6.0578ms
+[2025-09-12 19:59:37 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:59:37 INF] CORS policy execution successful.
+[2025-09-12 19:59:37 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:59:37 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:59:37 INF] LivroService iniciado
+[2025-09-12 19:59:37 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:59:37 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 19.4121ms
+[2025-09-12 19:59:37 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:59:37 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 29.1867ms
+[2025-09-12 19:59:54 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - null null
+[2025-09-12 19:59:54 INF] CORS policy execution successful.
+[2025-09-12 19:59:54 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 204 null null 3.3095ms
+[2025-09-12 19:59:54 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - application/json 406
+[2025-09-12 19:59:54 INF] CORS policy execution successful.
+[2025-09-12 19:59:54 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 19:59:54 INF] Route matched with {action = "Atualizar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Atualizar(System.Guid, Livraria.API.DTOs.Livros.LivroRequest) on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:59:54 INF] LivroService iniciado
+[2025-09-12 19:59:54 INF] Executing OkObjectResult, writing value of type 'Livro'.
+[2025-09-12 19:59:54 INF] Executed action Livraria.Api.Controllers.LivrosController.Atualizar (Livraria) in 46.5142ms
+[2025-09-12 19:59:54 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 19:59:54 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - 200 null application/json; charset=utf-8 59.8921ms
+[2025-09-12 19:59:54 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 19:59:54 INF] CORS policy execution successful.
+[2025-09-12 19:59:54 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 2.5556ms
+[2025-09-12 19:59:54 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 19:59:54 INF] CORS policy execution successful.
+[2025-09-12 19:59:54 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:59:54 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 19:59:54 INF] LivroService iniciado
+[2025-09-12 19:59:54 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 19:59:54 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 14.9296ms
+[2025-09-12 19:59:54 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 19:59:54 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 23.2685ms
+[2025-09-12 20:00:02 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:00:02 INF] CORS policy execution successful.
+[2025-09-12 20:00:02 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 2.9685ms
+[2025-09-12 20:00:02 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:00:02 INF] CORS policy execution successful.
+[2025-09-12 20:00:02 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:00:02 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:00:02 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:00:02 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:00:02 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 2.025ms
+[2025-09-12 20:00:02 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:00:02 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 7.3273ms
+[2025-09-12 20:00:03 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:00:03 INF] CORS policy execution successful.
+[2025-09-12 20:00:03 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.9013ms
+[2025-09-12 20:00:03 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:00:03 INF] CORS policy execution successful.
+[2025-09-12 20:00:03 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:00:03 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:00:03 INF] LivroService iniciado
+[2025-09-12 20:00:03 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:00:03 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 16.6992ms
+[2025-09-12 20:00:03 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:00:03 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 26.5855ms
+[2025-09-12 20:05:29 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:05:29 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:05:29 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:05:29 INF] LivroService iniciado
+[2025-09-12 20:05:29 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livro, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:05:29 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 764.6797ms
+[2025-09-12 20:05:29 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:05:29 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 777.2431ms
+[2025-09-12 20:08:56 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 20:08:56 INF] Now listening on: http://localhost:5065
+[2025-09-12 20:08:56 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 20:08:56 INF] Hosting environment: Development
+[2025-09-12 20:08:56 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 20:08:57 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 20:08:57 WRN] Failed to determine the https port for redirect.
+[2025-09-12 20:08:57 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 294.9959ms
+[2025-09-12 20:08:57 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 20:08:57 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 20:08:57 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 11.3607ms
+[2025-09-12 20:08:57 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.7649ms
+[2025-09-12 20:08:57 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 20:08:57 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.9854ms
+[2025-09-12 20:09:43 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:09:43 INF] CORS policy execution successful.
+[2025-09-12 20:09:43 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 9.8053ms
+[2025-09-12 20:09:43 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:09:43 INF] CORS policy execution successful.
+[2025-09-12 20:09:43 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:09:43 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:09:43 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:09:43 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:09:43 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 78.9716ms
+[2025-09-12 20:09:43 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:09:43 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 235.0627ms
+[2025-09-12 20:09:43 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:09:43 INF] CORS policy execution successful.
+[2025-09-12 20:09:43 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.9854ms
+[2025-09-12 20:09:43 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:09:43 INF] CORS policy execution successful.
+[2025-09-12 20:09:43 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:09:43 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:09:43 INF] LivroService iniciado
+[2025-09-12 20:09:44 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 355.3827ms
+[2025-09-12 20:09:44 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:09:44 ERR] Erro não tratado: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+System.Data.DataException: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+ ---> System.InvalidCastException: Object must implement IConvertible.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize33c1dddc-ba43-4a56-b82b-933be0d36f9a(DbDataReader)
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3966
+   at Deserialize33c1dddc-ba43-4a56-b82b-933be0d36f9a(DbDataReader)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at Livraria.Infrastructure.Repositories.LivroRepository.ListarAsync()
+   at Livraria.Application.Services.LivroService.ListarLivrosAsync()
+   at Livraria.Api.Controllers.LivrosController.Listar()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+[2025-09-12 20:09:44 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 500 null application/json 597.1467ms
+[2025-09-12 20:11:34 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 20:11:34 INF] Now listening on: http://localhost:5065
+[2025-09-12 20:11:34 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 20:11:34 INF] Hosting environment: Development
+[2025-09-12 20:11:34 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 20:11:35 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 20:11:35 WRN] Failed to determine the https port for redirect.
+[2025-09-12 20:11:35 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 363.9559ms
+[2025-09-12 20:11:35 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 20:11:35 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 20:11:35 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 24.4445ms
+[2025-09-12 20:11:35 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.951ms
+[2025-09-12 20:11:35 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 20:11:36 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.5783ms
+[2025-09-12 20:11:45 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:11:45 INF] CORS policy execution successful.
+[2025-09-12 20:11:45 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 10.5187ms
+[2025-09-12 20:11:45 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:11:45 INF] CORS policy execution successful.
+[2025-09-12 20:11:45 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:11:45 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:11:45 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:11:45 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:11:45 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 89.6189ms
+[2025-09-12 20:11:45 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:11:45 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 209.6702ms
+[2025-09-12 20:11:45 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:11:45 INF] CORS policy execution successful.
+[2025-09-12 20:11:45 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 7.4107ms
+[2025-09-12 20:11:45 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:11:45 INF] CORS policy execution successful.
+[2025-09-12 20:11:45 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:11:45 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:11:45 INF] LivroService iniciado
+[2025-09-12 20:11:45 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 263.6749ms
+[2025-09-12 20:11:45 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:11:45 ERR] Erro não tratado: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+System.Data.DataException: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+ ---> System.InvalidCastException: Object must implement IConvertible.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize98ecc468-8b67-4aa0-8b0c-21c90a526d10(DbDataReader)
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3966
+   at Deserialize98ecc468-8b67-4aa0-8b0c-21c90a526d10(DbDataReader)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at Livraria.Infrastructure.Repositories.LivroRepository.ListarAsync()
+   at Livraria.Application.Services.LivroService.ListarLivrosAsync()
+   at Livraria.Api.Controllers.LivrosController.Listar()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+[2025-09-12 20:11:45 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 500 null application/json 449.2475ms
+[2025-09-12 20:11:59 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:11:59 INF] CORS policy execution successful.
+[2025-09-12 20:11:59 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 3.1608ms
+[2025-09-12 20:11:59 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:11:59 INF] CORS policy execution successful.
+[2025-09-12 20:11:59 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:11:59 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:11:59 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:11:59 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:11:59 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 5.7978ms
+[2025-09-12 20:11:59 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:11:59 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 17.3528ms
+[2025-09-12 20:11:59 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:11:59 INF] CORS policy execution successful.
+[2025-09-12 20:11:59 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.327ms
+[2025-09-12 20:11:59 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:11:59 INF] CORS policy execution successful.
+[2025-09-12 20:11:59 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:11:59 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:11:59 INF] LivroService iniciado
+[2025-09-12 20:11:59 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 103.7878ms
+[2025-09-12 20:11:59 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:11:59 ERR] Erro não tratado: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+System.Data.DataException: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+ ---> System.InvalidCastException: Object must implement IConvertible.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize98ecc468-8b67-4aa0-8b0c-21c90a526d10(DbDataReader)
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3966
+   at Deserialize98ecc468-8b67-4aa0-8b0c-21c90a526d10(DbDataReader)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at Livraria.Infrastructure.Repositories.LivroRepository.ListarAsync()
+   at Livraria.Application.Services.LivroService.ListarLivrosAsync()
+   at Livraria.Api.Controllers.LivrosController.Listar()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+[2025-09-12 20:11:59 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 500 null application/json 187.3587ms
+[2025-09-12 20:12:11 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:12:11 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:12:11 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:12:11 INF] LivroService iniciado
+[2025-09-12 20:12:11 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 98.2586ms
+[2025-09-12 20:12:11 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:12:11 ERR] Erro não tratado: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+System.Data.DataException: Error parsing column 0 (Id=d5dcc60f-c7d2-4f37-9d51-8c6fb6612214 - Guid)
+ ---> System.InvalidCastException: Object must implement IConvertible.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize98ecc468-8b67-4aa0-8b0c-21c90a526d10(DbDataReader)
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3966
+   at Deserialize98ecc468-8b67-4aa0-8b0c-21c90a526d10(DbDataReader)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at Livraria.Infrastructure.Repositories.LivroRepository.ListarAsync()
+   at Livraria.Application.Services.LivroService.ListarLivrosAsync()
+   at Livraria.Api.Controllers.LivrosController.Listar()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Livraria.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+[2025-09-12 20:12:11 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 500 null application/json 169.7126ms
+[2025-09-12 20:12:11 INF] Request starting HTTP/1.1 GET http://localhost:5065/favicon.ico - null null
+[2025-09-12 20:12:11 INF] Request finished HTTP/1.1 GET http://localhost:5065/favicon.ico - 404 0 null 2.4442ms
+[2025-09-12 20:12:11 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5065/favicon.ico, Response status code: 404
+[2025-09-12 20:12:38 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 20:12:38 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 5.6616ms
+[2025-09-12 20:12:38 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 20:12:38 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 20:12:38 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 3.7276ms
+[2025-09-12 20:12:38 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0934ms
+[2025-09-12 20:12:38 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 20:12:38 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.7128ms
+[2025-09-12 20:13:08 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 20:13:08 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 4.0172ms
+[2025-09-12 20:13:08 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 20:13:08 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 20:13:08 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.7836ms
+[2025-09-12 20:13:08 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 19.9272ms
+[2025-09-12 20:13:08 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 20:13:08 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4306ms
+[2025-09-12 20:13:17 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 20:13:18 INF] Now listening on: http://localhost:5065
+[2025-09-12 20:13:18 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 20:13:18 INF] Hosting environment: Development
+[2025-09-12 20:13:18 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 20:13:18 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 20:13:18 WRN] Failed to determine the https port for redirect.
+[2025-09-12 20:13:19 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 257.8448ms
+[2025-09-12 20:13:19 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 20:13:19 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 20:13:19 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 10.6401ms
+[2025-09-12 20:13:19 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.1431ms
+[2025-09-12 20:13:19 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 20:13:19 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.5701ms
+[2025-09-12 20:13:25 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:13:25 INF] CORS policy execution successful.
+[2025-09-12 20:13:25 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 8.8674ms
+[2025-09-12 20:13:25 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:13:25 INF] CORS policy execution successful.
+[2025-09-12 20:13:25 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:13:25 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:13:25 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:13:25 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:13:25 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 75.8926ms
+[2025-09-12 20:13:25 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:13:25 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 172.7446ms
+[2025-09-12 20:13:25 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:13:25 INF] CORS policy execution successful.
+[2025-09-12 20:13:25 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 6.204ms
+[2025-09-12 20:13:25 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:13:25 INF] CORS policy execution successful.
+[2025-09-12 20:13:25 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:13:25 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:13:25 INF] LivroService iniciado
+[2025-09-12 20:13:25 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:13:25 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 221.6756ms
+[2025-09-12 20:13:25 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:13:25 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 286.943ms
+[2025-09-12 20:20:09 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:20:09 INF] CORS policy execution successful.
+[2025-09-12 20:20:09 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 4.0738ms
+[2025-09-12 20:20:09 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:20:09 INF] CORS policy execution successful.
+[2025-09-12 20:20:09 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:20:09 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:20:09 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:20:09 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:20:09 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 6.269ms
+[2025-09-12 20:20:09 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:20:09 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 17.731ms
+[2025-09-12 20:20:09 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:20:09 INF] CORS policy execution successful.
+[2025-09-12 20:20:09 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 5.4946ms
+[2025-09-12 20:20:09 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:20:09 INF] CORS policy execution successful.
+[2025-09-12 20:20:09 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:20:09 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:20:09 INF] LivroService iniciado
+[2025-09-12 20:20:10 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:20:10 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 957.7859ms
+[2025-09-12 20:20:10 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:20:10 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 971.3387ms
+[2025-09-12 20:22:38 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:22:38 INF] CORS policy execution successful.
+[2025-09-12 20:22:38 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 9.8803ms
+[2025-09-12 20:22:38 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:22:38 INF] CORS policy execution successful.
+[2025-09-12 20:22:38 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:22:38 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:22:38 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:22:38 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:22:38 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 3.754ms
+[2025-09-12 20:22:38 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:22:38 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 12.1809ms
+[2025-09-12 20:22:38 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:22:38 INF] CORS policy execution successful.
+[2025-09-12 20:22:38 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.8882ms
+[2025-09-12 20:22:38 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:22:38 INF] CORS policy execution successful.
+[2025-09-12 20:22:38 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:22:38 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:22:38 INF] LivroService iniciado
+[2025-09-12 20:22:38 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:22:38 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 27.4212ms
+[2025-09-12 20:22:38 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:22:38 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 37.9051ms
+[2025-09-12 20:23:00 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - null null
+[2025-09-12 20:23:00 INF] CORS policy execution successful.
+[2025-09-12 20:23:00 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - 204 null null 8.2061ms
+[2025-09-12 20:23:00 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - application/json 270
+[2025-09-12 20:23:00 INF] CORS policy execution successful.
+[2025-09-12 20:23:00 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 20:23:00 INF] Route matched with {action = "Atualizar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Atualizar(System.Guid, Livraria.API.DTOs.Livros.LivroRequest) on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:23:00 INF] LivroService iniciado
+[2025-09-12 20:23:00 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-09-12 20:23:00 INF] Executed action Livraria.Api.Controllers.LivrosController.Atualizar (Livraria) in 39.2404ms
+[2025-09-12 20:23:00 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 20:23:00 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - 400 null application/problem+json; charset=utf-8 59.9991ms
+[2025-09-12 20:23:04 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - application/json 270
+[2025-09-12 20:23:04 INF] CORS policy execution successful.
+[2025-09-12 20:23:04 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 20:23:04 INF] Route matched with {action = "Atualizar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Atualizar(System.Guid, Livraria.API.DTOs.Livros.LivroRequest) on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:23:04 INF] LivroService iniciado
+[2025-09-12 20:23:04 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-09-12 20:23:04 INF] Executed action Livraria.Api.Controllers.LivrosController.Atualizar (Livraria) in 4.8034ms
+[2025-09-12 20:23:04 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 20:23:04 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - 400 null application/problem+json; charset=utf-8 20.1236ms
+[2025-09-12 20:23:05 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:23:05 INF] CORS policy execution successful.
+[2025-09-12 20:23:05 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.6895ms
+[2025-09-12 20:23:05 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:23:05 INF] CORS policy execution successful.
+[2025-09-12 20:23:05 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:23:05 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:23:05 INF] LivroService iniciado
+[2025-09-12 20:23:05 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:23:05 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 17.1033ms
+[2025-09-12 20:23:05 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:23:05 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 26.2939ms
+[2025-09-12 20:47:28 INF] User profile is available. Using 'C:\Users\carli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-09-12 20:47:28 INF] Now listening on: http://localhost:5065
+[2025-09-12 20:47:28 INF] Application started. Press Ctrl+C to shut down.
+[2025-09-12 20:47:28 INF] Hosting environment: Development
+[2025-09-12 20:47:28 INF] Content root path: C:\Livraria\Livraria
+[2025-09-12 20:47:29 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+[2025-09-12 20:47:29 WRN] Failed to determine the https port for redirect.
+[2025-09-12 20:47:29 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 347.2364ms
+[2025-09-12 20:47:29 INF] Request starting HTTP/1.1 GET http://localhost:5065/_vs/browserLink - null null
+[2025-09-12 20:47:29 INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+[2025-09-12 20:47:29 INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 23.1629ms
+[2025-09-12 20:47:29 INF] Request finished HTTP/1.1 GET http://localhost:5065/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.2994ms
+[2025-09-12 20:47:29 INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+[2025-09-12 20:47:29 INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.4865ms
+[2025-09-12 20:47:36 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:47:36 INF] CORS policy execution successful.
+[2025-09-12 20:47:36 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 9.251ms
+[2025-09-12 20:47:36 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:47:36 INF] CORS policy execution successful.
+[2025-09-12 20:47:36 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:47:36 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:47:36 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:47:36 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:47:36 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 86.1215ms
+[2025-09-12 20:47:36 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:47:36 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 200.7464ms
+[2025-09-12 20:47:36 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:47:36 INF] CORS policy execution successful.
+[2025-09-12 20:47:36 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.4632ms
+[2025-09-12 20:47:36 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:47:36 INF] CORS policy execution successful.
+[2025-09-12 20:47:36 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:47:36 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:47:36 INF] LivroService iniciado
+[2025-09-12 20:47:37 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:47:37 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 1123.2ms
+[2025-09-12 20:47:37 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:47:37 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 1192.4524ms
+[2025-09-12 20:47:44 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - null null
+[2025-09-12 20:47:44 INF] CORS policy execution successful.
+[2025-09-12 20:47:44 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - 204 null null 3.1697ms
+[2025-09-12 20:47:44 INF] Request starting HTTP/1.1 PUT http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - application/json 270
+[2025-09-12 20:47:44 INF] CORS policy execution successful.
+[2025-09-12 20:47:44 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 20:47:44 INF] Route matched with {action = "Atualizar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Atualizar(System.Guid, Livraria.API.DTOs.Livros.LivroUpdateRequest) on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:47:44 INF] LivroService iniciado
+[2025-09-12 20:47:44 INF] Executing OkObjectResult, writing value of type 'Livraria.API.DTOs.Livros.LivroUpdateRequest'.
+[2025-09-12 20:47:44 INF] Executed action Livraria.Api.Controllers.LivrosController.Atualizar (Livraria) in 73.7695ms
+[2025-09-12 20:47:44 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Atualizar (Livraria)'
+[2025-09-12 20:47:44 INF] Request finished HTTP/1.1 PUT http://localhost:5065/api/Livros/5bcdac67-bf2f-4164-ba52-931043896ba3 - 200 null application/json; charset=utf-8 96.2187ms
+[2025-09-12 20:47:44 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:47:44 INF] CORS policy execution successful.
+[2025-09-12 20:47:44 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 3.0931ms
+[2025-09-12 20:47:44 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:47:44 INF] CORS policy execution successful.
+[2025-09-12 20:47:44 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:47:44 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:47:44 INF] LivroService iniciado
+[2025-09-12 20:47:44 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:47:44 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 17.5657ms
+[2025-09-12 20:47:44 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:47:44 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 25.4913ms
+[2025-09-12 20:48:04 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - null null
+[2025-09-12 20:48:04 INF] CORS policy execution successful.
+[2025-09-12 20:48:04 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/auth/login - 204 null null 4.1525ms
+[2025-09-12 20:48:04 INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json 60
+[2025-09-12 20:48:04 INF] CORS policy execution successful.
+[2025-09-12 20:48:04 INF] Executing endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:48:04 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Livraria.API.DTOs.Login.LoginRequest) on controller Livraria.API.Controllers.AuthController (Livraria).
+[2025-09-12 20:48:04 INF] Token gerado com sucesso para o Usuario admin
+[2025-09-12 20:48:04 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:48:04 INF] Executed action Livraria.API.Controllers.AuthController.Login (Livraria) in 5.9941ms
+[2025-09-12 20:48:04 INF] Executed endpoint 'Livraria.API.Controllers.AuthController.Login (Livraria)'
+[2025-09-12 20:48:04 INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 null application/json; charset=utf-8 16.2668ms
+[2025-09-12 20:48:04 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - null null
+[2025-09-12 20:48:04 INF] CORS policy execution successful.
+[2025-09-12 20:48:04 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5065/api/Livros - 204 null null 2.8523ms
+[2025-09-12 20:48:04 INF] Request starting HTTP/1.1 GET http://localhost:5065/api/Livros - null null
+[2025-09-12 20:48:04 INF] CORS policy execution successful.
+[2025-09-12 20:48:04 INF] Executing endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:48:04 INF] Route matched with {action = "Listar", controller = "Livros"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller Livraria.Api.Controllers.LivrosController (Livraria).
+[2025-09-12 20:48:04 INF] LivroService iniciado
+[2025-09-12 20:48:04 INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Livraria.API.DTOs.Livros.LivroResponse, Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-09-12 20:48:04 INF] Executed action Livraria.Api.Controllers.LivrosController.Listar (Livraria) in 19.4882ms
+[2025-09-12 20:48:04 INF] Executed endpoint 'Livraria.Api.Controllers.LivrosController.Listar (Livraria)'
+[2025-09-12 20:48:04 INF] Request finished HTTP/1.1 GET http://localhost:5065/api/Livros - 200 null application/json; charset=utf-8 27.6252ms

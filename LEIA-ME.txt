@@ -1,0 +1,33 @@
+BACKEND
+BACKEND .NET 8 - RODAR HTTP PARA CONEXÃO COM FRONT ANGULAR
+SQL SERVER 15.0.4382
+
+--------------------------------------------------------------------------------------
+
+FRONTEND
+NODE VERSION v22.18.0
+
+ANGULAR VERSION 
+Angular CLI: 20.3.1
+Node: 22.18.0
+Package Manager: npm 10.9.3
+OS: win32 x64
+
+Angular: 20.3.0
+... animations, common, compiler, compiler-cli, core, forms
+... platform-browser, platform-server, router
+
+Package                      Version
+------------------------------------
+@angular-devkit/architect    0.2003.1
+@angular-devkit/core         20.3.1
+@angular-devkit/schematics   20.3.1
+@angular/build               20.3.1
+@angular/cdk                 20.2.3
+@angular/cli                 20.3.1
+@angular/material            20.2.3
+@angular/ssr                 20.3.1
+@schematics/angular          20.3.1
+rxjs                         7.8.2
+typescript                   5.9.2
+zone.js                      0.15.1
