@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\logs\\livraria-info-20250915.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\logs\\livraria-info-20250915.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\logs\\livraria-erro-20250915.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\logs\\livraria-erro-20250915.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\application\\services\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\application\\services\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\infrastructure\\logging\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\infrastructure\\logging\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\exceptions\\livrojacadastradoexcepton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\exceptions\\livrojacadastradoexcepton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\exceptions\\categoriajaexisteexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\exceptions\\categoriajaexisteexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\logs\\livraria-erro-20250914.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\logs\\livraria-erro-20250914.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\infrastructure\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\infrastructure\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|c:\\teste theos sistemas eclesiais\\livraria-backend\\livraria\\infrastructure\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD37D101-9066-4876-AAE1-C9B292BC3923}|Livraria\\Livraria.csproj|solutionrelative:livraria\\infrastructure\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "livraria-erro-20250915.txt",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\logs\\livraria-erro-20250915.txt",
+              "RelativeDocumentMoniker": "Livraria\\logs\\livraria-erro-20250915.txt",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\logs\\livraria-erro-20250915.txt",
+              "RelativeToolTip": "Livraria\\logs\\livraria-erro-20250915.txt",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-15T12:32:10.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LivroService.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Application\\Services\\LivroService.cs",
+              "RelativeDocumentMoniker": "Livraria\\Application\\Services\\LivroService.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Application\\Services\\LivroService.cs",
+              "RelativeToolTip": "Livraria\\Application\\Services\\LivroService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T12:27:24.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoriaService.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Application\\Services\\CategoriaService.cs",
+              "RelativeDocumentMoniker": "Livraria\\Application\\Services\\CategoriaService.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Application\\Services\\CategoriaService.cs",
+              "RelativeToolTip": "Livraria\\Application\\Services\\CategoriaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:56:10.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LivroJaCadastradoExcepton.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Exceptions\\LivroJaCadastradoExcepton.cs",
+              "RelativeDocumentMoniker": "Livraria\\Exceptions\\LivroJaCadastradoExcepton.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Exceptions\\LivroJaCadastradoExcepton.cs",
+              "RelativeToolTip": "Livraria\\Exceptions\\LivroJaCadastradoExcepton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:49:23.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriaJaExisteException.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Exceptions\\CategoriaJaExisteException.cs",
+              "RelativeDocumentMoniker": "Livraria\\Exceptions\\CategoriaJaExisteException.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Exceptions\\CategoriaJaExisteException.cs",
+              "RelativeToolTip": "Livraria\\Exceptions\\CategoriaJaExisteException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:49:19.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "livraria-erro-20250914.txt",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\logs\\livraria-erro-20250914.txt",
+              "RelativeDocumentMoniker": "Livraria\\logs\\livraria-erro-20250914.txt",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\logs\\livraria-erro-20250914.txt",
+              "RelativeToolTip": "Livraria\\logs\\livraria-erro-20250914.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-15T11:48:41.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "livraria-info-20250915.txt",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\logs\\livraria-info-20250915.txt",
+              "RelativeDocumentMoniker": "Livraria\\logs\\livraria-info-20250915.txt",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\logs\\livraria-info-20250915.txt",
+              "RelativeToolTip": "Livraria\\logs\\livraria-info-20250915.txt",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-15T11:48:13.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LivroRepository.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Infrastructure\\Repositories\\LivroRepository.cs",
+              "RelativeDocumentMoniker": "Livraria\\Infrastructure\\Repositories\\LivroRepository.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Infrastructure\\Repositories\\LivroRepository.cs",
+              "RelativeToolTip": "Livraria\\Infrastructure\\Repositories\\LivroRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:44:21.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "Livraria\\Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "RelativeToolTip": "Livraria\\Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:44:17.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Infrastructure\\Logging\\Logger.cs",
+              "RelativeDocumentMoniker": "Livraria\\Infrastructure\\Logging\\Logger.cs",
+              "ToolTip": "C:\\Teste Theos Sistemas Eclesiais\\Livraria-backend\\Livraria\\Infrastructure\\Logging\\Logger.cs",
+              "RelativeToolTip": "Livraria\\Infrastructure\\Logging\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:39:15.994Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

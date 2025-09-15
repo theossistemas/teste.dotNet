@@ -1,0 +1,152 @@
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.csproj.AssemblyReference.cache
+C:\Livraria\Livraria\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.AssemblyInfoInputs.cache
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.AssemblyInfo.cs
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.MvcApplicationPartsAssemblyInfo.cs
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.MvcApplicationPartsAssemblyInfo.cache
+C:\Livraria\Livraria\bin\Debug\net8.0\appsettings.Development.json
+C:\Livraria\Livraria\bin\Debug\net8.0\appsettings.json
+C:\Livraria\Livraria\bin\Debug\net8.0\Livraria.staticwebassets.endpoints.json
+C:\Livraria\Livraria\bin\Debug\net8.0\Livraria.exe
+C:\Livraria\Livraria\bin\Debug\net8.0\Livraria.deps.json
+C:\Livraria\Livraria\bin\Debug\net8.0\Livraria.runtimeconfig.json
+C:\Livraria\Livraria\bin\Debug\net8.0\Livraria.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Livraria.pdb
+C:\Livraria\Livraria\bin\Debug\net8.0\Dapper.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\System.Text.Json.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Livraria\Livraria\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Livraria\Livraria\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Livraria\Livraria\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Livraria\Livraria\obj\Debug\net8.0\scopedcss\bundle\Livraria.styles.css
+C:\Livraria\Livraria\obj\Debug\net8.0\staticwebassets.build.json
+C:\Livraria\Livraria\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Livraria\Livraria\obj\Debug\net8.0\staticwebassets.development.json
+C:\Livraria\Livraria\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Livraria\Livraria\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.csproj.Up2Date
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.dll
+C:\Livraria\Livraria\obj\Debug\net8.0\refint\Livraria.dll
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.pdb
+C:\Livraria\Livraria\obj\Debug\net8.0\Livraria.genruntimeconfig.cache
+C:\Livraria\Livraria\obj\Debug\net8.0\ref\Livraria.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Livraria\Livraria\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\appsettings.Development.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\appsettings.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Livraria.staticwebassets.endpoints.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Livraria.exe
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Livraria.deps.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Livraria.runtimeconfig.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Livraria.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Livraria.pdb
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Dapper.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\System.Text.Json.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.csproj.AssemblyReference.cache
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.AssemblyInfoInputs.cache
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.AssemblyInfo.cs
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.MvcApplicationPartsAssemblyInfo.cs
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.MvcApplicationPartsAssemblyInfo.cache
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\scopedcss\bundle\Livraria.styles.css
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\staticwebassets.build.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\staticwebassets.development.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.csproj.Up2Date
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\refint\Livraria.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.pdb
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\Livraria.genruntimeconfig.cache
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\ref\Livraria.dll
+C:\Teste Theos Sistemas Eclesiais\Livraria-backend\Livraria\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
