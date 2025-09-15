@@ -1,0 +1,27 @@
+<div class="header-container">
+  <h2>Livros Cadastrados</h2>
+  <a *ngIf="authService.isAdmin()" mat-flat-button color="primary" routerLink="/novo-livro">
+    <mat-icon>add</mat-icon>
+    Adicionar Novo Livro
+  </a>
+</div>
+
+<div class="book-grid">
+  <mat-card *ngFor="let livro of livros" class="book-card">
+    <mat-card-header>
+      <mat-card-title>{{ livro.title }}</mat-card-title>
+      <mat-card-subtitle>{{ livro.author }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Ano de Publicação: {{ livro.publicationYear }}</p>
+    </mat-card-content>
+    <mat-card-actions align="end" *ngIf="authService.isAdmin()">
+      <a mat-icon-button color="primary" [routerLink]="['/editar-livro', livro.id]" title="Editar Livro">
+        <mat-icon>edit</mat-icon>
+      </a>
+      <button mat-icon-button color="warn" (click)="excluirLivro(livro.id)" title="Excluir Livro">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

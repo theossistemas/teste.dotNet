@@ -1,0 +1,29 @@
+<div class="form-container">
+  <mat-card>
+    <mat-card-title>{{ isEditMode ? 'Editar Livro' : 'Adicionar Novo Livro' }}</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="outline">
+          <mat-label>Título</mat-label>
+          <input matInput formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Autor</mat-label>
+          <input matInput formControlName="author">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Ano de Publicação</mat-label>
+          <input matInput type="number" formControlName="publicationYear">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="bookForm.invalid">
+          Salvar
+        </button>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
