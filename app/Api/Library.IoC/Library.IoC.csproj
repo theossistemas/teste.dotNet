@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
+	  <ProjectReference Include="..\Library.CrossCutting\Library.CrossCutting.csproj" />
+	  <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
+	  <ProjectReference Include="..\Library.Infraestructure\Library.Infraestructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.20" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
+	  <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+	  <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+	</ItemGroup>
+
+</Project>

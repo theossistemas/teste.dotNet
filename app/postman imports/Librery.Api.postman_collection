@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "81e46c25-1649-4261-99a5-56de11ade816",
+		"name": "Librery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11015750",
+		"_collection_link": "https://lively-zodiac-75677.postman.co/workspace/Arquitetura-de-Microsservi%C3%A7os-d~471a5892-5575-4625-925e-02a16177c4cd/collection/11015750-81e46c25-1649-4261-99a5-56de11ade816?action=share&source=collection_link&creator=11015750"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Clean Architecture: O Guia do Artesão para Estrutura e Design de Software\",\r\n    \"author\": \"Robert C. Martin (Uncle Bob)\",\r\n    \"summary\": \"Um guia prático sobre princípios de arquitetura limpa, separação de responsabilidades, e design sustentável em sistemas complexos.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7172/Book",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7172",
+							"path": [
+								"Book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7172/Book",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7172",
+							"path": [
+								"Book"
+							],
+							"query": [
+								{
+									"key": "Name",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "Page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "PageSaze",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "OrderBy",
+									"value": "desc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"72ac3377-20b8-47b1-1982-08ddff648d7f\",\r\n    \"name\": \"O Pequeno Príncipe\",\r\n    \"author\": \"Franz Kafka\",\r\n    \"summary\": \"Um homem é preso e julgado sem saber o motivo, crítica à burocracia e sociedade.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7172/Book",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7172",
+							"path": [
+								"Book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7172/Book/6ff0d146-d53e-4213-5c9a-08ddff7b97f3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7172",
+							"path": [
+								"Book",
+								"6ff0d146-d53e-4213-5c9a-08ddff7b97f3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authenticate",
+			"item": [
+				{
+					"name": "SignIn",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Pega o body da response\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"// Armazena o valor de \"token\" em uma variável de ambiente chamada Token\r",
+									"pm.environment.set(\"Token\", response.token);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userName\": \"jose.vitor\",\n  //\"userName\": \"jose.vitor@gmail.com\",\n  \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7172/Authenticate/SignIn",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7172",
+							"path": [
+								"Authenticate",
+								"SignIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignUp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Pega o body da response\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"// Armazena o valor de \"token\" em uma variável de ambiente chamada Token\r",
+									"pm.environment.set(\"Token\", response.token);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"jose.vitor\",\r\n  \"email\": \"jose.vitor@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7172/Authenticate/SignUp",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7172",
+							"path": [
+								"Authenticate",
+								"SignUp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
